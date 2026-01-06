@@ -3402,3 +3402,39 @@ notNull Violation: servicio.precio cannot be null
 2026-01-05 22:23:30 [INFO]: [0mDELETE /api/servicios/40 [32m200[0m 560.649 ms - 46[0m
 2026-01-05 22:23:32 [INFO]: [0mDELETE /api/servicios/39 [32m200[0m 694.950 ms - 46[0m
 2026-01-05 22:23:35 [INFO]: [0mDELETE /api/servicios/38 [32m200[0m 699.960 ms - 46[0m
+2026-01-05 22:50:39 [INFO]: servicioCtl: [object Object]
+2026-01-05 22:50:40 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-05 22:50:41 [INFO]: Base de datos conectada
+2026-01-05 22:50:42 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-05 22:50:43 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-05 22:50:43 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-05 22:51:05 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-05 22:51:05 [INFO]: [0mGET /api/servicios/ [31m500[0m 141.139 ms - 39[0m
+2026-01-05 22:51:09 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-05 22:51:09 [INFO]: [0mGET /api/servicios/ [31m500[0m 116.121 ms - 39[0m
+2026-01-05 22:53:45 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-05 22:53:45 [INFO]: [0mGET /api/servicios/ [31m500[0m 247.383 ms - 39[0m
+2026-01-05 22:53:45 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-05 22:53:45 [INFO]: [0mGET /api/servicios/ [31m500[0m 112.495 ms - 39[0m
+2026-01-05 22:58:43 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-05 22:58:54 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-05 23:02:33 [INFO]: servicioCtl: [object Object]
+2026-01-05 23:02:33 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-05 23:02:34 [INFO]: Base de datos conectada
+2026-01-05 23:02:34 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-05 23:02:36 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-05 23:02:36 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-05 23:02:37 [ERROR]: ❌ Error al sincronizar tablas: SequelizeDatabaseError: Can't DROP FOREIGN KEY `detalleRols_ibfk_1`; check that it exists
+2026-01-05 23:12:21 [ERROR]: SequelizeDatabaseError: read ECONNRESET
+2026-01-05 23:12:21 [INFO]: [0mGET /api/servicios/ [31m500[0m 22005.000 ms - 39[0m
+2026-01-05 23:13:11 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-05 23:13:20 [INFO]: servicioCtl: [object Object]
+2026-01-05 23:13:20 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-05 23:13:21 [INFO]: Base de datos conectada
+2026-01-05 23:13:21 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-05 23:13:23 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-05 23:13:23 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-05 23:13:23 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-05 23:13:30 [INFO]: [0mGET /api/servicios/ [32m200[0m 146.622 ms - 142[0m
+2026-01-05 23:13:31 [INFO]: [0mGET /api/servicios/ [36m304[0m 111.841 ms - -[0m
+2026-01-05 23:14:04 [INFO]: ⚠️  Mongoose desconectado de MongoDB

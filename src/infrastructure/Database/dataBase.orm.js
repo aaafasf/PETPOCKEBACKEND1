@@ -108,6 +108,13 @@ const tipoMascota = tipoMascotaModel(sequelize, Sequelize);
 const tipoServicio = tipoServicioModel(sequelize, Sequelize);
 
 // =======================
+// SINCRONIZAR SOLO LA TABLA 'SERVICIO'
+// =======================
+servicio.sync({ alter: true })
+  .then(() => console.log('✅ Tabla "servicio" sincronizada con la base de datos'))
+  .catch(err => console.error('❌ Error al sincronizar "servicio":', err));
+
+// =======================
 // RELACIONES
 // =======================
 
