@@ -5,28 +5,36 @@ dotenv.config();
 
 const claveSecreta = process.env.CLAVE_SECRETA || 'cifrarDatos';
 
-function cifrarDatos(datos) {
+// Cambiamos el nombre para que coincida con el uso en el resto del sistema
+function encrypt(datos) {
     try {
-        const cifrado = CryptoJS.AES.encrypt(JSON.stringify(datos), claveSecreta).toString();
-        return cifrado;
+        const textoAEncriptar = typeof datos === 'string' ? datos : JSON.stringify(datos);
+        return CryptoJS.AES.encrypt(textoAEncriptar, claveSecreta).toString();
     } catch (error) {
         console.error('Error al cifrar datos:', error.message);
         throw error;
     }
 }
 
-function descifrarDatos(cifrado) {
+function decrypt(cifrado) {
     try {
+        if (!cifrado) return '';
         const bytes = CryptoJS.AES.decrypt(cifrado, claveSecreta);
-        const datos = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-        return datos;
+        const textoDescifrado = bytes.toString(CryptoJS.enc.Utf8);
+        
+        // Intentamos parsear como JSON, si falla (porque es solo texto), devolvemos el texto
+        try {
+            return JSON.parse(textoDescifrado);
+        } catch (e) {
+            return textoDescifrado;
+        }
     } catch (error) {
         console.error('Error al descifrar datos:', error.message);
-        throw error;
+        return cifrado; // Devolvemos el original si hay error para no romper la app
     }
 }
 
 module.exports = {
-    cifrarDatos,
-    descifrarDatos
+    encrypt,
+    decrypt
 }

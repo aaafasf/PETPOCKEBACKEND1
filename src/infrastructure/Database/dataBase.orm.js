@@ -1,63 +1,61 @@
-const { Sequelize } = require("sequelize");
-const { MYSQLHOST, MYSQLUSER, MYSQLPASSWORD, MYSQLDATABASE, MYSQLPORT, MYSQL_URI } = require('../../config/keys');
+const { Sequelize } = require('sequelize');
+const {
+  MYSQLHOST,
+  MYSQLUSER,
+  MYSQLPASSWORD,
+  MYSQLDATABASE,
+  MYSQLPORT,
+  MYSQL_URI
+} = require('../../config/keys');
 
 let sequelize;
 
-// Usar URI de conexión si está disponible
+// =======================
+// CONEXIÓN
+// =======================
 if (MYSQL_URI) {
-    sequelize = new Sequelize(MYSQL_URI, {
-        dialect: 'mysql',
-        dialectOptions: {
-            charset: 'utf8mb4', // Soporte para caracteres especiales
-        },
-        pool: {
-            max: 20, // Número máximo de conexiones
-            min: 5,  // Número mínimo de conexiones
-            acquire: 30000, // Tiempo máximo en ms para obtener una conexión
-            idle: 10000 // Tiempo máximo en ms que una conexión puede estar inactiva
-        },
-        logging: false // Desactiva el logging para mejorar el rendimiento
-    });
+  sequelize = new Sequelize(MYSQL_URI, {
+    dialect: 'mysql',
+    dialectOptions: { charset: 'utf8mb4' },
+    pool: {
+      max: 20,
+      min: 5,
+      acquire: 30000,
+      idle: 10000
+    },
+    logging: false
+  });
 } else {
-    // Configuración para parámetros individuales
-    sequelize = new Sequelize(MYSQLDATABASE, MYSQLUSER, MYSQLPASSWORD, {
-        host: MYSQLHOST,
-        port: MYSQLPORT,
-        dialect: 'mysql',
-        dialectOptions: {
-            charset: 'utf8mb4', // Soporte para caracteres especiales
-        },
-        pool: {
-            max: 20, // Número máximo de conexiones
-            min: 5,  // Número mínimo de conexiones
-            acquire: 30000, // Tiempo máximo en ms para obtener una conexión
-            idle: 10000 // Tiempo máximo en ms que una conexión puede estar inactiva
-        },
-        logging: false // Desactiva el logging para mejorar el rendimiento
-    });
+  sequelize = new Sequelize(
+    MYSQLDATABASE,
+    MYSQLUSER,
+    MYSQLPASSWORD,
+    {
+      host: MYSQLHOST,
+      port: MYSQLPORT,
+      dialect: 'mysql',
+      dialectOptions: { charset: 'utf8mb4' },
+      pool: {
+        max: 20,
+        min: 5,
+        acquire: 30000,
+        idle: 10000
+      },
+      logging: false
+    }
+  );
 }
 
-// Autenticar y sincronizar
+// =======================
+// AUTENTICAR
+// =======================
 sequelize.authenticate()
-    .then(() => {
-        console.log("Conexión establecida con la base de datos");
-    })
-    .catch((err) => {
-        console.error("No se pudo conectar a la base de datos:", err.message);
-    });
+  .then(() => console.log('✅ Conectado a MySQL (Sequelize)'))
+  .catch(err => console.error('❌ Error MySQL:', err.message));
 
-// Sincronización de la base de datos
-const syncOptions = process.env.NODE_ENV === 'development' ? { force: true } : { alter: true };
-
-sequelize.sync(syncOptions)
-    .then(() => {
-        console.log('Base de Datos sincronizadas');
-    })
-    .catch((error) => {
-        console.error('Error al sincronizar la Base de Datos:', error);
-    });
-
-// Extracción de Modelos
+// =======================
+// MODELOS
+// =======================
 const usuarioModel = require('../../domain/models/sql/usuario');
 const rolModel = require('../../domain/models/sql/rol');
 const detalleRolModel = require('../../domain/models/sql/detalleRol');
@@ -73,8 +71,6 @@ const auditoriaModel = require('../../domain/models/sql/auditoria');
 const feedbackModel = require('../../domain/models/sql/feedback');
 const promocionModel = require('../../domain/models/sql/promocion');
 const reservaModel = require('../../domain/models/sql/reserva');
-
-// Nuevos modelos agregados
 const configuracionModel = require('../../domain/models/sql/configuracion');
 const configuracionServicioModel = require('../../domain/models/sql/configuracionServicio');
 const historialCitaModel = require('../../domain/models/sql/historialCita');
@@ -84,7 +80,9 @@ const pageModel = require('../../domain/models/sql/page');
 const tipoMascotaModel = require('../../domain/models/sql/tipoMascota');
 const tipoServicioModel = require('../../domain/models/sql/tipoServicio');
 
-// Inicializar los modelos a sincronizar
+// =======================
+// INICIALIZAR MODELOS
+// =======================
 const usuario = usuarioModel(sequelize, Sequelize);
 const rol = rolModel(sequelize, Sequelize);
 const detalleRol = detalleRolModel(sequelize, Sequelize);
@@ -100,8 +98,6 @@ const auditoria = auditoriaModel(sequelize, Sequelize);
 const feedback = feedbackModel(sequelize, Sequelize);
 const promocion = promocionModel(sequelize, Sequelize);
 const reserva = reservaModel(sequelize, Sequelize);
-
-// Nuevos modelos inicializados
 const configuracion = configuracionModel(sequelize, Sequelize);
 const configuracionServicio = configuracionServicioModel(sequelize, Sequelize);
 const historialCita = historialCitaModel(sequelize, Sequelize);
@@ -111,69 +107,64 @@ const page = pageModel(sequelize, Sequelize);
 const tipoMascota = tipoMascotaModel(sequelize, Sequelize);
 const tipoServicio = tipoServicioModel(sequelize, Sequelize);
 
-// Definir relaciones o claves foráneas
+// =======================
+// RELACIONES
+// =======================
 
-// Relaciones entre Usuario y DetalleRol
-usuario.hasMany(detalleRol);
-detalleRol.belongsTo(usuario);
+// ROLES
+usuario.hasMany(detalleRol, { foreignKey: 'idUsuario' });
+detalleRol.belongsTo(usuario, { foreignKey: 'idUsuario' });
 
-// Relaciones entre Rol y DetalleRol
-rol.hasMany(detalleRol);
-detalleRol.belongsTo(rol);
+rol.hasMany(detalleRol, { foreignKey: 'idRol' });
+detalleRol.belongsTo(rol, { foreignKey: 'idRol' });
 
-// Relaciones entre Usuario y Citas
-usuario.hasMany(cita);
-cita.belongsTo(usuario);
+// CITAS
+usuario.hasMany(cita, { foreignKey: 'userIdUser' });
+cita.belongsTo(usuario, { foreignKey: 'userIdUser' });
 
-// Relaciones entre Cliente y Mascotas
-cliente.hasMany(mascota);
-mascota.belongsTo(cliente);
+cliente.hasMany(cita, { foreignKey: 'idCliente' });
+cita.belongsTo(cliente, { foreignKey: 'idCliente' });
 
-// Relaciones entre Cliente y Citas
-cliente.hasMany(cita);
-cita.belongsTo(cliente);
+mascota.hasMany(cita, { foreignKey: 'idMascota' });
+cita.belongsTo(mascota, { foreignKey: 'idMascota' });
 
-// Relaciones entre Mascota y Citas
-mascota.hasMany(cita);
-cita.belongsTo(mascota);
+servicio.hasMany(cita, { foreignKey: 'idServicio' });
+cita.belongsTo(servicio, { foreignKey: 'idServicio' });
 
-// Relaciones entre Servicio y Citas
-servicio.hasMany(cita);
-cita.belongsTo(servicio);
+// MASCOTAS
+propietario.hasMany(mascota, { foreignKey: 'idPropietario' });
+mascota.belongsTo(propietario, { foreignKey: 'idPropietario' });
 
-// Relaciones entre Propietario y Mascotas
-propietario.hasMany(mascota);
-mascota.belongsTo(propietario);
+// PAGOS
+cita.hasMany(pago, { foreignKey: 'idCita' });
+pago.belongsTo(cita, { foreignKey: 'idCita' });
 
-// Relaciones entre Citas y Pagos
-cita.hasMany(pago);
-pago.belongsTo(cita);
-
-
-
-// Exportar todos los modelos
+// =======================
+// EXPORTS
+// =======================
 module.exports = {
-    usuario,
-    rol,
-    detalleRol,
-    cliente,
-    mascota,
-    servicio,
-    cita,
-    propietario,
-    producto,
-    pago,
-    notificacion,
-    auditoria,
-    feedback,
-    promocion,
-    reserva,
-    configuracion,
-    configuracionServicio,
-    historialCita,
-    historialPago,
-    log,
-    page,
-    tipoMascota,
-    tipoServicio
+  sequelize,
+  usuario,
+  rol,
+  detalleRol,
+  cliente,
+  mascota,
+  servicio,
+  cita,
+  propietario,
+  producto,
+  pago,
+  notificacion,
+  auditoria,
+  feedback,
+  promocion,
+  reserva,
+  configuracion,
+  configuracionServicio,
+  historialCita,
+  historialPago,
+  log,
+  page,
+  tipoMascota,
+  tipoServicio
 };

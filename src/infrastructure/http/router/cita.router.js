@@ -294,7 +294,7 @@ router.get('/calendario', obtenerCalendarioCitas);
  *       400:
  *         description: Parámetros inválidos
  */
-router.get('/verificar-disponibilidad', verificarDisponibilidad);
+//router.get('/verificar-disponibilidad', verificarDisponibilidad);
 
 /**
  * @swagger

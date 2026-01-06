@@ -1,188 +1,178 @@
-const servicioCtl = {};
-const orm = require('../../Database/dataBase.orm.js');
-const sql = require('../../Database/dataBase.sql.js');
+const path = require('path');
+const fs = require('fs');
+const orm = require('../../Database/dataBase.orm');
 const mongo = require('../../Database/dataBaseMongose');
-const { cifrarDatos, descifrarDatos } = require('../../../application/controller/encrypDates.js');
 
-// Función para descifrar de forma segura
-const descifrarSeguro = (dato) => {
-    try {
-        return dato ? descifrarDatos(dato) : '';
-    } catch (error) {
-        console.error('Error al descifrar:', error);
-        return '';
-    }
+const servicioCtl = {};
+
+// =======================
+// LISTAR ADMIN
+// =======================
+servicioCtl.listarAdmin = async (req, res) => {
+  try {
+    const servicios = await orm.servicio.findAll({
+      order: [['idServicio', 'DESC']],
+      raw: true
+    });
+
+    const serviciosMapeados = servicios.map(s => ({
+      idServicio: s.idServicio,
+      nombreServicio: s.nombre,           // <-- mapeo
+      descripcionServicio: s.descripcion, // <-- mapeo
+      precioServicio: s.precio,           // <-- mapeo
+      estadoServicio: s.estadoServicio,
+      imagen: s.imagen,
+      citas: s.citas || 0
+    }));
+
+    res.json(serviciosMapeados);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error al listar servicios' });
+  }
 };
 
-// Mostrar todos los servicios activos
-servicioCtl.mostrarServicios = async (req, res) => {
-    try {
-        const [listaServicios] = await sql.promise().query(`
-            SELECT * FROM servicios 
-            WHERE estadoServicio = 'activo'
-            ORDER BY createServicio DESC
-        `);
+// =======================
+// LISTAR PUBLICO
+// =======================
+servicioCtl.listarPublico = async (req, res) => {
+  try {
+    const servicios = await orm.servicio.findAll({
+      where: { estadoServicio: 'activo' },
+      order: [['idServicio', 'DESC']],
+      raw: true
+    });
 
-        const serviciosCompletos = await Promise.all(
-            listaServicios.map(async (servicio) => {
-                const servicioMongo = await mongo.servicioModel.findOne({ 
-                    idServicioSql: servicio.idServicio.toString()
-                });
+    const serviciosMapeados = servicios.map(s => ({
+      idServicio: s.idServicio,
+      nombreServicio: s.nombre,           // <-- mapeo
+      descripcionServicio: s.descripcion, // <-- mapeo
+      precioServicio: s.precio,           // <-- mapeo
+      estadoServicio: s.estadoServicio,
+      imagen: s.imagen
+    }));
 
-                return {
-                    ...servicio,
-                    nombreServicio: descifrarSeguro(servicio.nombreServicio),
-                    descripcionServicio: descifrarSeguro(servicio.descripcionServicio),
-                    detallesMongo: servicioMongo ? {
-                        descripcionExtendida: servicioMongo.descripcionExtendida,
-                        requisitos: servicioMongo.requisitos,
-                        duracionMinutos: servicioMongo.duracionMinutos,
-                        equipoNecesario: servicioMongo.equipoNecesario,
-                        instruccionesPrevias: servicioMongo.instruccionesPrevias,
-                        instruccionesPosteriores: servicioMongo.instruccionesPosteriores,
-                        etiquetas: servicioMongo.etiquetas,
-                        destacado: servicioMongo.destacado,
-                        imagenUrl: servicioMongo.imagenUrl
-                    } : null
-                };
-            })
-        );
-
-        return res.json(serviciosCompletos);
-    } catch (error) {
-        console.error('Error al mostrar servicios:', error);
-        return res.status(500).json({ message: 'Error al obtener los servicios', error: error.message });
-    }
+    res.json(serviciosMapeados);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error al listar servicios públicos' });
+  }
 };
 
-// Crear nuevo servicio
-servicioCtl.crearServicio = async (req, res) => {
-    try {
-        const { 
-            nombreServicio, descripcionServicio, precioServicio,
-            descripcionExtendida, requisitos, duracionMinutos, equipoNecesario,
-            instruccionesPrevias, instruccionesPosteriores, etiquetas, destacado, imagenUrl
-        } = req.body;
+// =======================
+// CREAR SERVICIO
+// =======================
+servicioCtl.crear = async (req, res) => {
+  try {
+    const { nombre, descripcion, precio } = req.body;
+    let imagenUrl = null;
 
-        if (!nombreServicio || !descripcionServicio || precioServicio === undefined) {
-            return res.status(400).json({ message: 'Nombre, descripción y precio son obligatorios' });
-        }
+    if (req.files && req.files.imagen) {
+      const imagen = req.files.imagen;
+      const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagen.name);
 
-        const nuevoServicio = await orm.servicio.create({
-            nombreServicio: cifrarDatos(nombreServicio),
-            descripcionServicio: cifrarDatos(descripcionServicio),
-            precioServicio: precioServicio,
-            estadoServicio: 'activo',
-            createServicio: new Date().toLocaleString(),
-        });
-
-        await mongo.servicioModel.create({
-            idServicioSql: nuevoServicio.idServicio.toString(),
-            descripcionExtendida: descripcionExtendida || '',
-            requisitos: requisitos || [],
-            duracionMinutos: duracionMinutos || 60,
-            equipoNecesario: equipoNecesario || [],
-            instruccionesPrevias: instruccionesPrevias || '',
-            instruccionesPosteriores: instruccionesPosteriores || '',
-            etiquetas: etiquetas || [],
-            destacado: destacado || false,
-            imagenUrl: imagenUrl || ''
-        });
-
-        return res.status(201).json({ 
-            message: 'Servicio creado exitosamente',
-            idServicio: nuevoServicio.idServicio
-        });
-
-    } catch (error) {
-        console.error('Error al crear servicio:', error);
-        return res.status(500).json({ 
-            message: 'Error al crear el servicio', 
-            error: error.message 
-        });
+      if (!fs.existsSync(path.dirname(uploadPath))) fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
+      await imagen.mv(uploadPath);
+      imagenUrl = imagen.name;
     }
+
+    const nuevo = await orm.servicio.create({
+      nombre,
+      descripcion,   // <-- cambio correcto
+      precio,
+      estadoServicio: 'activo',
+      imagen: imagenUrl
+    });
+
+    await mongo.servicioModel.create({
+      idServicioSql: nuevo.idServicio,
+      descripcionExtendida: descripcion,
+      imagenUrl: imagenUrl,
+      requisitos: [],
+      duracionMinutos: 0,
+      equipoNecesario: [],
+      instruccionesPrevias: '',
+      instruccionesPosteriores: '',
+      etiquetas: [],
+      destacado: false
+    });
+
+    res.status(201).json({
+      idServicio: nuevo.idServicio,
+      nombreServicio: nuevo.nombre,
+      descripcionServicio: nuevo.descripcion,
+      precioServicio: nuevo.precio,
+      estadoServicio: nuevo.estadoServicio,
+      imagen: nuevo.imagen
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error al crear servicio', error: error.message });
+  }
 };
 
-// Actualizar servicio
-servicioCtl.actualizarServicio = async (req, res) => {
-    try {
-        const { idServicio } = req.params; // Suponiendo que el ID se pasa como parámetro en la URL
-        const { 
-            nombreServicio, descripcionServicio, precioServicio,
-            descripcionExtendida, requisitos, duracionMinutos, equipoNecesario,
-            instruccionesPrevias, instruccionesPosteriores, etiquetas, destacado, imagenUrl
-        } = req.body;
+// =======================
+// ACTUALIZAR SERVICIO
+// =======================
+servicioCtl.actualizar = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { nombre, descripcion, precio, estadoServicio } = req.body;
 
-        if (!nombreServicio || !descripcionServicio || precioServicio === undefined) {
-            return res.status(400).json({ message: 'Nombre, descripción y precio son obligatorios' });
-        }
+    const servicio = await orm.servicio.findByPk(id);
+    if (!servicio) return res.status(404).json({ message: 'Servicio no encontrado' });
 
-        // Actualizar en la base de datos SQL
-        await orm.servicio.update({
-            nombreServicio: cifrarDatos(nombreServicio),
-            descripcionServicio: cifrarDatos(descripcionServicio),
-            precioServicio: precioServicio,
-        }, {
-            where: { idServicio }
-        });
-
-        // Actualizar en la base de datos MongoDB
-        await mongo.servicioModel.updateOne(
-            { idServicioSql: idServicio },
-            {
-                descripcionExtendida: descripcionExtendida || '',
-                requisitos: requisitos || [],
-                duracionMinutos: duracionMinutos || 60,
-                equipoNecesario: equipoNecesario || [],
-                instruccionesPrevias: instruccionesPrevias || '',
-                instruccionesPosteriores: instruccionesPosteriores || '',
-                etiquetas: etiquetas || [],
-                destacado: destacado || false,
-                imagenUrl: imagenUrl || ''
-            }
-        );
-
-        return res.json({ message: 'Servicio actualizado exitosamente' });
-
-    } catch (error) {
-        console.error('Error al actualizar servicio:', error);
-        return res.status(500).json({ 
-            message: 'Error al actualizar el servicio', 
-            error: error.message 
-        });
+    let imagenUrl = servicio.imagen;
+    if (req.files && req.files.imagen) {
+      const imagen = req.files.imagen;
+      const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagen.name);
+      if (!fs.existsSync(path.dirname(uploadPath))) fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
+      await imagen.mv(uploadPath);
+      imagenUrl = imagen.name;
     }
+
+    await orm.servicio.update(
+      { nombre, descripcion, precio, estadoServicio, imagen: imagenUrl }, // <-- cambio correcto
+      { where: { idServicio: id } }
+    );
+
+    await mongo.servicioModel.updateOne(
+      { idServicioSql: id },
+      { descripcionExtendida: descripcion, imagenUrl: imagenUrl }
+    );
+
+    res.json({
+      idServicio: servicio.idServicio,
+      nombreServicio: nombre,
+      descripcionServicio: descripcion,
+      precioServicio: precio,
+      estadoServicio,
+      imagen: imagenUrl
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error al actualizar servicio', error: error.message });
+  }
 };
 
+// =======================
+// ELIMINAR SERVICIO
+// =======================
+servicioCtl.eliminar = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const eliminado = await orm.servicio.destroy({ where: { idServicio: id } });
+    await mongo.servicioModel.deleteOne({ idServicioSql: id });
 
-// Eliminar servicio (cambiar estado a inactivo)
-servicioCtl.eliminarServicio = async (req, res) => {
-    try {
-        const { idServicio } = req.params; // Suponiendo que el ID se pasa como parámetro en la URL
+    if (eliminado) res.json({ message: 'Servicio eliminado correctamente' });
+    else res.status(404).json({ message: 'Servicio no encontrado' });
 
-        // Marcar como inactivo en SQL
-        await orm.servicio.update({
-            estadoServicio: 'inactivo',
-            updateServicio: new Date().toLocaleString(),
-        }, {
-            where: { idServicio }
-        });
-
-        // Marcar como inactivo en MongoDB
-        await mongo.servicioModel.updateOne(
-            { idServicioSql: idServicio },
-            { estadoServicio: 'inactivo' }
-        );
-
-        return res.json({ message: 'Servicio eliminado exitosamente' });
-
-    } catch (error) {
-        console.error('Error al eliminar servicio:', error);
-        return res.status(500).json({ 
-            message: 'Error al eliminar el servicio', 
-            error: error.message 
-        });
-    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error al eliminar servicio', error: error.message });
+  }
 };
-
 
 module.exports = servicioCtl;
