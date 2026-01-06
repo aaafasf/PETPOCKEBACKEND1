@@ -128,6 +128,7 @@ app.use('/mascota', require('../src/infrastructure/http/router/mascota.router'))
 app.use('/cita', require('../src/infrastructure/http/router/cita.router'));
 app.use('/producto', require('../src/infrastructure/http/router/producto.router'));
 app.use('/configuracion', require('../src/infrastructure/http/router/configuracion.router'));
+app.use('/notificacion', require('../src/infrastructure/http/router/notificacion.router'));
 
 
 // ==================== MANEJO DE ERRORES ====================
