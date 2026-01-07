@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const orm = require('../../Database/dataBase.orm');
+const sql = require('../../Database/dataBase.sql');
 const mongo = require('../../Database/dataBaseMongose');
 
 const servicioCtl = {};
@@ -10,22 +11,47 @@ const servicioCtl = {};
 // =======================
 servicioCtl.listarAdmin = async (req, res) => {
   try {
-    const servicios = await orm.servicio.findAll({
-      order: [['idServicio', 'DESC']],
-      raw: true
-    });
+    // Usar consulta SQL directa para evitar problemas con columnas que no existen
+    const [servicios] = await sql.promise().query(`
+      SELECT 
+        idServicio,
+        nombreServicio,
+        descripcionServicio,
+        precioServicio,
+        estadoServicio
+      FROM servicios
+      ORDER BY idServicio DESC
+    `);
 
-    const serviciosMapeados = servicios.map(s => ({
-      idServicio: s.idServicio,
-      nombreServicio: s.nombre,           // <-- mapeo
-      descripcionServicio: s.descripcion, // <-- mapeo
-      precioServicio: s.precio,           // <-- mapeo
-      estadoServicio: s.estadoServicio,
-      imagen: s.imagen,
-      citas: s.citas || 0
+    // Obtener imágenes desde MongoDB si existen
+    const serviciosConImagen = await Promise.all(servicios.map(async (s) => {
+      try {
+        const servicioMongo = await mongo.servicioModel.findOne({ 
+          idServicioSql: s.idServicio.toString() 
+        });
+        return {
+          idServicio: s.idServicio,
+          nombreServicio: s.nombreServicio,
+          descripcionServicio: s.descripcionServicio,
+          precioServicio: s.precioServicio,
+          estadoServicio: s.estadoServicio,
+          imagen: servicioMongo?.imagenUrl || null,
+          citas: 0
+        };
+      } catch (error) {
+        return {
+          idServicio: s.idServicio,
+          nombreServicio: s.nombreServicio,
+          descripcionServicio: s.descripcionServicio,
+          precioServicio: s.precioServicio,
+          estadoServicio: s.estadoServicio,
+          imagen: null,
+          citas: 0
+        };
+      }
     }));
 
-    res.json(serviciosMapeados);
+    res.json(serviciosConImagen);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Error al listar servicios' });
@@ -37,22 +63,46 @@ servicioCtl.listarAdmin = async (req, res) => {
 // =======================
 servicioCtl.listarPublico = async (req, res) => {
   try {
-    const servicios = await orm.servicio.findAll({
-      where: { estadoServicio: 'activo' },
-      order: [['idServicio', 'DESC']],
-      raw: true
-    });
+    // Usar consulta SQL directa para evitar problemas con columnas que no existen
+    const [servicios] = await sql.promise().query(`
+      SELECT 
+        idServicio,
+        nombreServicio,
+        descripcionServicio,
+        precioServicio,
+        estadoServicio
+      FROM servicios
+      WHERE estadoServicio = 'activo'
+      ORDER BY idServicio DESC
+    `);
 
-    const serviciosMapeados = servicios.map(s => ({
-      idServicio: s.idServicio,
-      nombreServicio: s.nombre,           // <-- mapeo
-      descripcionServicio: s.descripcion, // <-- mapeo
-      precioServicio: s.precio,           // <-- mapeo
-      estadoServicio: s.estadoServicio,
-      imagen: s.imagen
+    // Obtener imágenes desde MongoDB si existen
+    const serviciosConImagen = await Promise.all(servicios.map(async (s) => {
+      try {
+        const servicioMongo = await mongo.servicioModel.findOne({ 
+          idServicioSql: s.idServicio.toString() 
+        });
+        return {
+          idServicio: s.idServicio,
+          nombreServicio: s.nombreServicio,
+          descripcionServicio: s.descripcionServicio,
+          precioServicio: s.precioServicio,
+          estadoServicio: s.estadoServicio,
+          imagen: servicioMongo?.imagenUrl || null
+        };
+      } catch (error) {
+        return {
+          idServicio: s.idServicio,
+          nombreServicio: s.nombreServicio,
+          descripcionServicio: s.descripcionServicio,
+          precioServicio: s.precioServicio,
+          estadoServicio: s.estadoServicio,
+          imagen: null
+        };
+      }
     }));
 
-    res.json(serviciosMapeados);
+    res.json(serviciosConImagen);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Error al listar servicios públicos' });
@@ -76,16 +126,16 @@ servicioCtl.crear = async (req, res) => {
       imagenUrl = imagen.name;
     }
 
-    const nuevo = await orm.servicio.create({
-      nombre,
-      descripcion,   // <-- cambio correcto
-      precio,
-      estadoServicio: 'activo',
-      imagen: imagenUrl
-    });
+    // Insertar en MySQL sin el campo imagen (que no existe en la tabla)
+    const [resultado] = await sql.promise().query(`
+      INSERT INTO servicios (nombreServicio, descripcionServicio, precioServicio, estadoServicio)
+      VALUES (?, ?, ?, ?)
+    `, [nombre, descripcion, precio, 'activo']);
+
+    const idServicio = resultado.insertId;
 
     await mongo.servicioModel.create({
-      idServicioSql: nuevo.idServicio,
+      idServicioSql: idServicio.toString(),
       descripcionExtendida: descripcion,
       imagenUrl: imagenUrl,
       requisitos: [],
@@ -98,12 +148,12 @@ servicioCtl.crear = async (req, res) => {
     });
 
     res.status(201).json({
-      idServicio: nuevo.idServicio,
-      nombreServicio: nuevo.nombre,
-      descripcionServicio: nuevo.descripcion,
-      precioServicio: nuevo.precio,
-      estadoServicio: nuevo.estadoServicio,
-      imagen: nuevo.imagen
+      idServicio: idServicio,
+      nombreServicio: nombre,
+      descripcionServicio: descripcion,
+      precioServicio: precio,
+      estadoServicio: 'activo',
+      imagen: imagenUrl
     });
 
   } catch (error) {
@@ -120,10 +170,22 @@ servicioCtl.actualizar = async (req, res) => {
     const { id } = req.params;
     const { nombre, descripcion, precio, estadoServicio } = req.body;
 
-    const servicio = await orm.servicio.findByPk(id);
-    if (!servicio) return res.status(404).json({ message: 'Servicio no encontrado' });
+    // Verificar que el servicio existe
+    const [servicios] = await sql.promise().query(
+      'SELECT * FROM servicios WHERE idServicio = ?',
+      [id]
+    );
+    if (servicios.length === 0) return res.status(404).json({ message: 'Servicio no encontrado' });
 
-    let imagenUrl = servicio.imagen;
+    // Obtener imagen actual desde MongoDB
+    let imagenUrl = null;
+    try {
+      const servicioMongo = await mongo.servicioModel.findOne({ idServicioSql: id.toString() });
+      imagenUrl = servicioMongo?.imagenUrl || null;
+    } catch (error) {
+      console.error('Error al obtener imagen de MongoDB:', error);
+    }
+
     if (req.files && req.files.imagen) {
       const imagen = req.files.imagen;
       const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagen.name);
@@ -132,18 +194,20 @@ servicioCtl.actualizar = async (req, res) => {
       imagenUrl = imagen.name;
     }
 
-    await orm.servicio.update(
-      { nombre, descripcion, precio, estadoServicio, imagen: imagenUrl }, // <-- cambio correcto
-      { where: { idServicio: id } }
-    );
+    // Actualizar en MySQL sin el campo imagen
+    await sql.promise().query(`
+      UPDATE servicios 
+      SET nombreServicio = ?, descripcionServicio = ?, precioServicio = ?, estadoServicio = ?
+      WHERE idServicio = ?
+    `, [nombre, descripcion, precio, estadoServicio, id]);
 
     await mongo.servicioModel.updateOne(
-      { idServicioSql: id },
+      { idServicioSql: id.toString() },
       { descripcionExtendida: descripcion, imagenUrl: imagenUrl }
     );
 
     res.json({
-      idServicio: servicio.idServicio,
+      idServicio: parseInt(id),
       nombreServicio: nombre,
       descripcionServicio: descripcion,
       precioServicio: precio,
