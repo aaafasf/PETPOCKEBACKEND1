@@ -3438,6 +3438,382 @@ notNull Violation: servicio.precio cannot be null
 2026-01-05 23:13:30 [INFO]: [0mGET /api/servicios/ [32m200[0m 146.622 ms - 142[0m
 2026-01-05 23:13:31 [INFO]: [0mGET /api/servicios/ [36m304[0m 111.841 ms - -[0m
 2026-01-05 23:14:04 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-06 10:21:14 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:21:15 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:21:16 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:21:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-06 10:21:16 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:21:17 [INFO]: Base de datos conectada
+2026-01-06 10:21:17 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:21:30 [INFO]: [0mGET /api/servicios/lista [32m200[0m 120.400 ms - 659[0m
+2026-01-06 10:21:30 [INFO]: [0mGET /uploads/null [33m404[0m 1.628 ms - 48[0m
+2026-01-06 10:21:33 [INFO]: [0mGET /api/servicios/lista [36m304[0m 108.041 ms - -[0m
+2026-01-06 10:21:34 [INFO]: [0mGET /uploads/null [33m404[0m 0.935 ms - 48[0m
+2026-01-06 10:22:41 [INFO]: [0mGET /api/servicios/lista [36m304[0m 107.083 ms - -[0m
+2026-01-06 10:22:41 [INFO]: [0mGET /uploads/null [33m404[0m 1.054 ms - 48[0m
+2026-01-06 10:22:42 [INFO]: [0mGET /api/servicios/lista [36m304[0m 109.294 ms - -[0m
+2026-01-06 10:22:42 [INFO]: [0mGET /uploads/null [33m404[0m 0.738 ms - 48[0m
+2026-01-06 10:22:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 107.900 ms - -[0m
+2026-01-06 10:22:49 [INFO]: [0mGET /uploads/null [33m404[0m 0.769 ms - 48[0m
+2026-01-06 10:22:53 [INFO]: [0mGET /api/servicios/lista [36m304[0m 109.016 ms - -[0m
+2026-01-06 10:22:53 [INFO]: [0mGET /uploads/null [33m404[0m 0.744 ms - 48[0m
+2026-01-06 10:30:26 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-06 10:30:26 [INFO]: [0mGET /api/servicios/lista [31m500[0m 111.561 ms - 49[0m
+2026-01-06 10:30:34 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-06 10:30:34 [INFO]: [0mGET /api/servicios/lista [31m500[0m 111.398 ms - 49[0m
+2026-01-06 10:31:08 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:31:08 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:31:08 [INFO]: Base de datos conectada
+2026-01-06 10:31:09 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:31:10 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-06 10:31:10 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:31:10 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:31:19 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:31:19 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:31:19 [INFO]: Base de datos conectada
+2026-01-06 10:31:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:31:21 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-06 10:31:21 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:31:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:31:40 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:31:40 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:31:40 [INFO]: Base de datos conectada
+2026-01-06 10:31:41 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:31:42 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-06 10:31:42 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:31:42 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:31:47 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:31:47 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:31:47 [INFO]: Base de datos conectada
+2026-01-06 10:31:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:31:49 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-06 10:31:49 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:31:49 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:31:57 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:31:57 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:31:58 [INFO]: Base de datos conectada
+2026-01-06 10:32:00 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:32:00 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:32:00 [INFO]: Base de datos conectada
+2026-01-06 10:32:01 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:32:01 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-06 10:32:01 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:32:02 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:32:14 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:32:14 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:32:14 [INFO]: Base de datos conectada
+2026-01-06 10:32:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:32:15 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-06 10:32:15 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:32:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:32:27 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:32:27 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:32:27 [INFO]: Base de datos conectada
+2026-01-06 10:32:28 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:32:29 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-06 10:32:29 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:32:29 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:34:46 [INFO]: [0mGET /api/servicios/lista [32m200[0m 122.006 ms - 659[0m
+2026-01-06 10:34:46 [INFO]: [0mGET /uploads/null [33m404[0m 1.620 ms - 48[0m
+2026-01-06 10:34:59 [INFO]: [0mGET /api/servicios/lista [32m200[0m 112.269 ms - 659[0m
+2026-01-06 10:34:59 [INFO]: [0mGET /uploads/null [33m404[0m 0.956 ms - 48[0m
+2026-01-06 10:48:50 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-06 10:48:50 [INFO]: [0mGET /api/servicios/lista [31m500[0m 111.596 ms - 49[0m
+2026-01-06 10:48:53 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-06 10:48:53 [INFO]: [0mGET /api/servicios/lista [31m500[0m 110.349 ms - 49[0m
+2026-01-06 10:49:04 [ERROR]: SequelizeDatabaseError: Unknown column 'imagen' in 'field list'
+2026-01-06 10:49:04 [INFO]: [0mGET /api/servicios/lista [31m500[0m 110.258 ms - 49[0m
+2026-01-06 10:50:15 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:50:16 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:50:16 [INFO]: Base de datos conectada
+2026-01-06 10:50:17 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:50:19 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:50:19 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:50:19 [INFO]: Base de datos conectada
+2026-01-06 10:50:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:50:20 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-06 10:50:20 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:50:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:50:23 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:50:24 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:50:24 [INFO]: Base de datos conectada
+2026-01-06 10:50:25 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:50:25 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-06 10:50:25 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:50:26 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:50:30 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:50:30 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:50:30 [INFO]: Base de datos conectada
+2026-01-06 10:50:32 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:50:32 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:50:32 [INFO]: Base de datos conectada
+2026-01-06 10:50:33 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:50:34 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-06 10:50:34 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:50:34 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:50:48 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:50:48 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:50:48 [INFO]: Base de datos conectada
+2026-01-06 10:50:49 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:50:49 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-06 10:50:49 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:50:50 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:51:03 [INFO]: [0mGET /api/servicios/lista [32m200[0m 286.104 ms - 714[0m
+2026-01-06 10:51:03 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 5.430 ms - 48[0m
+2026-01-06 10:51:03 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 5.438 ms - 48[0m
+2026-01-06 10:51:03 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 5.902 ms - 48[0m
+2026-01-06 10:51:03 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 6.153 ms - 48[0m
+2026-01-06 10:51:08 [INFO]: servicioCtl: [object Object]
+2026-01-06 10:51:08 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-06 10:51:08 [INFO]: Base de datos conectada
+2026-01-06 10:51:09 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-06 10:51:09 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-06 10:51:09 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-06 10:51:10 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-06 10:51:25 [INFO]: [0mGET /api/servicios/lista [36m304[0m 283.550 ms - -[0m
+2026-01-06 10:51:25 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 4.813 ms - 48[0m
+2026-01-06 10:51:25 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 4.404 ms - 48[0m
+2026-01-06 10:51:25 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 4.395 ms - 48[0m
+2026-01-06 10:51:25 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 4.669 ms - 48[0m
+2026-01-06 10:51:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.959 ms - -[0m
+2026-01-06 10:51:29 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.235 ms - 48[0m
+2026-01-06 10:51:29 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.528 ms - 48[0m
+2026-01-06 10:51:29 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.901 ms - 48[0m
+2026-01-06 10:51:29 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.223 ms - 48[0m
+2026-01-06 11:07:34 [INFO]: [0mGET /api/servicios/lista [36m304[0m 274.141 ms - -[0m
+2026-01-06 11:07:34 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.182 ms - 48[0m
+2026-01-06 11:07:34 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.932 ms - 48[0m
+2026-01-06 11:07:34 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.785 ms - 48[0m
+2026-01-06 11:07:34 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 0.995 ms - 48[0m
+2026-01-06 11:13:37 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.905 ms - -[0m
+2026-01-06 11:13:37 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.168 ms - 48[0m
+2026-01-06 11:13:37 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.268 ms - 48[0m
+2026-01-06 11:13:37 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.757 ms - 48[0m
+2026-01-06 11:13:37 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.625 ms - 48[0m
+2026-01-06 11:13:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 268.526 ms - -[0m
+2026-01-06 11:13:39 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.394 ms - 48[0m
+2026-01-06 11:13:39 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.388 ms - 48[0m
+2026-01-06 11:13:39 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.217 ms - 48[0m
+2026-01-06 11:13:39 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.065 ms - 48[0m
+2026-01-06 11:15:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 268.448 ms - -[0m
+2026-01-06 11:15:01 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.615 ms - 48[0m
+2026-01-06 11:15:01 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 5.010 ms - 48[0m
+2026-01-06 11:15:01 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 5.932 ms - 48[0m
+2026-01-06 11:15:01 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 5.465 ms - 48[0m
+2026-01-06 11:17:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 266.148 ms - -[0m
+2026-01-06 11:17:00 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 0.953 ms - 48[0m
+2026-01-06 11:17:00 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.793 ms - 48[0m
+2026-01-06 11:17:00 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.829 ms - 48[0m
+2026-01-06 11:17:00 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 0.871 ms - 48[0m
+2026-01-06 11:17:11 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.159 ms - 48[0m
+2026-01-06 11:17:11 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.403 ms - 48[0m
+2026-01-06 11:17:11 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.717 ms - 48[0m
+2026-01-06 11:17:11 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.006 ms - 48[0m
+2026-01-06 11:17:42 [INFO]: [0mGET /api/servicios/lista [36m304[0m 263.234 ms - -[0m
+2026-01-06 11:17:42 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.312 ms - 48[0m
+2026-01-06 11:17:42 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 3.460 ms - 48[0m
+2026-01-06 11:17:42 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.120 ms - 48[0m
+2026-01-06 11:17:42 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.700 ms - 48[0m
+2026-01-06 11:17:47 [INFO]: [0mGET /api/servicios/lista [36m304[0m 267.288 ms - -[0m
+2026-01-06 11:17:47 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.201 ms - 48[0m
+2026-01-06 11:17:47 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.149 ms - 48[0m
+2026-01-06 11:17:47 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.061 ms - 48[0m
+2026-01-06 11:17:47 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.832 ms - 48[0m
+2026-01-06 11:18:47 [INFO]: [0mGET /api/servicios/lista [36m304[0m 267.333 ms - -[0m
+2026-01-06 11:18:47 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.979 ms - 48[0m
+2026-01-06 11:18:47 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.031 ms - 48[0m
+2026-01-06 11:18:47 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.041 ms - 48[0m
+2026-01-06 11:18:47 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.444 ms - 48[0m
+2026-01-06 11:21:24 [INFO]: [0mGET /api/servicios/lista [36m304[0m 264.919 ms - -[0m
+2026-01-06 11:21:24 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.189 ms - 48[0m
+2026-01-06 11:21:24 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.602 ms - 48[0m
+2026-01-06 11:21:24 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.978 ms - 48[0m
+2026-01-06 11:21:24 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.058 ms - 48[0m
+2026-01-06 11:21:34 [INFO]: [0mGET /api/servicios/lista [36m304[0m 267.338 ms - -[0m
+2026-01-06 11:21:34 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.835 ms - 48[0m
+2026-01-06 11:21:34 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.795 ms - 48[0m
+2026-01-06 11:21:34 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.050 ms - 48[0m
+2026-01-06 11:21:34 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.510 ms - 48[0m
+2026-01-06 11:23:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.030 ms - -[0m
+2026-01-06 11:23:26 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.106 ms - 48[0m
+2026-01-06 11:23:26 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.025 ms - 48[0m
+2026-01-06 11:23:26 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.446 ms - 48[0m
+2026-01-06 11:23:26 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.583 ms - 48[0m
+2026-01-06 11:24:33 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-06 11:24:39 [ERROR]: Error: read ECONNRESET
+2026-01-06 11:24:43 [ERROR]: Error: connect ETIMEDOUT
+2026-01-06 11:24:43 [INFO]: [0mGET /api/servicios/lista [31m500[0m 10005.886 ms - 49[0m
+2026-01-06 11:26:11 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-06 11:26:11 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-06 11:26:56 [INFO]: [0mGET /api/servicios/lista [32m200[0m 4788.389 ms - 714[0m
+2026-01-06 11:26:56 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.509 ms - 48[0m
+2026-01-06 11:26:56 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.368 ms - 48[0m
+2026-01-06 11:26:56 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.909 ms - 48[0m
+2026-01-06 11:26:56 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.925 ms - 48[0m
+2026-01-06 11:28:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 268.613 ms - -[0m
+2026-01-06 11:28:00 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.694 ms - 48[0m
+2026-01-06 11:28:00 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.921 ms - 48[0m
+2026-01-06 11:28:00 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.702 ms - 48[0m
+2026-01-06 11:28:00 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.202 ms - 48[0m
+2026-01-06 11:28:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.658 ms - -[0m
+2026-01-06 11:28:13 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.189 ms - 48[0m
+2026-01-06 11:28:13 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.100 ms - 48[0m
+2026-01-06 11:28:13 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.697 ms - 48[0m
+2026-01-06 11:28:13 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.640 ms - 48[0m
+2026-01-06 11:28:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 291.292 ms - -[0m
+2026-01-06 11:28:46 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.911 ms - 48[0m
+2026-01-06 11:28:46 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 3.079 ms - 48[0m
+2026-01-06 11:28:46 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.478 ms - 48[0m
+2026-01-06 11:28:46 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.820 ms - 48[0m
+2026-01-06 11:29:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.562 ms - -[0m
+2026-01-06 11:29:57 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.172 ms - 48[0m
+2026-01-06 11:29:57 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.624 ms - 48[0m
+2026-01-06 11:29:57 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.885 ms - 48[0m
+2026-01-06 11:29:57 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.736 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 268.107 ms - -[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.385 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.482 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.821 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.857 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.755 ms - -[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.439 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.692 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.211 ms - 48[0m
+2026-01-06 11:31:01 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.330 ms - 48[0m
+2026-01-06 11:31:09 [INFO]: [0mGET /api/servicios/lista [36m304[0m 319.902 ms - -[0m
+2026-01-06 11:31:09 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.233 ms - 48[0m
+2026-01-06 11:31:09 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.846 ms - 48[0m
+2026-01-06 11:31:09 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.261 ms - 48[0m
+2026-01-06 11:31:09 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.202 ms - 48[0m
+2026-01-06 11:31:14 [INFO]: [0mGET /api/servicios/lista [36m304[0m 263.671 ms - -[0m
+2026-01-06 11:31:14 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.090 ms - 48[0m
+2026-01-06 11:31:14 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.465 ms - 48[0m
+2026-01-06 11:31:14 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.492 ms - 48[0m
+2026-01-06 11:31:14 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.437 ms - 48[0m
+2026-01-06 11:31:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 266.992 ms - -[0m
+2026-01-06 11:31:21 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.069 ms - 48[0m
+2026-01-06 11:31:21 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.081 ms - 48[0m
+2026-01-06 11:31:21 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.383 ms - 48[0m
+2026-01-06 11:31:21 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.142 ms - 48[0m
+2026-01-06 11:31:33 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.516 ms - -[0m
+2026-01-06 11:31:33 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 0.653 ms - 48[0m
+2026-01-06 11:31:33 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.261 ms - 48[0m
+2026-01-06 11:31:33 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.399 ms - 48[0m
+2026-01-06 11:31:33 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 0.874 ms - 48[0m
+2026-01-06 11:35:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 432.176 ms - -[0m
+2026-01-06 11:35:35 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.158 ms - 48[0m
+2026-01-06 11:35:35 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.145 ms - 48[0m
+2026-01-06 11:35:35 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 0.936 ms - 48[0m
+2026-01-06 11:35:35 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.072 ms - 48[0m
+2026-01-06 11:35:41 [INFO]: [0mGET /api/servicios/lista [36m304[0m 262.155 ms - -[0m
+2026-01-06 11:35:41 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.521 ms - 48[0m
+2026-01-06 11:35:41 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.470 ms - 48[0m
+2026-01-06 11:35:41 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.973 ms - 48[0m
+2026-01-06 11:35:41 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 0.780 ms - 48[0m
+2026-01-06 11:36:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 259.549 ms - -[0m
+2026-01-06 11:36:01 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.345 ms - 48[0m
+2026-01-06 11:36:01 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.908 ms - 48[0m
+2026-01-06 11:36:01 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.308 ms - 48[0m
+2026-01-06 11:36:01 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.341 ms - 48[0m
+2026-01-06 11:36:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 261.674 ms - -[0m
+2026-01-06 11:36:16 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.302 ms - 48[0m
+2026-01-06 11:36:16 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.887 ms - 48[0m
+2026-01-06 11:36:16 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.013 ms - 48[0m
+2026-01-06 11:36:16 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.630 ms - 48[0m
+2026-01-06 11:36:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 265.317 ms - -[0m
+2026-01-06 11:36:29 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 3.224 ms - 48[0m
+2026-01-06 11:36:29 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.295 ms - 48[0m
+2026-01-06 11:36:29 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.469 ms - 48[0m
+2026-01-06 11:36:29 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.705 ms - 48[0m
+2026-01-06 11:36:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 270.049 ms - -[0m
+2026-01-06 11:36:31 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.923 ms - 48[0m
+2026-01-06 11:36:31 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.109 ms - 48[0m
+2026-01-06 11:36:31 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.580 ms - 48[0m
+2026-01-06 11:36:31 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.691 ms - 48[0m
+2026-01-06 11:36:33 [INFO]: [0mGET /api/servicios/lista [36m304[0m 262.036 ms - -[0m
+2026-01-06 11:36:33 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.184 ms - 48[0m
+2026-01-06 11:36:33 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.129 ms - 48[0m
+2026-01-06 11:36:33 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.424 ms - 48[0m
+2026-01-06 11:36:33 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.431 ms - 48[0m
+2026-01-06 11:36:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 261.199 ms - -[0m
+2026-01-06 11:36:59 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.617 ms - 48[0m
+2026-01-06 11:36:59 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.476 ms - 48[0m
+2026-01-06 11:36:59 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.737 ms - 48[0m
+2026-01-06 11:36:59 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.364 ms - 48[0m
+2026-01-06 11:37:19 [INFO]: [0mGET /api/servicios/lista [36m304[0m 268.677 ms - -[0m
+2026-01-06 11:37:19 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 0.715 ms - 48[0m
+2026-01-06 11:37:19 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.364 ms - 48[0m
+2026-01-06 11:37:19 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.595 ms - 48[0m
+2026-01-06 11:37:19 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 0.873 ms - 48[0m
+2026-01-06 11:37:34 [INFO]: [0mGET /api/servicios/lista [36m304[0m 258.559 ms - -[0m
+2026-01-06 11:37:34 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.524 ms - 48[0m
+2026-01-06 11:37:34 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.350 ms - 48[0m
+2026-01-06 11:37:34 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.241 ms - 48[0m
+2026-01-06 11:37:34 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.111 ms - 48[0m
+2026-01-06 11:37:46 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.994 ms - 48[0m
+2026-01-06 11:37:46 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.478 ms - 48[0m
+2026-01-06 11:37:46 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.962 ms - 48[0m
+2026-01-06 11:37:46 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 0.549 ms - 48[0m
+2026-01-06 11:37:59 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.904 ms - 48[0m
+2026-01-06 11:37:59 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.252 ms - 48[0m
+2026-01-06 11:37:59 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 0.645 ms - 48[0m
+2026-01-06 11:37:59 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 0.901 ms - 48[0m
+2026-01-06 11:38:19 [INFO]: [0mGET /api/servicios/lista [36m304[0m 264.697 ms - -[0m
+2026-01-06 11:38:19 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.143 ms - 48[0m
+2026-01-06 11:38:19 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.448 ms - 48[0m
+2026-01-06 11:38:19 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.335 ms - 48[0m
+2026-01-06 11:38:19 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.170 ms - 48[0m
+2026-01-06 11:40:23 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.450 ms - 48[0m
+2026-01-06 11:40:23 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 3.473 ms - 48[0m
+2026-01-06 11:40:23 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.575 ms - 48[0m
+2026-01-06 11:40:23 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.262 ms - 48[0m
+2026-01-06 11:40:38 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.691 ms - 48[0m
+2026-01-06 11:40:38 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.465 ms - 48[0m
+2026-01-06 11:40:38 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.194 ms - 48[0m
+2026-01-06 11:40:38 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.916 ms - 48[0m
+2026-01-06 11:40:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 264.937 ms - -[0m
+2026-01-06 11:40:46 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.076 ms - 48[0m
+2026-01-06 11:40:46 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.124 ms - 48[0m
+2026-01-06 11:40:46 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.749 ms - 48[0m
+2026-01-06 11:40:46 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.653 ms - 48[0m
+2026-01-06 11:40:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 260.931 ms - -[0m
+2026-01-06 11:40:49 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 0.619 ms - 48[0m
+2026-01-06 11:40:49 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 0.715 ms - 48[0m
+2026-01-06 11:40:49 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.715 ms - 48[0m
+2026-01-06 11:40:49 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.847 ms - 48[0m
+2026-01-06 11:40:50 [INFO]: [0mGET /api/servicios/lista [36m304[0m 266.099 ms - -[0m
+2026-01-06 11:40:50 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.307 ms - 48[0m
+2026-01-06 11:40:50 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 3.256 ms - 48[0m
+2026-01-06 11:40:50 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 4.048 ms - 48[0m
+2026-01-06 11:40:50 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.183 ms - 48[0m
+2026-01-06 11:41:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 353.944 ms - -[0m
+2026-01-06 11:41:31 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.001 ms - 48[0m
+2026-01-06 11:41:31 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.715 ms - 48[0m
+2026-01-06 11:41:31 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.201 ms - 48[0m
+2026-01-06 11:41:31 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.418 ms - 48[0m
+2026-01-06 11:42:45 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.903 ms - 48[0m
+2026-01-06 11:42:45 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.576 ms - 48[0m
+2026-01-06 11:42:45 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.152 ms - 48[0m
+2026-01-06 11:42:45 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.529 ms - 48[0m
+2026-01-06 11:43:43 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.538 ms - 48[0m
+2026-01-06 11:43:43 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.250 ms - 48[0m
+2026-01-06 11:43:43 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.712 ms - 48[0m
+2026-01-06 11:43:43 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.790 ms - 48[0m
+2026-01-06 11:43:54 [INFO]: [0mGET /api/servicios/lista [36m304[0m 322.904 ms - -[0m
+2026-01-06 11:43:54 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.735 ms - 48[0m
+2026-01-06 11:43:54 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.091 ms - 48[0m
+2026-01-06 11:43:54 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 1.713 ms - 48[0m
+2026-01-06 11:43:54 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.673 ms - 48[0m
+2026-01-06 11:44:28 [INFO]: [0mGET /api/servicios/lista [36m304[0m 293.317 ms - -[0m
+2026-01-06 11:44:28 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.235 ms - 48[0m
+2026-01-06 11:44:28 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.153 ms - 48[0m
+2026-01-06 11:44:28 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.338 ms - 48[0m
+2026-01-06 11:44:28 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.499 ms - 48[0m
+2026-01-06 11:45:08 [INFO]: [0mGET /api/servicios/lista [36m304[0m 285.065 ms - -[0m
+2026-01-06 11:45:08 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.118 ms - 48[0m
+2026-01-06 11:45:08 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [33m404[0m 2.253 ms - 48[0m
+2026-01-06 11:45:08 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.462 ms - 48[0m
+2026-01-06 11:45:08 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.501 ms - 48[0m
 <<<<<<< HEAD
 2026-01-06 11:15:49 [INFO]: servicioCtl: [object Object]
 2026-01-06 11:15:49 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
