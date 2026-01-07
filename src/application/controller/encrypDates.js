@@ -19,15 +19,16 @@ function encrypt(datos) {
 function decrypt(cifrado) {
     try {
         if (!cifrado) return '';
+        // Si el texto NO empieza con U2Fsd (prefijo estándar de AES), devuélvelo tal cual
+        // Esto permite leer "Firulais" o "Steven" sin que se borren.
+        if (!cifrado.startsWith('U2Fsd')) return cifrado;
         const bytes = CryptoJS.AES.decrypt(cifrado, claveSecreta);
         const textoDescifrado = bytes.toString(CryptoJS.enc.Utf8);
         
         // Intentamos parsear como JSON, si falla (porque es solo texto), devolvemos el texto
-        try {
-            return JSON.parse(textoDescifrado);
-        } catch (e) {
-            return textoDescifrado;
-        }
+        
+            return textoDescifrado || cifrado;
+        
     } catch (error) {
         console.error('Error al descifrar datos:', error.message);
         return cifrado; // Devolvemos el original si hay error para no romper la app
