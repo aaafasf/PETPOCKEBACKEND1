@@ -8,6 +8,9 @@
             idUsuario: type.INTEGER,
             mensaje: type.STRING,
             estadoNotificacion: type.STRING,
+            tipo: type.STRING,
+            fechaProgramada: type.DATE,
+            tipoRecordatorio: type.STRING,
             createNotificacion: type.STRING,
             updateNotificacion: type.STRING,
         }, {

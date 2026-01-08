@@ -10,7 +10,9 @@ const {
     marcarTodasComoLeidas,
     eliminarNotificacion,
     crearNotificacionMasiva,
-    obtenerEstadisticas
+    obtenerEstadisticas,
+    crearAlertaProgramada,
+    limpiarHistorial
 } = require('../controller/notificacion.controller');
 
 // Validaciones para crear notificación
@@ -51,6 +53,36 @@ const validacionNotificacionMasiva = [
         .optional()
         .isIn(['general', 'recordatorio', 'urgente', 'promocion', 'sistema'])
         .withMessage('Tipo debe ser: general, recordatorio, urgente, promocion o sistema')
+];
+
+// Validaciones para crear alerta programada
+const validacionAlertaProgramada = [
+    body('idUsuario')
+        .isInt({ min: 1 })
+        .withMessage('El ID del usuario debe ser un número entero positivo'),
+    
+    body('mensaje')
+        .notEmpty()
+        .withMessage('El mensaje es obligatorio')
+        .isLength({ min: 1, max: 500 })
+        .withMessage('El mensaje debe tener entre 1 y 500 caracteres'),
+    
+    body('fechaProgramada')
+        .isISO8601()
+        .withMessage('La fecha programada debe ser válida (formato ISO 8601)')
+        .custom((value) => {
+            const fecha = new Date(value);
+            const ahora = new Date();
+            if (fecha <= ahora) {
+                throw new Error('La fecha programada debe ser futura');
+            }
+            return true;
+        }),
+    
+    body('tipoRecordatorio')
+        .optional()
+        .isIn(['vacuna', 'control', 'cita', 'general', 'medicamento'])
+        .withMessage('Tipo de recordatorio debe ser: vacuna, control, cita, general o medicamento')
 ];
 
 // Validaciones para parámetros
@@ -97,5 +129,11 @@ router.put('/marcar-todas-leidas/:idUsuario', validacionParametroUsuario, marcar
 
 // Eliminar notificación
 router.delete('/eliminar/:idNotificacion', validacionParametroId, eliminarNotificacion);
+
+// Crear alerta programada (ej: Recordar vacuna en 6 meses)
+router.post('/crear-alerta-programada', validacionAlertaProgramada, crearAlertaProgramada);
+
+// Limpiar historial de notificaciones de un usuario
+router.delete('/limpiar-historial/:idUsuario', validacionParametroUsuario, limpiarHistorial);
 
 module.exports = router;
