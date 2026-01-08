@@ -1,3 +1,975 @@
+<<<<<<< HEAD
+2026-01-07 00:56:34 [INFO]: servicioCtl: [object Object]
+2026-01-07 00:56:34 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 00:56:35 [INFO]: Base de datos conectada
+2026-01-07 00:56:36 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 00:56:36 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 00:56:36 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 00:56:37 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 00:59:29 [INFO]: [0mGET /api/servicios/lista [32m200[0m 133.137 ms - 659[0m
+2026-01-07 00:59:29 [INFO]: [0mGET /uploads/null [33m404[0m 5.566 ms - 48[0m
+2026-01-07 00:59:36 [INFO]: [0mGET /api/servicios/lista [36m304[0m 112.268 ms - -[0m
+2026-01-07 00:59:36 [INFO]: [0mGET /uploads/null [33m404[0m 3.583 ms - 48[0m
+2026-01-07 00:59:40 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.338 ms - -[0m
+2026-01-07 00:59:40 [INFO]: [0mGET /uploads/null [33m404[0m 2.939 ms - 48[0m
+2026-01-07 00:59:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 111.832 ms - -[0m
+2026-01-07 00:59:46 [INFO]: [0mGET /uploads/null [33m404[0m 1.577 ms - 48[0m
+2026-01-07 01:00:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 115.259 ms - -[0m
+2026-01-07 01:00:03 [INFO]: [0mGET /uploads/null [33m404[0m 2.354 ms - 48[0m
+2026-01-07 01:00:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 111.997 ms - -[0m
+2026-01-07 01:00:05 [INFO]: [0mGET /uploads/null [33m404[0m 2.649 ms - 48[0m
+2026-01-07 01:00:07 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.447 ms - -[0m
+2026-01-07 01:00:07 [INFO]: [0mGET /uploads/null [33m404[0m 1.441 ms - 48[0m
+2026-01-07 01:00:10 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.588 ms - -[0m
+2026-01-07 01:00:10 [INFO]: [0mGET /uploads/null [33m404[0m 1.119 ms - 48[0m
+2026-01-07 01:00:14 [INFO]: [0mGET /api/servicios/lista [36m304[0m 112.731 ms - -[0m
+2026-01-07 01:00:14 [INFO]: [0mGET /uploads/null [33m404[0m 2.410 ms - 48[0m
+2026-01-07 01:00:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.875 ms - -[0m
+2026-01-07 01:00:15 [INFO]: [0mGET /uploads/null [33m404[0m 1.769 ms - 48[0m
+2026-01-07 01:00:18 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.365 ms - -[0m
+2026-01-07 01:00:18 [INFO]: [0mGET /uploads/null [33m404[0m 2.880 ms - 48[0m
+2026-01-07 01:00:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.830 ms - -[0m
+2026-01-07 01:00:21 [INFO]: [0mGET /uploads/null [33m404[0m 1.120 ms - 48[0m
+2026-01-07 01:00:27 [INFO]: [0mGET /api/servicios/lista [36m304[0m 111.004 ms - -[0m
+2026-01-07 01:00:27 [INFO]: [0mGET /uploads/null [33m404[0m 3.872 ms - 48[0m
+2026-01-07 01:00:48 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.057 ms - -[0m
+2026-01-07 01:00:48 [INFO]: [0mGET /uploads/null [33m404[0m 1.417 ms - 48[0m
+2026-01-07 01:01:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 109.691 ms - -[0m
+2026-01-07 01:01:05 [INFO]: [0mGET /uploads/null [33m404[0m 0.973 ms - 48[0m
+2026-01-07 01:01:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.474 ms - -[0m
+2026-01-07 01:01:21 [INFO]: [0mGET /uploads/null [33m404[0m 1.021 ms - 48[0m
+2026-01-07 01:01:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.331 ms - -[0m
+2026-01-07 01:01:26 [INFO]: [0mGET /uploads/null [33m404[0m 1.017 ms - 48[0m
+2026-01-07 01:01:36 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.524 ms - -[0m
+2026-01-07 01:01:36 [INFO]: [0mGET /uploads/null [33m404[0m 0.979 ms - 48[0m
+2026-01-07 01:02:38 [INFO]: [0mGET /api-docs/ [33m404[0m 1.256 ms - 48[0m
+2026-01-07 01:02:38 [INFO]: [0mGET /favicon.ico [33m404[0m 2.433 ms - 48[0m
+2026-01-07 01:02:51 [INFO]: [0mGET / [33m404[0m 0.773 ms - 48[0m
+2026-01-07 01:03:25 [INFO]: [0mGET /admin [33m404[0m 2.108 ms - 48[0m
+2026-01-07 01:03:34 [INFO]: [0mGET /api/servicios/lista [36m304[0m 110.287 ms - -[0m
+2026-01-07 01:03:34 [INFO]: [0mGET /uploads/null [33m404[0m 1.756 ms - 48[0m
+2026-01-07 01:03:44 [INFO]: [0mGET /uploads/null [33m404[0m 2.359 ms - 48[0m
+2026-01-07 01:03:56 [INFO]: servicioCtl: [object Object]
+2026-01-07 01:03:56 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 01:03:57 [INFO]: Base de datos conectada
+2026-01-07 01:03:57 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 01:03:59 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 01:03:59 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 01:03:59 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 01:04:04 [INFO]: [0mGET /api-docs/ [33m404[0m 13.857 ms - 48[0m
+2026-01-07 01:07:57 [INFO]: servicioCtl: [object Object]
+2026-01-07 01:07:57 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 01:07:57 [INFO]: Base de datos conectada
+2026-01-07 01:07:58 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 01:07:59 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 01:07:59 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 01:08:00 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 11:15:06 [INFO]: servicioCtl: [object Object]
+2026-01-07 11:15:06 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 11:15:07 [INFO]: Base de datos conectada
+2026-01-07 11:15:08 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 11:15:08 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 11:15:08 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 11:15:09 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 11:15:18 [INFO]: [0mGET / [33m404[0m 13.601 ms - 48[0m
+2026-01-07 11:15:19 [INFO]: [0mGET /favicon.ico [33m404[0m 1.466 ms - 48[0m
+2026-01-07 11:19:28 [INFO]: [0mGET /cliente [33m404[0m 1.688 ms - 48[0m
+2026-01-07 11:19:29 [INFO]: [0mGET /favicon.ico [33m404[0m 0.893 ms - 48[0m
+2026-01-07 11:20:04 [ERROR]: SequelizeDatabaseError: read ECONNRESET
+2026-01-07 11:20:04 [INFO]: [0mGET /api/servicios [31m500[0m 21669.955 ms - 39[0m
+2026-01-07 11:21:13 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-07 11:21:15 [INFO]: [0mGET /api/servicios/lista [32m200[0m 127.572 ms - 659[0m
+2026-01-07 11:21:15 [INFO]: [0mGET /uploads/null [33m404[0m 2.308 ms - 48[0m
+2026-01-07 11:21:22 [INFO]: [0mGET /api/servicios/lista [36m304[0m 120.848 ms - -[0m
+2026-01-07 11:21:22 [INFO]: [0mGET /uploads/null [33m404[0m 1.336 ms - 48[0m
+2026-01-07 11:21:22 [ERROR]: SequelizeDatabaseError: read ECONNRESET
+2026-01-07 11:21:27 [INFO]: [0mGET /api/servicios/lista [36m304[0m 119.787 ms - -[0m
+2026-01-07 11:21:27 [INFO]: [0mGET /uploads/null [33m404[0m 1.026 ms - 48[0m
+2026-01-07 11:25:06 [INFO]: [0mGET /api/servicios/lista [36m304[0m 114.900 ms - -[0m
+2026-01-07 11:25:06 [INFO]: [0mGET /uploads/null [33m404[0m 2.159 ms - 48[0m
+2026-01-07 11:25:30 [INFO]: [0mGET /api/servicios/lista [36m304[0m 115.489 ms - -[0m
+2026-01-07 11:25:30 [INFO]: [0mGET /uploads/null [33m404[0m 1.290 ms - 48[0m
+2026-01-07 11:25:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 113.944 ms - -[0m
+2026-01-07 11:25:35 [INFO]: [0mGET /uploads/null [33m404[0m 1.390 ms - 48[0m
+2026-01-07 11:25:37 [INFO]: [0mGET /api/servicios/lista [36m304[0m 114.433 ms - -[0m
+2026-01-07 11:25:37 [INFO]: [0mGET /uploads/null [33m404[0m 0.870 ms - 48[0m
+2026-01-07 11:25:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 117.237 ms - -[0m
+2026-01-07 11:25:52 [INFO]: [0mGET /uploads/null [33m404[0m 1.976 ms - 48[0m
+2026-01-07 11:27:23 [INFO]: [0mGET /api/servicios/lista [36m304[0m 115.140 ms - -[0m
+2026-01-07 11:27:23 [INFO]: [0mGET /uploads/null [33m404[0m 2.066 ms - 48[0m
+2026-01-07 11:27:27 [INFO]: [0mGET /api/servicios/lista [36m304[0m 113.579 ms - -[0m
+2026-01-07 11:27:27 [INFO]: [0mGET /uploads/null [33m404[0m 1.902 ms - 48[0m
+2026-01-07 11:27:33 [INFO]: [0mGET /api/servicios/lista [36m304[0m 117.441 ms - -[0m
+2026-01-07 11:27:33 [INFO]: [0mGET /uploads/null [33m404[0m 2.405 ms - 48[0m
+2026-01-07 11:27:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 114.146 ms - -[0m
+2026-01-07 11:27:52 [INFO]: [0mGET /uploads/null [33m404[0m 1.161 ms - 48[0m
+2026-01-07 11:27:56 [INFO]: [0mGET /api/servicios/lista [36m304[0m 113.757 ms - -[0m
+2026-01-07 11:27:56 [INFO]: [0mGET /uploads/null [33m404[0m 1.159 ms - 48[0m
+2026-01-07 11:29:15 [INFO]: servicioCtl: [object Object]
+2026-01-07 11:29:15 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 11:29:16 [INFO]: Base de datos conectada
+2026-01-07 11:29:16 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 11:29:17 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 11:29:17 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 11:29:18 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 11:33:57 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-07 11:33:57 [INFO]: [0mGET /api/servicios/lista [32m200[0m 616.180 ms - 714[0m
+2026-01-07 11:33:57 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [32m200[0m 10.257 ms - 451855[0m
+2026-01-07 11:33:57 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [32m200[0m 7.777 ms - 574392[0m
+2026-01-07 11:33:57 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [32m200[0m 12.325 ms - 800800[0m
+2026-01-07 11:33:58 [INFO]: [0mGET /uploads/servicios/diagnostico.png [32m200[0m 7.861 ms - 1155678[0m
+2026-01-07 11:34:00 [ERROR]: Error: read ECONNRESET
+2026-01-07 11:34:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 276.044 ms - -[0m
+2026-01-07 11:34:06 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 5.033 ms - -[0m
+2026-01-07 11:34:06 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 5.960 ms - -[0m
+2026-01-07 11:34:06 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 8.713 ms - -[0m
+2026-01-07 11:34:06 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 2.961 ms - -[0m
+2026-01-07 11:34:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 274.438 ms - -[0m
+2026-01-07 11:34:36 [INFO]: [0mGET /api/servicios/lista [36m304[0m 278.017 ms - -[0m
+2026-01-07 11:34:36 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 3.788 ms - -[0m
+2026-01-07 11:34:36 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 6.368 ms - -[0m
+2026-01-07 11:34:36 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 3.954 ms - -[0m
+2026-01-07 11:34:36 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 4.956 ms - -[0m
+2026-01-07 11:50:18 [INFO]: servicioCtl: [object Object]
+2026-01-07 11:50:18 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 11:50:19 [INFO]: Base de datos conectada
+2026-01-07 11:50:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 11:50:21 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 11:50:21 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 11:50:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 11:55:55 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-07 11:55:56 [INFO]: [0mGET /api/servicios/lista [32m200[0m 617.131 ms - 714[0m
+2026-01-07 11:55:56 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 4.201 ms - -[0m
+2026-01-07 11:55:56 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 4.137 ms - -[0m
+2026-01-07 11:55:56 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 3.846 ms - -[0m
+2026-01-07 11:55:56 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 6.209 ms - -[0m
+2026-01-07 11:56:05 [ERROR]: Error: read ECONNRESET
+2026-01-07 12:07:52 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:07:52 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:07:52 [INFO]: Base de datos conectada
+2026-01-07 12:07:53 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:07:54 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:07:54 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:07:54 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:08:15 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=12:02 [33m404[0m 8.915 ms - 48[0m
+2026-01-07 12:08:15 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=12:20 [33m404[0m 2.346 ms - 48[0m
+2026-01-07 12:08:18 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=12:20&idVeterinario=1 [33m404[0m 1.292 ms - 48[0m
+2026-01-07 12:08:23 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 12:08:23 [INFO]: [0mPOST /cita/crear [31m500[0m 314.400 ms - 255[0m
+2026-01-07 12:12:20 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-07 12:12:21 [INFO]: [0mGET /api/servicios/lista [32m200[0m 645.344 ms - 714[0m
+2026-01-07 12:12:21 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 8.404 ms - -[0m
+2026-01-07 12:12:21 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 8.154 ms - -[0m
+2026-01-07 12:12:21 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 8.107 ms - -[0m
+2026-01-07 12:12:21 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 8.979 ms - -[0m
+2026-01-07 12:12:38 [ERROR]: Error: read ECONNRESET
+2026-01-07 12:36:13 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:36:14 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:36:14 [INFO]: Base de datos conectada
+2026-01-07 12:36:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:36:15 [INFO]: [0mGET /api/servicios/lista [31m503[0m 4.636 ms - 28[0m
+2026-01-07 12:36:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:36:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:36:16 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:36:19 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1587.139 ms - 714[0m
+2026-01-07 12:36:19 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 5.852 ms - -[0m
+2026-01-07 12:36:19 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 5.564 ms - -[0m
+2026-01-07 12:36:19 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 5.902 ms - -[0m
+2026-01-07 12:36:19 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 2.133 ms - -[0m
+2026-01-07 12:36:27 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:01 [33m404[0m 1.529 ms - 48[0m
+2026-01-07 12:36:27 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10 [33m404[0m 1.322 ms - 48[0m
+2026-01-07 12:36:30 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10&idVeterinario=1 [33m404[0m 2.244 ms - 48[0m
+2026-01-07 12:36:33 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 12:36:33 [INFO]: [0mPOST /cita/crear [31m500[0m 277.692 ms - 255[0m
+2026-01-07 12:37:40 [INFO]: [0mGET /api/servicios/lista [36m304[0m 276.591 ms - -[0m
+2026-01-07 12:37:40 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 5.173 ms - -[0m
+2026-01-07 12:37:40 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 5.063 ms - -[0m
+2026-01-07 12:37:40 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 5.047 ms - -[0m
+2026-01-07 12:37:40 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 6.380 ms - -[0m
+2026-01-07 12:38:40 [INFO]: [0mGET /api/servicios/lista [36m304[0m 279.641 ms - -[0m
+2026-01-07 12:38:40 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 6.391 ms - -[0m
+2026-01-07 12:38:40 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 8.968 ms - -[0m
+2026-01-07 12:38:40 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 11.815 ms - -[0m
+2026-01-07 12:38:40 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 3.692 ms - -[0m
+2026-01-07 12:39:11 [INFO]: [0mGET /api/servicios/lista [36m304[0m 274.130 ms - -[0m
+2026-01-07 12:39:11 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 2.353 ms - -[0m
+2026-01-07 12:39:11 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 2.140 ms - -[0m
+2026-01-07 12:39:11 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 5.997 ms - -[0m
+2026-01-07 12:39:11 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 6.449 ms - -[0m
+2026-01-07 12:39:27 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:01 [33m404[0m 1.117 ms - 48[0m
+2026-01-07 12:39:27 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10 [33m404[0m 1.115 ms - 48[0m
+2026-01-07 12:39:29 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10&idVeterinario=1 [33m404[0m 0.760 ms - 48[0m
+2026-01-07 12:39:32 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 12:39:32 [INFO]: [0mPOST /cita/crear [31m500[0m 114.120 ms - 255[0m
+2026-01-07 12:39:52 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:39:52 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:39:52 [INFO]: Base de datos conectada
+2026-01-07 12:39:53 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:39:54 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:39:54 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:39:55 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:40:21 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:40:21 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:40:22 [INFO]: Base de datos conectada
+2026-01-07 12:40:22 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:40:23 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:40:23 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:40:23 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:40:43 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:40:43 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:40:44 [INFO]: Base de datos conectada
+2026-01-07 12:40:45 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:40:45 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:40:45 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:40:46 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:44:39 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:44:39 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:44:40 [INFO]: Base de datos conectada
+2026-01-07 12:44:41 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:44:42 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:44:42 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:44:42 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:44:58 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:01 [33m404[0m 7.127 ms - 48[0m
+2026-01-07 12:44:58 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10 [33m404[0m 1.443 ms - 48[0m
+2026-01-07 12:45:00 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10&idVeterinario=2 [33m404[0m 1.107 ms - 48[0m
+2026-01-07 12:45:02 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 12:45:02 [INFO]: [0mPOST /cita/crear [31m500[0m 272.139 ms - 255[0m
+2026-01-07 12:49:06 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:49:06 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:49:07 [INFO]: Base de datos conectada
+2026-01-07 12:49:07 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:49:08 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:49:08 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:49:08 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 12:50:18 [INFO]: servicioCtl: [object Object]
+2026-01-07 12:50:19 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 12:50:19 [INFO]: Base de datos conectada
+2026-01-07 12:50:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 12:50:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 12:50:21 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 12:50:21 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:00:56 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:00:57 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:00:57 [INFO]: Base de datos conectada
+2026-01-07 13:00:58 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:00:59 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:00:59 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:00:59 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:01:06 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:01:06 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:01:07 [INFO]: Base de datos conectada
+2026-01-07 13:01:07 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:01:08 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:01:08 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:01:08 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:01:21 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:01 [33m404[0m 6.399 ms - 48[0m
+2026-01-07 13:01:21 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10 [33m404[0m 2.328 ms - 48[0m
+2026-01-07 13:01:23 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10&idVeterinario=1 [33m404[0m 1.372 ms - 48[0m
+2026-01-07 13:01:25 [INFO]: 📥 userIdUser recibido: 1 tipo: number
+2026-01-07 13:01:25 [INFO]: ✅ veterinarioId procesado: 1
+2026-01-07 13:01:25 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 13:01:25 [INFO]: [0mPOST /cita/crear [31m500[0m 301.236 ms - 255[0m
+2026-01-07 13:28:01 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:28:01 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:28:02 [INFO]: Base de datos conectada
+2026-01-07 13:28:03 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:28:03 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:28:03 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:28:04 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:29:35 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:29:35 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:29:35 [INFO]: Base de datos conectada
+2026-01-07 13:29:36 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:29:37 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:29:37 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:29:37 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:29:56 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:29:56 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:29:56 [INFO]: Base de datos conectada
+2026-01-07 13:29:57 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:29:58 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:29:58 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:29:58 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:30:18 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:30:18 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:30:19 [INFO]: Base de datos conectada
+2026-01-07 13:30:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:30:20 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:30:20 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:30:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:31:19 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:31:19 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:31:19 [INFO]: Base de datos conectada
+2026-01-07 13:31:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:31:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:31:21 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:31:21 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:31:47 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:31:47 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:31:48 [INFO]: Base de datos conectada
+2026-01-07 13:31:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:31:49 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:31:49 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:31:49 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:32:14 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:32:14 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:32:15 [INFO]: Base de datos conectada
+2026-01-07 13:32:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:32:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:32:16 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:32:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:34:19 [INFO]: 📥 userIdUser recibido:  tipo: undefined
+2026-01-07 13:34:19 [INFO]: ✅ veterinarioId procesado: 
+2026-01-07 13:34:19 [INFO]: [0mPOST /cita/crear [32m201[0m 560.124 ms - 50[0m
+2026-01-07 13:34:28 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 13:34:28 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 13:34:28 [INFO]: [0mPOST /cita/crear [32m201[0m 290.322 ms - 50[0m
+2026-01-07 13:35:01 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:01 [33m404[0m 2.316 ms - 48[0m
+2026-01-07 13:35:01 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10 [33m404[0m 0.996 ms - 48[0m
+2026-01-07 13:35:03 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10&idVeterinario=27 [33m404[0m 1.137 ms - 48[0m
+2026-01-07 13:35:06 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 13:35:06 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 13:35:07 [INFO]: [0mPOST /cita/crear [32m201[0m 289.635 ms - 50[0m
+2026-01-07 13:35:08 [INFO]: [0mGET /api/servicios/lista [36m304[0m 327.095 ms - -[0m
+2026-01-07 13:35:08 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 6.547 ms - -[0m
+2026-01-07 13:35:08 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 11.072 ms - -[0m
+2026-01-07 13:35:08 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 14.841 ms - -[0m
+2026-01-07 13:35:08 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 24.518 ms - -[0m
+2026-01-07 13:35:35 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:35:36 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:35:36 [INFO]: Base de datos conectada
+2026-01-07 13:35:37 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:35:38 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:35:38 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:35:38 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:02 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:04 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:04 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:04 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:37:04 [INFO]: [0mGET /cita/cliente/1 [32m200[0m 1985.551 ms - -[0m
+2026-01-07 13:37:41 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:37:41 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:37:42 [INFO]: Base de datos conectada
+2026-01-07 13:37:42 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:37:43 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:37:43 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:37:43 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:38:00 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:38:00 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:38:00 [INFO]: Base de datos conectada
+2026-01-07 13:38:01 [INFO]: [0mGET /cita/cliente/1?t= [31m503[0m 2.775 ms - 28[0m
+2026-01-07 13:38:01 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:38:02 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:38:02 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:38:02 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:38:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:38:11 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 13:38:11 [INFO]: [0mGET /cita/cliente/1 [32m200[0m 1339.582 ms - -[0m
+2026-01-07 13:39:41 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:39:42 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:39:42 [INFO]: Base de datos conectada
+2026-01-07 13:39:43 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:39:44 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:39:44 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:39:44 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:41:30 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:41:30 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:41:30 [INFO]: Base de datos conectada
+2026-01-07 13:41:31 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:41:32 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:41:32 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:41:32 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:41:37 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-07 13:41:52 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:41:53 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:41:53 [INFO]: Base de datos conectada
+2026-01-07 13:41:54 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:41:54 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:41:54 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:41:55 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:42:16 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:42:16 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:42:16 [INFO]: Base de datos conectada
+2026-01-07 13:42:17 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:42:18 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:42:18 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:42:18 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:42:20 [INFO]: [0mGET /cita/cliente/1 [32m200[0m 1646.643 ms - -[0m
+2026-01-07 13:42:35 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:42:35 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:42:35 [INFO]: Base de datos conectada
+2026-01-07 13:42:36 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:42:37 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:42:37 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:42:37 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:42:37 [INFO]: [0mGET /cita/cliente/1 [31m503[0m 2.596 ms - 28[0m
+2026-01-07 13:42:56 [INFO]: [0mGET /cita/cliente/1 [32m200[0m 1306.747 ms - -[0m
+2026-01-07 13:44:32 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:44:32 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:44:32 [INFO]: Base de datos conectada
+2026-01-07 13:44:33 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:44:34 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:44:35 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:44:35 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:46:19 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-07 13:47:13 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:47:13 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:47:13 [INFO]: Base de datos conectada
+2026-01-07 13:47:14 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:47:15 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:47:15 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:47:15 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:47:28 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:01 [33m404[0m 7.247 ms - 48[0m
+2026-01-07 13:47:28 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10 [33m404[0m 1.603 ms - 48[0m
+2026-01-07 13:47:30 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:10&idVeterinario=27 [33m404[0m 1.132 ms - 48[0m
+2026-01-07 13:47:33 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 13:47:33 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 13:47:34 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 13:47:34 [INFO]: [0mPOST /cita/crear [31m500[0m 791.232 ms - 255[0m
+2026-01-07 13:48:36 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:48:36 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:48:37 [INFO]: Base de datos conectada
+2026-01-07 13:48:37 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:48:38 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:48:39 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:48:39 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:48:44 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=11:00 [33m404[0m 7.653 ms - 48[0m
+2026-01-07 13:48:46 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=11:00&idVeterinario=27 [33m404[0m 1.478 ms - 48[0m
+2026-01-07 13:48:52 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 13:48:52 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 13:48:53 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 13:48:53 [INFO]: [0mPOST /cita/crear [31m500[0m 281.943 ms - 255[0m
+2026-01-07 13:50:02 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:50:02 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:50:03 [INFO]: Base de datos conectada
+2026-01-07 13:50:03 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:50:04 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:50:04 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:50:04 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:51:49 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:51:49 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:51:49 [INFO]: Base de datos conectada
+2026-01-07 13:51:50 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:51:51 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:51:51 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:51:51 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:52:05 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-07 13:52:47 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:52:47 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:52:47 [INFO]: Base de datos conectada
+2026-01-07 13:52:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:52:49 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:52:49 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:52:49 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:53:19 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:02 [33m404[0m 8.578 ms - 48[0m
+2026-01-07 13:53:19 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:20 [33m404[0m 1.407 ms - 48[0m
+2026-01-07 13:53:23 [INFO]: 📥 userIdUser recibido:  tipo: undefined
+2026-01-07 13:53:23 [INFO]: ✅ veterinarioId procesado: 
+2026-01-07 13:53:23 [INFO]: [0mPOST /cita/crear [32m201[0m 477.553 ms - 50[0m
+2026-01-07 13:53:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1310.253 ms - -[0m
+2026-01-07 13:53:26 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 9.136 ms - -[0m
+2026-01-07 13:53:26 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 11.277 ms - -[0m
+2026-01-07 13:53:26 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 12.132 ms - -[0m
+2026-01-07 13:53:26 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 14.753 ms - -[0m
+2026-01-07 13:53:30 [INFO]: [0mGET /api/servicios/lista [36m304[0m 281.036 ms - -[0m
+2026-01-07 13:53:30 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 4.541 ms - -[0m
+2026-01-07 13:53:30 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 9.249 ms - -[0m
+2026-01-07 13:53:30 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 7.054 ms - -[0m
+2026-01-07 13:53:30 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 8.434 ms - -[0m
+2026-01-07 13:58:04 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:58:04 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:58:04 [INFO]: Base de datos conectada
+2026-01-07 13:58:05 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:58:06 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 13:58:06 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:58:06 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:58:57 [INFO]: servicioCtl: [object Object]
+2026-01-07 13:58:57 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 13:58:58 [INFO]: Base de datos conectada
+2026-01-07 13:58:58 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 13:58:59 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 13:58:59 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 13:58:59 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:10 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:11 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:11 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:11 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:11 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:11 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:12 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:12 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:12 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:12 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:12 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:12 [INFO]: [0mGET /cita/lista [32m200[0m 2245.475 ms - 6983[0m
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:00:48 [INFO]: [0mGET /cita/cliente/1 [32m200[0m 1314.241 ms - -[0m
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:01:28 [INFO]: [0mGET /cita/cliente/1 [32m200[0m 287.612 ms - -[0m
+2026-01-07 14:03:07 [INFO]: servicioCtl: [object Object]
+2026-01-07 14:03:07 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 14:03:08 [INFO]: Base de datos conectada
+2026-01-07 14:03:09 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 14:03:10 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 14:03:10 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 14:03:10 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 14:03:32 [INFO]: servicioCtl: [object Object]
+2026-01-07 14:03:32 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 14:03:33 [INFO]: Base de datos conectada
+2026-01-07 14:03:33 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 14:03:34 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 14:03:34 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 14:03:34 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 14:03:47 [INFO]: servicioCtl: [object Object]
+2026-01-07 14:03:47 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 14:03:47 [INFO]: Base de datos conectada
+2026-01-07 14:03:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 14:03:49 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 14:03:49 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 14:03:49 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 14:04:07 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=04:05 [33m404[0m 7.027 ms - 48[0m
+2026-01-07 14:04:09 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=04:05&idVeterinario=27 [33m404[0m 1.433 ms - 48[0m
+2026-01-07 14:04:12 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 14:04:12 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 14:04:12 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 14:04:12 [INFO]: [0mPOST /cita/crear [31m500[0m 560.309 ms - 255[0m
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:04:22 [INFO]: [0mGET /cita/cliente/1?t=1767812660405 [32m200[0m 2067.918 ms - -[0m
+2026-01-07 14:04:56 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:05 [33m404[0m 1.111 ms - 48[0m
+2026-01-07 14:04:57 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=10:50 [33m404[0m 1.406 ms - 48[0m
+2026-01-07 14:04:58 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-02-07&hora=10:50 [33m404[0m 1.263 ms - 48[0m
+2026-01-07 14:05:16 [INFO]: 📥 userIdUser recibido:  tipo: undefined
+2026-01-07 14:05:16 [INFO]: ✅ veterinarioId procesado: 
+2026-01-07 14:05:16 [INFO]: [0mPOST /cita/crear [32m201[0m 306.354 ms - 50[0m
+2026-01-07 14:05:18 [INFO]: [0mGET /api/servicios/lista [36m304[0m 276.670 ms - -[0m
+2026-01-07 14:05:18 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 8.841 ms - -[0m
+2026-01-07 14:05:18 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 8.207 ms - -[0m
+2026-01-07 14:05:18 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 8.853 ms - -[0m
+2026-01-07 14:05:18 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 2.459 ms - -[0m
+2026-01-07 14:06:13 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:13 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:13 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:13 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:13 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:14 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:15 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:15 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:15 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:16 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:16 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:16 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:16 [INFO]: [0mGET /cita/cliente/1?t=1767812773683 [32m200[0m 2294.807 ms - -[0m
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:06:47 [INFO]: [0mGET /cita/cliente/1?t=1767812806872 [32m200[0m 304.350 ms - -[0m
+2026-01-07 14:06:55 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:02 [33m404[0m 0.957 ms - 48[0m
+2026-01-07 14:06:55 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:20 [33m404[0m 0.817 ms - 48[0m
+2026-01-07 14:06:57 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:20&idVeterinario=27 [33m404[0m 0.886 ms - 48[0m
+2026-01-07 14:07:01 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 14:07:01 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 14:07:01 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 14:07:01 [INFO]: [0mPOST /cita/crear [31m500[0m 142.899 ms - 255[0m
+2026-01-07 14:07:06 [INFO]: [0mGET /api/servicios/lista [36m304[0m 272.113 ms - -[0m
+2026-01-07 14:07:07 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 2.049 ms - -[0m
+2026-01-07 14:07:07 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 3.447 ms - -[0m
+2026-01-07 14:07:07 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 4.685 ms - -[0m
+2026-01-07 14:07:07 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 3.134 ms - -[0m
+2026-01-07 14:07:12 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=05:00 [33m404[0m 0.665 ms - 48[0m
+2026-01-07 14:07:14 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=05:00&idVeterinario=27 [33m404[0m 0.959 ms - 48[0m
+2026-01-07 14:07:18 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 14:07:18 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 14:07:18 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 14:07:18 [INFO]: [0mPOST /cita/crear [31m500[0m 134.544 ms - 255[0m
+2026-01-07 14:07:26 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-07 14:07:32 [INFO]: servicioCtl: [object Object]
+2026-01-07 14:07:32 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 14:07:33 [INFO]: Base de datos conectada
+2026-01-07 14:07:33 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 14:07:34 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 14:07:34 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 14:07:34 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 14:07:40 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:02 [33m404[0m 6.269 ms - 48[0m
+2026-01-07 14:07:40 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:20 [33m404[0m 1.921 ms - 48[0m
+2026-01-07 14:07:44 [INFO]: 📥 userIdUser recibido:  tipo: undefined
+2026-01-07 14:07:44 [INFO]: ✅ veterinarioId procesado: 
+2026-01-07 14:07:45 [INFO]: [0mPOST /cita/crear [32m201[0m 465.033 ms - 50[0m
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:07:48 [INFO]: [0mGET /cita/cliente/1?t=1767812866690 [32m200[0m 1338.436 ms - -[0m
+2026-01-07 14:07:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 278.384 ms - -[0m
+2026-01-07 14:07:58 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 7.302 ms - -[0m
+2026-01-07 14:07:58 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 4.638 ms - -[0m
+2026-01-07 14:07:58 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 11.845 ms - -[0m
+2026-01-07 14:07:58 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 5.157 ms - -[0m
+2026-01-07 14:08:22 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:02 [33m404[0m 0.944 ms - 48[0m
+2026-01-07 14:08:22 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=20:20 [33m404[0m 0.647 ms - 48[0m
+2026-01-07 14:08:27 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=00:20 [33m404[0m 0.783 ms - 48[0m
+2026-01-07 14:08:27 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=00:00 [33m404[0m 0.820 ms - 48[0m
+2026-01-07 14:08:29 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-02&hora=00:00 [33m404[0m 0.657 ms - 48[0m
+2026-01-07 14:08:30 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-20&hora=00:00 [33m404[0m 0.871 ms - 48[0m
+2026-01-07 14:08:32 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-20&hora=00:00&idVeterinario=27 [33m404[0m 0.743 ms - 48[0m
+2026-01-07 14:08:37 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 14:08:37 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 14:08:37 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 14:08:37 [INFO]: [0mPOST /cita/crear [31m500[0m 142.499 ms - 255[0m
+2026-01-07 14:08:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 277.071 ms - -[0m
+2026-01-07 14:08:55 [INFO]: servicioCtl: [object Object]
+2026-01-07 14:08:55 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 14:08:56 [INFO]: Base de datos conectada
+2026-01-07 14:08:56 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 14:08:57 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 14:08:57 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 14:08:57 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 14:08:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1604.037 ms - -[0m
+2026-01-07 14:08:59 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 6.103 ms - -[0m
+2026-01-07 14:08:59 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 8.698 ms - -[0m
+2026-01-07 14:08:59 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 7.327 ms - -[0m
+2026-01-07 14:08:59 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 3.814 ms - -[0m
+2026-01-07 14:09:11 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-07&hora=00:00 [33m404[0m 1.820 ms - 48[0m
+2026-01-07 14:09:14 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-02&hora=00:00 [33m404[0m 1.460 ms - 48[0m
+2026-01-07 14:09:14 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-20&hora=00:00 [33m404[0m 1.143 ms - 48[0m
+2026-01-07 14:09:18 [INFO]: 📥 userIdUser recibido:  tipo: undefined
+2026-01-07 14:09:18 [INFO]: ✅ veterinarioId procesado: 
+2026-01-07 14:09:18 [INFO]: [0mPOST /cita/crear [32m201[0m 464.792 ms - 50[0m
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:20 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:21 [INFO]: [0mGET /cita/cliente/1?t=1767812960392 [32m200[0m 1281.501 ms - -[0m
+2026-01-07 14:09:37 [INFO]: [0mPUT /cita/cambiar-estado/78 [32m200[0m 407.942 ms - 66[0m
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:39 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 14:09:40 [INFO]: [0mGET /cita/cliente/1?t=1767812979392 [32m200[0m 1322.619 ms - -[0m
+2026-01-07 14:10:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 282.836 ms - -[0m
+2026-01-07 14:10:03 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 5.171 ms - -[0m
+2026-01-07 14:10:03 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 4.307 ms - -[0m
+2026-01-07 14:10:03 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 6.361 ms - -[0m
+2026-01-07 14:10:03 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 2.466 ms - -[0m
+2026-01-07 14:10:14 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-30&hora=23:02 [33m404[0m 0.874 ms - 48[0m
+2026-01-07 14:10:15 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-30&hora=23:20 [33m404[0m 0.718 ms - 48[0m
+2026-01-07 14:10:17 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-30&hora=23:20&idVeterinario=27 [33m404[0m 0.838 ms - 48[0m
+2026-01-07 14:10:19 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 14:10:19 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 14:10:20 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_851` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 14:10:20 [INFO]: [0mPOST /cita/crear [31m500[0m 140.637 ms - 255[0m
+2026-01-07 14:10:24 [INFO]: [0mGET /api/servicios/lista [36m304[0m 275.506 ms - -[0m
+2026-01-07 14:10:24 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [36m304[0m 5.699 ms - -[0m
+2026-01-07 14:10:24 [INFO]: [0mGET /uploads/servicios/peluqueria.jpg [36m304[0m 5.089 ms - -[0m
+2026-01-07 14:10:24 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 7.039 ms - -[0m
+2026-01-07 14:10:24 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 3.464 ms - -[0m
+2026-01-07 22:52:40 [INFO]: servicioCtl: [object Object]
+2026-01-07 22:52:41 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 22:52:42 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 22:52:43 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 22:52:43 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 22:52:43 [INFO]: Base de datos conectada
+2026-01-07 22:52:43 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 22:53:11 [INFO]: [0mGET /api/servicios/lista [32m200[0m 391.994 ms - 519[0m
+2026-01-07 22:53:11 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [32m200[0m 5.315 ms - 109025[0m
+2026-01-07 22:53:11 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [32m200[0m 6.256 ms - 574392[0m
+2026-01-07 22:53:11 [INFO]: [0mGET /uploads/servicios/diagnostico.png [32m200[0m 6.227 ms - 1155678[0m
+2026-01-07 22:53:26 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=10:03 [33m404[0m 1.096 ms - 48[0m
+2026-01-07 22:53:26 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=10:30 [33m404[0m 1.087 ms - 48[0m
+2026-01-07 22:53:30 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=10:30&idVeterinario=27 [33m404[0m 0.480 ms - 48[0m
+2026-01-07 22:53:40 [INFO]: 📥 userIdUser recibido: 27 tipo: number
+2026-01-07 22:53:40 [INFO]: ✅ veterinarioId procesado: 27
+2026-01-07 22:53:40 [ERROR]: Error al crear cita: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_855` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-07 22:53:40 [INFO]: [0mPOST /cita/crear [31m500[0m 280.145 ms - 255[0m
+2026-01-07 22:54:23 [INFO]: servicioCtl: [object Object]
+2026-01-07 22:54:23 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 22:54:23 [INFO]: Base de datos conectada
+2026-01-07 22:54:24 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 22:54:25 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 22:54:25 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 22:54:25 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 22:54:40 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=10:03 [33m404[0m 6.574 ms - 48[0m
+2026-01-07 22:54:40 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=10:30 [33m404[0m 1.599 ms - 48[0m
+2026-01-07 22:54:43 [INFO]: 📥 userIdUser recibido:  tipo: undefined
+2026-01-07 22:54:43 [INFO]: ✅ veterinarioId procesado: 
+2026-01-07 22:54:43 [INFO]: [0mPOST /cita/crear [32m201[0m 459.047 ms - 50[0m
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:45 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:46 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-07 22:54:47 [INFO]: [0mGET /cita/cliente/1?t=1767844485597 [32m200[0m 1482.523 ms - -[0m
+2026-01-07 22:57:37 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-07 22:57:43 [INFO]: servicioCtl: [object Object]
+2026-01-07 22:57:44 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-07 22:57:44 [INFO]: Base de datos conectada
+2026-01-07 22:57:45 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-07 22:57:46 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-07 22:57:46 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-07 22:57:46 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-07 23:05:16 [ERROR]: Error: read ECONNRESET
+2026-01-07 23:05:16 [INFO]: [0mGET /api/servicios/ [31m500[0m 31.055 ms - 39[0m
+2026-01-07 23:05:21 [INFO]: [0mGET /api/servicios/ [32m200[0m 605.891 ms - 746[0m
+2026-01-07 23:05:21 [INFO]: [0mGET /uploads/servicios/fondo-geometrico-abstracto-3d_1048-11325.avif?t=1767845120572 [33m404[0m 5.024 ms - 48[0m
+2026-01-07 23:05:21 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767845120572 [32m200[0m 7.894 ms - 109025[0m
+2026-01-07 23:05:21 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767845120572 [32m200[0m 7.310 ms - 574392[0m
+2026-01-07 23:05:21 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767845120572 [32m200[0m 7.529 ms - 1155678[0m
+2026-01-07 23:05:34 [ERROR]: SequelizeDatabaseError: read ECONNRESET
+2026-01-07 23:05:34 [INFO]: [0mDELETE /api/servicios/42 [31m500[0m 17.666 ms - 66[0m
+2026-01-07 23:05:39 [INFO]: [0mGET /api/servicios/ [36m304[0m 281.757 ms - -[0m
+2026-01-07 23:05:39 [INFO]: [0mGET /uploads/servicios/fondo-geometrico-abstracto-3d_1048-11325.avif?t=1767845139156 [33m404[0m 5.719 ms - 48[0m
+2026-01-07 23:05:39 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767845139156 [32m200[0m 10.026 ms - 109025[0m
+2026-01-07 23:05:39 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767845139156 [32m200[0m 6.474 ms - 574392[0m
+2026-01-07 23:05:39 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767845139156 [32m200[0m 7.381 ms - 1155678[0m
+2026-01-07 23:06:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 294.268 ms - -[0m
+2026-01-07 23:06:52 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 4.365 ms - -[0m
+2026-01-07 23:06:52 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 17.703 ms - -[0m
+2026-01-07 23:06:52 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 24.849 ms - -[0m
+2026-01-07 23:08:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 288.558 ms - -[0m
+2026-01-07 23:08:13 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 1.309 ms - -[0m
+2026-01-07 23:08:13 [INFO]: [0mGET /uploads/servicios/diagnostico.png [36m304[0m 2.120 ms - -[0m
+2026-01-07 23:08:13 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [36m304[0m 4.199 ms - -[0m
+2026-01-07 23:08:52 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+=======
 2025-12-17 18:05:22 [INFO]: El servidor está escuchando en el puerto 3000
 2025-12-17 18:05:27 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
 2025-12-17 18:05:27 [INFO]: 🚀 MongoDB conectado correctamente
@@ -4770,544 +5742,3 @@ notNull Violation: servicio.precio cannot be null
 2026-01-07 18:55:26 [INFO]: [0mGET /usuario/lista [36m304[0m 164.564 ms - -[0m
 2026-01-07 18:57:44 [INFO]: [0mGET /usuario/lista [36m304[0m 118.204 ms - -[0m
 2026-01-07 18:57:52 [INFO]: [0mDELETE /usuario/eliminar/33 [32m200[0m 246.979 ms - 60[0m
-2026-01-07 20:38:39 [INFO]: servicioCtl: [object Object]
-2026-01-07 20:38:40 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 20:38:40 [INFO]: Base de datos conectada
-2026-01-07 20:38:41 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 20:38:42 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 20:38:42 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
-2026-01-07 20:38:42 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 20:39:05 [INFO]: [0mGET /api/servicios/lista [32m200[0m 390.035 ms - 708[0m
-2026-01-07 20:39:06 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 10.701 ms - 48[0m
-2026-01-07 20:39:06 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 9.665 ms - 48[0m
-2026-01-07 20:39:06 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 7.644 ms - 48[0m
-2026-01-07 20:39:06 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [32m200[0m 32.368 ms - 109025[0m
-2026-01-07 20:40:12 [INFO]: [0mGET /api/servicios/lista [36m304[0m 321.130 ms - -[0m
-2026-01-07 20:40:12 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 3.316 ms - 48[0m
-2026-01-07 20:40:12 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 12.063 ms - 48[0m
-2026-01-07 20:40:12 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 15.380 ms - -[0m
-2026-01-07 20:40:12 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 14.551 ms - 48[0m
-2026-01-07 20:40:18 [INFO]: [0mGET /api/servicios/lista [36m304[0m 319.229 ms - -[0m
-2026-01-07 20:40:18 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 1.914 ms - -[0m
-2026-01-07 20:40:18 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 1.620 ms - 48[0m
-2026-01-07 20:40:18 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 6.212 ms - 48[0m
-2026-01-07 20:40:18 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 8.657 ms - 48[0m
-2026-01-07 20:40:23 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.965 ms - -[0m
-2026-01-07 20:40:23 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.410 ms - 48[0m
-2026-01-07 20:40:23 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.207 ms - 48[0m
-2026-01-07 20:40:23 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 4.194 ms - 48[0m
-2026-01-07 20:40:25 [INFO]: [0mGET /api/servicios/lista [36m304[0m 305.384 ms - -[0m
-2026-01-07 20:40:25 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 3.901 ms - 48[0m
-2026-01-07 20:40:25 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 4.523 ms - 48[0m
-2026-01-07 20:40:25 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.507 ms - 48[0m
-2026-01-07 20:40:37 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.786 ms - -[0m
-2026-01-07 20:40:37 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 4.256 ms - 48[0m
-2026-01-07 20:40:37 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.523 ms - 48[0m
-2026-01-07 20:40:37 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.905 ms - 48[0m
-2026-01-07 20:40:37 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 1.796 ms - -[0m
-2026-01-07 20:41:15 [INFO]: [0mGET /usuario/lista [32m200[0m 177.981 ms - -[0m
-2026-01-07 20:41:32 [INFO]: [0mGET /configuracion/listar [32m200[0m 114.200 ms - 632[0m
-2026-01-07 20:41:33 [INFO]: [0mGET /api/servicios/ [32m200[0m 302.337 ms - 748[0m
-2026-01-07 20:41:33 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836492986 [33m404[0m 8.080 ms - 48[0m
-2026-01-07 20:41:33 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836492986 [33m404[0m 5.352 ms - 48[0m
-2026-01-07 20:41:33 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836492986 [33m404[0m 7.899 ms - 48[0m
-2026-01-07 20:41:33 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836492986 [32m200[0m 13.172 ms - 109025[0m
-2026-01-07 20:41:33 [INFO]: [0mGET /api/servicios/ [36m304[0m 297.599 ms - -[0m
-2026-01-07 20:41:34 [INFO]: [0mGET /api/servicios/ [36m304[0m 301.087 ms - -[0m
-2026-01-07 20:41:34 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836494272 [33m404[0m 4.250 ms - 48[0m
-2026-01-07 20:41:34 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836494272 [33m404[0m 5.406 ms - 48[0m
-2026-01-07 20:41:34 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836494272 [33m404[0m 4.447 ms - 48[0m
-2026-01-07 20:41:34 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836494272 [32m200[0m 11.320 ms - 109025[0m
-2026-01-07 20:41:35 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.600 ms - -[0m
-2026-01-07 20:41:35 [INFO]: [0mGET /api/servicios/ [32m200[0m 636.593 ms - 748[0m
-2026-01-07 20:41:38 [INFO]: [0mGET /api/servicios/ [36m304[0m 302.752 ms - -[0m
-2026-01-07 20:41:38 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836498024 [33m404[0m 2.424 ms - 48[0m
-2026-01-07 20:41:38 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836498024 [33m404[0m 6.360 ms - 48[0m
-2026-01-07 20:41:38 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836498024 [33m404[0m 5.333 ms - 48[0m
-2026-01-07 20:41:38 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836498024 [32m200[0m 11.225 ms - 109025[0m
-2026-01-07 20:41:38 [INFO]: [0mGET /configuracion/listar [36m304[0m 108.625 ms - -[0m
-2026-01-07 20:41:39 [INFO]: [0mGET /api/servicios/ [36m304[0m 299.925 ms - -[0m
-2026-01-07 20:41:39 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836499223 [33m404[0m 12.023 ms - 48[0m
-2026-01-07 20:41:39 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836499223 [33m404[0m 10.555 ms - 48[0m
-2026-01-07 20:41:39 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836499223 [33m404[0m 12.835 ms - 48[0m
-2026-01-07 20:41:39 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836499223 [32m200[0m 21.975 ms - 109025[0m
-2026-01-07 20:41:45 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.465 ms - -[0m
-2026-01-07 20:41:46 [INFO]: [0mGET /api/servicios/ [36m304[0m 299.251 ms - -[0m
-2026-01-07 20:41:47 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836506649 [33m404[0m 3.207 ms - 48[0m
-2026-01-07 20:41:47 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836506649 [33m404[0m 3.555 ms - 48[0m
-2026-01-07 20:41:47 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836506649 [33m404[0m 4.114 ms - 48[0m
-2026-01-07 20:41:47 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836506649 [32m200[0m 15.400 ms - 109025[0m
-2026-01-07 20:41:47 [INFO]: [0mGET /api/servicios/ [36m304[0m 309.650 ms - -[0m
-2026-01-07 20:41:47 [INFO]: [0mGET /api/servicios/ [32m200[0m 669.206 ms - 748[0m
-2026-01-07 20:41:48 [INFO]: [0mGET /api/servicios/ [32m200[0m 1757.243 ms - 748[0m
-2026-01-07 20:41:52 [INFO]: [0mGET /api/servicios/ [36m304[0m 297.802 ms - -[0m
-2026-01-07 20:41:52 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836512173 [33m404[0m 1.359 ms - 48[0m
-2026-01-07 20:41:52 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836512173 [32m200[0m 1.882 ms - 109025[0m
-2026-01-07 20:41:52 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836512173 [33m404[0m 1.390 ms - 48[0m
-2026-01-07 20:41:52 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836512173 [33m404[0m 1.288 ms - 48[0m
-2026-01-07 20:41:54 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.926 ms - -[0m
-2026-01-07 20:41:54 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836513971 [33m404[0m 1.402 ms - 48[0m
-2026-01-07 20:41:54 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836513971 [33m404[0m 3.212 ms - 48[0m
-2026-01-07 20:41:54 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836513971 [33m404[0m 1.390 ms - 48[0m
-2026-01-07 20:41:54 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836513971 [32m200[0m 10.207 ms - 109025[0m
-2026-01-07 20:41:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 302.632 ms - -[0m
-2026-01-07 20:41:59 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 2.250 ms - 48[0m
-2026-01-07 20:41:59 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 5.067 ms - -[0m
-2026-01-07 20:41:59 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 4.680 ms - 48[0m
-2026-01-07 20:41:59 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 4.149 ms - 48[0m
-2026-01-07 20:42:06 [INFO]: [0mGET /api/servicios/ [36m304[0m 299.545 ms - -[0m
-2026-01-07 20:42:06 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836526476 [33m404[0m 1.249 ms - 48[0m
-2026-01-07 20:42:06 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836526476 [32m200[0m 2.710 ms - 109025[0m
-2026-01-07 20:42:06 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836526476 [33m404[0m 1.167 ms - 48[0m
-2026-01-07 20:42:06 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836526476 [33m404[0m 1.277 ms - 48[0m
-2026-01-07 20:42:25 [INFO]: [0mGET /configuracion/listar [36m304[0m 109.502 ms - -[0m
-2026-01-07 20:42:35 [INFO]: [0mGET /api/servicios/ [36m304[0m 331.078 ms - -[0m
-2026-01-07 20:42:35 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836554641 [33m404[0m 1.819 ms - 48[0m
-2026-01-07 20:42:35 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836554641 [33m404[0m 3.617 ms - 48[0m
-2026-01-07 20:42:35 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836554641 [33m404[0m 4.112 ms - 48[0m
-2026-01-07 20:42:35 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836554641 [32m200[0m 7.101 ms - 109025[0m
-2026-01-07 20:42:35 [INFO]: [0mGET /api/servicios/ [36m304[0m 328.149 ms - -[0m
-2026-01-07 20:42:37 [INFO]: [0mGET /configuracion/listar [36m304[0m 109.914 ms - -[0m
-2026-01-07 20:42:38 [INFO]: [0mGET /usuario/lista [36m304[0m 110.234 ms - -[0m
-2026-01-07 20:42:40 [INFO]: [0mGET /usuario/lista [36m304[0m 110.632 ms - -[0m
-2026-01-07 20:42:41 [INFO]: [0mGET /usuario/lista [36m304[0m 111.626 ms - -[0m
-2026-01-07 20:42:46 [INFO]: [0mDELETE /usuario/eliminar/44 [32m200[0m 217.565 ms - 60[0m
-2026-01-07 20:42:52 [INFO]: [0mDELETE /usuario/eliminar/41 [32m200[0m 215.401 ms - 60[0m
-2026-01-07 20:42:59 [INFO]: [0mGET /configuracion/listar [36m304[0m 108.549 ms - -[0m
-2026-01-07 20:43:00 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.900 ms - -[0m
-2026-01-07 20:43:00 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836579804 [33m404[0m 3.248 ms - 48[0m
-2026-01-07 20:43:00 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836579804 [33m404[0m 3.571 ms - 48[0m
-2026-01-07 20:43:00 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836579804 [33m404[0m 4.126 ms - 48[0m
-2026-01-07 20:43:00 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836579804 [32m200[0m 14.389 ms - 109025[0m
-2026-01-07 20:43:00 [INFO]: [0mGET /api/servicios/ [36m304[0m 296.521 ms - -[0m
-2026-01-07 20:43:08 [INFO]: [0mGET /api/servicios/ [32m200[0m 323.977 ms - 748[0m
-2026-01-07 20:43:09 [INFO]: [0mGET /api/servicios/ [32m200[0m 476.866 ms - 748[0m
-2026-01-07 20:43:09 [INFO]: [0mGET /api/servicios/ [36m304[0m 822.840 ms - -[0m
-2026-01-07 20:43:09 [INFO]: [0mGET /api/servicios/ [32m200[0m 657.531 ms - 748[0m
-2026-01-07 20:43:13 [INFO]: [0mGET /api/servicios/ [32m200[0m 13279.852 ms - 748[0m
-2026-01-07 20:43:14 [INFO]: [0mGET /api/servicios/ [36m304[0m 3730.937 ms - -[0m
-2026-01-07 20:43:14 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836590833 [33m404[0m 2.114 ms - 48[0m
-2026-01-07 20:43:14 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836590833 [33m404[0m 5.367 ms - 48[0m
-2026-01-07 20:43:14 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836590833 [33m404[0m 7.798 ms - 48[0m
-2026-01-07 20:43:14 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836590833 [32m200[0m 16.916 ms - 109025[0m
-2026-01-07 20:43:23 [INFO]: [0mGET /api/servicios/ [36m304[0m 300.160 ms - -[0m
-2026-01-07 20:43:23 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836602870 [33m404[0m 1.390 ms - 48[0m
-2026-01-07 20:43:23 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836602870 [33m404[0m 3.306 ms - 48[0m
-2026-01-07 20:43:23 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836602870 [33m404[0m 3.699 ms - 48[0m
-2026-01-07 20:43:23 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836602870 [32m200[0m 10.037 ms - 109025[0m
-2026-01-07 20:43:28 [INFO]: [0mGET /api/servicios/ [36m304[0m 300.341 ms - -[0m
-2026-01-07 20:44:06 [INFO]: [0mGET /api/servicios/ [36m304[0m 301.846 ms - -[0m
-2026-01-07 20:44:06 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836646174 [33m404[0m 5.102 ms - 48[0m
-2026-01-07 20:44:06 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836646174 [33m404[0m 3.181 ms - 48[0m
-2026-01-07 20:44:06 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836646174 [33m404[0m 3.473 ms - 48[0m
-2026-01-07 20:44:06 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836646174 [32m200[0m 13.433 ms - 109025[0m
-2026-01-07 20:44:19 [INFO]: [0mGET /api/servicios/lista [36m304[0m 302.534 ms - -[0m
-2026-01-07 20:44:19 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 4.366 ms - 48[0m
-2026-01-07 20:44:19 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 1.886 ms - -[0m
-2026-01-07 20:44:19 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.733 ms - 48[0m
-2026-01-07 20:44:19 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.023 ms - 48[0m
-2026-01-07 20:44:25 [ERROR]: Error: Column 'nombreServicio' cannot be null
-2026-01-07 20:44:25 [INFO]: [0mPUT /api/servicios/44 [31m500[0m 460.664 ms - 91[0m
-2026-01-07 20:44:26 [ERROR]: Error: Column 'nombreServicio' cannot be null
-2026-01-07 20:44:26 [INFO]: [0mPUT /api/servicios/44 [31m500[0m 411.923 ms - 91[0m
-2026-01-07 20:44:26 [ERROR]: Error: Column 'nombreServicio' cannot be null
-2026-01-07 20:44:26 [INFO]: [0mPUT /api/servicios/44 [31m500[0m 408.415 ms - 91[0m
-2026-01-07 20:44:26 [ERROR]: Error: Column 'nombreServicio' cannot be null
-2026-01-07 20:44:26 [INFO]: [0mPUT /api/servicios/44 [31m500[0m 410.056 ms - 91[0m
-2026-01-07 20:44:26 [ERROR]: Error: Column 'nombreServicio' cannot be null
-2026-01-07 20:44:26 [INFO]: [0mPUT /api/servicios/44 [31m500[0m 412.493 ms - 91[0m
-2026-01-07 20:44:26 [ERROR]: Error: Column 'nombreServicio' cannot be null
-2026-01-07 20:44:26 [INFO]: [0mPUT /api/servicios/44 [31m500[0m 408.699 ms - 91[0m
-2026-01-07 20:44:28 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836646174 [33m404[0m 3.200 ms - 48[0m
-2026-01-07 20:44:33 [INFO]: [0mPUT /api/servicios/44 [32m200[0m 615.352 ms - 196[0m
-2026-01-07 20:44:33 [INFO]: [0mGET /api/servicios/ [32m200[0m 297.420 ms - 754[0m
-2026-01-07 20:44:33 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836673146 [33m404[0m 1.547 ms - 48[0m
-2026-01-07 20:44:33 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836673146 [33m404[0m 4.110 ms - 48[0m
-2026-01-07 20:44:33 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836673146 [33m404[0m 4.872 ms - 48[0m
-2026-01-07 20:44:33 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836673146 [32m200[0m 11.039 ms - 109025[0m
-2026-01-07 20:44:36 [INFO]: [0mGET /api/servicios/lista [32m200[0m 300.212 ms - 714[0m
-2026-01-07 20:44:36 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 2.931 ms - -[0m
-2026-01-07 20:44:36 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 8.195 ms - 48[0m
-2026-01-07 20:44:36 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 6.664 ms - 48[0m
-2026-01-07 20:44:36 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 5.882 ms - 48[0m
-2026-01-07 20:44:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 303.707 ms - -[0m
-2026-01-07 20:44:59 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 1.366 ms - -[0m
-2026-01-07 20:44:59 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 4.487 ms - 48[0m
-2026-01-07 20:44:59 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 8.652 ms - 48[0m
-2026-01-07 20:44:59 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 8.850 ms - 48[0m
-2026-01-07 20:45:00 [INFO]: [0mGET /configuracion/listar [36m304[0m 228.929 ms - -[0m
-2026-01-07 20:45:06 [INFO]: [0mGET /usuario/lista [32m200[0m 112.265 ms - -[0m
-2026-01-07 20:45:09 [INFO]: [0mDELETE /usuario/eliminar/38 [32m200[0m 221.144 ms - 60[0m
-2026-01-07 20:45:53 [INFO]: [0mGET /usuario/lista [32m200[0m 111.409 ms - 985[0m
-2026-01-07 20:45:57 [INFO]: [0mGET /api/servicios/ [36m304[0m 302.844 ms - -[0m
-2026-01-07 20:45:57 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836756932 [33m404[0m 3.447 ms - 48[0m
-2026-01-07 20:45:57 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836756932 [33m404[0m 2.819 ms - 48[0m
-2026-01-07 20:45:57 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836756932 [33m404[0m 4.315 ms - 48[0m
-2026-01-07 20:45:57 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836756932 [32m200[0m 17.002 ms - 109025[0m
-2026-01-07 20:46:13 [INFO]: [0mGET /api/servicios/ [36m304[0m 300.355 ms - -[0m
-2026-01-07 20:46:13 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767836773057 [33m404[0m 2.638 ms - 48[0m
-2026-01-07 20:46:13 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767836773057 [33m404[0m 3.947 ms - 48[0m
-2026-01-07 20:46:13 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767836773057 [33m404[0m 4.458 ms - 48[0m
-2026-01-07 20:46:13 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767836773057 [32m200[0m 12.015 ms - 109025[0m
-2026-01-07 20:46:16 [INFO]: [0mGET /configuracion/listar [32m200[0m 113.531 ms - 190[0m
-2026-01-07 20:46:43 [INFO]: [0mPOST /usuario/crear [32m201[0m 541.951 ms - 53[0m
-2026-01-07 20:46:45 [INFO]: [0mGET /usuario/lista [32m200[0m 114.784 ms - -[0m
-2026-01-07 20:47:56 [INFO]: [0mDELETE /usuario/eliminar/42 [32m200[0m 222.400 ms - 60[0m
-2026-01-07 20:48:12 [INFO]: [0mDELETE /usuario/eliminar/39 [32m200[0m 218.877 ms - 60[0m
-2026-01-07 20:48:18 [INFO]: [0mDELETE /usuario/eliminar/40 [32m200[0m 221.880 ms - 60[0m
-2026-01-07 20:50:16 [INFO]: [0mDELETE /usuario/eliminar/43 [32m200[0m 222.053 ms - 60[0m
-2026-01-07 20:52:57 [INFO]: [0mGET /configuracion/listar [32m200[0m 112.410 ms - 177[0m
-2026-01-07 20:52:57 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.909 ms - -[0m
-2026-01-07 20:52:57 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767837177512 [33m404[0m 1.703 ms - 48[0m
-2026-01-07 20:52:57 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767837177512 [33m404[0m 2.930 ms - 48[0m
-2026-01-07 20:52:57 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767837177512 [33m404[0m 4.152 ms - 48[0m
-2026-01-07 20:52:57 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767837177512 [32m200[0m 12.925 ms - 109025[0m
-2026-01-07 20:52:58 [INFO]: [0mGET /configuracion/listar [36m304[0m 110.215 ms - -[0m
-2026-01-07 20:52:58 [INFO]: [0mGET /api/servicios/ [36m304[0m 300.515 ms - -[0m
-2026-01-07 20:52:58 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767837178196 [33m404[0m 3.150 ms - 48[0m
-2026-01-07 20:52:58 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767837178196 [33m404[0m 3.769 ms - 48[0m
-2026-01-07 20:52:58 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767837178196 [33m404[0m 2.306 ms - 48[0m
-2026-01-07 20:52:58 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767837178196 [32m200[0m 12.620 ms - 109025[0m
-2026-01-07 20:53:02 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.725 ms - -[0m
-2026-01-07 20:59:15 [INFO]: servicioCtl: [object Object]
-2026-01-07 20:59:15 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 20:59:16 [INFO]: Base de datos conectada
-2026-01-07 20:59:16 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 20:59:17 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 20:59:18 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 20:59:18 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 20:59:21 [INFO]: [0mGET /configuracion/listar [32m200[0m 128.670 ms - 177[0m
-2026-01-07 20:59:59 [INFO]: ===== GUARDAR CONFIGURACION =====
-2026-01-07 20:59:59 [INFO]: req.body: [object Object]
-2026-01-07 20:59:59 [INFO]: req.files: 
-2026-01-07 20:59:59 [INFO]: Configuración actualizada correctamente en DB
-2026-01-07 20:59:59 [INFO]: [0mPOST /configuracion [32m200[0m 129.765 ms - 51[0m
-2026-01-07 21:00:00 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.248 ms - -[0m
-2026-01-07 21:27:29 [INFO]: servicioCtl: [object Object]
-2026-01-07 21:27:30 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 21:27:30 [INFO]: Base de datos conectada
-2026-01-07 21:27:31 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 21:27:32 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 21:27:32 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
-2026-01-07 21:27:32 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 21:28:03 [INFO]: [0mGET /configuracion/listar [32m200[0m 140.261 ms - 194[0m
-2026-01-07 21:28:58 [INFO]: [0mGET /configuracion/listar [36m304[0m 110.738 ms - -[0m
-2026-01-07 21:34:11 [INFO]: servicioCtl: [object Object]
-2026-01-07 21:34:12 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 21:34:12 [INFO]: Base de datos conectada
-2026-01-07 21:34:13 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 21:34:14 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 21:34:14 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 21:34:14 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 21:34:18 [INFO]: ===== GUARDAR CONFIGURACION =====
-2026-01-07 21:34:18 [INFO]: req.body: [object Object]
-2026-01-07 21:34:18 [INFO]: Configuración actualizada
-2026-01-07 21:34:18 [INFO]: [0mPOST /configuracion [32m200[0m 148.973 ms - 51[0m
-2026-01-07 21:34:21 [INFO]: [0mGET /configuracion/listar [36m304[0m 110.927 ms - -[0m
-2026-01-07 21:34:27 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.921 ms - -[0m
-2026-01-07 21:34:40 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.406 ms - -[0m
-2026-01-07 21:34:43 [INFO]: [0mGET /configuracion/listar [36m304[0m 109.889 ms - -[0m
-2026-01-07 21:36:14 [INFO]: servicioCtl: [object Object]
-2026-01-07 21:36:14 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 21:36:14 [INFO]: Base de datos conectada
-2026-01-07 21:36:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 21:36:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 21:36:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
-2026-01-07 21:36:16 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 21:36:21 [INFO]: [0mGET /configuracion/listar [36m304[0m 133.496 ms - -[0m
-2026-01-07 21:36:46 [INFO]: ===== GUARDAR CONFIGURACION =====
-2026-01-07 21:36:46 [INFO]: req.body: {
-  "nombre": "dsadasdas",
-  "telefono": "23232",
-  "correo": "dsfsdfds",
-  "direccion": "dfds",
-  "horarios": "dfsfds",
-  "logo": "",
-  "zonaHoraria": "America/Guayaquil",
-  "idioma": "es",
-  "formatoFecha": "DD/MM/YYYY",
-  "politicas": "dsadas",
-  "horasMinimasCancelacion": 10,
-  "limiteMascotas": 10
-}
-2026-01-07 21:36:46 [INFO]: Configuración actualizada
-2026-01-07 21:36:46 [INFO]: [0mPOST /configuracion [32m200[0m 146.512 ms - 51[0m
-2026-01-07 21:36:49 [INFO]: [0mGET /configuracion/listar [36m304[0m 2485.632 ms - -[0m
-2026-01-07 21:36:52 [INFO]: [0mGET /configuracion/listar [36m304[0m 118.483 ms - -[0m
-2026-01-07 21:41:44 [INFO]: servicioCtl: [object Object]
-2026-01-07 21:41:44 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 21:41:45 [INFO]: Base de datos conectada
-2026-01-07 21:41:45 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 21:41:46 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 21:41:47 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
-2026-01-07 21:41:47 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 21:42:17 [INFO]: [0mGET /configuracion/listar [36m304[0m 129.756 ms - -[0m
-2026-01-07 21:42:35 [INFO]: [0mGET /configuracion/listar?ts=1767840155046 [32m200[0m 113.728 ms - 194[0m
-2026-01-07 21:43:01 [INFO]: [0mGET /configuracion/listar?ts=1767840181800 [32m200[0m 112.274 ms - 194[0m
-2026-01-07 21:43:12 [INFO]: servicioCtl: [object Object]
-2026-01-07 21:43:12 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 21:43:13 [INFO]: Base de datos conectada
-2026-01-07 21:43:13 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 21:43:14 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 21:43:15 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
-2026-01-07 21:43:15 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 21:43:31 [INFO]: [0mGET /configuracion/listar?ts=1767840211008 [32m200[0m 128.579 ms - 194[0m
-2026-01-07 21:44:23 [INFO]: [0mGET /api/servicios/ [36m304[0m 330.809 ms - -[0m
-2026-01-07 21:46:15 [INFO]: [0mGET /usuario/lista [32m200[0m 126.401 ms - 974[0m
-2026-01-07 21:46:27 [INFO]: [0mGET /usuario/lista [36m304[0m 119.238 ms - -[0m
-2026-01-07 21:46:34 [INFO]: [0mDELETE /usuario/eliminar/46 [32m200[0m 219.262 ms - 60[0m
-2026-01-07 21:46:37 [INFO]: [0mDELETE /usuario/eliminar/48 [32m200[0m 219.132 ms - 60[0m
-2026-01-07 21:46:58 [INFO]: [0mGET /api/servicios/ [36m304[0m 302.226 ms - -[0m
-2026-01-07 21:46:58 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767840418282 [33m404[0m 10.252 ms - 48[0m
-2026-01-07 21:46:58 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767840418282 [33m404[0m 5.330 ms - 48[0m
-2026-01-07 21:46:58 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767840418282 [33m404[0m 6.840 ms - 48[0m
-2026-01-07 21:46:58 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767840418282 [32m200[0m 22.515 ms - 109025[0m
-2026-01-07 21:47:03 [INFO]: [0mGET /usuario/lista [32m200[0m 119.796 ms - 482[0m
-2026-01-07 21:47:10 [INFO]: [0mDELETE /usuario/eliminar/47 [32m200[0m 219.152 ms - 60[0m
-2026-01-07 21:47:24 [INFO]: [0mGET /usuario/lista [32m200[0m 118.183 ms - 236[0m
-2026-01-07 21:47:33 [INFO]: [0mGET /configuracion/listar?ts=1767840453690 [32m200[0m 116.638 ms - 194[0m
-2026-01-07 21:51:10 [INFO]: [0mGET /configuracion [32m200[0m 133.894 ms - 192[0m
-2026-01-07 21:51:57 [INFO]: servicioCtl: [object Object]
-2026-01-07 21:51:57 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 21:51:58 [INFO]: Base de datos conectada
-2026-01-07 21:51:58 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 21:51:59 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 21:52:00 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 21:52:00 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 21:52:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 345.350 ms - -[0m
-2026-01-07 21:52:03 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 4.278 ms - 48[0m
-2026-01-07 21:52:03 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 5.922 ms - -[0m
-2026-01-07 21:52:03 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 8.072 ms - 48[0m
-2026-01-07 21:52:03 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 4.418 ms - 48[0m
-2026-01-07 21:52:30 [INFO]: [0mGET /api/servicios/ [36m304[0m 309.136 ms - -[0m
-2026-01-07 21:52:33 [INFO]: [0mGET /api/servicios/lista [36m304[0m 310.245 ms - -[0m
-2026-01-07 21:52:33 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 3.119 ms - -[0m
-2026-01-07 21:52:34 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 5.506 ms - 48[0m
-2026-01-07 21:52:34 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 6.249 ms - 48[0m
-2026-01-07 21:52:34 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 18.761 ms - 48[0m
-2026-01-07 21:52:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 302.958 ms - -[0m
-2026-01-07 21:52:39 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 15.250 ms - -[0m
-2026-01-07 21:52:39 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg [33m404[0m 12.130 ms - 48[0m
-2026-01-07 21:52:39 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 4.721 ms - 48[0m
-2026-01-07 21:52:39 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.074 ms - 48[0m
-2026-01-07 21:52:50 [INFO]: [0mGET /api/servicios/ [36m304[0m 304.032 ms - -[0m
-2026-01-07 21:52:50 [INFO]: [0mGET /uploads/servicios/medicina-general.jpg?t=1767840770355 [33m404[0m 1.368 ms - 48[0m
-2026-01-07 21:52:51 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767840770355 [32m200[0m 5.093 ms - 109025[0m
-2026-01-07 21:52:51 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767840770355 [33m404[0m 9.233 ms - 48[0m
-2026-01-07 21:52:51 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767840770355 [33m404[0m 8.709 ms - 48[0m
-2026-01-07 21:52:58 [INFO]: [0mDELETE /api/servicios/44 [32m200[0m 306.825 ms - 46[0m
-2026-01-07 21:52:59 [INFO]: [0mGET /api/servicios/ [32m200[0m 297.741 ms - 549[0m
-2026-01-07 21:52:59 [INFO]: [0mGET /api/servicios/ [32m200[0m 625.776 ms - 549[0m
-2026-01-07 21:53:04 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.559 ms - -[0m
-2026-01-07 21:53:04 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767840783995 [33m404[0m 4.224 ms - 48[0m
-2026-01-07 21:53:04 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767840783995 [33m404[0m 5.553 ms - 48[0m
-2026-01-07 21:53:04 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767840783995 [32m200[0m 9.019 ms - 109025[0m
-2026-01-07 21:53:04 [INFO]: [0mGET /configuracion [36m304[0m 117.495 ms - -[0m
-2026-01-07 21:53:04 [INFO]: [0mGET /configuracion/listar [32m200[0m 110.342 ms - 194[0m
-2026-01-07 21:53:06 [INFO]: [0mGET /usuario/lista [36m304[0m 118.992 ms - -[0m
-2026-01-07 21:53:10 [INFO]: [0mGET /api/servicios/lista [32m200[0m 303.178 ms - 519[0m
-2026-01-07 21:53:11 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.846 ms - 48[0m
-2026-01-07 21:53:11 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 4.907 ms - 48[0m
-2026-01-07 21:53:11 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 6.876 ms - -[0m
-2026-01-07 21:53:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.013 ms - -[0m
-2026-01-07 21:53:29 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 4.734 ms - 48[0m
-2026-01-07 21:53:29 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 5.886 ms - 48[0m
-2026-01-07 21:53:31 [INFO]: [0mGET /api/servicios/ [36m304[0m 302.669 ms - -[0m
-2026-01-07 21:53:31 [INFO]: [0mGET /api/servicios/ [32m200[0m 621.361 ms - 549[0m
-2026-01-07 21:53:32 [INFO]: [0mGET /api/servicios/ [32m200[0m 1696.545 ms - 549[0m
-2026-01-07 21:53:59 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.364 ms - -[0m
-2026-01-07 21:53:59 [INFO]: [0mGET /api/servicios/ [32m200[0m 299.778 ms - 549[0m
-2026-01-07 21:53:59 [INFO]: [0mGET /api/servicios/ [32m200[0m 630.279 ms - 549[0m
-2026-01-07 21:54:00 [INFO]: [0mGET /api/servicios/ [32m200[0m 1530.141 ms - 549[0m
-2026-01-07 21:54:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.407 ms - -[0m
-2026-01-07 21:54:15 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.765 ms - 48[0m
-2026-01-07 21:54:15 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.551 ms - 48[0m
-2026-01-07 21:54:15 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 4.699 ms - -[0m
-2026-01-07 21:54:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.446 ms - -[0m
-2026-01-07 21:54:17 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 2.348 ms - 48[0m
-2026-01-07 21:54:17 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 2.841 ms - 48[0m
-2026-01-07 21:54:28 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.704 ms - -[0m
-2026-01-07 21:54:28 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.322 ms - 48[0m
-2026-01-07 21:54:28 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 3.401 ms - 48[0m
-2026-01-07 21:54:28 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 5.332 ms - -[0m
-2026-01-07 21:55:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 304.925 ms - -[0m
-2026-01-07 21:55:17 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 1.886 ms - -[0m
-2026-01-07 21:55:17 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 1.480 ms - 48[0m
-2026-01-07 21:55:17 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 1.615 ms - 48[0m
-2026-01-07 21:55:18 [INFO]: [0mGET /configuracion [36m304[0m 110.369 ms - -[0m
-2026-01-07 21:55:18 [INFO]: [0mGET /configuracion/listar [32m200[0m 109.621 ms - 194[0m
-2026-01-07 21:55:27 [INFO]: [0mGET /configuracion [36m304[0m 109.499 ms - -[0m
-2026-01-07 21:55:27 [INFO]: [0mGET /configuracion/listar [32m200[0m 109.456 ms - 194[0m
-2026-01-07 22:09:14 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:09:14 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:09:15 [INFO]: Base de datos conectada
-2026-01-07 22:09:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:09:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:09:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
-2026-01-07 22:09:16 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:09:21 [INFO]: [0mGET /configuracion [36m304[0m 127.126 ms - -[0m
-2026-01-07 22:09:21 [INFO]: [0mGET /configuracion/listar [32m200[0m 121.053 ms - 194[0m
-2026-01-07 22:10:01 [INFO]: [0mGET /api/configuracion [33m404[0m 5.603 ms - 48[0m
-2026-01-07 22:10:01 [INFO]: [0mGET /api/configuracion/listar [33m404[0m 1.964 ms - 48[0m
-2026-01-07 22:10:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 356.790 ms - -[0m
-2026-01-07 22:10:02 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 7.739 ms - 48[0m
-2026-01-07 22:10:02 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 8.313 ms - 48[0m
-2026-01-07 22:10:02 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 11.248 ms - -[0m
-2026-01-07 22:10:05 [INFO]: [0mGET /api/configuracion [33m404[0m 1.977 ms - 48[0m
-2026-01-07 22:10:05 [INFO]: [0mGET /api/configuracion/listar [33m404[0m 1.684 ms - 48[0m
-2026-01-07 22:10:15 [INFO]: [0mGET /configuracion [36m304[0m 112.676 ms - -[0m
-2026-01-07 22:10:15 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.419 ms - -[0m
-2026-01-07 22:10:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 305.433 ms - -[0m
-2026-01-07 22:10:17 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [36m304[0m 2.523 ms - -[0m
-2026-01-07 22:10:17 [INFO]: [0mGET /uploads/servicios/diagnostico.png [33m404[0m 3.252 ms - 48[0m
-2026-01-07 22:10:17 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg [33m404[0m 4.672 ms - 48[0m
-2026-01-07 22:13:26 [INFO]: [0mGET /configuracion [32m200[0m 113.601 ms - 192[0m
-2026-01-07 22:13:26 [INFO]: [0mGET /favicon.ico [33m404[0m 1.691 ms - 48[0m
-2026-01-07 22:13:40 [INFO]: [0mGET /configuracion/listar [32m200[0m 109.315 ms - 194[0m
-2026-01-07 22:17:43 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:17:43 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:17:44 [INFO]: Base de datos conectada
-2026-01-07 22:17:45 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:17:45 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:17:46 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 22:17:46 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:18:06 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:18:06 [INFO]: [0mGET /configuracion [31m500[0m 146.161 ms - 45[0m
-2026-01-07 22:18:06 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:18:06 [INFO]: [0mGET /configuracion/listar [31m500[0m 142.112 ms - 45[0m
-2026-01-07 22:20:29 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:20:29 [INFO]: [0mGET /configuracion [31m500[0m 119.334 ms - 45[0m
-2026-01-07 22:20:34 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:20:34 [INFO]: [0mGET /configuracion/listar [31m500[0m 110.531 ms - 45[0m
-2026-01-07 22:21:32 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:21:32 [INFO]: [0mGET /configuracion [31m500[0m 118.201 ms - 45[0m
-2026-01-07 22:27:16 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:27:16 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:27:17 [INFO]: Base de datos conectada
-2026-01-07 22:27:17 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:27:18 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:27:19 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 22:27:19 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:29:40 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:29:40 [INFO]: [0mGET /configuracion [31m500[0m 140.689 ms - 45[0m
-2026-01-07 22:29:40 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Table 'Petpoket.configuracions' doesn't exist
-2026-01-07 22:29:40 [INFO]: [0mGET /configuracion/listar [31m500[0m 137.503 ms - 45[0m
-2026-01-07 22:31:59 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:31:59 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:31:59 [INFO]: Base de datos conectada
-2026-01-07 22:32:00 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:32:01 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:32:01 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
-2026-01-07 22:32:01 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:32:18 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Table 'Petpoket.configuracion' doesn't exist
-2026-01-07 22:32:18 [INFO]: [0mGET /configuracion [31m500[0m 125.435 ms - 45[0m
-2026-01-07 22:32:18 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Table 'Petpoket.configuracion' doesn't exist
-2026-01-07 22:32:18 [INFO]: [0mGET /configuracion/listar [31m500[0m 118.503 ms - 45[0m
-2026-01-07 22:34:51 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:34:51 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:34:51 [INFO]: Base de datos conectada
-2026-01-07 22:34:52 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:34:53 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:34:53 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 22:34:53 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:35:08 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Unknown column 'id' in 'field list'
-2026-01-07 22:35:08 [INFO]: [0mGET /configuracion [31m500[0m 127.907 ms - 45[0m
-2026-01-07 22:35:08 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Unknown column 'id' in 'field list'
-2026-01-07 22:35:08 [INFO]: [0mGET /configuracion/listar [31m500[0m 124.408 ms - 45[0m
-2026-01-07 22:38:34 [INFO]: [0mGET /api/servicios/ [32m200[0m 459.854 ms - 549[0m
-2026-01-07 22:38:34 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767843513717 [33m404[0m 12.357 ms - 48[0m
-2026-01-07 22:38:34 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767843513717 [33m404[0m 12.290 ms - 48[0m
-2026-01-07 22:38:34 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767843513717 [32m200[0m 33.305 ms - 109025[0m
-2026-01-07 22:38:37 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Unknown column 'id' in 'field list'
-2026-01-07 22:38:37 [INFO]: [0mGET /configuracion [31m500[0m 122.909 ms - 45[0m
-2026-01-07 22:38:37 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Unknown column 'id' in 'field list'
-2026-01-07 22:38:37 [INFO]: [0mGET /configuracion/listar [31m500[0m 114.221 ms - 45[0m
-2026-01-07 22:38:39 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Unknown column 'id' in 'field list'
-2026-01-07 22:38:39 [INFO]: [0mGET /configuracion [31m500[0m 117.043 ms - 45[0m
-2026-01-07 22:38:39 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Unknown column 'id' in 'field list'
-2026-01-07 22:38:39 [INFO]: [0mGET /configuracion/listar [31m500[0m 119.939 ms - 45[0m
-2026-01-07 22:43:57 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:43:57 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:43:58 [INFO]: Base de datos conectada
-2026-01-07 22:43:58 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:43:59 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:44:00 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 22:44:00 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:44:44 [INFO]: [0mGET /api/servicios/ [36m304[0m 346.965 ms - -[0m
-2026-01-07 22:44:45 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767843884520 [32m200[0m 5.816 ms - 109025[0m
-2026-01-07 22:44:45 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767843884520 [33m404[0m 3.024 ms - 48[0m
-2026-01-07 22:44:45 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767843884520 [33m404[0m 2.102 ms - 48[0m
-2026-01-07 22:46:01 [INFO]: [0mGET /configuracion [32m200[0m 122.277 ms - 2[0m
-2026-01-07 22:46:01 [INFO]: [0mGET /configuracion/listar [32m200[0m 113.163 ms - 2[0m
-2026-01-07 22:51:14 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.676 ms - -[0m
-2026-01-07 22:51:34 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: read ECONNRESET
-2026-01-07 22:51:34 [INFO]: [0mGET /configuracion [31m500[0m 19312.335 ms - 45[0m
-2026-01-07 22:54:49 [INFO]: servicioCtl: [object Object]
-2026-01-07 22:54:50 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 22:54:50 [INFO]: Base de datos conectada
-2026-01-07 22:54:51 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 22:54:52 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 22:54:52 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 22:54:52 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 22:55:16 [INFO]: [0mGET /configuracion [32m200[0m 125.298 ms - 2[0m
-2026-01-07 22:55:16 [INFO]: [0mGET /configuracion/listar [36m304[0m 118.050 ms - -[0m
-2026-01-07 22:55:20 [INFO]: [0mGET /configuracion [36m304[0m 112.216 ms - -[0m
-2026-01-07 22:55:20 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.796 ms - -[0m
-2026-01-07 22:55:56 [INFO]: [0mPOST /configuracion [32m200[0m 2777.073 ms - 51[0m
-2026-01-07 22:55:57 [INFO]: [0mPOST /configuracion [32m200[0m 2723.874 ms - 51[0m
-2026-01-07 22:55:57 [INFO]: [0mGET /configuracion [32m200[0m 110.875 ms - 187[0m
-2026-01-07 22:55:57 [INFO]: [0mGET /configuracion/listar [32m200[0m 122.380 ms - -[0m
-2026-01-07 22:55:58 [INFO]: [0mGET /configuracion [32m200[0m 111.280 ms - 187[0m
-2026-01-07 22:55:58 [INFO]: [0mGET /configuracion/listar [36m304[0m 108.930 ms - -[0m
-2026-01-07 23:14:01 [INFO]: servicioCtl: [object Object]
-2026-01-07 23:14:01 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 23:14:02 [INFO]: Base de datos conectada
-2026-01-07 23:14:02 [INFO]: ✅ Conectado a MySQL (Sequelize)
-2026-01-07 23:14:03 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
-2026-01-07 23:14:04 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
-2026-01-07 23:14:04 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 23:14:06 [INFO]: [0mGET /configuracion [32m200[0m 123.064 ms - 187[0m
-2026-01-07 23:16:54 [INFO]: [0mPOST /configuracion [32m200[0m 2751.151 ms - 51[0m
-2026-01-07 23:16:56 [INFO]: [0mGET /configuracion [32m200[0m 111.300 ms - 227[0m
-2026-01-07 23:16:56 [INFO]: [0mGET /configuracion/listar [32m200[0m 132.654 ms - -[0m
-2026-01-07 23:16:57 [INFO]: [0mPOST /configuracion [32m200[0m 2816.082 ms - 51[0m
-2026-01-07 23:16:58 [INFO]: [0mGET /configuracion [32m200[0m 109.865 ms - 227[0m
-2026-01-07 23:16:58 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.911 ms - -[0m
-2026-01-07 23:17:00 [INFO]: [0mGET /configuracion [36m304[0m 112.999 ms - -[0m
-2026-01-07 23:17:00 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.623 ms - -[0m
-2026-01-07 23:18:50 [INFO]: [0mGET /configuracion [36m304[0m 182.357 ms - -[0m
-2026-01-07 23:18:50 [INFO]: [0mGET /configuracion/listar [36m304[0m 132.356 ms - -[0m
-2026-01-07 23:21:59 [INFO]: [0mGET /configuracion [36m304[0m 227.045 ms - -[0m
-2026-01-07 23:21:59 [INFO]: [0mGET /configuracion/listar [36m304[0m 156.152 ms - -[0m
-2026-01-07 23:22:31 [INFO]: servicioCtl: [object Object]
-2026-01-07 23:22:31 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
-2026-01-07 23:22:32 [INFO]: Base de datos conectada
-2026-01-07 23:22:32 [ERROR]: ❌ Error MySQL: Too many connections
-2026-01-07 23:22:33 [ERROR]: ❌ Error al sincronizar "servicio": SequelizeConnectionError: Too many connections
-2026-01-07 23:22:34 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
-2026-01-07 23:22:34 [INFO]: 🚀 MongoDB conectado correctamente
-2026-01-07 23:22:41 [INFO]: [0mGET /configuracion [36m304[0m 146.749 ms - -[0m
-2026-01-07 23:22:41 [INFO]: [0mGET /configuracion/listar [36m304[0m 220.754 ms - -[0m
-2026-01-07 23:23:54 [INFO]: [0mGET /configuracion [36m304[0m 152.886 ms - -[0m
-2026-01-07 23:23:54 [INFO]: [0mGET /configuracion/listar [36m304[0m 224.376 ms - -[0m
-2026-01-07 23:24:39 [ERROR]: Error en guardarConfiguracion: SequelizeConnectionError: Too many connections
-2026-01-07 23:24:39 [INFO]: [0mPOST /configuracion [31m500[0m 2300.894 ms - 45[0m
-2026-01-07 23:24:41 [ERROR]: Error en guardarConfiguracion: SequelizeConnectionError: Too many connections
-2026-01-07 23:24:41 [INFO]: [0mPOST /configuracion [31m500[0m 2650.498 ms - 45[0m
-2026-01-07 23:24:44 [INFO]: [0mPOST /configuracion [32m200[0m 2734.802 ms - 51[0m
-2026-01-07 23:24:45 [INFO]: [0mGET /configuracion [32m200[0m 115.585 ms - 272[0m
-2026-01-07 23:24:45 [INFO]: [0mGET /configuracion/listar [32m200[0m 222.980 ms - -[0m
-2026-01-07 23:24:48 [INFO]: [0mGET /configuracion [36m304[0m 113.630 ms - -[0m
-2026-01-07 23:24:48 [INFO]: [0mGET /configuracion/listar [36m304[0m 216.058 ms - -[0m
-2026-01-07 23:29:33 [INFO]: [0mGET /api/servicios/ [36m304[0m 630.653 ms - -[0m
-2026-01-07 23:29:33 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767846572478 [33m404[0m 31.896 ms - 48[0m
-2026-01-07 23:29:33 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767846572478 [33m404[0m 36.588 ms - 48[0m
-2026-01-07 23:29:33 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767846572478 [32m200[0m 75.142 ms - 109025[0m
-2026-01-07 23:29:58 [INFO]: [0mGET /configuracion [36m304[0m 124.567 ms - -[0m
-2026-01-07 23:29:58 [INFO]: [0mGET /configuracion/listar [36m304[0m 218.670 ms - -[0m
-2026-01-07 23:32:54 [INFO]: [0mGET /api/servicios/ [36m304[0m 340.918 ms - -[0m
-2026-01-07 23:32:54 [INFO]: [0mGET /uploads/servicios/diagnostico.png?t=1767846773986 [33m404[0m 6.954 ms - 48[0m
-2026-01-07 23:32:54 [INFO]: [0mGET /uploads/servicios/vacunacion.jpg?t=1767846773986 [33m404[0m 9.451 ms - 48[0m
-2026-01-07 23:32:54 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg?t=1767846773986 [32m200[0m 18.654 ms - 109025[0m
-2026-01-07 23:33:06 [INFO]: [0mGET /configuracion [36m304[0m 121.061 ms - -[0m
-2026-01-07 23:33:06 [INFO]: [0mGET /configuracion/listar [36m304[0m 121.975 ms - -[0m
