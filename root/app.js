@@ -118,6 +118,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(compression());
 app.use('/uploads', express.static(path.join(__dirname, '../src/uploads')));
+app.use(express.json());
 
 // ==================== RUTAS API ====================
 // Asegúrate de que estas rutas existan en tu carpeta /src
@@ -128,11 +129,8 @@ app.use('/mascota', require('../src/infrastructure/http/router/mascota.router'))
 app.use('/cita', require('../src/infrastructure/http/router/cita.router'));
 app.use('/producto', require('../src/infrastructure/http/router/producto.router'));
 app.use('/configuracion', require('../src/infrastructure/http/router/configuracion.router'));
-<<<<<<< HEAD
 app.use('/usuario', require('../src/infrastructure/http/router/user.router'));
-=======
 app.use('/notificacion', require('../src/infrastructure/http/router/notificacion.router'));
->>>>>>> bc5b2b211b6fe80d119f8c375b6f6fdc2a008824
 
 
 // ==================== MANEJO DE ERRORES ====================

@@ -1,5 +1,3 @@
-const path = require('path');
-const fs = require('fs');
 const orm = require('../../../infrastructure/Database/dataBase.orm');
 const Configuracion = orm.configuracion;
 
@@ -10,8 +8,27 @@ const configuracionCtl = {};
 // =======================
 configuracionCtl.obtenerConfiguracion = async (req, res) => {
   try {
-    const config = await Configuracion.findOne({ raw: true });
-    res.json(config || {});
+    const configs = await Configuracion.findAll({ raw: true });
+    const datosClinica = {};
+
+    configs.forEach(c => {
+      switch (c.clave) {
+        case 'nombreClinica': datosClinica.nombre = c.valor; break;
+        case 'telefonoClinica': datosClinica.telefono = c.valor; break;
+        case 'correoClinica': datosClinica.correo = c.valor; break;
+        case 'direccionClinica': datosClinica.direccion = c.valor; break;
+        case 'horariosClinica': datosClinica.horarios = c.valor; break;
+        case 'logoClinica': datosClinica.logo = c.valor; break;
+        case 'zonaHoraria': datosClinica.zonaHoraria = c.valor; break;
+        case 'idioma': datosClinica.idioma = c.valor; break;
+        case 'formatoFecha': datosClinica.formatoFecha = c.valor; break;
+        case 'politicas': datosClinica.politicas = c.valor; break;
+        case 'horasMinimasCancelacion': datosClinica.horasMinimasCancelacion = parseInt(c.valor); break;
+        case 'limiteMascotas': datosClinica.limiteMascotas = parseInt(c.valor); break;
+      }
+    });
+
+    res.json(datosClinica);
   } catch (error) {
     console.error('Error en obtenerConfiguracion:', error);
     res.status(500).json({ message: 'Error al obtener configuración' });
@@ -19,7 +36,7 @@ configuracionCtl.obtenerConfiguracion = async (req, res) => {
 };
 
 // =======================
-// LISTAR TODAS LAS CONFIGURACIONES
+// LISTAR CONFIGURACIONES
 // =======================
 configuracionCtl.listarConfiguraciones = async (req, res) => {
   try {
@@ -32,53 +49,38 @@ configuracionCtl.listarConfiguraciones = async (req, res) => {
 };
 
 // =======================
-// GUARDAR O ACTUALIZAR CONFIGURACIÓN
+// GUARDAR / ACTUALIZAR
 // =======================
 configuracionCtl.guardarConfiguracion = async (req, res) => {
   try {
-    console.log('===== GUARDAR CONFIGURACION =====');
-    console.log('req.body:', req.body);
-    console.log('req.files:', req.files);
+    const datos = req.body;
 
-    // Copiar body y convertir objetos a strings para MySQL
-    // Normalizar datos: aseguramos que sean strings o números
-const data = {};
-for (const key in req.body) {
-  if (req.body.hasOwnProperty(key)) {
-    let value = req.body[key];
-    // Convertir números a enteros si es necesario
-    if (key === 'horasMinimasCancelacion' || key === 'limiteMascotas') {
-      value = parseInt(value) || 0;
-    } else {
-      value = value?.toString() || '';
-    }
-    data[key] = value;
-  }
-}
+    // Guardar cada campo como un registro clave-valor
+    const claves = {
+      nombre: 'nombreClinica',
+      telefono: 'telefonoClinica',
+      correo: 'correoClinica',
+      direccion: 'direccionClinica',
+      horarios: 'horariosClinica',
+      logo: 'logoClinica',
+      zonaHoraria: 'zonaHoraria',
+      idioma: 'idioma',
+      formatoFecha: 'formatoFecha',
+      politicas: 'politicas',
+      horasMinimasCancelacion: 'horasMinimasCancelacion',
+      limiteMascotas: 'limiteMascotas'
+    };
 
-    // Manejo de archivo logo
-    if (req.files && req.files.logo) {
-      const logo = req.files.logo;
-      console.log('Archivo recibido:', logo.name);
-      const uploadPath = path.join(__dirname, '../../../uploads', logo.name);
+    for (const campo in claves) {
+      const clave = claves[campo];
+      const valor = datos[campo];
 
-      if (!fs.existsSync(path.dirname(uploadPath))) {
-        fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
+      const existente = await Configuracion.findOne({ where: { clave } });
+      if (existente) {
+        await Configuracion.update({ valor }, { where: { clave } });
+      } else {
+        await Configuracion.create({ clave, valor, tipo: 'clinica' });
       }
-
-      await logo.mv(uploadPath);
-      data.logo = logo.name;
-    }
-
-    // Revisar si ya existe configuración
-    let config = await Configuracion.findOne();
-
-    if (config) {
-      await Configuracion.update(data, { where: { id: config.id } });
-      console.log('Configuración actualizada correctamente en DB');
-    } else {
-      await Configuracion.create(data);
-      console.log('Configuración creada correctamente en DB');
     }
 
     res.json({ message: 'Configuración guardada correctamente' });
