@@ -32,15 +32,8 @@ module.exports = (sequelize, DataTypes) => {
     updatedAt: {
       type: DataTypes.DATE,
       field: 'updateServicio'
-    },
-    imagen: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    color: {
-      type: DataTypes.STRING,
-      allowNull: true
     }
+    // Nota: El campo 'imagen' se almacena en MongoDB, no en MySQL
   }, {
     tableName: 'servicios',
     timestamps: false

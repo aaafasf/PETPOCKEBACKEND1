@@ -77,7 +77,7 @@ notificacionCtl.crearNotificacion = async (req, res) => {
     }
 };
 
-// Obtener notificaciones por usuario
+// Obtener notificaciones por usuario (bandeja de notificaciones leídas/no leídas)
 notificacionCtl.obtenerNotificacionesPorUsuario = async (req, res) => {
     try {
         const { idUsuario } = req.params;
@@ -103,10 +103,23 @@ notificacionCtl.obtenerNotificacionesPorUsuario = async (req, res) => {
 
         const notificacionesCompletas = notificacionesUsuario.map(notificacion => ({
             ...notificacion,
-            nameUsers: descifrarSeguro(notificacion.nameUsers)
+            nameUsers: descifrarSeguro(notificacion.nameUsers),
+            leida: notificacion.estadoNotificacion === 'leida',
+            noLeida: notificacion.estadoNotificacion === 'pendiente' || notificacion.estadoNotificacion === 'programada'
         }));
 
-        return res.json(notificacionesCompletas);
+        // Separar en leídas y no leídas para facilitar el frontend
+        const leidas = notificacionesCompletas.filter(n => n.leida);
+        const noLeidas = notificacionesCompletas.filter(n => n.noLeida);
+
+        return res.json({
+            todas: notificacionesCompletas,
+            leidas: leidas,
+            noLeidas: noLeidas,
+            total: notificacionesCompletas.length,
+            totalLeidas: leidas.length,
+            totalNoLeidas: noLeidas.length
+        });
     } catch (error) {
         console.error('Error al obtener notificaciones por usuario:', error);
         return res.status(500).json({ message: 'Error al obtener notificaciones', error: error.message });
@@ -228,6 +241,96 @@ notificacionCtl.obtenerEstadisticas = async (req, res) => {
     } catch (error) {
         console.error('Error al obtener estadísticas:', error);
         return res.status(500).json({ message: 'Error al obtener estadísticas', error: error.message });
+    }
+};
+
+// Crear alerta programada (ej: Recordar vacuna en 6 meses)
+notificacionCtl.crearAlertaProgramada = async (req, res) => {
+    try {
+        const { idUsuario, mensaje, fechaProgramada, tipoRecordatorio } = req.body;
+
+        if (!idUsuario || !mensaje || !fechaProgramada) {
+            return res.status(400).json({ message: 'Usuario, mensaje y fecha programada son obligatorios' });
+        }
+
+        // Verificar que el usuario existe
+        const [usuarioExiste] = await sql.promise().query(
+            'SELECT idUser FROM users WHERE idUser = ? AND stateUser = "active"',
+            [idUsuario]
+        );
+
+        if (usuarioExiste.length === 0) {
+            return res.status(404).json({ message: 'El usuario no existe' });
+        }
+
+        // Validar que la fecha programada sea futura
+        const fechaProg = new Date(fechaProgramada);
+        const ahora = new Date();
+        if (fechaProg <= ahora) {
+            return res.status(400).json({ message: 'La fecha programada debe ser futura' });
+        }
+
+        const nuevaAlerta = await orm.notificacion.create({
+            idUsuario: idUsuario,
+            mensaje: mensaje,
+            tipo: 'recordatorio',
+            fechaProgramada: fechaProgramada,
+            tipoRecordatorio: tipoRecordatorio || 'general',
+            estadoNotificacion: 'programada',
+            createNotificacion: new Date().toLocaleString(),
+        });
+
+        return res.status(201).json({ 
+            message: 'Alerta programada creada exitosamente',
+            idNotificacion: nuevaAlerta.idNotificacion,
+            fechaProgramada: fechaProgramada
+        });
+
+    } catch (error) {
+        console.error('Error al crear alerta programada:', error);
+        return res.status(500).json({ 
+            message: 'Error al crear la alerta programada', 
+            error: error.message 
+        });
+    }
+};
+
+// Limpiar historial de notificaciones (eliminar todas las notificaciones de un usuario)
+notificacionCtl.limpiarHistorial = async (req, res) => {
+    try {
+        const { idUsuario } = req.params;
+
+        if (!idUsuario) {
+            return res.status(400).json({ message: 'ID de usuario es obligatorio' });
+        }
+
+        // Verificar que el usuario existe
+        const [usuarioExiste] = await sql.promise().query(
+            'SELECT idUser FROM users WHERE idUser = ?',
+            [idUsuario]
+        );
+
+        if (usuarioExiste.length === 0) {
+            return res.status(404).json({ message: 'El usuario no existe' });
+        }
+
+        // Eliminar todas las notificaciones del usuario
+        const [resultado] = await sql.promise().query(
+            'DELETE FROM notificaciones WHERE idUsuario = ?',
+            [idUsuario]
+        );
+
+        return res.json({ 
+            message: 'Historial de notificaciones limpiado exitosamente',
+            notificacionesEliminadas: resultado.affectedRows
+        });
+
+    } catch (error) {
+        console.error('Error al limpiar historial:', error);
+        return res.status(500).json({ 
+            message: 'Error al limpiar el historial', 
+            error: error.message 
+        });
     }
 };
 

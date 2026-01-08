@@ -2,7 +2,7 @@ const citaCtl = {};
 const orm = require('../../Database/dataBase.orm.js');
 const sql = require('../../Database/dataBase.sql.js');
 const mongo = require('../../Database/dataBaseMongose');
-const { cifrarDatos, descifrarDatos } = require('../../../application/controller/encrypDates.js');
+const { encrypt: cifrarDatos, decrypt: descifrarDatos} = require('../../../application/controller/encrypDates');
 
 // Función para descifrar de forma segura
 const descifrarSeguro = (dato) => {
@@ -622,6 +622,21 @@ citaCtl.obtenerEstadisticas = async (req, res) => {
             message: 'Error al obtener estadísticas',
             error: error.message
         });
+    }
+};
+// Obtener lista de Veterinarios (Traemos todos los usuarios)
+citaCtl.obtenerVeterinarios = async (req, res) => {
+    try {
+        // Seleccionamos ID y Nombre de la tabla 'users'
+        const [usuarios] = await sql.promise().query(`
+            SELECT idUser, nameUsers, emailUser 
+            FROM users
+        `);
+
+        return res.json(usuarios);
+    } catch (error) {
+        console.error('Error al obtener veterinarios:', error);
+        return res.status(500).json({ message: 'Error al obtener veterinarios' });
     }
 };
 
