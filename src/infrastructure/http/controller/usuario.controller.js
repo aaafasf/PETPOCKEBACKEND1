@@ -1,13 +1,14 @@
-const usuarioCtl = {};
+const usuarioCtrl = {};
 const orm = require('../../Database/dataBase.orm.js');
+const { Op } = require('sequelize');
 const sql = require('../../Database/dataBase.sql.js');
-const { cifrarDatos, descifrarDatos } = require('../../../application/controller/encrypDates.js');
+const { encrypt, decrypt } = require('../../../application/controller/encrypDates.js');
 const bcrypt = require('bcrypt');
 
 // Función para descifrar de forma segura
 const descifrarSeguro = (dato) => {
     try {
-        return dato ? descifrarDatos(dato) : '';
+        return dato ? decrypt(dato) : '';
     } catch (error) {
         console.error('Error al descifrar:', error);
         return '';
@@ -15,38 +16,32 @@ const descifrarSeguro = (dato) => {
 };
 
 // Mostrar todos los usuarios activos con sus roles
-usuarioCtl.mostrarUsuarios = async (req, res) => {
-    try {
-        const [listaUsuarios] = await sql.promise().query(`
-            SELECT u.*, GROUP_CONCAT(DISTINCT r.nameRol SEPARATOR ', ') as roles
-            FROM users u
-            LEFT JOIN detallerols dr ON u.idUser = dr.userIdUser
-            LEFT JOIN roles r ON dr.roleIdRol = r.idRol AND r.stateRol = 'activo'
-            WHERE u.stateUser = 'active'
-            GROUP BY u.idUser
-            ORDER BY u.createUser DESC
-        `);
+          usuarioCtrl.mostrarUsuarios = async (req, res) => {
+  try {
+    const usuarios = await orm.usuario.findAll({
+      where: { stateUser: 'active' }
+    });
 
-        const usuariosCompletos = listaUsuarios.map(usuario => ({
-            ...usuario,
-            nameUsers: descifrarSeguro(usuario.nameUsers),
-            phoneUser: descifrarSeguro(usuario.phoneUser),
-            emailUser: descifrarSeguro(usuario.emailUser),
-            userName: descifrarSeguro(usuario.userName),
-            // No incluir la contraseña en la respuesta
-            passwordUser: undefined,
-            roles: usuario.roles || 'Sin roles asignados'
-        }));
+    // Desencriptamos los datos antes de enviarlos
+    const usuariosCompletos = usuarios.map(usuario => ({
+      ...usuario.dataValues,
+      nameUsers: decrypt(usuario.nameUsers),   // Desencriptamos el nombre
+      phoneUser: decrypt(usuario.phoneUser),   // Desencriptamos teléfono
+      emailUser: decrypt(usuario.emailUser),   // Desencriptamos email
+      userName: decrypt(usuario.userName),     // Desencriptamos usuario
+      passwordUser: '********', // Ocultar la contraseña
+      roles: usuario.roles || 'Sin roles asignados'    // Si no tienes roles asignados
+    }));
 
-        return res.json(usuariosCompletos);
-    } catch (error) {
-        console.error('Error al mostrar usuarios:', error);
-        return res.status(500).json({ message: 'Error al obtener los usuarios', error: error.message });
-    }
+    return res.json(usuariosCompletos);
+  } catch (error) {
+    console.error('Error al mostrar usuarios:', error);
+    return res.status(500).json({ message: 'Error al obtener los usuarios' });
+  }
 };
 
 // Crear nuevo usuario
-usuarioCtl.crearUsuario = async (req, res) => {
+usuarioCtrl.crearUsuario = async (req, res) => {
     try {
         const { nameUsers, phoneUser, emailUser, userName, passwordUser, roles } = req.body;
 
@@ -54,41 +49,39 @@ usuarioCtl.crearUsuario = async (req, res) => {
         if (!nameUsers || !emailUser || !userName || !passwordUser) {
             return res.status(400).json({ message: 'Nombre, email, usuario y contraseña son obligatorios' });
         }
-
+                
         // Verificar si el usuario ya existe
-        const [usuarioExiste] = await sql.promise().query(
-            'SELECT idUser FROM users WHERE userName = ? OR emailUser = ?',
-            [cifrarDatos(userName), cifrarDatos(emailUser)]
-        );
+        const usuarioExiste = await orm.usuario.findOne({
+        where: {
+        [Op.or]: [
+           { userName: encrypt(userName) },
+           { emailUser: encrypt(emailUser) }
+          ]
+         }
+        });
 
-        if (usuarioExiste.length > 0) {
-            return res.status(400).json({ message: 'Ya existe un usuario con este nombre de usuario o email' });
-        }
+if (usuarioExiste) {
+  return res.status(400).json({
+    message: 'Ya existe un usuario con este nombre de usuario o email'
+  });
+}
+
 
         // Encriptar contraseña
         const hashedPassword = await bcrypt.hash(passwordUser, 10);
 
         // Crear usuario en SQL
         const nuevoUsuario = await orm.usuario.create({
-            nameUsers: cifrarDatos(nameUsers),
-            phoneUser: cifrarDatos(phoneUser || ''),
-            emailUser: cifrarDatos(emailUser),
-            userName: cifrarDatos(userName),
+            nameUsers: encrypt(nameUsers),
+            phoneUser: phoneUser? encrypt(phoneUser) : null,
+            emailUser: encrypt(emailUser),
+            userName: encrypt(userName),
             passwordUser: hashedPassword,
             stateUser: 'active',
             createUser: new Date().toLocaleString(),
+            roles: roles,
         });
 
-        // Asignar roles si se proporcionan
-        if (roles && Array.isArray(roles) && roles.length > 0) {
-            for (const rolId of roles) {
-                await orm.detalleRol.create({
-                    userIdUser: nuevoUsuario.idUser,
-                    roleIdRol: rolId,
-                    createDetalleRol: new Date().toLocaleString()
-                });
-            }
-        }
 
         return res.status(201).json({ 
             message: 'Usuario creado exitosamente',
@@ -105,7 +98,7 @@ usuarioCtl.crearUsuario = async (req, res) => {
 };
 
 // Actualizar usuario
-usuarioCtl.actualizarUsuario = async (req, res) => {
+usuarioCtrl.actualizarUsuario = async (req, res) => {
     try {
         const { id } = req.params;
         const { nameUsers, phoneUser, emailUser, userName, passwordUser, roles } = req.body;
@@ -128,7 +121,7 @@ usuarioCtl.actualizarUsuario = async (req, res) => {
         // Verificar si el nuevo userName o email ya existen (excluyendo el usuario actual)
         const [duplicado] = await sql.promise().query(
             'SELECT idUser FROM users WHERE (userName = ? OR emailUser = ?) AND idUser != ? AND stateUser = "active"',
-            [cifrarDatos(userName), cifrarDatos(emailUser), id]
+            [encrypt(userName), encrypt(emailUser), id]
         );
 
         if (duplicado.length > 0) {
@@ -137,10 +130,10 @@ usuarioCtl.actualizarUsuario = async (req, res) => {
 
         // Preparar datos para actualizar
         let updateData = {
-            nameUsers: cifrarDatos(nameUsers),
-            phoneUser: cifrarDatos(phoneUser || ''),
-            emailUser: cifrarDatos(emailUser),
-            userName: cifrarDatos(userName),
+            nameUsers: encrypt(nameUsers),
+            phoneUser: phoneUser? encrypt(phoneUser) : null,
+            emailUser: encrypt(emailUser),
+            userName: encrypt(userName),
             updateUser: new Date().toLocaleString()
         };
 
@@ -156,7 +149,7 @@ usuarioCtl.actualizarUsuario = async (req, res) => {
                 phoneUser = ?, 
                 emailUser = ?, 
                 userName = ?, 
-                ${passwordUser ? 'passwordUser = ?, ' : ''}
+                passwordUser = ?,
                 updateUser = ? 
              WHERE idUser = ?`,
             passwordUser ? 
@@ -168,14 +161,14 @@ usuarioCtl.actualizarUsuario = async (req, res) => {
         if (roles && Array.isArray(roles)) {
             // Eliminar roles existentes
             await sql.promise().query(
-                'DELETE FROM detallerols WHERE userIdUser = ?',
+                'DELETE FROM users WHERE idUser = ?',
                 [id]
             );
             
             // Crear nuevas relaciones de roles
             for (const rolId of roles) {
                 await orm.detalleRol.create({
-                    userIdUser: id,
+                    idUser: id,
                     roleIdRol: rolId,
                     createDetalleRol: new Date().toLocaleString()
                 });
@@ -190,39 +183,39 @@ usuarioCtl.actualizarUsuario = async (req, res) => {
     }
 };
 
-// Eliminar (desactivar) usuario
-usuarioCtl.eliminarUsuario = async (req, res) => {
-    try {
-        const { id } = req.params;
+// Eliminar usuario
+usuarioCtrl.eliminarUsuario = async (req, res) => {
+  try {
+    // Convertir id a número (asegurando que sea tipo entero)
+    const { id } = req.params.id;
+    const idUser = parseInt(id, 10); // Esto convierte el id a entero
 
-        // Verificar si el usuario existe
-        const [usuarioExiste] = await sql.promise().query(
-            'SELECT idUser FROM users WHERE idUser = ? AND stateUser = "active"',
-            [id]
-        );
+    // Verificar si existe el usuario
+    const usuario = await orm.usuario.findByPk(idUser);  // Usamos idNumber aquí
 
-        if (usuarioExiste.length === 0) {
-            return res.status(404).json({ message: 'Usuario no encontrado' });
-        }
-
-        // Desactivar usuario
-        await sql.promise().query(
-            `UPDATE users SET 
-                stateUser = 'inactive', 
-                updateUser = ? 
-             WHERE idUser = ?`,
-            [new Date().toLocaleString(), id]
-        );
-
-        return res.json({ message: 'Usuario desactivado exitosamente' });
-    } catch (error) {
-        console.error('Error al eliminar usuario:', error);
-        return res.status(500).json({ message: 'Error al desactivar', error: error.message });
+    if (!usuario) {
+      return res.status(404).json({
+        message: 'Usuario no encontrado'
+      });
     }
+
+    // Eliminar usuario
+    await usuario.destroy();
+
+    return res.json({
+      message: 'Usuario eliminado correctamente'
+    });
+  } catch (error) {
+    console.error('Error al eliminar usuario:', error);
+    return res.status(500).json({
+      message: 'Error al eliminar usuario',
+      error: error.message
+    });
+  }
 };
 
 // Obtener usuario por ID con sus roles
-usuarioCtl.obtenerUsuario = async (req, res) => {
+usuarioCtrl.obtenerUsuario = async (req, res) => {
     try {
         const { id } = req.params;
         
@@ -239,23 +232,23 @@ usuarioCtl.obtenerUsuario = async (req, res) => {
         // Obtener roles del usuario
         const [rolesUsuario] = await sql.promise().query(`
             SELECT r.*, dr.createDetalleRol
-            FROM detallerols dr
+            FROM users dr
             JOIN roles r ON dr.roleIdRol = r.idRol
-            WHERE dr.userIdUser = ? AND r.stateRol = 'activo'
+            WHERE dr.idUser = ? AND r.stateRol = 'activo'
         `, [id]);
 
         const usuarioCompleto = {
             ...usuario[0],
-            nameUsers: descifrarSeguro(usuario[0].nameUsers),
-            phoneUser: descifrarSeguro(usuario[0].phoneUser),
-            emailUser: descifrarSeguro(usuario[0].emailUser),
-            userName: descifrarSeguro(usuario[0].userName),
+            nameUsers: decrypt(usuario[0].nameUsers),
+            phoneUser: decrypt(usuario[0].phoneUser),
+            emailUser: decrypt(usuario[0].emailUser),
+            userName: decrypt(usuario[0].userName),
             // No incluir la contraseña
-            passwordUser: undefined,
+            passwordUser: '********', // Ocultar la contraseña
             roles: rolesUsuario.map(rol => ({
                 ...rol,
-                nameRol: descifrarSeguro(rol.nameRol),
-                descriptionRol: descifrarSeguro(rol.descriptionRol)
+                nameRol: decrypt(rol.nameRol),
+                descriptionRol: decrypt(rol.descriptionRol)
             }))
         };
 
@@ -267,7 +260,7 @@ usuarioCtl.obtenerUsuario = async (req, res) => {
 };
 
 // Buscar usuarios por término
-usuarioCtl.buscarUsuarios = async (req, res) => {
+usuarioCtrl.buscarUsuarios = async (req, res) => {
     try {
         const { q } = req.query;
 
@@ -278,7 +271,7 @@ usuarioCtl.buscarUsuarios = async (req, res) => {
         const [usuariosEncontrados] = await sql.promise().query(`
             SELECT u.*, GROUP_CONCAT(DISTINCT r.nameRol SEPARATOR ', ') as roles
             FROM users u
-            LEFT JOIN detallerols dr ON u.idUser = dr.userIdUser
+            LEFT JOIN userss dr ON u.idUser = dr.idUser
             LEFT JOIN roles r ON dr.roleIdRol = r.idRol AND r.stateRol = 'activo'
             WHERE u.stateUser = 'active' AND (
                 u.nameUsers LIKE ? OR 
@@ -291,11 +284,11 @@ usuarioCtl.buscarUsuarios = async (req, res) => {
 
         const resultados = usuariosEncontrados.map(usuario => ({
             ...usuario,
-            nameUsers: descifrarSeguro(usuario.nameUsers),
-            phoneUser: descifrarSeguro(usuario.phoneUser),
-            emailUser: descifrarSeguro(usuario.emailUser),
-            userName: descifrarSeguro(usuario.userName),
-            passwordUser: undefined,
+            nameUsers: decrypt(usuario.nameUsers),
+            phoneUser: decrypt(usuario.phoneUser),
+            emailUser: decrypt(usuario.emailUser),
+            userName: decrypt(usuario.userName),
+            passwordUser: '********', // No mostrar la contraseña
             roles: usuario.roles || 'Sin roles'
         }));
 
@@ -307,7 +300,7 @@ usuarioCtl.buscarUsuarios = async (req, res) => {
 };
 
 // Asignar rol a usuario
-usuarioCtl.asignarRol = async (req, res) => {
+usuarioCtrl.asignarRol = async (req, res) => {
     try {
         const { usuarioId, rolId } = req.body;
 
@@ -336,7 +329,7 @@ usuarioCtl.asignarRol = async (req, res) => {
 
         // Verificar si ya existe la relación
         const [relacionExiste] = await sql.promise().query(
-            'SELECT idDetalleRol FROM detallerols WHERE userIdUser = ? AND roleIdRol = ?',
+            'SELECT idDetalleRol FROM users WHERE idUser = ? AND roleIdRol = ?',
             [usuarioId, rolId]
         );
 
@@ -346,7 +339,7 @@ usuarioCtl.asignarRol = async (req, res) => {
 
         // Crear nueva relación
         await orm.detalleRol.create({
-            userIdUser: usuarioId,
+            idUser: usuarioId,
             roleIdRol: rolId,
             createDetalleRol: new Date().toLocaleString()
         });
@@ -360,33 +353,43 @@ usuarioCtl.asignarRol = async (req, res) => {
 };
 
 // Remover rol de usuario
-usuarioCtl.removerRol = async (req, res) => {
-    try {
-        const { usuarioId, rolId } = req.body;
+usuarioCtrl.eliminarUsuario = async (req, res) => {
+  try {
+    const { id } = req.params;
 
-        if (!usuarioId || !rolId) {
-            return res.status(400).json({ message: 'Usuario y rol son obligatorios' });
-        }
-
-        const resultado = await sql.promise().query(
-            'DELETE FROM detallerols WHERE userIdUser = ? AND roleIdRol = ?',
-            [usuarioId, rolId]
-        );
-
-        if (resultado[0].affectedRows === 0) {
-            return res.status(404).json({ message: 'Relación usuario-rol no encontrada' });
-        }
-
-        return res.json({ message: 'Rol removido exitosamente' });
-
-    } catch (error) {
-        console.error('Error al remover rol:', error);
-        return res.status(500).json({ message: 'Error al remover rol', error: error.message });
+    if (!id) {
+      return res.status(400).json({ message: 'Id de usuario requerido' });
     }
+
+    // Verificar si el usuario existe
+    const [usuario] = await sql.promise().query(
+      'SELECT * FROM users WHERE idUser = ?',
+      [id]
+    );
+
+    if (usuario.length === 0) {
+      return res.status(404).json({ success: false, message: 'Usuario no encontrado' });
+    }
+
+    // Eliminar usuario
+    await sql.promise().query('DELETE FROM users WHERE idUser = ?', [id]);
+
+    return res.json({
+      success: true,
+      message: 'Usuario eliminado correctamente',
+    });
+  } catch (error) {
+    console.error('Error al eliminar usuario:', error);
+    return res.status(500).json({
+      success: false,
+      message: 'Error al eliminar usuario',
+      error: error.message,
+    });
+  }
 };
 
 // Cambiar estado de usuario
-usuarioCtl.cambiarEstado = async (req, res) => {
+usuarioCtrl.cambiarEstado = async (req, res) => {
     try {
         const { id } = req.params;
         const { estado } = req.body;
@@ -412,7 +415,7 @@ usuarioCtl.cambiarEstado = async (req, res) => {
 };
 
 // Obtener estadísticas de usuarios
-usuarioCtl.obtenerEstadisticas = async (req, res) => {
+usuarioCtrl.obtenerEstadisticas = async (req, res) => {
     try {
         const [estadisticas] = await sql.promise().query(`
             SELECT 
@@ -425,10 +428,10 @@ usuarioCtl.obtenerEstadisticas = async (req, res) => {
 
         // Usuarios por rol
         const [usuariosPorRol] = await sql.promise().query(`
-            SELECT r.nameRol, COUNT(dr.userIdUser) as cantidadUsuarios
+            SELECT r.nameRol, COUNT(dr.idUser) as cantidadUsuarios
             FROM roles r
             LEFT JOIN detallerols dr ON r.idRol = dr.roleIdRol
-            LEFT JOIN users u ON dr.userIdUser = u.idUser AND u.stateUser = 'active'
+            LEFT JOIN users u ON dr.idUser = u.idUser AND u.stateUser = 'active'
             WHERE r.stateRol = 'activo'
             GROUP BY r.idRol, r.nameRol
             ORDER BY cantidadUsuarios DESC
@@ -438,7 +441,7 @@ usuarioCtl.obtenerEstadisticas = async (req, res) => {
             estadisticas: estadisticas[0],
             usuariosPorRol: usuariosPorRol.map(item => ({
                 ...item,
-                nameRol: descifrarSeguro(item.nameRol)
+                nameRol: decrypt(item.nameRol)
             }))
         });
     } catch (error) {
@@ -447,4 +450,4 @@ usuarioCtl.obtenerEstadisticas = async (req, res) => {
     }
 };
 
-module.exports = usuarioCtl;
+module.exports = usuarioCtrl;

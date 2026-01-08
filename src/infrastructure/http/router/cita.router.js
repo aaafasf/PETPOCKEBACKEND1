@@ -13,7 +13,8 @@ const {
     reprogramarCita,
     cambiarEstadoCita,
     verificarDisponibilidad,
-    obtenerEstadisticas
+    obtenerEstadisticas,
+    obtenerVeterinarios
 } = require('../controller/cita.controller');
 
 // Middleware de autenticación (opcional)
@@ -145,6 +146,7 @@ const validacionReprogramarCita = [
         .isLength({ max: 300 })
         .withMessage('El motivo no puede exceder 300 caracteres')
 ];
+router.get('/veterinarios', obtenerVeterinarios);
 
 // ================ RUTAS DE CITAS ================
 

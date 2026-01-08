@@ -1,11 +1,8 @@
-const citaCtl = {}
-const orm = require('../../Database/dataBase.orm.js')
-const sql = require('../../Database/dataBase.sql.js')
-const mongo = require('../../Database/dataBaseMongose')
-const {
-	cifrarDatos,
-	descifrarDatos,
-} = require('../../../application/controller/encrypDates.js')
+const citaCtl = {};
+const orm = require('../../Database/dataBase.orm.js');
+const sql = require('../../Database/dataBase.sql.js');
+const mongo = require('../../Database/dataBaseMongose');
+const { cifrarDatos, descifrarDatos } = require('../../../application/controller/encrypDates.js');
 
 // Función para descifrar de forma segura
 const descifrarSeguro = dato => {
@@ -685,14 +682,13 @@ citaCtl.obtenerEstadisticas = async (req, res) => {
 			params
 		)
 
-		return res.json(estadisticas[0])
-	} catch (error) {
-		console.error('Error al obtener estadísticas:', error)
-		return res.status(500).json({
-			message: 'Error al obtener estadísticas',
-			error: error.message,
-		})
-	}
-}
+        return res.json(estadisticas[0]);
 
-module.exports = citaCtl
+    } catch (error) {
+        console.error('Error al obtener estadísticas:', error);
+        return res.status(500).json({
+            message: 'Error al obtener estadísticas',
+            error: error.message
+        });
+    }
+};
