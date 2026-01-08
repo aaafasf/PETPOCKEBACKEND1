@@ -2,7 +2,7 @@ const mascotaCtl = {};
 const orm = require('../../Database/dataBase.orm.js');
 const sql = require('../../Database/dataBase.sql.js');
 const mongo = require('../../Database/dataBaseMongose');
-const { cifrarDatos, descifrarDatos } = require('../../../application/controller/encrypDates.js');
+const { encrypt: cifrarDatos, decrypt: descifrarDatos} = require('../../../application/controller/encrypDates');
 
 // Función para descifrar de forma segura
 const descifrarSeguro = (dato) => {
@@ -15,7 +15,7 @@ const descifrarSeguro = (dato) => {
 };
 
 // Mostrar todas las mascotas activas con datos híbridos
-mascotaCtl.mostrarMascotas = async (req, res) => {
+mascotaCtl.mostrarMascotas = async (req, res) => {  
     try {
         const [listaMascotas] = await sql.promise().query(`
             SELECT m.*, p.nombrePropietario, p.emailPropietario 

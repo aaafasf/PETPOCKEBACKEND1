@@ -283,6 +283,7 @@ app.use('/mascota', require('../src/infrastructure/http/router/mascota.router'))
 app.use('/cita', require('../src/infrastructure/http/router/cita.router'));
 app.use('/producto', require('../src/infrastructure/http/router/producto.router'));
 app.use('/configuracion', require('../src/infrastructure/http/router/configuracion.router'));
+app.use('/usuario', require('../src/infrastructure/http/router/user.router'));
 // Registrar router de notificaciones
 const notificacionRouter = require('../src/infrastructure/http/router/notificacion.router');
 console.log('\n🔧 [APP] Registrando router de notificaciones en /api/notificaciones');

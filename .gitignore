@@ -1,7 +1,19 @@
-node_modules
-/nbproject/private/
-combined.log
-error.log
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
 
-src/logs/app.log 
-src/logs/app.log
+# Logs (BACKEND)
+logs/
+root/logs/
+src/logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
