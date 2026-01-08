@@ -303,10 +303,102 @@ citaCtl.obtenerEstadisticas = async (req, res) => {
 };
 
 /* =========================
-   VETERINARIOS (TEMP)
+   VETERINARIOS
 ========================= */
 citaCtl.obtenerVeterinarios = async (req, res) => {
-    return res.json([]);
+  try {
+    // Traemos usuarios que tengan el rol 'Veterinario'
+    const [veterinarios] = await sql.promise().query(`
+      SELECT u.idUser, u.nameUsers
+      FROM users u
+      JOIN detalleRols dr ON dr.userIdUser = u.idUser
+      JOIN roles r ON r.idRol = dr.roleIdRol
+      WHERE r.nameRol = 'Veterinario'
+    `);
+
+    const veterinariosMap = veterinarios.map(vet => ({
+      id: vet.idUser,
+      name: vet.nameUsers // si tu base estuviera encriptada, aquí puedes descifrar
+    }));
+
+    return res.json({ usuarios: veterinariosMap });
+  } catch (error) {
+    console.error('Error al obtener veterinarios:', error);
+    return res.status(500).json({ message: 'Error al obtener veterinarios' });
+  }
+};
+
+
+/* =========================
+   AGENDA (ADMIN)
+========================= */
+citaCtl.obtenerCitasPorFecha = async (req, res) => {
+    try {
+        const { fecha } = req.params;
+
+        const [citas] = await sql.promise().query(`
+            SELECT c.*,
+                   cl.nombreCliente,
+                   m.nombreMascota
+            FROM citas c
+            JOIN clientes cl ON c.idCliente = cl.idClientes
+            JOIN mascotas m ON c.idMascota = m.idMascota
+            WHERE c.fecha = ?
+            ORDER BY c.hora ASC
+        `, [fecha]);
+
+        const resultado = await Promise.all(
+            citas.map(async (cita) => {
+                const mongoData = await mongo.citaModel.findOne({
+                    idCitaSql: cita.idCita.toString()
+                });
+
+                return {
+                    idCita: cita.idCita,
+                    fecha: cita.fecha,
+                    hora: cita.hora,
+                    estadoCita: cita.estadoCita,
+                    idCliente: cita.idCliente,
+                    idMascota: cita.idMascota,
+                    idServicio: cita.idServicio,
+
+                    motivo: descifrarSeguro(mongoData?.motivo),
+
+                    cliente: {
+                        nombre: descifrarSeguro(cita.nombreCliente)
+                    },
+                    mascota: {
+                        nombre: descifrarSeguro(cita.nombreMascota)
+                    },
+                    detallesMongo: mongoData
+                };
+            })
+        );
+
+        return res.json(resultado);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: 'Error al obtener agenda' });
+    }
+};
+
+/* =========================
+   CAMBIAR ESTADO (AGENDA)
+========================= */
+citaCtl.actualizarEstadoAgenda = async (req, res) => {
+    try {
+        const { idCita } = req.params;
+        const { estadoCita } = req.body;
+
+        await orm.cita.update(
+            { estadoCita },
+            { where: { idCita } }
+        );
+
+        return res.json({ message: 'Estado actualizado' });
+    } catch (error) {
+        return res.status(500).json({ message: 'Error al actualizar estado' });
+    }
 };
 
 module.exports = citaCtl;

@@ -6,31 +6,54 @@ const { body, param, validationResult } = require('express-validator');
 const handleValidationErrors = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({ 
+        console.error('[NOTIFICACIONES] Errores de validación:', errors.array());
+        return res.status(400).json({
             success: false,
-            message: 'Error de validación',
-            errors: errors.array() 
+            message: 'Errores de validación',
+            error: 'Los datos enviados no son válidos',
+            details: errors.array().map(err => ({
+                campo: err.param || err.msg,
+                mensaje: err.msg,
+                valor: err.value
+            })),
+            errors: errors.array()
         });
     }
     next();
 };
 
+// Middleware para capturar errores no manejados
+const handleAsyncErrors = (fn) => {
+    return (req, res, next) => {
+        Promise.resolve(fn(req, res, next)).catch((error) => {
+            console.error('[NOTIFICACIONES] Error no manejado:', error);
+            console.error('[NOTIFICACIONES] Stack:', error.stack);
+            return res.status(500).json({
+                success: false,
+                message: 'Error interno del servidor',
+                error: error.message,
+                details: 'Ocurrió un error inesperado al procesar la solicitud',
+                stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+            });
+        });
+    };
+};
+
 const { 
     mostrarNotificaciones,
-    obtenerNotificacionPorId,
     crearNotificacion,
     obtenerNotificacionesPorUsuario,
+    obtenerNotificacionPorId,
     marcarComoLeida,
     marcarTodasComoLeidas,
     eliminarNotificacion,
     crearNotificacionMasiva,
     obtenerEstadisticas,
     crearAlertaProgramada,
-    limpiarHistorial,
-    limpiarHistorialGeneral
+    limpiarHistorial
 } = require('../controller/notificacion.controller');
 
-// Validaciones para crear notificación (más permisivas)
+// Validaciones para crear notificación (idUsuario es opcional, puede venir de sesión)
 const validacionCrearNotificacion = [
     body('idUsuario')
         .optional()
@@ -43,10 +66,25 @@ const validacionCrearNotificacion = [
         .isLength({ min: 1, max: 500 })
         .withMessage('El mensaje debe tener entre 1 y 500 caracteres'),
     
+    body('titulo')
+        .optional()
+        .isLength({ max: 200 })
+        .withMessage('El título no puede exceder 200 caracteres'),
+    
     body('tipo')
         .optional()
-        .isIn(['general', 'recordatorio', 'urgente', 'promocion', 'sistema'])
-        .withMessage('Tipo debe ser: general, recordatorio, urgente, promocion o sistema')
+        .isIn(['general', 'recordatorio', 'urgente', 'promocion', 'sistema', 'control', 'vacuna', 'cita', 'medicamento'])
+        .withMessage('Tipo debe ser válido'),
+    
+    body('fechaProgramada')
+        .optional()
+        .isISO8601()
+        .withMessage('La fecha programada debe ser válida (formato ISO 8601)'),
+    
+    body('tipoRecordatorio')
+        .optional()
+        .isIn(['vacuna', 'control', 'cita', 'general', 'medicamento'])
+        .withMessage('Tipo de recordatorio debe ser: vacuna, control, cita, general o medicamento')
 ];
 
 // Validaciones para notificación masiva
@@ -71,34 +109,37 @@ const validacionNotificacionMasiva = [
         .withMessage('Tipo debe ser: general, recordatorio, urgente, promocion o sistema')
 ];
 
-// Validaciones para crear alerta programada (más permisivas)
+// Validaciones para crear alerta programada (fechaProgramada es opcional)
 const validacionAlertaProgramada = [
     body('idUsuario')
-        .optional()
         .isInt({ min: 1 })
         .withMessage('El ID del usuario debe ser un número entero positivo'),
     
     body('mensaje')
-        .optional()
-        .isLength({ min: 0, max: 1000 })
-        .withMessage('El mensaje no puede exceder 1000 caracteres'),
-    
-    body('titulo')
-        .optional()
-        .isLength({ min: 0, max: 200 })
-        .withMessage('El título no puede exceder 200 caracteres'),
+        .notEmpty()
+        .withMessage('El mensaje es obligatorio')
+        .isLength({ min: 1, max: 500 })
+        .withMessage('El mensaje debe tener entre 1 y 500 caracteres'),
     
     body('fechaProgramada')
         .optional()
+        .isISO8601()
+        .withMessage('La fecha programada debe ser válida (formato ISO 8601)')
         .custom((value) => {
             if (value) {
                 const fecha = new Date(value);
-                if (isNaN(fecha.getTime())) {
-                    throw new Error('La fecha programada debe ser válida');
+                const ahora = new Date();
+                if (fecha <= ahora) {
+                    throw new Error('La fecha programada debe ser futura');
                 }
             }
             return true;
         }),
+    
+    body('tipo')
+        .optional()
+        .isIn(['general', 'recordatorio', 'urgente', 'promocion', 'sistema'])
+        .withMessage('Tipo debe ser: general, recordatorio, urgente, promocion o sistema'),
     
     body('tipoRecordatorio')
         .optional()
@@ -108,14 +149,6 @@ const validacionAlertaProgramada = [
 
 // Validaciones para parámetros
 const validacionParametroId = [
-    param('id')
-        .optional()
-        .isInt({ min: 1 })
-        .withMessage('El ID de la notificación debe ser un número entero positivo'),
-    handleValidationErrors
-];
-
-const validacionParametroIdNotificacion = [
     param('idNotificacion')
         .isInt({ min: 1 })
         .withMessage('El ID de la notificación debe ser un número entero positivo')
@@ -128,253 +161,96 @@ const validacionParametroUsuario = [
 ];
 
 // ================ RUTAS DE NOTIFICACIONES ================
-// Rutas principales que coinciden con lo esperado por el frontend
-// IMPORTANTE: Las rutas específicas deben ir ANTES de las rutas con parámetros
+// IMPORTANTE: Las rutas más específicas deben ir ANTES que las rutas con parámetros dinámicos
 
-// Middleware para logging y CORS - PRIMERO
-router.use((req, res, next) => {
-    console.log(`\n🔍 [NOTIFICACIONES] ${req.method} ${req.path}`);
-    console.log(`🔍 Origin: ${req.headers.origin || 'Sin origen'}`);
-    console.log(`🔍 Headers:`, JSON.stringify(req.headers, null, 2));
-    
-    // Configurar CORS explícitamente en TODAS las rutas
-    const origin = req.headers.origin || '*';
-    res.setHeader('Access-Control-Allow-Origin', origin);
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
-    res.setHeader('Access-Control-Expose-Headers', 'Content-Type, Content-Length');
-    
-    // Manejar OPTIONS explícitamente
-    if (req.method === 'OPTIONS') {
-        console.log('✅ Respondiendo a OPTIONS (preflight)');
-        return res.status(200).end();
-    }
-    
-    // Forzar que NO se use caché en las respuestas
-    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0, private');
-    res.setHeader('Pragma', 'no-cache');
-    res.setHeader('Expires', '0');
-    res.setHeader('Surrogate-Control', 'no-store');
-    res.setHeader('ETag', `"${Date.now()}-${Math.random()}"`);
-    res.setHeader('Last-Modified', new Date().toUTCString());
-    
+// Endpoint raíz - Información de la API y prueba de conexión
+router.get('/', (req, res) => {
+    res.json({
+        success: true,
+        message: 'API de Notificaciones funcionando correctamente',
+        timestamp: new Date().toISOString(),
+        basePath: '/notificaciones o /notificacion',
+        endpoints: {
+            lista: 'GET /notificaciones/lista',
+            estadisticas: 'GET /notificaciones/estadisticas',
+            porUsuario: 'GET /notificaciones/usuario/:idUsuario',
+            noLeidas: 'GET /notificaciones/usuario/:idUsuario/no-leidas',
+            porId: 'GET /notificaciones/:idNotificacion',
+            crear: 'POST /notificaciones/crear',
+            crearAlerta: 'POST /notificaciones/crear-alerta-programada',
+            marcarLeida: 'PUT /notificaciones/marcar-leida/:idNotificacion',
+            marcarTodasLeidas: 'PUT /notificaciones/marcar-todas-leidas/:idUsuario',
+            eliminar: 'DELETE /notificaciones/eliminar/:idNotificacion',
+            limpiarHistorial: 'DELETE /notificaciones/limpiar-historial/:idUsuario'
+        }
+    });
+});
+
+// Obtener todas las notificaciones
+router.get('/lista', handleAsyncErrors(mostrarNotificaciones));
+
+// Obtener estadísticas de notificaciones
+router.get('/estadisticas', handleAsyncErrors(obtenerEstadisticas));
+
+// Obtener notificaciones por usuario (rutas específicas primero)
+router.get('/usuario/:idUsuario/no-leidas', validacionParametroUsuario, handleValidationErrors, handleAsyncErrors((req, res) => {
+    req.query.estado = 'pendiente';
+    return obtenerNotificacionesPorUsuario(req, res);
+}));
+
+// Obtener notificaciones por usuario
+router.get('/usuario/:idUsuario', validacionParametroUsuario, handleValidationErrors, handleAsyncErrors(obtenerNotificacionesPorUsuario));
+
+// Obtener una notificación individual por ID (para modal/vista) - Debe ir DESPUÉS de rutas más específicas
+router.get('/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(obtenerNotificacionPorId));
+
+// Crear nueva notificación (ruta principal para crear notificaciones)
+// IMPORTANTE: Esta ruta debe ir ANTES de las rutas con parámetros dinámicos
+router.post('/crear', (req, res, next) => {
+    console.log('[NOTIFICACIONES] POST /crear recibido');
+    console.log('[NOTIFICACIONES] Body:', req.body);
     next();
-});
+}, validacionCrearNotificacion, handleValidationErrors, handleAsyncErrors(crearNotificacion));
 
-// GET /api/notificaciones - Obtener todas las notificaciones
-router.get('/', async (req, res) => {
-    try {
-        console.log('📥 GET /api/notificaciones - Iniciando...');
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        
-        // Llamar al método directamente con manejo de errores garantizado
-        await mostrarNotificaciones(req, res);
-        
-        console.log('✅ GET /api/notificaciones - Completado');
-    } catch (error) {
-        console.error('❌ [ROUTER] Error en GET /api/notificaciones:', error);
-        console.error('❌ [ROUTER] Stack:', error.stack);
-        
-        // Configurar headers CORS en caso de error
-        const origin = req.headers.origin || '*';
-        res.setHeader('Access-Control-Allow-Origin', origin);
-        res.setHeader('Access-Control-Allow-Credentials', 'true');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
-        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
-        res.setHeader('Access-Control-Expose-Headers', 'Content-Type, Content-Length');
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0');
-        
-        // SIEMPRE responder con array vacío si hay error
-        if (!res.headersSent) {
-            const respuesta = [];
-            console.log('📤 [ROUTER] Enviando respuesta de error (array vacío)');
-            return res.status(200).json(respuesta);
-        } else {
-            console.log('⚠️ [ROUTER] Headers ya enviados en error handler');
-        }
-    }
-});
-
-// POST /api/notificaciones - Crear notificación o alerta programada
-// IMPORTANTE: Esta ruta debe ir DESPUÉS de GET / pero ANTES de rutas con parámetros
-router.post('/', [
-    body('idUsuario')
-        .optional()
-        .isInt({ min: 1 })
-        .withMessage('El ID del usuario debe ser un número entero positivo'),
-    body('mensaje')
-        .optional()
-        .isLength({ min: 0, max: 1000 })
-        .withMessage('El mensaje no puede exceder 1000 caracteres'),
-    body('titulo')
-        .optional()
-        .isLength({ min: 0, max: 200 })
-        .withMessage('El título no puede exceder 200 caracteres'),
-    body('fechaProgramada')
-        .optional()
-        .custom((value) => {
-            if (value && isNaN(new Date(value).getTime())) {
-                throw new Error('La fecha debe ser válida');
-            }
-            return true;
-        }),
-    handleValidationErrors
-], async (req, res) => {
-    try {
-        console.log('\n📨 [POST] ===== Petición POST /api/notificaciones recibida =====');
-        console.log('📨 [POST] Origin:', req.headers.origin || 'Sin origen');
-        console.log('📨 [POST] Body:', JSON.stringify(req.body, null, 2));
-        
-        // Configurar headers CORS y no-cache
-        const origin = req.headers.origin || '*';
-        res.setHeader('Access-Control-Allow-Origin', origin);
-        res.setHeader('Access-Control-Allow-Credentials', 'true');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
-        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
-        res.setHeader('Access-Control-Expose-Headers', 'Content-Type, Content-Length');
-        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0');
-        res.setHeader('Pragma', 'no-cache');
-        res.setHeader('Expires', '0');
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        
-        // Si viene fechaProgramada, usar crearAlertaProgramada
-        // Si solo viene titulo (sin fechaProgramada), usar crearNotificacion (que maneja titulo)
-        if (req.body.fechaProgramada) {
-            console.log('📅 [POST] Creando alerta programada (con fecha)...');
-            try {
-                await crearAlertaProgramada(req, res);
-                console.log('✅ [POST] crearAlertaProgramada completado');
-            } catch (error) {
-                console.error('❌ [POST] Error en crearAlertaProgramada:', error);
-                if (!res.headersSent) {
-                    return res.status(500).json({
-                        success: false,
-                        message: 'Error al crear la alerta programada',
-                        error: error.message
-                    });
-                }
-            }
-        } else {
-            console.log('📝 [POST] Creando notificación (simple o con título)...');
-            try {
-                await crearNotificacion(req, res);
-                console.log('✅ [POST] crearNotificacion completado');
-            } catch (error) {
-                console.error('❌ [POST] Error en crearNotificacion:', error);
-                if (!res.headersSent) {
-                    return res.status(500).json({
-                        success: false,
-                        message: 'Error al crear la notificación',
-                        error: error.message
-                    });
-                }
-            }
-        }
-        
-        // Verificar que se haya enviado una respuesta
-        if (!res.headersSent) {
-            console.error('❌ [POST] ERROR: No se envió respuesta del controlador');
-            return res.status(500).json({
-                success: false,
-                message: 'Error: El controlador no envió respuesta'
-            });
-        }
-        
-        console.log('✅ [POST] POST /api/notificaciones completado');
-        console.log('📨 [POST] ===== Fin de procesamiento POST =====\n');
-    } catch (error) {
-        console.error('\n❌ [POST] ===== Error en POST /api/notificaciones =====');
-        console.error('❌ [POST] Error:', error.message);
-        console.error('❌ [POST] Stack:', error.stack);
-        
-        // Configurar headers CORS en caso de error
-        const origin = req.headers.origin || '*';
-        res.setHeader('Access-Control-Allow-Origin', origin);
-        res.setHeader('Access-Control-Allow-Credentials', 'true');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
-        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
-        res.setHeader('Content-Type', 'application/json; charset=utf-8');
-        
-        // Asegurarse de que siempre se responda
-        if (!res.headersSent) {
-            return res.status(500).json({
-                success: false,
-                message: 'Error al procesar la solicitud',
-                error: error.message
-            });
-        }
-        console.error('❌ [POST] ===== Fin de manejo de error =====\n');
-    }
-});
-
-// PATCH /api/notificaciones/:id/marcar-leida - Marcar como leída
-router.patch('/:id/marcar-leida', [
-    param('id').isInt({ min: 1 }).withMessage('ID inválido'),
-    handleValidationErrors
-], marcarComoLeida);
-
-// DELETE /api/notificaciones/limpiar - Limpiar historial (debe ir antes de /:id)
-router.delete('/limpiar', limpiarHistorialGeneral);
-
-// GET /api/notificaciones/:id - Obtener una notificación por ID (debe ir al final de GET)
-// Validación más flexible para evitar que se quede colgado
-router.get('/:id', [
-    param('id').isInt({ min: 1 }).withMessage('ID inválido'),
-    handleValidationErrors
-], obtenerNotificacionPorId);
-
-// DELETE /api/notificaciones/:id - Eliminar notificación (debe ir después de rutas específicas)
-router.delete('/:id', [
-    param('id').isInt({ min: 1 }).withMessage('ID inválido'),
-    handleValidationErrors
-], eliminarNotificacion);
-
-// ================ RUTAS ADICIONALES (compatibilidad) ================
-// Estas rutas ya están definidas arriba, solo mantenemos las POST y DELETE alternativas
-
-// Crear nueva notificación (ruta alternativa)
-router.post('/crear', validacionCrearNotificacion, handleValidationErrors, crearNotificacion);
+// Alias alternativo para compatibilidad
+router.post('/crear-notificacion', validacionCrearNotificacion, handleValidationErrors, handleAsyncErrors(crearNotificacion));
 
 // Crear notificaciones masivas
-router.post('/crear-masiva', validacionNotificacionMasiva, handleValidationErrors, crearNotificacionMasiva);
+router.post('/crear-masiva', validacionNotificacionMasiva, handleValidationErrors, handleAsyncErrors(crearNotificacionMasiva));
 
-// Marcar notificación como leída (ruta alternativa)
-router.put('/marcar-leida/:idNotificacion', [
-    param('idNotificacion').isInt({ min: 1 }).withMessage('ID inválido'),
-    handleValidationErrors
-], marcarComoLeida);
+// Marcar notificación como leída
+router.put('/marcar-leida/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(marcarComoLeida));
 
 // Marcar todas las notificaciones de un usuario como leídas
-router.put('/marcar-todas-leidas/:idUsuario', [
-    param('idUsuario').isInt({ min: 1 }).withMessage('ID de usuario inválido'),
-    handleValidationErrors
-], marcarTodasComoLeidas);
+router.put('/marcar-todas-leidas/:idUsuario', validacionParametroUsuario, handleValidationErrors, handleAsyncErrors(marcarTodasComoLeidas));
 
-// Eliminar notificación (ruta alternativa)
-router.delete('/eliminar/:idNotificacion', [
-    param('idNotificacion').isInt({ min: 1 }).withMessage('ID inválido'),
-    handleValidationErrors
-], eliminarNotificacion);
+// Eliminar notificación (desde params)
+router.delete('/eliminar/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(eliminarNotificacion));
+
+// Eliminar notificación (desde body) - Ruta alternativa para compatibilidad con frontend
+router.delete('/eliminar', (req, res, next) => {
+    // Si viene en body, moverlo a params para que funcione con el controlador
+    if (req.body && req.body.idNotificacion) {
+        req.params.idNotificacion = req.body.idNotificacion;
+        console.log('[NOTIFICACIONES] ID de notificación recibido en body:', req.body.idNotificacion);
+    }
+    next();
+}, handleAsyncErrors(eliminarNotificacion));
 
 // Crear alerta programada (ej: Recordar vacuna en 6 meses)
-router.post('/crear-alerta-programada', validacionAlertaProgramada, handleValidationErrors, crearAlertaProgramada);
+router.post('/crear-alerta-programada', validacionAlertaProgramada, handleValidationErrors, handleAsyncErrors(crearAlertaProgramada));
 
-// Limpiar historial de notificaciones de un usuario (ruta alternativa)
-router.delete('/limpiar-historial/:idUsuario', [
-    param('idUsuario').isInt({ min: 1 }).withMessage('ID de usuario inválido'),
-    handleValidationErrors
-], limpiarHistorial);
+// Limpiar historial de notificaciones de un usuario (desde params)
+router.delete('/limpiar-historial/:idUsuario', validacionParametroUsuario, handleValidationErrors, handleAsyncErrors(limpiarHistorial));
 
-// Log de registro de rutas al cargar el módulo
-console.log('✅ Router de notificaciones cargado correctamente');
-console.log('✅ Rutas registradas:');
-router.stack.forEach((layer) => {
-    if (layer.route) {
-        const methods = Object.keys(layer.route.methods).join(', ').toUpperCase();
-        console.log(`   ${methods} ${layer.route.path}`);
+// Limpiar historial de notificaciones (desde body) - Ruta alternativa para compatibilidad con frontend
+router.delete('/limpiar-historial', (req, res, next) => {
+    // Si viene en body, moverlo a params para que funcione con el controlador
+    if (req.body && req.body.idUsuario) {
+        req.params.idUsuario = req.body.idUsuario;
+        console.log('[NOTIFICACIONES] ID de usuario recibido en body:', req.body.idUsuario);
     }
-});
+    next();
+}, handleAsyncErrors(limpiarHistorial));
 
 module.exports = router;

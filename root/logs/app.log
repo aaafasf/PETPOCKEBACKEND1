@@ -5890,3 +5890,1552 @@ notNull Violation: servicio.precio cannot be null
 2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
 2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
 2026-01-08 01:59:55 [INFO]: [0mGET /cita/lista [32m200[0m 1826.669 ms - -[0m
+2026-01-08 02:06:06 [INFO]: servicioCtl: [object Object]
+2026-01-08 02:06:06 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 02:06:06 [INFO]: ✅ Rutas registradas:
+2026-01-08 02:06:06 [INFO]:    GET /
+2026-01-08 02:06:06 [INFO]:    POST /
+2026-01-08 02:06:06 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 02:06:06 [INFO]:    DELETE /limpiar
+2026-01-08 02:06:06 [INFO]:    GET /:id
+2026-01-08 02:06:06 [INFO]:    DELETE /:id
+2026-01-08 02:06:06 [INFO]:    POST /crear
+2026-01-08 02:06:06 [INFO]:    POST /crear-masiva
+2026-01-08 02:06:06 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 02:06:06 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 02:06:06 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 02:06:06 [INFO]:    POST /crear-alerta-programada
+2026-01-08 02:06:06 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 02:06:06 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 02:06:06 [INFO]: Base de datos conectada
+2026-01-08 02:06:07 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 02:06:08 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 02:06:08 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 02:06:08 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 02:07:29 [INFO]: [0mGET /cita/veterinarios [36m304[0m 14.559 ms - -[0m
+2026-01-08 02:07:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 538.397 ms - -[0m
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:29 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:30 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 02:07:31 [INFO]: [0mGET /cita/lista [36m304[0m 2116.785 ms - -[0m
+2026-01-08 02:08:58 [INFO]: servicioCtl: [object Object]
+2026-01-08 02:08:59 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 02:08:59 [INFO]: ✅ Rutas registradas:
+2026-01-08 02:08:59 [INFO]:    GET /
+2026-01-08 02:08:59 [INFO]:    POST /
+2026-01-08 02:08:59 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 02:08:59 [INFO]:    DELETE /limpiar
+2026-01-08 02:08:59 [INFO]:    GET /:id
+2026-01-08 02:08:59 [INFO]:    DELETE /:id
+2026-01-08 02:08:59 [INFO]:    POST /crear
+2026-01-08 02:08:59 [INFO]:    POST /crear-masiva
+2026-01-08 02:08:59 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 02:08:59 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 02:08:59 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 02:08:59 [INFO]:    POST /crear-alerta-programada
+2026-01-08 02:08:59 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 02:08:59 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 02:08:59 [INFO]: Base de datos conectada
+2026-01-08 02:09:00 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 02:09:01 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 02:09:01 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 02:09:01 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 02:09:11 [INFO]: [0mGET /cliente/lista [36m304[0m 907.432 ms - -[0m
+2026-01-08 02:09:11 [INFO]: [0mGET /mascota/lista [36m304[0m 1082.835 ms - -[0m
+2026-01-08 02:09:11 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1260.696 ms - -[0m
+2026-01-08 02:09:12 [INFO]: [0mGET /cliente/lista [36m304[0m 544.399 ms - -[0m
+2026-01-08 02:09:12 [INFO]: [0mGET /cita/lista [32m200[0m 1546.658 ms - -[0m
+2026-01-08 02:09:12 [INFO]: [0mGET /cliente/lista [36m304[0m 308.404 ms - -[0m
+2026-01-08 02:09:13 [INFO]: [0mGET /mascota/lista [36m304[0m 1584.353 ms - -[0m
+2026-01-08 02:09:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1450.762 ms - -[0m
+2026-01-08 02:09:13 [INFO]: [0mGET /mascota/lista [36m304[0m 300.198 ms - -[0m
+2026-01-08 02:09:21 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.138 ms - -[0m
+2026-01-08 02:09:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 303.476 ms - -[0m
+2026-01-08 02:09:22 [INFO]: [0mGET /cita/lista [32m200[0m 1472.182 ms - -[0m
+2026-01-08 02:09:25 [INFO]: [0mGET /api/servicios/ [36m304[0m 297.376 ms - -[0m
+2026-01-08 02:09:25 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767856164999 [33m404[0m 9.293 ms - 48[0m
+2026-01-08 02:09:25 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/diagnostico.png?t=1767856164999 [33m404[0m 8.063 ms - 48[0m
+2026-01-08 02:09:25 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767856164999 [33m404[0m 8.204 ms - 48[0m
+2026-01-08 02:09:31 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.005 ms - -[0m
+2026-01-08 02:09:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 302.328 ms - -[0m
+2026-01-08 02:09:32 [INFO]: [0mGET /configuracion [36m304[0m 119.394 ms - -[0m
+2026-01-08 02:09:32 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.225 ms - -[0m
+2026-01-08 02:09:33 [INFO]: [0mGET /cita/lista [36m304[0m 1470.884 ms - -[0m
+2026-01-08 02:09:38 [INFO]: [0mGET /api/servicios/ [36m304[0m 300.011 ms - -[0m
+2026-01-08 02:09:38 [INFO]: [0mGET /configuracion [36m304[0m 110.857 ms - -[0m
+2026-01-08 02:09:38 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.583 ms - -[0m
+2026-01-08 02:09:40 [INFO]: [0mGET /api/servicios/ [36m304[0m 297.122 ms - -[0m
+2026-01-08 02:09:40 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767856180531 [33m404[0m 5.405 ms - 48[0m
+2026-01-08 02:09:40 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/diagnostico.png?t=1767856180531 [33m404[0m 5.774 ms - 48[0m
+2026-01-08 02:09:40 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767856180531 [33m404[0m 7.227 ms - 48[0m
+2026-01-08 02:09:40 [INFO]: [0mGET /configuracion [36m304[0m 108.673 ms - -[0m
+2026-01-08 02:09:41 [INFO]: [0mGET /configuracion/listar [36m304[0m 113.993 ms - -[0m
+2026-01-08 02:09:48 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.190 ms - -[0m
+2026-01-08 02:09:48 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767856188283 [33m404[0m 5.376 ms - 48[0m
+2026-01-08 02:09:48 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/diagnostico.png?t=1767856188283 [33m404[0m 5.984 ms - 48[0m
+2026-01-08 02:09:48 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767856188283 [33m404[0m 7.446 ms - 48[0m
+2026-01-08 02:09:48 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.006 ms - -[0m
+2026-01-08 02:09:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.198 ms - -[0m
+2026-01-08 02:09:50 [INFO]: [0mGET /cita/lista [36m304[0m 1465.924 ms - -[0m
+2026-01-08 02:11:03 [INFO]: [0mGET /cita/lista [36m304[0m 330.934 ms - -[0m
+2026-01-08 02:11:03 [INFO]: [0mGET /cliente/lista [36m304[0m 499.871 ms - -[0m
+2026-01-08 02:11:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 502.278 ms - -[0m
+2026-01-08 02:11:03 [INFO]: [0mGET /cliente/lista [36m304[0m 314.498 ms - -[0m
+2026-01-08 02:11:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 317.486 ms - -[0m
+2026-01-08 02:11:04 [INFO]: [0mGET /cliente/lista [36m304[0m 305.849 ms - -[0m
+2026-01-08 02:11:04 [INFO]: [0mGET /mascota/lista [36m304[0m 1731.865 ms - -[0m
+2026-01-08 02:11:05 [INFO]: [0mGET /mascota/lista [36m304[0m 308.906 ms - -[0m
+2026-01-08 02:11:05 [INFO]: [0mGET /mascota/lista [36m304[0m 300.645 ms - -[0m
+2026-01-08 02:19:07 [INFO]: [0mGET /cita/veterinarios [36m304[0m 4.132 ms - -[0m
+2026-01-08 02:19:07 [INFO]: [0mGET /api/servicios/lista [36m304[0m 376.906 ms - -[0m
+2026-01-08 02:19:07 [INFO]: [0mGET /cita/lista [32m200[0m 348.276 ms - -[0m
+2026-01-08 02:19:43 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 02:19:58 [INFO]: servicioCtl: [object Object]
+2026-01-08 02:19:58 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 02:19:58 [INFO]: ✅ Rutas registradas:
+2026-01-08 02:19:58 [INFO]:    GET /
+2026-01-08 02:19:58 [INFO]:    POST /
+2026-01-08 02:19:58 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 02:19:58 [INFO]:    DELETE /limpiar
+2026-01-08 02:19:58 [INFO]:    GET /:id
+2026-01-08 02:19:58 [INFO]:    DELETE /:id
+2026-01-08 02:19:58 [INFO]:    POST /crear
+2026-01-08 02:19:58 [INFO]:    POST /crear-masiva
+2026-01-08 02:19:58 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 02:19:58 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 02:19:58 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 02:19:58 [INFO]:    POST /crear-alerta-programada
+2026-01-08 02:19:58 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 02:19:58 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 02:19:59 [INFO]: Base de datos conectada
+2026-01-08 02:20:00 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 02:20:00 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 02:20:01 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 02:20:01 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 02:20:13 [INFO]: [0mGET /cita/veterinarios [36m304[0m 4.900 ms - -[0m
+2026-01-08 02:20:14 [INFO]: [0mGET /api/servicios/lista [36m304[0m 366.989 ms - -[0m
+2026-01-08 02:20:14 [INFO]: [0mGET /cita/lista [0m-[0m - ms - -[0m
+2026-01-08 02:20:15 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.615 ms - -[0m
+2026-01-08 02:20:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 303.878 ms - -[0m
+2026-01-08 02:20:16 [INFO]: [0mGET /cita/lista [32m200[0m 1492.133 ms - -[0m
+2026-01-08 02:21:36 [INFO]: [0mGET /api/servicios/ [36m304[0m 301.361 ms - -[0m
+2026-01-08 02:21:36 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767856896620 [33m404[0m 12.703 ms - 48[0m
+2026-01-08 02:21:36 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/diagnostico.png?t=1767856896620 [33m404[0m 11.778 ms - 48[0m
+2026-01-08 02:21:36 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767856896620 [33m404[0m 10.418 ms - 48[0m
+2026-01-08 02:21:37 [INFO]: [0mGET /configuracion [36m304[0m 124.168 ms - -[0m
+2026-01-08 02:21:37 [INFO]: [0mGET /configuracion/listar [36m304[0m 130.109 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /cliente/lista [36m304[0m 495.299 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /mascota/lista [36m304[0m 668.992 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 668.966 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /cliente/lista [36m304[0m 358.298 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /mascota/lista [36m304[0m 301.436 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 322.783 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /cliente/lista [36m304[0m 309.258 ms - -[0m
+2026-01-08 02:21:39 [INFO]: [0mGET /mascota/lista [36m304[0m 296.214 ms - -[0m
+2026-01-08 02:21:40 [INFO]: [0mGET /cita/lista [36m304[0m 1710.691 ms - -[0m
+2026-01-08 02:32:07 [INFO]: servicioCtl: [object Object]
+2026-01-08 02:32:07 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 02:32:08 [INFO]: ✅ Rutas registradas:
+2026-01-08 02:32:08 [INFO]:    GET /
+2026-01-08 02:32:08 [INFO]:    POST /
+2026-01-08 02:32:08 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 02:32:08 [INFO]:    DELETE /limpiar
+2026-01-08 02:32:08 [INFO]:    GET /:id
+2026-01-08 02:32:08 [INFO]:    DELETE /:id
+2026-01-08 02:32:08 [INFO]:    POST /crear
+2026-01-08 02:32:08 [INFO]:    POST /crear-masiva
+2026-01-08 02:32:08 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 02:32:08 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 02:32:08 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 02:32:08 [INFO]:    POST /crear-alerta-programada
+2026-01-08 02:32:08 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 02:32:08 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 02:32:08 [INFO]: Base de datos conectada
+2026-01-08 02:32:09 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 02:32:10 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 02:32:10 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 02:32:10 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 02:32:16 [INFO]: [0mGET /cliente/lista [36m304[0m 907.391 ms - -[0m
+2026-01-08 02:32:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1076.823 ms - -[0m
+2026-01-08 02:32:16 [INFO]: [0mGET /mascota/lista [36m304[0m 1266.490 ms - -[0m
+2026-01-08 02:32:16 [INFO]: [0mGET /cliente/lista [36m304[0m 539.632 ms - -[0m
+2026-01-08 02:32:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 384.739 ms - -[0m
+2026-01-08 02:32:16 [INFO]: [0mGET /cita/lista [36m304[0m 1582.612 ms - -[0m
+2026-01-08 02:32:16 [INFO]: [0mGET /cliente/lista [36m304[0m 301.558 ms - -[0m
+2026-01-08 02:32:17 [INFO]: [0mGET /mascota/lista [36m304[0m 1444.755 ms - -[0m
+2026-01-08 02:32:18 [INFO]: [0mGET /mascota/lista [36m304[0m 298.763 ms - -[0m
+2026-01-08 02:37:44 [INFO]: [0mGET /cliente/lista [36m304[0m 325.274 ms - -[0m
+2026-01-08 02:37:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 330.717 ms - -[0m
+2026-01-08 02:37:44 [INFO]: [0mGET /cliente/lista [36m304[0m 304.654 ms - -[0m
+2026-01-08 02:37:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 307.013 ms - -[0m
+2026-01-08 02:37:44 [INFO]: [0mGET /cliente/lista [36m304[0m 303.171 ms - -[0m
+2026-01-08 02:38:03 [ERROR]: Error al mostrar mascotas: Error: read ECONNRESET
+2026-01-08 02:38:03 [INFO]: [0mGET /mascota/lista [31m500[0m 19246.244 ms - 69[0m
+2026-01-08 02:38:03 [ERROR]: Error: read ECONNRESET
+2026-01-08 02:38:03 [INFO]: [0mGET /cita/agenda/2026-01-08 [31m500[0m 19290.895 ms - 37[0m
+2026-01-08 02:38:03 [INFO]: [0mGET /mascota/lista [32m200[0m 309.648 ms - -[0m
+2026-01-08 02:38:03 [INFO]: [0mGET /mascota/lista [36m304[0m 298.159 ms - -[0m
+2026-01-08 02:48:51 [INFO]: servicioCtl: [object Object]
+2026-01-08 02:48:51 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 02:48:51 [INFO]: ✅ Rutas registradas:
+2026-01-08 02:48:51 [INFO]:    GET /
+2026-01-08 02:48:51 [INFO]:    POST /
+2026-01-08 02:48:51 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 02:48:51 [INFO]:    DELETE /limpiar
+2026-01-08 02:48:51 [INFO]:    GET /:id
+2026-01-08 02:48:51 [INFO]:    DELETE /:id
+2026-01-08 02:48:51 [INFO]:    POST /crear
+2026-01-08 02:48:51 [INFO]:    POST /crear-masiva
+2026-01-08 02:48:51 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 02:48:51 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 02:48:51 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 02:48:51 [INFO]:    POST /crear-alerta-programada
+2026-01-08 02:48:51 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 02:48:51 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 02:48:51 [INFO]: Base de datos conectada
+2026-01-08 02:48:52 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 02:48:53 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 02:48:53 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 02:48:53 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 02:49:41 [INFO]: [0mGET /cliente/lista [32m200[0m 366.842 ms - -[0m
+2026-01-08 02:49:41 [INFO]: [0mGET /api/servicios/lista [32m200[0m 646.861 ms - 639[0m
+2026-01-08 02:49:41 [INFO]: [0mGET /cita/agenda/2026-01-08 [32m200[0m 843.129 ms - 600[0m
+2026-01-08 02:49:42 [INFO]: [0mGET /cliente/lista [36m304[0m 674.560 ms - -[0m
+2026-01-08 02:49:42 [INFO]: [0mGET /api/servicios/lista [36m304[0m 546.586 ms - -[0m
+2026-01-08 02:49:42 [INFO]: [0mGET /cliente/lista [36m304[0m 353.921 ms - -[0m
+2026-01-08 02:49:42 [INFO]: [0mGET /mascota/lista [32m200[0m 1826.418 ms - -[0m
+2026-01-08 02:49:43 [INFO]: [0mGET /mascota/lista [36m304[0m 297.404 ms - -[0m
+2026-01-08 02:49:43 [INFO]: [0mGET /mascota/lista [36m304[0m 297.801 ms - -[0m
+2026-01-08 02:50:00 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.448 ms - -[0m
+2026-01-08 02:50:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.034 ms - -[0m
+2026-01-08 02:50:00 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 300.229 ms - -[0m
+2026-01-08 02:50:29 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 300.062 ms - -[0m
+2026-01-08 02:50:29 [INFO]: [0mGET /cliente/lista [36m304[0m 307.121 ms - -[0m
+2026-01-08 02:50:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 483.018 ms - -[0m
+2026-01-08 02:50:29 [INFO]: [0mGET /cliente/lista [36m304[0m 359.349 ms - -[0m
+2026-01-08 02:50:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 305.394 ms - -[0m
+2026-01-08 02:50:30 [INFO]: [0mGET /cliente/lista [36m304[0m 304.950 ms - -[0m
+2026-01-08 02:50:30 [INFO]: [0mGET /mascota/lista [36m304[0m 1696.845 ms - -[0m
+2026-01-08 02:50:31 [INFO]: [0mGET /mascota/lista [36m304[0m 301.999 ms - -[0m
+2026-01-08 02:50:31 [INFO]: [0mGET /mascota/lista [36m304[0m 297.746 ms - -[0m
+2026-01-08 02:51:48 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.814 ms - -[0m
+2026-01-08 02:51:48 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.038 ms - -[0m
+2026-01-08 02:51:48 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.655 ms - -[0m
+2026-01-08 02:56:35 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 314.057 ms - -[0m
+2026-01-08 02:56:35 [INFO]: [0mGET /cliente/lista [36m304[0m 325.418 ms - -[0m
+2026-01-08 02:56:35 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 02:56:35 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 02:56:35 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 02:56:35 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 02:56:36 [INFO]: [0mGET /api/servicios/ [36m304[0m 313.409 ms - -[0m
+2026-01-08 02:56:36 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.902 ms - -[0m
+2026-01-08 02:56:36 [INFO]: [0mGET /api/servicios/lista [32m200[0m 295.574 ms - 639[0m
+2026-01-08 02:56:36 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.463 ms - -[0m
+2026-01-08 02:56:37 [INFO]: [0mGET /mascota/lista [36m304[0m 1701.591 ms - -[0m
+2026-01-08 02:56:37 [INFO]: [0mGET /api/servicios/ [36m304[0m 296.531 ms - -[0m
+2026-01-08 02:56:37 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767858997303 [33m404[0m 9.913 ms - 48[0m
+2026-01-08 02:56:37 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/diagnostico.png?t=1767858997303 [33m404[0m 8.655 ms - 48[0m
+2026-01-08 02:56:37 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767858997303 [33m404[0m 10.174 ms - 48[0m
+2026-01-08 02:56:39 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:39 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 431.996 ms - 91[0m
+2026-01-08 02:56:41 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:41 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 403.976 ms - 91[0m
+2026-01-08 02:56:41 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:41 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 403.173 ms - 91[0m
+2026-01-08 02:56:41 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:41 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 403.188 ms - 91[0m
+2026-01-08 02:56:41 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:41 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 401.279 ms - 91[0m
+2026-01-08 02:56:41 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:41 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 402.625 ms - 91[0m
+2026-01-08 02:56:43 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:43 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 402.041 ms - 91[0m
+2026-01-08 02:56:43 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:43 [INFO]: [0mPUT /api/servicios/42 [31m500[0m 402.832 ms - 91[0m
+2026-01-08 02:56:43 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767858997303 [33m404[0m 1.304 ms - 48[0m
+2026-01-08 02:56:43 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-08 02:56:43 [INFO]: [0mPUT /api/servicios/43 [31m500[0m 404.696 ms - 91[0m
+2026-01-08 02:56:46 [INFO]: [0mDELETE /api/servicios/42 [32m200[0m 305.775 ms - 46[0m
+2026-01-08 02:56:48 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.886 ms - -[0m
+2026-01-08 02:56:48 [INFO]: [0mGET /api/servicios/lista [32m200[0m 297.511 ms - 417[0m
+2026-01-08 02:56:48 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 295.630 ms - -[0m
+2026-01-08 02:56:49 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 303.760 ms - -[0m
+2026-01-08 02:56:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 302.752 ms - -[0m
+2026-01-08 02:56:49 [INFO]: [0mGET /cliente/lista [32m200[0m 304.131 ms - -[0m
+2026-01-08 02:56:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.144 ms - -[0m
+2026-01-08 02:56:49 [INFO]: [0mGET /cliente/lista [36m304[0m 302.036 ms - -[0m
+2026-01-08 02:56:50 [INFO]: [0mGET /cliente/lista [36m304[0m 300.440 ms - -[0m
+2026-01-08 02:56:50 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.111 ms - -[0m
+2026-01-08 02:56:50 [INFO]: [0mGET /mascota/lista [36m304[0m 1491.843 ms - -[0m
+2026-01-08 02:56:50 [INFO]: [0mGET /api/servicios/lista [36m304[0m 294.703 ms - -[0m
+2026-01-08 02:56:50 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 295.968 ms - -[0m
+2026-01-08 03:00:26 [INFO]: [0mGET /cita/veterinarios [36m304[0m 4.104 ms - -[0m
+2026-01-08 03:00:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 329.963 ms - -[0m
+2026-01-08 03:00:27 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 320.627 ms - -[0m
+2026-01-08 03:00:45 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 03:00:52 [INFO]: servicioCtl: [object Object]
+2026-01-08 03:00:52 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 03:00:52 [INFO]: ✅ Rutas registradas:
+2026-01-08 03:00:52 [INFO]:    GET /
+2026-01-08 03:00:52 [INFO]:    POST /
+2026-01-08 03:00:52 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 03:00:52 [INFO]:    DELETE /limpiar
+2026-01-08 03:00:52 [INFO]:    GET /:id
+2026-01-08 03:00:52 [INFO]:    DELETE /:id
+2026-01-08 03:00:52 [INFO]:    POST /crear
+2026-01-08 03:00:52 [INFO]:    POST /crear-masiva
+2026-01-08 03:00:52 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 03:00:52 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 03:00:52 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 03:00:52 [INFO]:    POST /crear-alerta-programada
+2026-01-08 03:00:52 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 03:00:52 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 03:00:52 [INFO]: [0mGET /api/servicios/lista [31m503[0m 3.918 ms - 28[0m
+2026-01-08 03:00:52 [INFO]: [0mGET /cita/veterinarios [31m503[0m 0.549 ms - 28[0m
+2026-01-08 03:00:52 [INFO]: [0mGET /cita/agenda/2026-01-08 [31m503[0m 1.124 ms - 28[0m
+2026-01-08 03:00:53 [INFO]: Base de datos conectada
+2026-01-08 03:00:53 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 03:00:54 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 03:00:55 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 03:00:55 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 03:02:48 [INFO]: [0mGET /cita/veterinarios [32m200[0m 4.901 ms - 2[0m
+2026-01-08 03:02:48 [INFO]: [0mGET /api/servicios/lista [32m200[0m 334.588 ms - 417[0m
+2026-01-08 03:02:49 [INFO]: [0mGET /cita/agenda/2026-01-08 [32m200[0m 650.155 ms - 600[0m
+2026-01-08 03:18:12 [INFO]: servicioCtl: [object Object]
+2026-01-08 03:18:12 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 03:18:12 [INFO]: ✅ Rutas registradas:
+2026-01-08 03:18:12 [INFO]:    GET /
+2026-01-08 03:18:12 [INFO]:    POST /
+2026-01-08 03:18:12 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 03:18:12 [INFO]:    DELETE /limpiar
+2026-01-08 03:18:12 [INFO]:    GET /:id
+2026-01-08 03:18:12 [INFO]:    DELETE /:id
+2026-01-08 03:18:12 [INFO]:    POST /crear
+2026-01-08 03:18:12 [INFO]:    POST /crear-masiva
+2026-01-08 03:18:12 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 03:18:12 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 03:18:12 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 03:18:12 [INFO]:    POST /crear-alerta-programada
+2026-01-08 03:18:12 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 03:18:12 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 03:18:13 [INFO]: Base de datos conectada
+2026-01-08 03:18:14 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 03:18:14 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 03:18:15 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 03:18:15 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 03:18:56 [INFO]: [0mGET /cita/veterinarios [36m304[0m 4.038 ms - -[0m
+2026-01-08 03:18:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 352.846 ms - -[0m
+2026-01-08 03:18:57 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 637.934 ms - -[0m
+2026-01-08 03:23:01 [INFO]: [0mGET /cita/veterinarios [36m304[0m 7.476 ms - -[0m
+2026-01-08 03:23:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 365.086 ms - -[0m
+2026-01-08 03:23:01 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 332.592 ms - -[0m
+2026-01-08 03:25:32 [INFO]: [0mGET /cita/veterinarios [36m304[0m 3.538 ms - -[0m
+2026-01-08 03:25:32 [INFO]: [0mGET /api/servicios/lista [36m304[0m 335.805 ms - -[0m
+2026-01-08 03:25:32 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 321.649 ms - -[0m
+2026-01-08 03:27:53 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.774 ms - -[0m
+2026-01-08 03:27:53 [INFO]: [0mGET /api/servicios/lista [36m304[0m 337.434 ms - -[0m
+2026-01-08 03:27:53 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 317.077 ms - -[0m
+2026-01-08 03:27:58 [INFO]: [0mGET /cita/veterinarios [36m304[0m 2.507 ms - -[0m
+2026-01-08 03:27:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.079 ms - -[0m
+2026-01-08 03:27:58 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 298.053 ms - -[0m
+2026-01-08 03:28:25 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.873 ms - -[0m
+2026-01-08 03:28:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.711 ms - -[0m
+2026-01-08 03:28:26 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 297.131 ms - -[0m
+2026-01-08 03:41:40 [INFO]: servicioCtl: [object Object]
+2026-01-08 03:41:41 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 03:41:41 [INFO]: ✅ Rutas registradas:
+2026-01-08 03:41:41 [INFO]:    GET /
+2026-01-08 03:41:41 [INFO]:    POST /
+2026-01-08 03:41:41 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 03:41:41 [INFO]:    DELETE /limpiar
+2026-01-08 03:41:41 [INFO]:    GET /:id
+2026-01-08 03:41:41 [INFO]:    DELETE /:id
+2026-01-08 03:41:41 [INFO]:    POST /crear
+2026-01-08 03:41:41 [INFO]:    POST /crear-masiva
+2026-01-08 03:41:41 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 03:41:41 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 03:41:41 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 03:41:41 [INFO]:    POST /crear-alerta-programada
+2026-01-08 03:41:41 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 03:41:41 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 03:41:41 [INFO]: Base de datos conectada
+2026-01-08 03:41:42 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 03:41:43 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 03:41:43 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 03:41:43 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 03:41:55 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 339.476 ms - -[0m
+2026-01-08 03:41:55 [INFO]: [0mGET /cliente/lista [36m304[0m 645.362 ms - -[0m
+2026-01-08 03:41:55 [INFO]: [0mGET /api/servicios/lista [36m304[0m 822.661 ms - -[0m
+2026-01-08 03:41:56 [INFO]: [0mGET /cliente/lista [36m304[0m 387.408 ms - -[0m
+2026-01-08 03:41:56 [INFO]: [0mGET /api/servicios/lista [36m304[0m 365.883 ms - -[0m
+2026-01-08 03:41:56 [INFO]: [0mGET /cliente/lista [36m304[0m 346.298 ms - -[0m
+2026-01-08 03:41:56 [INFO]: [0mGET /mascota/lista [36m304[0m 1802.583 ms - -[0m
+2026-01-08 03:41:57 [INFO]: [0mGET /mascota/lista [36m304[0m 303.910 ms - -[0m
+2026-01-08 03:41:57 [INFO]: [0mGET /mascota/lista [36m304[0m 298.819 ms - -[0m
+2026-01-08 03:42:01 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.573 ms - -[0m
+2026-01-08 03:42:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.351 ms - -[0m
+2026-01-08 03:42:01 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 301.581 ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.804 ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /cliente/lista [36m304[0m 306.867 ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /api/servicios/lista [36m304[0m 481.634 ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.427 ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:43:30 [INFO]: [0mGET /cliente/lista [36m304[0m 354.679 ms - -[0m
+2026-01-08 03:43:31 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 297.235 ms - -[0m
+2026-01-08 03:43:31 [INFO]: [0mGET /api/servicios/lista [32m200[0m 468.658 ms - 417[0m
+2026-01-08 03:43:31 [INFO]: [0mGET /mascota/lista [36m304[0m 1680.869 ms - -[0m
+2026-01-08 03:43:39 [INFO]: [0mGET /api/notificaciones [33m404[0m 2.916 ms - 48[0m
+2026-01-08 03:43:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.245 ms - -[0m
+2026-01-08 03:43:39 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 3.408 ms - 48[0m
+2026-01-08 03:43:39 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 4.628 ms - 48[0m
+2026-01-08 03:43:41 [INFO]: [0mGET /api/notificaciones [33m404[0m 0.843 ms - 48[0m
+2026-01-08 03:43:41 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.493 ms - -[0m
+2026-01-08 03:43:41 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 1.718 ms - 48[0m
+2026-01-08 03:43:41 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 3.824 ms - 48[0m
+2026-01-08 03:43:42 [INFO]: [0mGET /mascotas/cliente/1 [33m404[0m 1.871 ms - 48[0m
+2026-01-08 03:43:42 [INFO]: [0mGET /veterinarios/lista [33m404[0m 1.050 ms - 48[0m
+2026-01-08 03:43:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 295.554 ms - 437[0m
+2026-01-08 03:43:51 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.049 ms - 48[0m
+2026-01-08 03:43:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.964 ms - -[0m
+2026-01-08 03:43:52 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 3.374 ms - 48[0m
+2026-01-08 03:43:52 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 4.594 ms - 48[0m
+2026-01-08 03:43:54 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.127 ms - 48[0m
+2026-01-08 03:43:56 [INFO]: [0mGET /api/notificaciones [33m404[0m 3.752 ms - 48[0m
+2026-01-08 03:43:56 [INFO]: [0mGET /api/servicios/lista [36m304[0m 295.884 ms - -[0m
+2026-01-08 03:43:56 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 1.616 ms - 48[0m
+2026-01-08 03:43:56 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 2.092 ms - 48[0m
+2026-01-08 03:43:58 [INFO]: [0mGET /api/notificaciones [33m404[0m 0.899 ms - 48[0m
+2026-01-08 03:43:58 [INFO]: [0mGET /api/notificaciones [33m404[0m 0.787 ms - 48[0m
+2026-01-08 03:43:58 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:43:59 [INFO]: [0mGET /api/servicios/lista [32m200[0m 300.201 ms - 417[0m
+2026-01-08 03:43:59 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 1.695 ms - 48[0m
+2026-01-08 03:43:59 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 2.640 ms - 48[0m
+2026-01-08 03:44:00 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.599 ms - 48[0m
+2026-01-08 03:44:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.963 ms - -[0m
+2026-01-08 03:44:00 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 3.646 ms - 48[0m
+2026-01-08 03:44:00 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 3.850 ms - 48[0m
+2026-01-08 03:44:01 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.307 ms - 48[0m
+2026-01-08 03:44:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.883 ms - -[0m
+2026-01-08 03:44:01 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 2.271 ms - 48[0m
+2026-01-08 03:44:01 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 3.335 ms - 48[0m
+2026-01-08 03:44:02 [INFO]: [0mGET /api/notificaciones [33m404[0m 0.687 ms - 48[0m
+2026-01-08 03:44:04 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.439 ms - 48[0m
+2026-01-08 03:44:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.418 ms - -[0m
+2026-01-08 03:44:05 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 2.205 ms - 48[0m
+2026-01-08 03:44:05 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 3.627 ms - 48[0m
+2026-01-08 03:44:05 [INFO]: [0mGET /mascotas/cliente/1 [33m404[0m 0.663 ms - 48[0m
+2026-01-08 03:44:05 [INFO]: [0mGET /veterinarios/lista [33m404[0m 0.778 ms - 48[0m
+2026-01-08 03:44:06 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.257 ms - -[0m
+2026-01-08 03:49:53 [INFO]: [0mGET /mascota/lista [36m304[0m 312.226 ms - -[0m
+2026-01-08 03:49:53 [INFO]: [0mGET /cita/agenda/2026-01-08 [32m200[0m 313.862 ms - -[0m
+2026-01-08 03:49:54 [INFO]: [0mGET /mascota/lista [36m304[0m 296.689 ms - -[0m
+2026-01-08 03:49:54 [INFO]: [0mGET /mascota/lista [36m304[0m 297.377 ms - -[0m
+2026-01-08 03:49:54 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:49:54 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:49:54 [INFO]: [0mGET /configuracion [36m304[0m 138.545 ms - -[0m
+2026-01-08 03:49:56 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.323 ms - -[0m
+2026-01-08 03:49:56 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767862195993 [33m404[0m 4.927 ms - 48[0m
+2026-01-08 03:49:56 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862195993 [33m404[0m 4.248 ms - 48[0m
+2026-01-08 03:49:56 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.853 ms - -[0m
+2026-01-08 03:49:56 [INFO]: [0mGET /api/servicios/lista [32m200[0m 297.540 ms - 417[0m
+2026-01-08 03:49:56 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.439 ms - -[0m
+2026-01-08 03:49:57 [INFO]: [0mGET /configuracion [36m304[0m 108.900 ms - -[0m
+2026-01-08 03:49:57 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 298.582 ms - -[0m
+2026-01-08 03:49:57 [INFO]: [0mGET /mascota/lista [36m304[0m 300.119 ms - -[0m
+2026-01-08 03:49:58 [INFO]: [0mGET /mascota/lista [36m304[0m 296.697 ms - -[0m
+2026-01-08 03:49:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 629.558 ms - -[0m
+2026-01-08 03:49:58 [INFO]: [0mGET /mascota/lista [36m304[0m 300.089 ms - -[0m
+2026-01-08 03:49:58 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:49:58 [INFO]: [0mGET /api/servicios/ [36m304[0m 295.533 ms - -[0m
+2026-01-08 03:50:04 [INFO]: [0mGET /api/servicios/ [36m304[0m 295.820 ms - -[0m
+2026-01-08 03:50:04 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767862204051 [33m404[0m 2.187 ms - 48[0m
+2026-01-08 03:50:04 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862204051 [33m404[0m 2.949 ms - 48[0m
+2026-01-08 03:50:04 [INFO]: [0mGET /cita/veterinarios [36m304[0m 3.947 ms - -[0m
+2026-01-08 03:50:04 [INFO]: [0mGET /api/servicios/lista [32m200[0m 297.445 ms - 417[0m
+2026-01-08 03:50:04 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.021 ms - -[0m
+2026-01-08 03:50:05 [INFO]: [0mGET /mascota/lista [36m304[0m 298.673 ms - -[0m
+2026-01-08 03:50:05 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 305.368 ms - -[0m
+2026-01-08 03:50:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 304.256 ms - -[0m
+2026-01-08 03:50:06 [INFO]: [0mGET /mascota/lista [36m304[0m 298.231 ms - -[0m
+2026-01-08 03:50:06 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.913 ms - -[0m
+2026-01-08 03:50:06 [INFO]: [0mGET /mascota/lista [36m304[0m 299.354 ms - -[0m
+2026-01-08 03:50:11 [INFO]: [0mGET /api/notificaciones [33m404[0m 0.737 ms - 48[0m
+2026-01-08 03:50:11 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.909 ms - -[0m
+2026-01-08 03:50:11 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 4.959 ms - 48[0m
+2026-01-08 03:50:11 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 5.919 ms - 48[0m
+2026-01-08 03:50:12 [ERROR]: Error al mostrar clientes: Error: read ECONNRESET
+2026-01-08 03:50:12 [INFO]: [0mGET /cliente/lista [31m500[0m 19290.393 ms - 69[0m
+2026-01-08 03:50:12 [ERROR]: Error: read ECONNRESET
+2026-01-08 03:50:12 [INFO]: [0mGET /cliente/lista [32m200[0m 317.087 ms - -[0m
+2026-01-08 03:50:13 [INFO]: [0mGET /cliente/lista [36m304[0m 311.227 ms - -[0m
+2026-01-08 03:50:13 [INFO]: [0mGET /cliente/lista [36m304[0m 305.873 ms - -[0m
+2026-01-08 03:50:13 [INFO]: [0mGET /cliente/lista [36m304[0m 302.654 ms - -[0m
+2026-01-08 03:50:14 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-08 03:50:14 [INFO]: [0mGET /configuracion/listar [31m500[0m 19275.096 ms - 45[0m
+2026-01-08 03:50:14 [INFO]: [0mGET /configuracion/listar [32m200[0m 111.118 ms - -[0m
+2026-01-08 03:50:53 [INFO]: servicioCtl: [object Object]
+2026-01-08 03:50:53 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 03:50:53 [INFO]: ✅ Rutas registradas:
+2026-01-08 03:50:53 [INFO]:    GET /
+2026-01-08 03:50:53 [INFO]:    POST /
+2026-01-08 03:50:53 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 03:50:53 [INFO]:    DELETE /limpiar
+2026-01-08 03:50:53 [INFO]:    GET /:id
+2026-01-08 03:50:53 [INFO]:    DELETE /:id
+2026-01-08 03:50:53 [INFO]:    POST /crear
+2026-01-08 03:50:53 [INFO]:    POST /crear-masiva
+2026-01-08 03:50:53 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 03:50:53 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 03:50:53 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 03:50:53 [INFO]:    POST /crear-alerta-programada
+2026-01-08 03:50:53 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 03:50:53 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 03:50:53 [INFO]: Base de datos conectada
+2026-01-08 03:50:54 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 03:50:55 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 03:50:56 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 03:50:56 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 03:51:03 [INFO]: [0mGET /cita/veterinarios [36m304[0m 4.302 ms - -[0m
+2026-01-08 03:51:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 330.450 ms - -[0m
+2026-01-08 03:51:04 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 634.173 ms - -[0m
+2026-01-08 03:51:09 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.614 ms - -[0m
+2026-01-08 03:51:09 [INFO]: [0mGET /api/servicios/lista [36m304[0m 304.545 ms - -[0m
+2026-01-08 03:51:09 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 304.960 ms - -[0m
+2026-01-08 03:51:11 [INFO]: [0mGET /api/servicios/ [36m304[0m 297.314 ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 300.421 ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.524 ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /mascota/lista [36m304[0m 665.992 ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 386.855 ms - -[0m
+2026-01-08 03:51:12 [INFO]: [0mGET /api/servicios/lista [32m200[0m 556.274 ms - 417[0m
+2026-01-08 03:51:13 [INFO]: [0mGET /api/servicios/ [36m304[0m 308.140 ms - -[0m
+2026-01-08 03:51:13 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767862272799 [33m404[0m 5.055 ms - 48[0m
+2026-01-08 03:51:13 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862272799 [33m404[0m 6.643 ms - 48[0m
+2026-01-08 03:51:13 [INFO]: [0mGET /cliente/lista [36m304[0m 1472.457 ms - -[0m
+2026-01-08 03:51:16 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862272799 [33m404[0m 1.136 ms - 48[0m
+2026-01-08 03:51:23 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.355 ms - -[0m
+2026-01-08 03:51:24 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.434 ms - -[0m
+2026-01-08 03:51:24 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 303.292 ms - -[0m
+2026-01-08 03:55:45 [INFO]: [0mGET /api/servicios/ [36m304[0m 342.742 ms - -[0m
+2026-01-08 03:55:52 [INFO]: [0mGET /usuario/lista [32m200[0m 185.921 ms - 977[0m
+2026-01-08 03:55:58 [INFO]: [0mGET /configuracion [36m304[0m 112.249 ms - -[0m
+2026-01-08 03:56:01 [INFO]: [0mGET /usuario/lista [36m304[0m 111.055 ms - -[0m
+2026-01-08 03:56:03 [INFO]: [0mGET /configuracion [36m304[0m 109.366 ms - -[0m
+2026-01-08 03:56:06 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.970 ms - -[0m
+2026-01-08 03:56:06 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.824 ms - -[0m
+2026-01-08 03:56:06 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 304.565 ms - -[0m
+2026-01-08 03:56:08 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.652 ms - -[0m
+2026-01-08 03:56:08 [INFO]: [0mGET /api/servicios/lista [36m304[0m 504.535 ms - -[0m
+2026-01-08 03:56:08 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:56:08 [INFO]: [0mGET /api/servicios/ [36m304[0m 294.566 ms - -[0m
+2026-01-08 03:56:08 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767862568509 [33m404[0m 5.981 ms - 48[0m
+2026-01-08 03:56:08 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862568509 [33m404[0m 7.335 ms - 48[0m
+2026-01-08 03:56:09 [INFO]: [0mGET /configuracion [36m304[0m 110.298 ms - -[0m
+2026-01-08 03:56:09 [INFO]: [0mGET /mascota/lista [36m304[0m 1726.845 ms - -[0m
+2026-01-08 03:56:09 [INFO]: [0mGET /cliente/lista [36m304[0m 1732.144 ms - -[0m
+2026-01-08 03:56:10 [INFO]: [0mGET /api/servicios/ [36m304[0m 295.135 ms - -[0m
+2026-01-08 03:56:10 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767862569990 [33m404[0m 2.140 ms - 48[0m
+2026-01-08 03:56:10 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862569990 [33m404[0m 3.449 ms - 48[0m
+2026-01-08 03:56:10 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.020 ms - -[0m
+2026-01-08 03:56:10 [INFO]: [0mGET /api/servicios/lista [32m200[0m 300.826 ms - 417[0m
+2026-01-08 03:56:11 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.208 ms - -[0m
+2026-01-08 03:56:11 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.721 ms - -[0m
+2026-01-08 03:56:12 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.214 ms - -[0m
+2026-01-08 03:56:12 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.097 ms - -[0m
+2026-01-08 03:56:12 [INFO]: [0mGET /cliente/lista [36m304[0m 1454.920 ms - -[0m
+2026-01-08 03:56:12 [INFO]: [0mGET /mascota/lista [36m304[0m 1463.956 ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /cliente/lista [36m304[0m 304.365 ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 309.346 ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /api/servicios/ [36m304[0m 294.855 ms - -[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767862576572 [33m404[0m 4.199 ms - 48[0m
+2026-01-08 03:56:16 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767862576572 [33m404[0m 3.694 ms - 48[0m
+2026-01-08 03:56:17 [INFO]: [0mGET /configuracion [36m304[0m 111.780 ms - -[0m
+2026-01-08 03:56:17 [INFO]: [0mGET /mascota/lista [36m304[0m 1457.540 ms - -[0m
+2026-01-08 03:56:17 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-08 03:56:17 [INFO]: [0mGET /configuracion/listar [31m500[0m 19280.881 ms - 45[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /configuracion/listar [32m200[0m 116.528 ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /configuracion/listar [36m304[0m 110.235 ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /configuracion/listar [36m304[0m 108.989 ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /api/servicios/ [36m304[0m 302.855 ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.141 ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 297.699 ms - -[0m
+2026-01-08 03:56:18 [INFO]: [0mGET /cliente/lista [32m200[0m 302.979 ms - -[0m
+2026-01-08 03:56:19 [INFO]: [0mGET /api/servicios/lista [32m200[0m 310.288 ms - 417[0m
+2026-01-08 03:56:19 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 295.995 ms - -[0m
+2026-01-08 03:56:19 [INFO]: [0mGET /configuracion/listar [36m304[0m 109.602 ms - -[0m
+2026-01-08 03:56:19 [INFO]: [0mGET /configuracion [36m304[0m 116.807 ms - -[0m
+2026-01-08 03:56:20 [INFO]: [0mGET /mascota/lista [36m304[0m 1465.287 ms - -[0m
+2026-01-08 03:56:20 [INFO]: [0mGET /usuario/lista [36m304[0m 117.025 ms - -[0m
+2026-01-08 03:56:29 [INFO]: [0mDELETE /usuario/eliminar/49 [32m200[0m 232.285 ms - 60[0m
+2026-01-08 03:56:32 [INFO]: [0mDELETE /usuario/eliminar/51 [32m200[0m 224.175 ms - 60[0m
+2026-01-08 03:56:35 [INFO]: [0mDELETE /usuario/eliminar/50 [32m200[0m 218.923 ms - 60[0m
+2026-01-08 03:58:09 [INFO]: [0mGET /usuario/lista [32m200[0m 137.264 ms - 236[0m
+2026-01-08 03:58:10 [INFO]: [0mGET /cita/veterinarios [36m304[0m 3.002 ms - -[0m
+2026-01-08 03:58:10 [INFO]: [0mGET /api/servicios/lista [36m304[0m 346.495 ms - -[0m
+2026-01-08 03:58:10 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 333.600 ms - -[0m
+2026-01-08 03:58:44 [INFO]: [0mGET /usuario/lista [36m304[0m 129.853 ms - -[0m
+2026-01-08 03:58:45 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.138 ms - -[0m
+2026-01-08 03:58:45 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.724 ms - -[0m
+2026-01-08 03:58:45 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 308.272 ms - -[0m
+2026-01-08 04:00:06 [INFO]: [0mGET /usuario/lista [36m304[0m 179.880 ms - -[0m
+2026-01-08 04:00:07 [INFO]: [0mGET /cita/veterinarios [36m304[0m 2.169 ms - -[0m
+2026-01-08 04:00:07 [INFO]: [0mGET /api/servicios/lista [36m304[0m 339.415 ms - -[0m
+2026-01-08 04:00:07 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 329.478 ms - -[0m
+2026-01-08 04:00:10 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.744 ms - -[0m
+2026-01-08 04:00:10 [INFO]: [0mGET /usuario/lista [36m304[0m 118.054 ms - -[0m
+2026-01-08 04:00:10 [INFO]: [0mGET /api/servicios/lista [36m304[0m 295.229 ms - -[0m
+2026-01-08 04:00:10 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.469 ms - -[0m
+2026-01-08 04:00:34 [INFO]: [0mGET /usuario/lista [36m304[0m 121.306 ms - -[0m
+2026-01-08 04:00:34 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.714 ms - -[0m
+2026-01-08 04:00:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.109 ms - -[0m
+2026-01-08 04:00:35 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.944 ms - -[0m
+2026-01-08 04:00:44 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.824 ms - -[0m
+2026-01-08 04:00:45 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.427 ms - -[0m
+2026-01-08 04:00:45 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.729 ms - -[0m
+2026-01-08 04:00:45 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.615 ms - -[0m
+2026-01-08 04:00:45 [INFO]: [0mGET /cliente/lista [36m304[0m 318.645 ms - -[0m
+2026-01-08 04:00:45 [INFO]: [0mGET /mascota/lista [36m304[0m 324.844 ms - -[0m
+2026-01-08 04:05:40 [INFO]: [0mGET /usuario/lista [36m304[0m 155.636 ms - -[0m
+2026-01-08 04:05:43 [INFO]: [0mGET /cita/veterinarios [36m304[0m 2.274 ms - -[0m
+2026-01-08 04:05:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.599 ms - -[0m
+2026-01-08 04:05:44 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 305.836 ms - -[0m
+2026-01-08 04:05:53 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.877 ms - -[0m
+2026-01-08 04:05:53 [INFO]: [0mGET /cliente/lista [36m304[0m 313.983 ms - -[0m
+2026-01-08 04:05:53 [INFO]: [0mGET /mascota/lista [36m304[0m 317.077 ms - -[0m
+2026-01-08 04:23:30 [INFO]: servicioCtl: [object Object]
+2026-01-08 04:23:30 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 04:23:30 [INFO]: ✅ Rutas registradas:
+2026-01-08 04:23:30 [INFO]:    GET /
+2026-01-08 04:23:30 [INFO]:    POST /
+2026-01-08 04:23:30 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 04:23:30 [INFO]:    DELETE /limpiar
+2026-01-08 04:23:30 [INFO]:    GET /:id
+2026-01-08 04:23:30 [INFO]:    DELETE /:id
+2026-01-08 04:23:30 [INFO]:    POST /crear
+2026-01-08 04:23:30 [INFO]:    POST /crear-masiva
+2026-01-08 04:23:30 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 04:23:30 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 04:23:30 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 04:23:30 [INFO]:    POST /crear-alerta-programada
+2026-01-08 04:23:30 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 04:23:30 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 04:23:30 [INFO]: Base de datos conectada
+2026-01-08 04:23:31 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 04:23:32 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 04:23:32 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 04:23:32 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 04:23:38 [INFO]: [0mGET /cita/veterinarios [36m304[0m 4.040 ms - -[0m
+2026-01-08 04:23:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 336.947 ms - -[0m
+2026-01-08 04:23:39 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 634.182 ms - -[0m
+2026-01-08 04:23:39 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.727 ms - -[0m
+2026-01-08 04:23:41 [INFO]: [0mGET /cliente/lista [36m304[0m 1481.037 ms - -[0m
+2026-01-08 04:23:41 [INFO]: [0mGET /mascota/lista [36m304[0m 1490.501 ms - -[0m
+2026-01-08 04:39:52 [INFO]: servicioCtl: [object Object]
+2026-01-08 04:39:52 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 04:39:52 [INFO]: ✅ Rutas registradas:
+2026-01-08 04:39:52 [INFO]:    GET /
+2026-01-08 04:39:52 [INFO]:    POST /
+2026-01-08 04:39:52 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 04:39:52 [INFO]:    DELETE /limpiar
+2026-01-08 04:39:52 [INFO]:    GET /:id
+2026-01-08 04:39:52 [INFO]:    DELETE /:id
+2026-01-08 04:39:52 [INFO]:    POST /crear
+2026-01-08 04:39:52 [INFO]:    POST /crear-masiva
+2026-01-08 04:39:52 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 04:39:52 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 04:39:52 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 04:39:52 [INFO]:    POST /crear-alerta-programada
+2026-01-08 04:39:52 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 04:39:52 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 04:39:53 [INFO]: Base de datos conectada
+2026-01-08 04:39:54 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 04:39:55 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 04:39:55 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 04:39:55 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 04:40:03 [INFO]: [0mGET /cita/veterinarios [36m304[0m 9.668 ms - -[0m
+2026-01-08 04:40:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 339.826 ms - -[0m
+2026-01-08 04:40:04 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 631.413 ms - -[0m
+2026-01-08 04:40:04 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.314 ms - -[0m
+2026-01-08 04:40:04 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.256 ms - -[0m
+2026-01-08 04:40:04 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 315.019 ms - -[0m
+2026-01-08 04:40:06 [INFO]: [0mGET /mascota/lista [36m304[0m 681.080 ms - -[0m
+2026-01-08 04:40:07 [INFO]: [0mGET /mascota/lista [36m304[0m 304.215 ms - -[0m
+2026-01-08 04:40:07 [INFO]: [0mGET /mascota/lista [36m304[0m 304.498 ms - -[0m
+2026-01-08 04:40:07 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1457.699 ms - -[0m
+2026-01-08 04:40:07 [INFO]: [0mGET /cliente/lista [36m304[0m 1475.064 ms - -[0m
+2026-01-08 04:40:07 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1640.437 ms - -[0m
+2026-01-08 04:40:08 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.105 ms - -[0m
+2026-01-08 04:40:09 [INFO]: [0mGET /cliente/lista [36m304[0m 1450.104 ms - -[0m
+2026-01-08 04:40:09 [INFO]: [0mGET /cliente/lista [36m304[0m 303.410 ms - -[0m
+2026-01-08 04:40:14 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.858 ms - -[0m
+2026-01-08 04:40:14 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.214 ms - -[0m
+2026-01-08 04:40:14 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 307.159 ms - -[0m
+2026-01-08 04:40:15 [INFO]: [0mGET /cita/veterinarios [36m304[0m 0.817 ms - -[0m
+2026-01-08 04:40:15 [INFO]: [0mGET /mascota/lista [36m304[0m 301.523 ms - -[0m
+2026-01-08 04:40:17 [INFO]: [0mGET /cliente/lista [36m304[0m 1716.344 ms - -[0m
+2026-01-08 04:41:43 [INFO]: [0mGET /usuario/lista [32m200[0m 164.344 ms - 708[0m
+2026-01-08 04:43:55 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.804 ms - -[0m
+2026-01-08 04:43:55 [INFO]: [0mGET /api/servicios/lista [36m304[0m 342.160 ms - -[0m
+2026-01-08 04:43:55 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 320.956 ms - -[0m
+2026-01-08 04:45:30 [INFO]: [0mGET /cita/veterinarios [36m304[0m 2.470 ms - -[0m
+2026-01-08 04:45:30 [INFO]: [0mGET /api/servicios/lista [36m304[0m 307.615 ms - -[0m
+2026-01-08 04:45:30 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 309.222 ms - -[0m
+2026-01-08 04:46:15 [INFO]: servicioCtl: [object Object]
+2026-01-08 04:46:16 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 04:46:16 [INFO]: ✅ Rutas registradas:
+2026-01-08 04:46:16 [INFO]:    GET /
+2026-01-08 04:46:16 [INFO]:    POST /
+2026-01-08 04:46:16 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 04:46:16 [INFO]:    DELETE /limpiar
+2026-01-08 04:46:16 [INFO]:    GET /:id
+2026-01-08 04:46:16 [INFO]:    DELETE /:id
+2026-01-08 04:46:16 [INFO]:    POST /crear
+2026-01-08 04:46:16 [INFO]:    POST /crear-masiva
+2026-01-08 04:46:16 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 04:46:16 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 04:46:16 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 04:46:16 [INFO]:    POST /crear-alerta-programada
+2026-01-08 04:46:16 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 04:46:16 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 04:46:16 [INFO]: Base de datos conectada
+2026-01-08 04:46:17 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 04:46:18 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 04:46:18 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 04:46:18 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 04:47:52 [INFO]: servicioCtl: [object Object]
+2026-01-08 04:47:53 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 04:47:53 [INFO]: ✅ Rutas registradas:
+2026-01-08 04:47:53 [INFO]:    GET /
+2026-01-08 04:47:53 [INFO]:    POST /
+2026-01-08 04:47:53 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 04:47:53 [INFO]:    DELETE /limpiar
+2026-01-08 04:47:53 [INFO]:    GET /:id
+2026-01-08 04:47:53 [INFO]:    DELETE /:id
+2026-01-08 04:47:53 [INFO]:    POST /crear
+2026-01-08 04:47:53 [INFO]:    POST /crear-masiva
+2026-01-08 04:47:53 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 04:47:53 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 04:47:53 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 04:47:53 [INFO]:    POST /crear-alerta-programada
+2026-01-08 04:47:53 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 04:47:53 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 04:47:53 [INFO]: Base de datos conectada
+2026-01-08 04:47:54 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 04:47:55 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 04:47:55 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 04:47:55 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 04:49:58 [INFO]: [0mGET /cita/veterinarios [36m304[0m 5.573 ms - -[0m
+2026-01-08 04:49:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 341.897 ms - -[0m
+2026-01-08 04:49:59 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 628.273 ms - -[0m
+2026-01-08 04:51:12 [INFO]: [0mGET /cita/veterinarios [36m304[0m 1.797 ms - -[0m
+2026-01-08 04:51:12 [INFO]: [0mGET /favicon.ico [33m404[0m 3.341 ms - 48[0m
+2026-01-08 04:55:34 [INFO]: servicioCtl: [object Object]
+2026-01-08 04:55:34 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 04:55:34 [INFO]: ✅ Rutas registradas:
+2026-01-08 04:55:34 [INFO]:    GET /
+2026-01-08 04:55:34 [INFO]:    POST /
+2026-01-08 04:55:34 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 04:55:34 [INFO]:    DELETE /limpiar
+2026-01-08 04:55:34 [INFO]:    GET /:id
+2026-01-08 04:55:34 [INFO]:    DELETE /:id
+2026-01-08 04:55:34 [INFO]:    POST /crear
+2026-01-08 04:55:34 [INFO]:    POST /crear-masiva
+2026-01-08 04:55:34 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 04:55:34 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 04:55:34 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 04:55:34 [INFO]:    POST /crear-alerta-programada
+2026-01-08 04:55:34 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 04:55:34 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 04:55:34 [INFO]: Base de datos conectada
+2026-01-08 04:55:35 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 04:55:36 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 04:55:36 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 04:55:36 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 04:56:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 333.934 ms - -[0m
+2026-01-08 04:56:02 [ERROR]: Error al obtener veterinarios: Error: Table 'Petpoket.detalleRol' doesn't exist
+2026-01-08 04:56:02 [INFO]: [0mGET /cita/veterinarios [31m500[0m 437.561 ms - 43[0m
+2026-01-08 04:56:03 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 670.178 ms - -[0m
+2026-01-08 04:59:07 [INFO]: servicioCtl: [object Object]
+2026-01-08 04:59:07 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 04:59:07 [INFO]: ✅ Rutas registradas:
+2026-01-08 04:59:07 [INFO]:    GET /
+2026-01-08 04:59:07 [INFO]:    POST /
+2026-01-08 04:59:07 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 04:59:07 [INFO]:    DELETE /limpiar
+2026-01-08 04:59:07 [INFO]:    GET /:id
+2026-01-08 04:59:07 [INFO]:    DELETE /:id
+2026-01-08 04:59:07 [INFO]:    POST /crear
+2026-01-08 04:59:07 [INFO]:    POST /crear-masiva
+2026-01-08 04:59:07 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 04:59:07 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 04:59:07 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 04:59:07 [INFO]:    POST /crear-alerta-programada
+2026-01-08 04:59:07 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 04:59:07 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 04:59:07 [INFO]: Base de datos conectada
+2026-01-08 04:59:08 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 04:59:09 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 04:59:09 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 04:59:09 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 04:59:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 374.984 ms - -[0m
+2026-01-08 04:59:21 [ERROR]: Error al obtener veterinarios: Error: Unknown column 'r.nombreRol' in 'where clause'
+2026-01-08 04:59:21 [INFO]: [0mGET /cita/veterinarios [31m500[0m 453.503 ms - 43[0m
+2026-01-08 04:59:21 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 651.699 ms - -[0m
+2026-01-08 05:03:31 [ERROR]: Error al obtener veterinarios: Error: Unknown column 'r.nombreRol' in 'where clause'
+2026-01-08 05:03:31 [INFO]: [0mGET /cita/veterinarios [31m500[0m 144.277 ms - 43[0m
+2026-01-08 05:03:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 433.373 ms - -[0m
+2026-01-08 05:03:31 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 370.500 ms - -[0m
+2026-01-08 05:03:38 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 05:03:46 [INFO]: servicioCtl: [object Object]
+2026-01-08 05:03:47 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 05:03:47 [INFO]: ✅ Rutas registradas:
+2026-01-08 05:03:47 [INFO]:    GET /
+2026-01-08 05:03:47 [INFO]:    POST /
+2026-01-08 05:03:47 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 05:03:47 [INFO]:    DELETE /limpiar
+2026-01-08 05:03:47 [INFO]:    GET /:id
+2026-01-08 05:03:47 [INFO]:    DELETE /:id
+2026-01-08 05:03:47 [INFO]:    POST /crear
+2026-01-08 05:03:47 [INFO]:    POST /crear-masiva
+2026-01-08 05:03:47 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 05:03:47 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 05:03:47 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 05:03:47 [INFO]:    POST /crear-alerta-programada
+2026-01-08 05:03:47 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 05:03:47 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 05:03:47 [INFO]: Base de datos conectada
+2026-01-08 05:03:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 05:03:49 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 05:03:49 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 05:03:49 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 05:04:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 335.060 ms - -[0m
+2026-01-08 05:04:03 [INFO]: [0mGET /cita/veterinarios [32m200[0m 439.479 ms - 49[0m
+2026-01-08 05:04:03 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 661.014 ms - -[0m
+2026-01-08 05:04:11 [INFO]: [0mGET /cita/veterinarios [36m304[0m 108.827 ms - -[0m
+2026-01-08 05:04:11 [INFO]: [0mGET /mascota/lista [36m304[0m 670.634 ms - -[0m
+2026-01-08 05:04:12 [INFO]: [0mGET /cliente/lista [36m304[0m 1675.279 ms - -[0m
+2026-01-08 05:04:12 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1683.593 ms - -[0m
+2026-01-08 05:04:18 [INFO]: [0mGET /cita/agenda/2026-01-02 [32m200[0m 114.337 ms - 2[0m
+2026-01-08 05:04:26 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 300.244 ms - -[0m
+2026-01-08 05:04:26 [INFO]: [0mGET /cita/veterinarios [36m304[0m 110.324 ms - -[0m
+2026-01-08 05:04:27 [INFO]: [0mGET /cliente/lista [36m304[0m 313.221 ms - -[0m
+2026-01-08 05:04:28 [INFO]: [0mGET /mascota/lista [36m304[0m 1498.045 ms - -[0m
+2026-01-08 05:10:13 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.320 ms - -[0m
+2026-01-08 05:10:13 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 313.020 ms - -[0m
+2026-01-08 05:10:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 325.275 ms - -[0m
+2026-01-08 05:12:51 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.983 ms - -[0m
+2026-01-08 05:12:51 [INFO]: [0mGET /api/servicios/lista [36m304[0m 351.270 ms - -[0m
+2026-01-08 05:12:51 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 335.207 ms - -[0m
+2026-01-08 05:13:51 [INFO]: servicioCtl: [object Object]
+2026-01-08 05:13:52 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 05:13:52 [INFO]: ✅ Rutas registradas:
+2026-01-08 05:13:52 [INFO]:    GET /
+2026-01-08 05:13:52 [INFO]:    POST /
+2026-01-08 05:13:52 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 05:13:52 [INFO]:    DELETE /limpiar
+2026-01-08 05:13:52 [INFO]:    GET /:id
+2026-01-08 05:13:52 [INFO]:    DELETE /:id
+2026-01-08 05:13:52 [INFO]:    POST /crear
+2026-01-08 05:13:52 [INFO]:    POST /crear-masiva
+2026-01-08 05:13:52 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 05:13:52 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 05:13:52 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 05:13:52 [INFO]:    POST /crear-alerta-programada
+2026-01-08 05:13:52 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 05:13:52 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 05:13:52 [INFO]: Base de datos conectada
+2026-01-08 05:13:53 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 05:13:54 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 05:13:54 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 05:13:54 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 05:13:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 348.055 ms - -[0m
+2026-01-08 05:13:58 [INFO]: [0mGET /cita/veterinarios [36m304[0m 441.767 ms - -[0m
+2026-01-08 05:13:58 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 631.719 ms - -[0m
+2026-01-08 05:14:01 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.578 ms - -[0m
+2026-01-08 05:14:01 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.574 ms - -[0m
+2026-01-08 05:14:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 303.966 ms - -[0m
+2026-01-08 05:14:02 [INFO]: [0mGET /mascota/lista [36m304[0m 669.288 ms - -[0m
+2026-01-08 05:14:02 [INFO]: [0mGET /mascota/lista [36m304[0m 301.741 ms - -[0m
+2026-01-08 05:14:04 [INFO]: [0mGET /cliente/lista [36m304[0m 2540.900 ms - -[0m
+2026-01-08 05:14:04 [INFO]: [0mGET /cliente/lista [36m304[0m 304.134 ms - -[0m
+2026-01-08 05:18:05 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 315.604 ms - -[0m
+2026-01-08 05:18:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 497.679 ms - -[0m
+2026-01-08 05:18:06 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.458 ms - -[0m
+2026-01-08 05:18:06 [INFO]: [0mGET /mascota/lista [36m304[0m 1689.337 ms - -[0m
+2026-01-08 05:18:07 [INFO]: [0mGET /mascota/lista [36m304[0m 299.077 ms - -[0m
+2026-01-08 05:18:07 [INFO]: [0mGET /mascota/lista [36m304[0m 296.848 ms - -[0m
+2026-01-08 05:18:07 [INFO]: [0mGET /cita/veterinarios [36m304[0m 110.182 ms - -[0m
+2026-01-08 05:18:07 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.924 ms - -[0m
+2026-01-08 05:18:07 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.655 ms - -[0m
+2026-01-08 05:18:27 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 05:18:27 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 05:18:29 [INFO]: [0mGET /cliente/lista [36m304[0m 23882.049 ms - -[0m
+2026-01-08 05:24:30 [INFO]: [0mGET /cita/veterinarios [36m304[0m 149.840 ms - -[0m
+2026-01-08 05:24:31 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1737.112 ms - -[0m
+2026-01-08 05:24:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1758.606 ms - -[0m
+2026-01-08 05:24:49 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.895 ms - -[0m
+2026-01-08 05:24:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.722 ms - -[0m
+2026-01-08 05:24:50 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1466.677 ms - -[0m
+2026-01-08 05:25:24 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.355 ms - -[0m
+2026-01-08 05:25:24 [INFO]: [0mGET /api/servicios/lista [36m304[0m 303.173 ms - -[0m
+2026-01-08 05:25:24 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 305.551 ms - -[0m
+2026-01-08 05:25:26 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.191 ms - -[0m
+2026-01-08 05:25:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.679 ms - -[0m
+2026-01-08 05:25:26 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.709 ms - -[0m
+2026-01-08 05:25:29 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.602 ms - -[0m
+2026-01-08 05:25:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.095 ms - -[0m
+2026-01-08 05:25:29 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 302.526 ms - -[0m
+2026-01-08 05:39:02 [INFO]: servicioCtl: [object Object]
+2026-01-08 05:39:02 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 05:39:02 [INFO]: ✅ Rutas registradas:
+2026-01-08 05:39:02 [INFO]:    GET /
+2026-01-08 05:39:02 [INFO]:    POST /
+2026-01-08 05:39:02 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 05:39:02 [INFO]:    DELETE /limpiar
+2026-01-08 05:39:02 [INFO]:    GET /:id
+2026-01-08 05:39:02 [INFO]:    DELETE /:id
+2026-01-08 05:39:02 [INFO]:    POST /crear
+2026-01-08 05:39:02 [INFO]:    POST /crear-masiva
+2026-01-08 05:39:02 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 05:39:02 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 05:39:02 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 05:39:02 [INFO]:    POST /crear-alerta-programada
+2026-01-08 05:39:02 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 05:39:02 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 05:39:03 [INFO]: Base de datos conectada
+2026-01-08 05:39:04 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 05:39:05 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 05:39:05 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 05:39:05 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 05:39:19 [INFO]: [0mGET /api/servicios/lista [32m200[0m 345.051 ms - 417[0m
+2026-01-08 05:39:19 [INFO]: [0mGET /cita/veterinarios [32m200[0m 442.073 ms - 49[0m
+2026-01-08 05:39:19 [INFO]: [0mGET /cita/agenda/2026-01-08 [32m200[0m 644.548 ms - -[0m
+2026-01-08 05:39:20 [INFO]: [0mGET /cliente/lista [36m304[0m 994.942 ms - -[0m
+2026-01-08 05:39:21 [INFO]: [0mGET /mascota/lista [36m304[0m 1841.999 ms - -[0m
+2026-01-08 05:39:24 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.190 ms - -[0m
+2026-01-08 05:39:25 [INFO]: [0mGET /cliente/lista [36m304[0m 313.661 ms - -[0m
+2026-01-08 05:39:25 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 495.813 ms - -[0m
+2026-01-08 05:39:25 [INFO]: [0mGET /cita/veterinarios [0m-[0m - ms - -[0m
+2026-01-08 05:39:25 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 461.743 ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /mascota/lista [36m304[0m 1484.820 ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1496.025 ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /mascota/lista [36m304[0m 302.574 ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.180 ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /mascota/lista [36m304[0m 302.620 ms - -[0m
+2026-01-08 05:39:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.309 ms - -[0m
+2026-01-08 05:39:27 [INFO]: [0mGET /mascota/lista [36m304[0m 295.903 ms - -[0m
+2026-01-08 05:39:27 [INFO]: [0mGET /cliente/lista [32m200[0m 1607.024 ms - -[0m
+2026-01-08 05:39:27 [INFO]: [0mGET /cliente/lista [36m304[0m 305.801 ms - -[0m
+2026-01-08 05:39:28 [INFO]: [0mGET /cliente/lista [36m304[0m 300.294 ms - -[0m
+2026-01-08 05:39:33 [INFO]: [0mGET /cita/veterinarios [32m200[0m 115.231 ms - 49[0m
+2026-01-08 05:39:33 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.133 ms - -[0m
+2026-01-08 05:39:33 [INFO]: [0mGET /mascota/lista [36m304[0m 298.593 ms - -[0m
+2026-01-08 05:39:33 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 301.449 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /cliente/lista [36m304[0m 1475.000 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.861 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /cita/veterinarios [36m304[0m 116.730 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /mascota/lista [36m304[0m 300.839 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 314.519 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /cliente/lista [36m304[0m 313.741 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /mascota/lista [36m304[0m 297.331 ms - -[0m
+2026-01-08 05:39:35 [INFO]: [0mGET /cliente/lista [36m304[0m 310.480 ms - -[0m
+2026-01-08 05:50:23 [INFO]: servicioCtl: [object Object]
+2026-01-08 05:50:23 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 05:50:23 [INFO]: ✅ Rutas registradas:
+2026-01-08 05:50:23 [INFO]:    GET /
+2026-01-08 05:50:23 [INFO]:    POST /
+2026-01-08 05:50:23 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 05:50:23 [INFO]:    DELETE /limpiar
+2026-01-08 05:50:23 [INFO]:    GET /:id
+2026-01-08 05:50:23 [INFO]:    DELETE /:id
+2026-01-08 05:50:23 [INFO]:    POST /crear
+2026-01-08 05:50:23 [INFO]:    POST /crear-masiva
+2026-01-08 05:50:23 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 05:50:23 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 05:50:23 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 05:50:23 [INFO]:    POST /crear-alerta-programada
+2026-01-08 05:50:23 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 05:50:23 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 05:50:23 [INFO]: Base de datos conectada
+2026-01-08 05:50:24 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 05:50:25 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 05:50:25 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 05:50:25 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 05:50:33 [INFO]: [0mGET /cita/veterinarios [36m304[0m 134.738 ms - -[0m
+2026-01-08 05:50:34 [INFO]: [0mGET /mascota/lista [36m304[0m 1014.899 ms - -[0m
+2026-01-08 05:50:34 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1020.184 ms - -[0m
+2026-01-08 05:50:35 [INFO]: [0mGET /cita/veterinarios [36m304[0m 110.453 ms - -[0m
+2026-01-08 05:50:35 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.404 ms - -[0m
+2026-01-08 05:50:35 [INFO]: [0mGET /mascota/lista [36m304[0m 302.166 ms - -[0m
+2026-01-08 05:50:35 [INFO]: [0mGET /cliente/lista [36m304[0m 1969.556 ms - -[0m
+2026-01-08 05:50:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1998.549 ms - -[0m
+2026-01-08 05:50:36 [INFO]: [0mGET /mascota/lista [36m304[0m 308.749 ms - -[0m
+2026-01-08 05:50:36 [INFO]: [0mGET /api/servicios/lista [36m304[0m 375.080 ms - -[0m
+2026-01-08 05:50:37 [INFO]: [0mGET /cliente/lista [36m304[0m 1458.510 ms - -[0m
+2026-01-08 05:50:37 [INFO]: [0mGET /cliente/lista [36m304[0m 307.749 ms - -[0m
+2026-01-08 05:53:00 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.023 ms - -[0m
+2026-01-08 05:53:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.189 ms - -[0m
+2026-01-08 05:53:00 [INFO]: [0mGET /cliente/lista [36m304[0m 312.152 ms - -[0m
+2026-01-08 05:53:00 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 483.130 ms - -[0m
+2026-01-08 05:53:02 [INFO]: [0mGET /mascota/lista [36m304[0m 1711.481 ms - -[0m
+2026-01-08 05:53:09 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.749 ms - -[0m
+2026-01-08 05:53:09 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.101 ms - -[0m
+2026-01-08 05:53:09 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 296.815 ms - -[0m
+2026-01-08 05:53:09 [INFO]: [0mGET /mascota/lista [36m304[0m 302.044 ms - -[0m
+2026-01-08 05:53:10 [INFO]: [0mGET /cliente/lista [36m304[0m 1478.035 ms - -[0m
+2026-01-08 05:53:14 [INFO]: [0mGET /cita/veterinarios [36m304[0m 119.089 ms - -[0m
+2026-01-08 05:53:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.857 ms - -[0m
+2026-01-08 05:53:15 [INFO]: [0mGET /cliente/lista [36m304[0m 308.162 ms - -[0m
+2026-01-08 05:53:15 [INFO]: [0mGET /mascota/lista [36m304[0m 311.706 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /cita/veterinarios [36m304[0m 119.484 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /cita/veterinarios [36m304[0m 114.752 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.244 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /cliente/lista [36m304[0m 319.108 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /mascota/lista [36m304[0m 320.605 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1494.108 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /mascota/lista [36m304[0m 298.517 ms - -[0m
+2026-01-08 05:53:16 [INFO]: [0mGET /cliente/lista [36m304[0m 312.467 ms - -[0m
+2026-01-08 05:59:11 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 06:05:05 [INFO]: servicioCtl: [object Object]
+2026-01-08 06:05:06 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 06:05:06 [INFO]: ✅ Rutas registradas:
+2026-01-08 06:05:06 [INFO]:    GET /
+2026-01-08 06:05:06 [INFO]:    POST /
+2026-01-08 06:05:06 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 06:05:06 [INFO]:    DELETE /limpiar
+2026-01-08 06:05:06 [INFO]:    GET /:id
+2026-01-08 06:05:06 [INFO]:    DELETE /:id
+2026-01-08 06:05:06 [INFO]:    POST /crear
+2026-01-08 06:05:06 [INFO]:    POST /crear-masiva
+2026-01-08 06:05:06 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 06:05:06 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 06:05:06 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 06:05:06 [INFO]:    POST /crear-alerta-programada
+2026-01-08 06:05:06 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 06:05:06 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 06:05:06 [INFO]: Base de datos conectada
+2026-01-08 06:05:08 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 06:05:09 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 06:05:09 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 06:05:09 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 06:05:11 [INFO]: [0mGET /mascotas/cliente/1 [33m404[0m 9.918 ms - 48[0m
+2026-01-08 06:05:11 [INFO]: [0mGET /veterinarios/lista [33m404[0m 2.320 ms - 48[0m
+2026-01-08 06:05:12 [INFO]: [0mGET /api/servicios/ [36m304[0m 452.969 ms - -[0m
+2026-01-08 06:05:43 [INFO]: [0mGET /mascotas/cliente/1 [33m404[0m 3.565 ms - 48[0m
+2026-01-08 06:05:43 [INFO]: [0mGET /veterinarios/lista [33m404[0m 1.610 ms - 48[0m
+2026-01-08 06:05:43 [INFO]: [0mGET /api/servicios/ [36m304[0m 362.350 ms - -[0m
+2026-01-08 06:05:48 [INFO]: [0mGET /mascotas/cliente/1 [33m404[0m 1.210 ms - 48[0m
+2026-01-08 06:05:48 [INFO]: [0mGET /veterinarios/lista [33m404[0m 1.695 ms - 48[0m
+2026-01-08 06:05:49 [INFO]: [0mGET /api/servicios/ [36m304[0m 374.679 ms - -[0m
+2026-01-08 06:07:39 [INFO]: [0mGET /mascotas/cliente/1 [33m404[0m 10.468 ms - 48[0m
+2026-01-08 06:07:39 [INFO]: [0mGET /veterinarios/lista [33m404[0m 1.062 ms - 48[0m
+2026-01-08 06:07:40 [INFO]: [0mGET /api/servicios/ [36m304[0m 410.925 ms - -[0m
+2026-01-08 06:09:10 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=11:14 [32m200[0m 143.040 ms - 19[0m
+2026-01-08 06:09:23 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=11:14&idVeterinario=27 [32m200[0m 111.005 ms - 19[0m
+2026-01-08 06:09:51 [ERROR]: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_855` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-08 06:09:51 [INFO]: [0mPOST /cita/crear [31m500[0m 892.550 ms - 33[0m
+2026-01-08 06:10:20 [INFO]: [0mGET /api/notificaciones [33m404[0m 5.010 ms - 48[0m
+2026-01-08 06:10:20 [INFO]: [0mGET /api/servicios/lista [32m200[0m 404.990 ms - 417[0m
+2026-01-08 06:10:20 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 19.938 ms - 48[0m
+2026-01-08 06:10:20 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 10.108 ms - 48[0m
+2026-01-08 06:10:26 [INFO]: [0mGET /api/notificaciones [33m404[0m 2.135 ms - 48[0m
+2026-01-08 06:10:27 [INFO]: [0mGET /api/servicios/lista [36m304[0m 618.325 ms - -[0m
+2026-01-08 06:10:27 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 4.913 ms - 48[0m
+2026-01-08 06:10:27 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 4.712 ms - 48[0m
+2026-01-08 06:10:27 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.353 ms - 48[0m
+2026-01-08 06:10:37 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.023 ms - 48[0m
+2026-01-08 06:10:37 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.110 ms - -[0m
+2026-01-08 06:10:37 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 4.486 ms - 48[0m
+2026-01-08 06:10:37 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 15.389 ms - 48[0m
+2026-01-08 06:14:28 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 06:14:35 [INFO]: servicioCtl: [object Object]
+2026-01-08 06:14:36 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 06:14:36 [INFO]: ✅ Rutas registradas:
+2026-01-08 06:14:36 [INFO]:    GET /
+2026-01-08 06:14:36 [INFO]:    POST /
+2026-01-08 06:14:36 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 06:14:36 [INFO]:    DELETE /limpiar
+2026-01-08 06:14:36 [INFO]:    GET /:id
+2026-01-08 06:14:36 [INFO]:    DELETE /:id
+2026-01-08 06:14:36 [INFO]:    POST /crear
+2026-01-08 06:14:36 [INFO]:    POST /crear-masiva
+2026-01-08 06:14:36 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 06:14:36 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 06:14:36 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 06:14:36 [INFO]:    POST /crear-alerta-programada
+2026-01-08 06:14:36 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 06:14:36 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 06:14:36 [INFO]: Base de datos conectada
+2026-01-08 06:14:37 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 06:14:38 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 06:14:38 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 06:14:38 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 06:14:59 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=06:18 [32m200[0m 200.736 ms - 19[0m
+2026-01-08 06:15:03 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=06:18&idVeterinario=27 [32m200[0m 381.694 ms - 19[0m
+2026-01-08 06:15:13 [ERROR]: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_855` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-08 06:15:13 [INFO]: [0mPOST /cita/crear [31m500[0m 780.990 ms - 33[0m
+2026-01-08 06:18:54 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 06:19:02 [INFO]: servicioCtl: [object Object]
+2026-01-08 06:19:02 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 06:19:02 [INFO]: ✅ Rutas registradas:
+2026-01-08 06:19:02 [INFO]:    GET /
+2026-01-08 06:19:02 [INFO]:    POST /
+2026-01-08 06:19:02 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 06:19:02 [INFO]:    DELETE /limpiar
+2026-01-08 06:19:02 [INFO]:    GET /:id
+2026-01-08 06:19:02 [INFO]:    DELETE /:id
+2026-01-08 06:19:02 [INFO]:    POST /crear
+2026-01-08 06:19:02 [INFO]:    POST /crear-masiva
+2026-01-08 06:19:02 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 06:19:02 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 06:19:02 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 06:19:02 [INFO]:    POST /crear-alerta-programada
+2026-01-08 06:19:02 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 06:19:02 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 06:19:03 [INFO]: Base de datos conectada
+2026-01-08 06:19:04 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 06:19:04 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 06:19:05 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 06:19:05 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 06:20:42 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=09:23 [32m200[0m 144.872 ms - 19[0m
+2026-01-08 06:20:49 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=09:23&idVeterinario=27 [32m200[0m 119.162 ms - 19[0m
+2026-01-08 06:21:01 [ERROR]: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`Petpoket`.`citas`, CONSTRAINT `citas_ibfk_855` FOREIGN KEY (`userIdUser`) REFERENCES `users` (`idUser`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-01-08 06:21:01 [INFO]: [0mPOST /cita/crear [31m500[0m 690.737 ms - 33[0m
+2026-01-08 06:25:35 [INFO]: servicioCtl: [object Object]
+2026-01-08 06:25:35 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 06:25:35 [INFO]: ✅ Rutas registradas:
+2026-01-08 06:25:35 [INFO]:    GET /
+2026-01-08 06:25:35 [INFO]:    POST /
+2026-01-08 06:25:35 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 06:25:35 [INFO]:    DELETE /limpiar
+2026-01-08 06:25:35 [INFO]:    GET /:id
+2026-01-08 06:25:35 [INFO]:    DELETE /:id
+2026-01-08 06:25:35 [INFO]:    POST /crear
+2026-01-08 06:25:35 [INFO]:    POST /crear-masiva
+2026-01-08 06:25:35 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 06:25:35 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 06:25:35 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 06:25:35 [INFO]:    POST /crear-alerta-programada
+2026-01-08 06:25:35 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 06:25:35 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 06:25:36 [INFO]: Base de datos conectada
+2026-01-08 06:25:38 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 06:25:39 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 06:25:39 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 06:25:39 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 06:26:20 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=07:27 [32m200[0m 267.473 ms - 19[0m
+2026-01-08 06:26:21 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=07:27&idVeterinario=53 [32m200[0m 108.410 ms - 19[0m
+2026-01-08 06:26:24 [INFO]: [0mGET /cita/verificar-disponibilidad?fecha=2026-01-08&hora=07:27 [36m304[0m 374.766 ms - -[0m
+2026-01-08 06:26:30 [INFO]: [0mPOST /cita/crear [32m201[0m 1430.993 ms - 51[0m
+2026-01-08 06:26:31 [INFO]: [0mGET /cita/cliente/1?t=1767871591687 [32m200[0m 285.689 ms - -[0m
+2026-01-08 06:27:40 [INFO]: [0mDELETE /cita/cancelar/27 [32m200[0m 739.391 ms - 28[0m
+2026-01-08 06:27:43 [INFO]: [0mGET /cita/cliente/1?t=1767871662948 [32m200[0m 221.789 ms - -[0m
+2026-01-08 06:28:12 [INFO]: [0mDELETE /cita/cancelar/15 [32m200[0m 264.006 ms - 28[0m
+2026-01-08 06:28:14 [INFO]: [0mGET /cita/cliente/1?t=1767871693940 [32m200[0m 246.339 ms - -[0m
+2026-01-08 06:28:17 [INFO]: [0mDELETE /cita/cancelar/78 [32m200[0m 492.748 ms - 28[0m
+2026-01-08 06:28:19 [INFO]: [0mGET /cita/cliente/1?t=1767871698965 [32m200[0m 496.777 ms - -[0m
+2026-01-08 06:28:53 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.968 ms - 48[0m
+2026-01-08 06:28:53 [INFO]: [0mGET /api/servicios/lista [36m304[0m 588.789 ms - -[0m
+2026-01-08 06:28:53 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 11.202 ms - 48[0m
+2026-01-08 06:28:53 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 12.061 ms - 48[0m
+2026-01-08 06:28:56 [INFO]: [0mGET /cita/cliente/1?t=1767871736404 [32m200[0m 111.651 ms - -[0m
+2026-01-08 06:30:14 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.220 ms - 48[0m
+2026-01-08 06:30:14 [INFO]: [0mGET /api/servicios/lista [36m304[0m 349.768 ms - -[0m
+2026-01-08 06:30:15 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 4.784 ms - 48[0m
+2026-01-08 06:30:15 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 6.357 ms - 48[0m
+2026-01-08 06:30:23 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.619 ms - 48[0m
+2026-01-08 06:30:23 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.023 ms - -[0m
+2026-01-08 06:30:23 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 2.849 ms - 48[0m
+2026-01-08 06:30:23 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 4.760 ms - 48[0m
+2026-01-08 06:30:25 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.269 ms - 48[0m
+2026-01-08 06:31:13 [INFO]: [0mGET /api/notificaciones [33m404[0m 1.895 ms - 48[0m
+2026-01-08 06:31:22 [INFO]: [0mGET /api/notificaciones [33m404[0m 5.778 ms - 48[0m
+2026-01-08 06:33:18 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-08 06:49:52 [INFO]: servicioCtl: [object Object]
+2026-01-08 06:49:53 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 06:49:53 [INFO]: Base de datos conectada
+2026-01-08 06:49:54 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 06:49:55 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 06:49:55 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 06:49:55 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 07:04:34 [INFO]: [0mGET /notificaciones/lista?t=1767873873852 [33m404[0m 70.474 ms - 48[0m
+2026-01-08 07:05:08 [INFO]: [0mGET /notificaciones/lista?t=1767873908876 [33m404[0m 10.971 ms - 48[0m
+2026-01-08 07:05:10 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 07:05:46 [INFO]: servicioCtl: [object Object]
+2026-01-08 07:05:46 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 07:05:46 [INFO]: [0mGET /api/servicios/lista [31m503[0m 3.082 ms - 28[0m
+2026-01-08 07:05:46 [INFO]: [0mGET /notificaciones/lista?t=1767873944478 [31m503[0m 0.400 ms - 28[0m
+2026-01-08 07:05:47 [INFO]: Base de datos conectada
+2026-01-08 07:05:47 [INFO]: [0mGET /api/servicios/lista [31m503[0m 1.424 ms - 28[0m
+2026-01-08 07:05:47 [INFO]: [0mGET /notificaciones/lista?t=1767873947439 [31m503[0m 1.614 ms - 28[0m
+2026-01-08 07:05:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 07:05:50 [INFO]: [0mGET /notificaciones/lista?t=1767873950312 [33m404[0m 3.705 ms - 48[0m
+2026-01-08 07:05:50 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 07:05:50 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 07:05:50 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 07:05:53 [INFO]: [0mGET /api/servicios/lista [32m200[0m 3176.424 ms - 417[0m
+2026-01-08 07:05:53 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 6.749 ms - 48[0m
+2026-01-08 07:05:53 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg [33m404[0m 8.022 ms - 48[0m
+2026-01-08 07:06:02 [INFO]: [0mGET /notificaciones/lista?t=1767873962966 [33m404[0m 4.935 ms - 48[0m
+2026-01-08 07:08:11 [INFO]: [0mGET /notificaciones/lista?t=1767874091675 [33m404[0m 2.387 ms - 48[0m
+2026-01-08 07:17:12 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:17:39 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: read ECONNRESET
+2026-01-08 07:17:39 [INFO]: [0mGET /notificacion/lista?t=1767874632819 [31m500[0m 27006.733 ms - 180[0m
+2026-01-08 07:17:50 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:17:52 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 07:17:52 [INFO]: [0mGET /notificacion/lista?t=1767874670845 [0m-[0m - ms - -[0m
+2026-01-08 07:17:52 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 1
+2026-01-08 07:17:52 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:17:52 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 1
+2026-01-08 07:17:52 [INFO]: [0mGET /notificacion/lista?t=1767874672332 [32m200[0m 430.383 ms - 258[0m
+2026-01-08 07:17:54 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1852.058 ms - 417[0m
+2026-01-08 07:17:56 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:17:57 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 1
+2026-01-08 07:17:57 [INFO]: [0mGET /notificacion/lista?t=1767874676568 [32m200[0m 447.795 ms - 258[0m
+2026-01-08 07:17:57 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:17:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 975.297 ms - -[0m
+2026-01-08 07:17:57 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 1
+2026-01-08 07:17:58 [INFO]: [0mGET /notificacion/lista?t=1767874677520 [32m200[0m 469.717 ms - 258[0m
+2026-01-08 07:18:02 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:18:02 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 1
+2026-01-08 07:18:02 [INFO]: [0mGET /notificacion/lista?t=1767874682277 [32m200[0m 203.115 ms - 258[0m
+2026-01-08 07:19:35 [INFO]: [NOTIFICACIONES] POST /crear recibido
+2026-01-08 07:19:35 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-08 07:19:35 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-08 07:19:35 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-08 07:19:36 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-08 07:19:36 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-08 07:19:36 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-08 07:19:37 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 45
+2026-01-08 07:19:37 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-08 07:19:37 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 45,
+  "mensaje": "sdaasda: dsfds",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "1/8/2026, 7:19:37 AM",
+  "fechaProgramada": "2026-01-09T08:20"
+}
+2026-01-08 07:19:37 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-08 07:19:52 [INFO]: [0mPOST /notificacion/crear [0m-[0m - ms - -[0m
+2026-01-08 07:19:52 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:19:53 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 1
+2026-01-08 07:19:53 [INFO]: [0mGET /notificacion/lista?t=1767874792914 [32m200[0m 285.039 ms - 258[0m
+2026-01-08 07:20:10 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: read ECONNRESET
+2026-01-08 07:20:10 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "errno": -4077,
+    "code": "ECONNRESET",
+    "syscall": "read",
+    "fatal": true,
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      45,
+      "sdaasda: dsfds",
+      "programada",
+      "2026-01-09 13:20:00",
+      "1/8/2026, 7:19:37 AM"
+    ]
+  },
+  "original": {
+    "errno": -4077,
+    "code": "ECONNRESET",
+    "syscall": "read",
+    "fatal": true,
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      45,
+      "sdaasda: dsfds",
+      "programada",
+      "2026-01-09 13:20:00",
+      "1/8/2026, 7:19:37 AM"
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    45,
+    "sdaasda: dsfds",
+    "programada",
+    "2026-01-09 13:20:00",
+    "1/8/2026, 7:19:37 AM"
+  ]
+}
+2026-01-08 07:20:10 [INFO]: [NOTIFICACIONES] Eliminando notificación
+2026-01-08 07:20:10 [INFO]: [NOTIFICACIONES] Params: [object Object]
+2026-01-08 07:20:10 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-08 07:20:10 [INFO]: [NOTIFICACIONES] Query: [object Object]
+2026-01-08 07:20:10 [INFO]: [NOTIFICACIONES] ID obtenido: 59
+2026-01-08 07:20:10 [INFO]: [NOTIFICACIONES] Verificando existencia de notificación: 59
+2026-01-08 07:20:11 [INFO]: [NOTIFICACIONES] Resultado de verificación: [object Object]
+2026-01-08 07:20:11 [INFO]: [NOTIFICACIONES] Notificación encontrada, procediendo a eliminar...
+2026-01-08 07:20:11 [INFO]: [NOTIFICACIONES] Notificación eliminada exitosamente. Filas afectadas: 1
+2026-01-08 07:20:11 [INFO]: [0mDELETE /notificacion/eliminar/59 [32m200[0m 747.907 ms - 111[0m
+2026-01-08 07:20:13 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-08 07:20:14 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 0
+2026-01-08 07:20:14 [INFO]: [0mGET /notificacion/lista?t=1767874813623 [32m200[0m 456.756 ms - 2[0m
+2026-01-08 07:20:42 [INFO]: [NOTIFICACIONES] POST /crear recibido
+2026-01-08 07:20:42 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-08 07:20:42 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-08 07:20:42 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-08 07:20:43 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-08 07:20:43 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-08 07:20:43 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-08 07:20:44 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 45
+2026-01-08 07:20:44 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-08 07:20:44 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 45,
+  "mensaje": "Vacuna: dsadadasda",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "1/8/2026, 7:20:44 AM",
+  "fechaProgramada": "2026-01-08T07:22"
+}
+2026-01-08 07:20:44 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-08 07:21:09 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: read ECONNRESET
+2026-01-08 07:21:09 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "errno": -4077,
+    "code": "ECONNRESET",
+    "syscall": "read",
+    "fatal": true,
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      45,
+      "Vacuna: dsadadasda",
+      "programada",
+      "2026-01-08 12:22:00",
+      "1/8/2026, 7:20:44 AM"
+    ]
+  },
+  "original": {
+    "errno": -4077,
+    "code": "ECONNRESET",
+    "syscall": "read",
+    "fatal": true,
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      45,
+      "Vacuna: dsadadasda",
+      "programada",
+      "2026-01-08 12:22:00",
+      "1/8/2026, 7:20:44 AM"
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    45,
+    "Vacuna: dsadadasda",
+    "programada",
+    "2026-01-08 12:22:00",
+    "1/8/2026, 7:20:44 AM"
+  ]
+}
+2026-01-08 07:21:09 [INFO]: [0mPOST /notificacion/crear [31m500[0m 26881.796 ms - 260[0m
+2026-01-08 07:40:48 [INFO]: servicioCtl: [object Object]
+2026-01-08 07:40:49 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 07:40:49 [INFO]: Base de datos conectada
+2026-01-08 07:40:50 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 07:40:51 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 07:40:51 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-08 07:40:51 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 07:40:54 [INFO]: [0mGET /cita/agenda/2026-01-08 [32m200[0m 352.923 ms - -[0m
+2026-01-08 07:40:54 [INFO]: [0mGET /api/servicios/lista [32m200[0m 996.652 ms - 417[0m
+2026-01-08 07:40:55 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.301 ms - -[0m
+2026-01-08 07:40:55 [INFO]: [0mGET /mascota/lista [32m200[0m 1790.346 ms - -[0m
+2026-01-08 07:40:55 [INFO]: [0mGET /cliente/lista [32m200[0m 1810.630 ms - -[0m
+2026-01-08 07:40:56 [INFO]: [0mGET /mascota/lista [36m304[0m 299.165 ms - -[0m
+2026-01-08 07:40:56 [INFO]: [0mGET /mascota/lista [36m304[0m 297.143 ms - -[0m
+2026-01-08 07:40:56 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 07:40:56 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 07:40:56 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.119 ms - -[0m
+2026-01-08 07:40:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.879 ms - -[0m
+2026-01-08 07:40:57 [INFO]: [0mGET /mascota/lista [36m304[0m 299.329 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /mascota/lista [36m304[0m 298.077 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.920 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1631.662 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.404 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /mascota/lista [36m304[0m 300.782 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /cliente/lista [32m200[0m 1772.342 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 297.743 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /mascota/lista [36m304[0m 302.099 ms - -[0m
+2026-01-08 07:40:58 [INFO]: [0mGET /cliente/lista [36m304[0m 305.213 ms - -[0m
+2026-01-08 07:40:59 [INFO]: [0mGET /cliente/lista [36m304[0m 303.768 ms - -[0m
+2026-01-08 07:40:59 [INFO]: [0mGET /cliente/lista [36m304[0m 302.293 ms - -[0m
+2026-01-08 07:41:10 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.737 ms - -[0m
+2026-01-08 07:41:10 [INFO]: [0mGET /cliente/lista [36m304[0m 304.945 ms - -[0m
+2026-01-08 07:41:10 [INFO]: [0mGET /mascota/lista [36m304[0m 307.354 ms - -[0m
+2026-01-08 07:41:11 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.267 ms - -[0m
+2026-01-08 07:41:11 [INFO]: [0mGET /cliente/lista [36m304[0m 302.026 ms - -[0m
+2026-01-08 07:41:11 [INFO]: [0mGET /mascota/lista [36m304[0m 304.863 ms - -[0m
+2026-01-08 07:41:12 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1448.990 ms - -[0m
+2026-01-08 07:41:12 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1465.332 ms - -[0m
+2026-01-08 07:41:12 [INFO]: [0mGET /api/servicios/lista [36m304[0m 295.358 ms - -[0m
+2026-01-08 07:41:14 [INFO]: [0mGET /api/servicios/ [36m304[0m 295.623 ms - -[0m
+2026-01-08 07:41:14 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1767876074305 [33m404[0m 3.838 ms - 48[0m
+2026-01-08 07:41:14 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/vacunacion.jpg?t=1767876074305 [33m404[0m 6.431 ms - 48[0m
+2026-01-08 07:41:14 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.274 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.928 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /cliente/lista [36m304[0m 306.070 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /mascota/lista [36m304[0m 308.440 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /cita/veterinarios [36m304[0m 107.763 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 295.151 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /cliente/lista [36m304[0m 299.948 ms - -[0m
+2026-01-08 07:41:15 [INFO]: [0mGET /mascota/lista [36m304[0m 302.712 ms - -[0m
+2026-01-08 07:41:16 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 1470.648 ms - -[0m
+2026-01-08 07:41:16 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.240 ms - -[0m
+2026-01-08 07:41:17 [INFO]: [0mGET /cliente/lista [36m304[0m 306.481 ms - -[0m
+2026-01-08 07:41:17 [INFO]: [0mGET /mascota/lista [36m304[0m 310.378 ms - -[0m
+2026-01-08 07:43:10 [INFO]: [0mGET /cita/veterinarios [36m304[0m 110.467 ms - -[0m
+2026-01-08 07:43:10 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.311 ms - -[0m
+2026-01-08 07:43:10 [INFO]: [0mGET /cliente/lista [36m304[0m 306.872 ms - -[0m
+2026-01-08 07:43:10 [INFO]: [0mGET /mascota/lista [36m304[0m 308.383 ms - -[0m
+2026-01-08 07:43:10 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 310.131 ms - -[0m
+2026-01-08 07:43:17 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.768 ms - -[0m
+2026-01-08 07:43:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.002 ms - -[0m
+2026-01-08 07:43:17 [INFO]: [0mGET /cliente/lista [36m304[0m 307.864 ms - -[0m
+2026-01-08 07:43:17 [INFO]: [0mGET /mascota/lista [36m304[0m 308.396 ms - -[0m
+2026-01-08 07:43:17 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 308.808 ms - -[0m
+2026-01-08 07:43:19 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.960 ms - -[0m
+2026-01-08 07:43:19 [INFO]: [0mGET /cita/veterinarios [36m304[0m 107.863 ms - -[0m
+2026-01-08 07:43:20 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.834 ms - -[0m
+2026-01-08 07:43:20 [INFO]: [0mGET /cliente/lista [36m304[0m 303.566 ms - -[0m
+2026-01-08 07:43:20 [INFO]: [0mGET /mascota/lista [36m304[0m 305.624 ms - -[0m
+2026-01-08 07:43:20 [INFO]: [0mGET /cliente/lista [36m304[0m 302.129 ms - -[0m
+2026-01-08 07:43:20 [INFO]: [0mGET /mascota/lista [36m304[0m 303.155 ms - -[0m
+2026-01-08 07:43:43 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.915 ms - -[0m
+2026-01-08 07:43:43 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.760 ms - -[0m
+2026-01-08 07:43:43 [INFO]: [0mGET /cliente/lista [36m304[0m 305.876 ms - -[0m
+2026-01-08 07:43:43 [INFO]: [0mGET /mascota/lista [36m304[0m 306.325 ms - -[0m
+2026-01-08 07:43:43 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 308.501 ms - -[0m
+2026-01-08 07:43:48 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.738 ms - -[0m
+2026-01-08 07:43:48 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.563 ms - -[0m
+2026-01-08 07:43:48 [INFO]: [0mGET /cliente/lista [36m304[0m 304.351 ms - -[0m
+2026-01-08 07:43:48 [INFO]: [0mGET /mascota/lista [36m304[0m 305.783 ms - -[0m
+2026-01-08 07:43:48 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 306.300 ms - -[0m
+2026-01-08 07:43:49 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.625 ms - -[0m
+2026-01-08 07:43:50 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.287 ms - -[0m
+2026-01-08 07:43:50 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.172 ms - -[0m
+2026-01-08 07:43:56 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.006 ms - -[0m
+2026-01-08 07:43:56 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.815 ms - -[0m
+2026-01-08 07:43:56 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 299.219 ms - -[0m
+2026-01-08 07:44:02 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.593 ms - -[0m
+2026-01-08 07:44:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.416 ms - -[0m
+2026-01-08 07:44:02 [INFO]: [0mGET /cliente/lista [36m304[0m 299.289 ms - -[0m
+2026-01-08 07:44:02 [INFO]: [0mGET /mascota/lista [36m304[0m 300.045 ms - -[0m
+2026-01-08 07:44:04 [INFO]: [0mGET /cita/veterinarios [36m304[0m 110.247 ms - -[0m
+2026-01-08 07:44:04 [INFO]: [0mGET /cliente/lista [36m304[0m 303.061 ms - -[0m
+2026-01-08 07:44:04 [INFO]: [0mGET /mascota/lista [36m304[0m 306.482 ms - -[0m
+2026-01-08 07:47:40 [INFO]: [0mGET /cita/veterinarios [36m304[0m 138.472 ms - -[0m
+2026-01-08 07:47:41 [INFO]: [0mGET /api/servicios/lista [36m304[0m 496.316 ms - -[0m
+2026-01-08 07:47:41 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 353.138 ms - -[0m
+2026-01-08 07:47:44 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-08 07:47:44 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-08 07:47:44 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-08 07:47:44 [INFO]: [0mGET /cita/veterinarios [0m-[0m - ms - -[0m
+2026-01-08 07:47:44 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 324.050 ms - -[0m
+2026-01-08 07:47:45 [INFO]: [0mGET /cliente/lista [32m200[0m 643.884 ms - -[0m
+2026-01-08 07:47:45 [INFO]: [0mGET /mascota/lista [32m200[0m 629.769 ms - -[0m
+2026-01-08 07:47:45 [INFO]: [0mGET /cliente/lista [36m304[0m 302.778 ms - -[0m
+2026-01-08 07:47:45 [INFO]: [0mGET /mascota/lista [36m304[0m 305.301 ms - -[0m
+2026-01-08 07:47:45 [INFO]: [0mGET /cliente/lista [36m304[0m 301.435 ms - -[0m
+2026-01-08 07:47:45 [INFO]: [0mGET /mascota/lista [36m304[0m 303.670 ms - -[0m
+2026-01-08 07:47:46 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1757.815 ms - 417[0m
+2026-01-08 07:47:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 296.335 ms - -[0m
+2026-01-08 07:47:50 [INFO]: [0mGET /cita/veterinarios [32m200[0m 108.875 ms - 49[0m
+2026-01-08 07:47:50 [INFO]: [0mGET /api/servicios/lista [36m304[0m 295.974 ms - -[0m
+2026-01-08 07:47:50 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 298.878 ms - -[0m
+2026-01-08 07:47:51 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.051 ms - -[0m
+2026-01-08 07:47:51 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.369 ms - -[0m
+2026-01-08 07:47:51 [INFO]: [0mGET /cliente/lista [36m304[0m 302.786 ms - -[0m
+2026-01-08 07:47:51 [INFO]: [0mGET /mascota/lista [36m304[0m 304.037 ms - -[0m
+2026-01-08 07:47:52 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.253 ms - -[0m
+2026-01-08 07:47:52 [INFO]: [0mGET /cliente/lista [36m304[0m 304.453 ms - -[0m
+2026-01-08 07:47:52 [INFO]: [0mGET /mascota/lista [36m304[0m 306.469 ms - -[0m
+2026-01-08 07:49:24 [INFO]: [0mGET /cita/veterinarios [36m304[0m 117.143 ms - -[0m
+2026-01-08 07:49:24 [INFO]: [0mGET /cliente/lista [36m304[0m 320.165 ms - -[0m
+2026-01-08 07:49:24 [INFO]: [0mGET /mascota/lista [36m304[0m 320.775 ms - -[0m
+2026-01-08 07:50:46 [INFO]: [0mGET /cita/veterinarios [36m304[0m 135.542 ms - -[0m
+2026-01-08 07:50:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 357.686 ms - -[0m
+2026-01-08 07:50:46 [INFO]: [0mGET /cita/agenda/2026-01-08 [36m304[0m 344.701 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /cita/veterinarios [36m304[0m 114.374 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.038 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.060 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /cliente/lista [36m304[0m 336.660 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /mascota/lista [36m304[0m 340.898 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /cliente/lista [36m304[0m 316.901 ms - -[0m
+2026-01-08 07:50:51 [INFO]: [0mGET /mascota/lista [36m304[0m 317.361 ms - -[0m
+2026-01-08 07:52:44 [INFO]: [0mGET /cita/veterinarios [36m304[0m 115.379 ms - -[0m
+2026-01-08 07:52:44 [INFO]: [0mGET /cliente/lista [36m304[0m 318.900 ms - -[0m
+2026-01-08 07:52:44 [INFO]: [0mGET /mascota/lista [36m304[0m 324.063 ms - -[0m
+2026-01-08 07:57:27 [INFO]: servicioCtl: [object Object]
+2026-01-08 07:57:27 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 07:57:28 [INFO]: Base de datos conectada
+2026-01-08 07:57:28 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 07:57:29 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 07:57:29 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-08 07:57:29 [INFO]: 🚀 MongoDB conectado correctamente

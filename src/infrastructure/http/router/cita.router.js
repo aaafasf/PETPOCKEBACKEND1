@@ -14,7 +14,8 @@ const {
     cambiarEstadoCita,
     verificarDisponibilidad,
     obtenerEstadisticas,
-    obtenerVeterinarios
+    obtenerVeterinarios,
+    obtenerCitasPorFecha
 } = require('../controller/cita.controller');
 
 // =======================
@@ -54,6 +55,9 @@ router.get('/detalle/:idCita', obtenerCitaPorId);
 router.get('/cliente/:idCliente', obtenerCitasPorCliente);
 router.get('/calendario', obtenerCalendarioCitas);
 router.get('/estadisticas', obtenerEstadisticas);
+router.get('/agenda/:fecha', obtenerCitasPorFecha);
+
+
 
 router.post('/crear', validacionCrearCita, crearCita);
 router.put('/actualizar/:idCita', validacionActualizarCita, actualizarCita);

@@ -5,10 +5,14 @@ dotenv.config();
 
 const claveSecreta = process.env.CLAVE_SECRETA || 'cifrarDatos';
 
-// Cambiamos el nombre para que coincida con el uso en el resto del sistema
-function encrypt(datos) {
+// =======================
+// CIFRAR
+// =======================
+function cifrarDatos(datos) {
     try {
-        const textoAEncriptar = typeof datos === 'string' ? datos : JSON.stringify(datos);
+        const textoAEncriptar =
+            typeof datos === 'string' ? datos : JSON.stringify(datos);
+
         return CryptoJS.AES.encrypt(textoAEncriptar, claveSecreta).toString();
     } catch (error) {
         console.error('Error al cifrar datos:', error.message);
@@ -16,26 +20,38 @@ function encrypt(datos) {
     }
 }
 
-function decrypt(cifrado) {
+// Alias para compatibilidad
+const encrypt = cifrarDatos;
+
+// =======================
+// DESCIFRAR
+// =======================
+function descifrarDatos(cifrado) {
     try {
         if (!cifrado) return '';
-        // Si el texto NO empieza con U2Fsd (prefijo estándar de AES), devuélvelo tal cual
-        // Esto permite leer "Firulais" o "Steven" sin que se borren.
+
+        // Si NO parece AES, devolver tal cual (nombres normales)
         if (!cifrado.startsWith('U2Fsd')) return cifrado;
+
         const bytes = CryptoJS.AES.decrypt(cifrado, claveSecreta);
         const textoDescifrado = bytes.toString(CryptoJS.enc.Utf8);
-        
-        // Intentamos parsear como JSON, si falla (porque es solo texto), devolvemos el texto
-        
-            return textoDescifrado || cifrado;
-        
+
+        return textoDescifrado || cifrado;
     } catch (error) {
         console.error('Error al descifrar datos:', error.message);
-        return cifrado; // Devolvemos el original si hay error para no romper la app
+        return cifrado;
     }
 }
 
+// Alias para compatibilidad
+const decrypt = descifrarDatos;
+
+// =======================
+// EXPORTS
+// =======================
 module.exports = {
+    cifrarDatos,
+    descifrarDatos,
     encrypt,
     decrypt
-}
+};
