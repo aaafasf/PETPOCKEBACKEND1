@@ -5742,3 +5742,151 @@ notNull Violation: servicio.precio cannot be null
 2026-01-07 18:55:26 [INFO]: [0mGET /usuario/lista [36m304[0m 164.564 ms - -[0m
 2026-01-07 18:57:44 [INFO]: [0mGET /usuario/lista [36m304[0m 118.204 ms - -[0m
 2026-01-07 18:57:52 [INFO]: [0mDELETE /usuario/eliminar/33 [32m200[0m 246.979 ms - 60[0m
+2026-01-08 01:59:00 [INFO]: servicioCtl: [object Object]
+2026-01-08 01:59:00 [INFO]: ✅ Router de notificaciones cargado correctamente
+2026-01-08 01:59:00 [INFO]: ✅ Rutas registradas:
+2026-01-08 01:59:00 [INFO]:    GET /
+2026-01-08 01:59:00 [INFO]:    POST /
+2026-01-08 01:59:00 [INFO]:    PATCH /:id/marcar-leida
+2026-01-08 01:59:00 [INFO]:    DELETE /limpiar
+2026-01-08 01:59:00 [INFO]:    GET /:id
+2026-01-08 01:59:00 [INFO]:    DELETE /:id
+2026-01-08 01:59:00 [INFO]:    POST /crear
+2026-01-08 01:59:00 [INFO]:    POST /crear-masiva
+2026-01-08 01:59:00 [INFO]:    PUT /marcar-leida/:idNotificacion
+2026-01-08 01:59:00 [INFO]:    PUT /marcar-todas-leidas/:idUsuario
+2026-01-08 01:59:00 [INFO]:    DELETE /eliminar/:idNotificacion
+2026-01-08 01:59:00 [INFO]:    POST /crear-alerta-programada
+2026-01-08 01:59:00 [INFO]:    DELETE /limpiar-historial/:idUsuario
+2026-01-08 01:59:00 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-08 01:59:00 [INFO]: Base de datos conectada
+2026-01-08 01:59:01 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-08 01:59:02 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-08 01:59:03 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-08 01:59:03 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-08 01:59:52 [INFO]: [0mGET /cita/veterinarios [36m304[0m 5.917 ms - -[0m
+2026-01-08 01:59:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 369.079 ms - -[0m
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [INFO]: [0mGET /cita/lista [0m-[0m - ms - -[0m
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:53 [INFO]: [0mGET /cita/veterinarios [36m304[0m 2.076 ms - -[0m
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:54 [INFO]: [0mGET /api/servicios/lista [36m304[0m 766.433 ms - -[0m
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [ERROR]: Error al descifrar: TypeError: descifrarDatos is not a function
+2026-01-08 01:59:55 [INFO]: [0mGET /cita/lista [32m200[0m 1826.669 ms - -[0m
