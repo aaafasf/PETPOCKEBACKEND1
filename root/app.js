@@ -132,7 +132,7 @@ app.use('/notificacion', require('../src/infrastructure/http/router/notificacion
 
 
 // ==================== MANEJO DE ERRORES ====================
-app.use((err, req, res, next) => {
+app.use((err, req, res, next) => {  
     logger.error(`Error: ${err.message}`);
     res.status(err.status || 500).json({
         success: false,
