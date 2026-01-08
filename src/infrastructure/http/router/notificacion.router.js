@@ -116,7 +116,10 @@ router.get('/usuario/:idUsuario/no-leidas', validacionParametroUsuario, (req, re
 });
 
 // Crear nueva notificación
-router.post('/crear', validacionCrearNotificacion, crearNotificacion);
+router.post('/crear', (req, res) => {
+    console.log("¡La ruta funciona!", req.body);
+    res.status(200).json({ mensaje: "Conexión exitosa" });
+});
 
 // Crear notificaciones masivas
 router.post('/crear-masiva', validacionNotificacionMasiva, crearNotificacionMasiva);
