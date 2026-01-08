@@ -14,6 +14,7 @@ const {
     cambiarEstado,
     obtenerEstadisticas
 } = require('../controller/usuario.controller');
+const usuarioCtrl = require('../controller/usuario.controller');
 
 // Middleware de autenticación (opcional, descomenta si lo necesitas)
 // const isLoggedIn = require('../lib/auth');
@@ -134,7 +135,7 @@ router.post('/crear', validacionCrearUsuario, crearUsuario);
 router.post('/asignar-rol', validacionRol, asignarRol);
 
 // Remover rol de usuario
-router.post('/remover-rol', validacionRol, removerRol);
+//router.post('/removerRol', usuarioCtrl.removerRol);
 
 // Actualizar usuario existente
 router.put('/actualizar/:id', validacionActualizarUsuario, actualizarUsuario);
@@ -143,6 +144,6 @@ router.put('/actualizar/:id', validacionActualizarUsuario, actualizarUsuario);
 router.put('/cambiar-estado/:id', validacionEstado, cambiarEstado);
 
 // Eliminar (desactivar) usuario
-router.delete('/eliminar/:id', eliminarUsuario);
+router.delete('/eliminar/:id', usuarioCtrl.eliminarUsuario);
 
 module.exports = router;
