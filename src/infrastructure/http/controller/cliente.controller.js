@@ -2,7 +2,7 @@ const clienteCtl = {};
 const orm = require('../../Database/dataBase.orm.js');
 const sql = require('../../Database/dataBase.sql.js');
 const mongo = require('../../Database/dataBaseMongose');
-const { cifrarDatos, descifrarDatos } = require('../../../application/controller/encrypDates.js');
+const { encrypt: cifrarDatos, decrypt: descifrarDatos} = require('../../../application/controller/encrypDates');
 
 // Función para descifrar de forma segura
 const descifrarSeguro = (dato) => {

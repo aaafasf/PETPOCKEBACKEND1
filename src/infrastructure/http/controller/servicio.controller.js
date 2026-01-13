@@ -6,6 +6,13 @@ const mongo = require('../../Database/dataBaseMongose');
 
 const servicioCtl = {};
 
+// Función auxiliar para construir URL completa de imagen
+const construirUrlImagen = (req, imagenUrl) => {
+  if (!imagenUrl) return null;
+  const baseUrl = `${req.protocol}://${req.get('host')}`;
+  return `${baseUrl}/uploads/servicios/${imagenUrl}`;
+};
+
 // =======================
 // LISTAR ADMIN
 // =======================
@@ -35,7 +42,7 @@ servicioCtl.listarAdmin = async (req, res) => {
           descripcionServicio: s.descripcionServicio,
           precioServicio: s.precioServicio,
           estadoServicio: s.estadoServicio,
-          imagen: servicioMongo?.imagenUrl || null,
+          imagen: construirUrlImagen(req, servicioMongo?.imagenUrl),
           citas: 0
         };
       } catch (error) {
@@ -88,7 +95,7 @@ servicioCtl.listarPublico = async (req, res) => {
           descripcionServicio: s.descripcionServicio,
           precioServicio: s.precioServicio,
           estadoServicio: s.estadoServicio,
-          imagen: servicioMongo?.imagenUrl || null
+          imagen: construirUrlImagen(req, servicioMongo?.imagenUrl)
         };
       } catch (error) {
         return {
@@ -153,7 +160,7 @@ servicioCtl.crear = async (req, res) => {
       descripcionServicio: descripcion,
       precioServicio: precio,
       estadoServicio: 'activo',
-      imagen: imagenUrl
+      imagen: construirUrlImagen(req, imagenUrl)
     });
 
   } catch (error) {
@@ -212,7 +219,7 @@ servicioCtl.actualizar = async (req, res) => {
       descripcionServicio: descripcion,
       precioServicio: precio,
       estadoServicio,
-      imagen: imagenUrl
+      imagen: construirUrlImagen(req, imagenUrl)
     });
 
   } catch (error) {
