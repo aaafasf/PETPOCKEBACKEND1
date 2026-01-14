@@ -9888,3 +9888,242 @@ notNull Violation: servicio.precio cannot be null
 2026-01-12 21:22:37 [INFO]: [0mGET /mascota/lista [36m304[0m 291.741 ms - -[0m
 2026-01-12 21:22:37 [INFO]: [0mGET /cliente/lista [36m304[0m 300.865 ms - -[0m
 >>>>>>> 280df2276005c2fb5ef13e65ef9251d79fb6c33e
+2026-01-12 23:15:44 [INFO]: servicioCtl: [object Object]
+2026-01-12 23:15:45 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-12 23:15:46 [INFO]: Base de datos conectada
+2026-01-12 23:15:47 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-12 23:15:47 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-12 23:15:47 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-12 23:15:48 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-12 23:16:24 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-12 23:16:40 [INFO]: servicioCtl: [object Object]
+2026-01-12 23:16:40 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-12 23:16:40 [INFO]: Base de datos conectada
+2026-01-12 23:16:41 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-12 23:16:42 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-12 23:16:42 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-12 23:16:42 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-12 23:17:12 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:17:12 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:17:12 [INFO]: [0mGET /notificacion/lista?t=1768277831784 [32m200[0m 126.012 ms - -[0m
+2026-01-12 23:17:12 [INFO]: [0mGET /api/servicios/lista [32m200[0m 458.911 ms - 326[0m
+2026-01-12 23:17:12 [INFO]: [0mGET /uploads/null [33m404[0m 6.003 ms - 48[0m
+2026-01-12 23:17:15 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:17:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 392.606 ms - -[0m
+2026-01-12 23:17:16 [INFO]: [0mGET /uploads/null [33m404[0m 1.394 ms - 48[0m
+2026-01-12 23:17:16 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:17:16 [INFO]: [0mGET /notificacion/lista?t=1768277835567 [32m200[0m 443.009 ms - -[0m
+2026-01-12 23:17:17 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:17:17 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:17:17 [INFO]: [0mGET /notificacion/lista?t=1768277837050 [32m200[0m 119.224 ms - -[0m
+2026-01-12 23:17:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 402.687 ms - -[0m
+2026-01-12 23:17:17 [INFO]: [0mGET /uploads/null [33m404[0m 2.563 ms - 48[0m
+2026-01-12 23:17:18 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:17:19 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:17:19 [INFO]: [0mGET /notificacion/lista?t=1768277838963 [32m200[0m 113.540 ms - -[0m
+2026-01-12 23:17:20 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:17:20 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:17:20 [INFO]: [0mGET /notificacion/lista?t=1768277840178 [32m200[0m 115.035 ms - -[0m
+2026-01-12 23:17:20 [INFO]: [0mGET /api/servicios/lista [36m304[0m 390.667 ms - -[0m
+2026-01-12 23:17:20 [INFO]: [0mGET /uploads/null [33m404[0m 1.569 ms - 48[0m
+2026-01-12 23:17:28 [INFO]: [0mGET /api/servicios/ [32m200[0m 394.559 ms - 346[0m
+2026-01-12 23:17:30 [INFO]: [0mGET /cliente/lista [32m200[0m 954.747 ms - -[0m
+2026-01-12 23:17:30 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-12 23:17:30 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-12 23:17:30 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:17:30 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-12 23:17:30 [INFO]: [0mGET /mascota/lista [32m200[0m 1180.674 ms - -[0m
+2026-01-12 23:17:31 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277849701 [32m200[0m 1751.786 ms - -[0m
+2026-01-12 23:17:31 [INFO]: [0mGET /api/servicios/ [36m304[0m 912.305 ms - -[0m
+2026-01-12 23:17:32 [INFO]: [0mGET /cita/veterinarios [32m200[0m 111.852 ms - 71[0m
+2026-01-12 23:17:32 [INFO]: [0mGET /api/servicios/lista [36m304[0m 391.865 ms - -[0m
+2026-01-12 23:17:32 [INFO]: [0mGET /api/servicios/ [32m200[0m 1771.834 ms - 346[0m
+2026-01-12 23:17:33 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277852162 [32m200[0m 1575.245 ms - -[0m
+2026-01-12 23:17:38 [INFO]: [0mGET /configuracion/listar [32m200[0m 110.300 ms - -[0m
+2026-01-12 23:17:38 [INFO]: [0mGET /configuracion [32m200[0m 122.426 ms - 272[0m
+2026-01-12 23:17:40 [INFO]: [0mGET /usuario/lista [32m200[0m 123.859 ms - 251[0m
+2026-01-12 23:17:43 [INFO]: [0mGET /api/servicios/ [32m200[0m 303.957 ms - 346[0m
+2026-01-12 23:17:43 [INFO]: [0mGET /api/servicios/ [32m200[0m 345.694 ms - 346[0m
+2026-01-12 23:17:43 [INFO]: [0mGET /api/servicios/ [36m304[0m 381.487 ms - -[0m
+2026-01-12 23:17:51 [INFO]: [0mGET /configuracion [36m304[0m 118.445 ms - -[0m
+2026-01-12 23:17:51 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.525 ms - -[0m
+2026-01-12 23:17:52 [INFO]: [0mGET /usuario/lista [36m304[0m 110.024 ms - -[0m
+2026-01-12 23:17:58 [INFO]: [0mGET /api/servicios/ [36m304[0m 304.442 ms - -[0m
+2026-01-12 23:17:58 [INFO]: [0mGET /api/servicios/ [32m200[0m 300.523 ms - 346[0m
+2026-01-12 23:17:58 [INFO]: [0mGET /api/servicios/ [32m200[0m 299.820 ms - 346[0m
+2026-01-12 23:17:58 [INFO]: [0mGET /api/servicios/ [32m200[0m 299.580 ms - 346[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277971014 [32m200[0m 311.626 ms - -[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /mascota/lista [36m304[0m 488.237 ms - -[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 666.143 ms - -[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /cliente/lista [32m200[0m 658.841 ms - -[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /mascota/lista [32m200[0m 666.287 ms - -[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /api/servicios/lista [32m200[0m 546.691 ms - 326[0m
+2026-01-12 23:19:31 [INFO]: [0mGET /cliente/lista [32m200[0m 370.852 ms - -[0m
+2026-01-12 23:19:32 [INFO]: [0mGET /mascota/lista [32m200[0m 362.888 ms - -[0m
+2026-01-12 23:19:32 [INFO]: [0mGET /usuario/lista [36m304[0m 110.975 ms - -[0m
+2026-01-12 23:19:32 [INFO]: [0mGET /cliente/lista [36m304[0m 1701.556 ms - -[0m
+2026-01-12 23:19:35 [INFO]: [0mGET /configuracion [36m304[0m 109.670 ms - -[0m
+2026-01-12 23:19:35 [INFO]: [0mGET /configuracion/listar [36m304[0m 118.806 ms - -[0m
+2026-01-12 23:19:37 [INFO]: [0mGET /api/servicios/ [36m304[0m 297.819 ms - -[0m
+2026-01-12 23:19:37 [INFO]: [0mGET /cita/veterinarios [36m304[0m 115.981 ms - -[0m
+2026-01-12 23:19:37 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.386 ms - -[0m
+2026-01-12 23:19:37 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277977347 [32m200[0m 301.209 ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /cliente/lista [36m304[0m 310.979 ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /mascota/lista [36m304[0m 314.035 ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/lista [36m304[0m 504.209 ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /cliente/lista [32m200[0m 498.693 ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/ [36m304[0m 301.496 ms - -[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/ [32m200[0m 300.370 ms - 346[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/ [32m200[0m 298.176 ms - 346[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/ [32m200[0m 439.322 ms - 346[0m
+2026-01-12 23:19:38 [INFO]: [0mGET /api/servicios/ [32m200[0m 427.978 ms - 346[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277977713 [32m200[0m 1492.876 ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277979015 [32m200[0m 310.254 ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /cliente/lista [32m200[0m 486.544 ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /cliente/lista [36m304[0m 504.461 ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /api/servicios/ [36m304[0m 296.315 ms - -[0m
+2026-01-12 23:19:39 [INFO]: [0mGET /api/servicios/ [32m200[0m 299.344 ms - 346[0m
+2026-01-12 23:19:40 [INFO]: [0mGET /api/servicios/ [32m200[0m 419.305 ms - 346[0m
+2026-01-12 23:19:40 [INFO]: [0mGET /api/servicios/ [32m200[0m 418.500 ms - 346[0m
+2026-01-12 23:19:40 [INFO]: [0mGET /api/servicios/ [32m200[0m 299.914 ms - 346[0m
+2026-01-12 23:19:40 [INFO]: [0mGET /api/servicios/ [32m200[0m 619.193 ms - 346[0m
+2026-01-12 23:19:40 [INFO]: [0mGET /mascota/lista [36m304[0m 1468.249 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /cliente/lista [36m304[0m 305.405 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277980874 [32m200[0m 317.442 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /api/servicios/lista [36m304[0m 481.710 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /cliente/lista [32m200[0m 488.178 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /mascota/lista [32m200[0m 486.433 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /cliente/lista [32m200[0m 348.602 ms - -[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /api/servicios/lista [32m200[0m 358.925 ms - 326[0m
+2026-01-12 23:19:41 [INFO]: [0mGET /mascota/lista [32m200[0m 302.133 ms - -[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 296.760 ms - 346[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 298.553 ms - 346[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 300.792 ms - 346[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [36m304[0m 310.336 ms - -[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 307.884 ms - 346[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 302.995 ms - 346[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /mascota/lista [36m304[0m 1484.202 ms - -[0m
+2026-01-12 23:19:42 [INFO]: [0mGET /api/servicios/ [32m200[0m 298.044 ms - 346[0m
+2026-01-12 23:19:43 [INFO]: [0mGET /api/servicios/lista [36m304[0m 307.925 ms - -[0m
+2026-01-12 23:19:43 [INFO]: [0mGET /cliente/lista [36m304[0m 328.588 ms - -[0m
+2026-01-12 23:19:43 [INFO]: [0mGET /cita/agenda/2026-01-12?t=1768277983505 [32m200[0m 334.580 ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /mascota/lista [36m304[0m 498.742 ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 297.964 ms - 346[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 299.007 ms - 346[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [36m304[0m 308.868 ms - -[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 313.997 ms - 346[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 316.836 ms - 346[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 318.041 ms - 346[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 319.693 ms - 346[0m
+2026-01-12 23:19:44 [INFO]: [0mGET /api/servicios/ [32m200[0m 297.198 ms - 346[0m
+2026-01-12 23:19:48 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:19:48 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:19:48 [INFO]: [0mGET /notificacion/lista?t=1768277988018 [32m200[0m 115.581 ms - -[0m
+2026-01-12 23:19:48 [INFO]: [0mGET /api/servicios/lista [36m304[0m 304.245 ms - -[0m
+2026-01-12 23:19:48 [INFO]: [0mGET /uploads/null [33m404[0m 1.152 ms - 48[0m
+2026-01-12 23:19:51 [INFO]: [0mGET /api/servicios/ [36m304[0m 298.698 ms - -[0m
+2026-01-12 23:19:57 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:19:57 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:19:57 [INFO]: [0mGET /notificacion/lista?t=1768277997013 [32m200[0m 114.780 ms - -[0m
+2026-01-12 23:19:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.830 ms - -[0m
+2026-01-12 23:19:57 [INFO]: [0mGET /uploads/null [33m404[0m 1.270 ms - 48[0m
+2026-01-12 23:19:59 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:19:59 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:19:59 [INFO]: [0mGET /notificacion/lista?t=1768277999261 [32m200[0m 122.019 ms - -[0m
+2026-01-12 23:19:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.427 ms - -[0m
+2026-01-12 23:19:59 [INFO]: [0mGET /uploads/null [33m404[0m 1.529 ms - 48[0m
+2026-01-12 23:20:01 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:01 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:01 [INFO]: [0mGET /notificacion/lista?t=1768278001667 [32m200[0m 115.999 ms - -[0m
+2026-01-12 23:20:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.554 ms - -[0m
+2026-01-12 23:20:02 [INFO]: [0mGET /uploads/null [33m404[0m 1.865 ms - 48[0m
+2026-01-12 23:20:04 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:04 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:04 [INFO]: [0mGET /notificacion/lista?t=1768278004714 [32m200[0m 114.221 ms - -[0m
+2026-01-12 23:20:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.531 ms - -[0m
+2026-01-12 23:20:05 [INFO]: [0mGET /uploads/null [33m404[0m 2.488 ms - 48[0m
+2026-01-12 23:20:09 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:09 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:09 [INFO]: [0mGET /notificacion/lista?t=1768278008988 [32m200[0m 114.866 ms - -[0m
+2026-01-12 23:20:09 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.922 ms - -[0m
+2026-01-12 23:20:09 [INFO]: [0mGET /uploads/null [33m404[0m 1.055 ms - 48[0m
+2026-01-12 23:20:12 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:12 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:12 [INFO]: [0mGET /notificacion/lista?t=1768278012734 [32m200[0m 113.675 ms - -[0m
+2026-01-12 23:20:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.395 ms - -[0m
+2026-01-12 23:20:13 [INFO]: [0mGET /uploads/null [33m404[0m 1.035 ms - 48[0m
+2026-01-12 23:20:21 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:21 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:21 [INFO]: [0mGET /notificacion/lista?t=1768278021099 [32m200[0m 117.628 ms - -[0m
+2026-01-12 23:20:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.554 ms - -[0m
+2026-01-12 23:20:21 [INFO]: [0mGET /uploads/null [33m404[0m 1.676 ms - 48[0m
+2026-01-12 23:20:23 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:23 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:23 [INFO]: [0mGET /notificacion/lista?t=1768278023462 [32m200[0m 114.291 ms - -[0m
+2026-01-12 23:20:24 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:24 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:24 [INFO]: [0mGET /notificacion/lista?t=1768278024142 [32m200[0m 115.343 ms - -[0m
+2026-01-12 23:20:24 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.737 ms - -[0m
+2026-01-12 23:20:24 [INFO]: [0mGET /uploads/null [33m404[0m 1.253 ms - 48[0m
+2026-01-12 23:20:26 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:26 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:26 [INFO]: [0mGET /notificacion/lista?t=1768278025895 [32m200[0m 114.407 ms - -[0m
+2026-01-12 23:20:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.443 ms - -[0m
+2026-01-12 23:20:26 [INFO]: [0mGET /uploads/null [33m404[0m 1.712 ms - 48[0m
+2026-01-12 23:20:29 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:20:29 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:20:29 [INFO]: [0mGET /notificacion/lista?t=1768278028874 [32m200[0m 114.618 ms - -[0m
+2026-01-12 23:20:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.095 ms - -[0m
+2026-01-12 23:20:29 [INFO]: [0mGET /uploads/null [33m404[0m 1.079 ms - 48[0m
+2026-01-12 23:24:06 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:06 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:06 [INFO]: [0mGET /notificacion/lista?t=1768278246619 [32m200[0m 115.035 ms - -[0m
+2026-01-12 23:24:06 [INFO]: [0mGET /api/servicios/lista [36m304[0m 301.594 ms - -[0m
+2026-01-12 23:24:07 [INFO]: [0mGET /uploads/null [33m404[0m 1.052 ms - 48[0m
+2026-01-12 23:24:10 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:10 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:10 [INFO]: [0mGET /notificacion/lista?t=1768278250004 [32m200[0m 115.509 ms - -[0m
+2026-01-12 23:24:10 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.319 ms - -[0m
+2026-01-12 23:24:10 [INFO]: [0mGET /uploads/null [33m404[0m 0.919 ms - 48[0m
+2026-01-12 23:24:12 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:12 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:12 [INFO]: [0mGET /notificacion/lista?t=1768278252621 [32m200[0m 113.610 ms - -[0m
+2026-01-12 23:24:12 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.920 ms - -[0m
+2026-01-12 23:24:13 [INFO]: [0mGET /uploads/null [33m404[0m 0.846 ms - 48[0m
+2026-01-12 23:24:15 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:15 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:15 [INFO]: [0mGET /notificacion/lista?t=1768278254871 [32m200[0m 112.790 ms - -[0m
+2026-01-12 23:24:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 297.348 ms - -[0m
+2026-01-12 23:24:15 [INFO]: [0mGET /uploads/null [33m404[0m 0.972 ms - 48[0m
+2026-01-12 23:24:20 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:20 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:20 [INFO]: [0mGET /notificacion/lista?t=1768278259981 [32m200[0m 116.620 ms - -[0m
+2026-01-12 23:24:20 [INFO]: [0mGET /api/servicios/lista [36m304[0m 298.508 ms - -[0m
+2026-01-12 23:24:20 [INFO]: [0mGET /uploads/null [33m404[0m 1.193 ms - 48[0m
+2026-01-12 23:24:22 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:22 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:22 [INFO]: [0mGET /notificacion/lista?t=1768278262141 [32m200[0m 113.854 ms - -[0m
+2026-01-12 23:24:26 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:26 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:26 [INFO]: [0mGET /notificacion/lista?t=1768278266010 [32m200[0m 113.283 ms - -[0m
+2026-01-12 23:24:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 300.276 ms - -[0m
+2026-01-12 23:24:26 [INFO]: [0mGET /uploads/null [33m404[0m 0.846 ms - 48[0m
+2026-01-12 23:24:33 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-12 23:24:33 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-12 23:24:33 [INFO]: [0mGET /notificacion/lista?t=1768278273738 [32m200[0m 113.459 ms - -[0m
+2026-01-12 23:24:34 [INFO]: [0mGET /api/servicios/lista [36m304[0m 299.210 ms - -[0m
+2026-01-12 23:24:34 [INFO]: [0mGET /uploads/null [33m404[0m 0.769 ms - 48[0m
