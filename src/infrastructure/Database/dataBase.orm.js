@@ -79,6 +79,13 @@ const historialPagoModel = require('../../domain/models/sql/historialPago');
 const logModel = require('../../domain/models/sql/log');
 const pageModel = require('../../domain/models/sql/page');
 const tipoMascotaModel = require('../../domain/models/sql/tipoMascota');
+// Catálogos maestros
+const especieModel = require('../../domain/models/sql/especie');
+const razaModel = require('../../domain/models/sql/raza');
+const tamanoModel = require('../../domain/models/sql/tamano');
+const sexoModel = require('../../domain/models/sql/sexo');
+const colorModel = require('../../domain/models/sql/color');
+const estadoMascotaModel = require('../../domain/models/sql/estadoMascota');
 const tipoServicioModel = require('../../domain/models/sql/tipoServicio');
 
 // =======================
@@ -106,7 +113,28 @@ const historialPago = historialPagoModel(sequelize, Sequelize);
 const log = logModel(sequelize, Sequelize);
 const page = pageModel(sequelize, Sequelize);
 const tipoMascota = tipoMascotaModel(sequelize, Sequelize);
+
 const tipoServicio = tipoServicioModel(sequelize, Sequelize);
+// Catálogos maestros
+
+const Especie = especieModel(sequelize);
+const Raza = razaModel(sequelize);
+const Tamano = tamanoModel(sequelize);
+const Sexo = sexoModel(sequelize);
+const Color = colorModel(sequelize);
+const EstadoMascota = estadoMascotaModel(sequelize);
+
+// Sincronizar automáticamente todas las tablas maestras (catálogos)
+Promise.all([
+  Especie.sync({ alter: true }),
+  Raza.sync({ alter: true }),
+  Tamano.sync({ alter: true }),
+  Sexo.sync({ alter: true }),
+  Color.sync({ alter: true }),
+  EstadoMascota.sync({ alter: true })
+])
+  .then(() => console.log('✅ Tablas maestras sincronizadas con la base de datos'))
+  .catch(err => console.error('❌ Error al sincronizar catálogos:', err.message));
 
 // =======================
 // SINCRONIZAR SOLO LA TABLA 'SERVICIO'
@@ -115,9 +143,14 @@ servicio.sync({ alter: true })
   .then(() => console.log('✅ Tabla "servicio" sincronizada con la base de datos'))
   .catch(err => console.error('❌ Error al sincronizar "servicio":', err));
 
+
 // =======================
 // RELACIONES
 // =======================
+
+// Catálogos: relación especie-raza
+Especie.hasMany(Raza, { foreignKey: 'idEspecie' });
+Raza.belongsTo(Especie, { foreignKey: 'idEspecie' });
 
 // ROLES
 usuario.hasMany(detalleRol, { foreignKey: 'idUsuario' });
@@ -175,5 +208,12 @@ module.exports = {
   log,
   page,
   tipoMascota,
-  tipoServicio
+  tipoServicio,
+  // Catálogos
+  Especie,
+  Raza,
+  Tamano,
+  Sexo,
+  Color,
+  EstadoMascota
 };
