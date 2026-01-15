@@ -17,3 +17,4 @@ nbproject/
 # OS
 .DS_Store
 Thumbs.db
+root/logs/
