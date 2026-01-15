@@ -284,12 +284,7 @@ app.use('/cita', require('../src/infrastructure/http/router/cita.router'));
 app.use('/producto', require('../src/infrastructure/http/router/producto.router'));
 app.use('/configuracion', require('../src/infrastructure/http/router/configuracion.router'));
 app.use('/usuario', require('../src/infrastructure/http/router/user.router'));
-app.use('/api/especies', require('../src/infrastructure/http/router/especie.router'));
-app.use('/api/razas', require('../src/infrastructure/http/router/raza.router'));
-app.use('/api/sexos', require('../src/infrastructure/http/router/sexo.router'));
-app.use('/api/colores', require('../src/infrastructure/http/router/color.router'));
-app.use('/api/tamanos', require('../src/infrastructure/http/router/tamano.router'));
-app.use('/api/estados-mascota', require('../src/infrastructure/http/router/estadoMascota.router'));
+app.use('/notificacion', require('../src/infrastructure/http/router/notificacion.router'));
 // Registrar router de notificaciones
 const notificacionRouter = require('../src/infrastructure/http/router/notificacion.router');
 console.log('\n🔧 [APP] Registrando router de notificaciones en /api/notificaciones');

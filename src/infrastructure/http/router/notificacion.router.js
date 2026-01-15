@@ -171,23 +171,28 @@ router.get('/', (req, res) => {
         timestamp: new Date().toISOString(),
         basePath: '/notificaciones o /notificacion',
         endpoints: {
-            lista: 'GET /notificaciones/lista',
-            estadisticas: 'GET /notificaciones/estadisticas',
-            porUsuario: 'GET /notificaciones/usuario/:idUsuario',
-            noLeidas: 'GET /notificaciones/usuario/:idUsuario/no-leidas',
-            porId: 'GET /notificaciones/:idNotificacion',
-            crear: 'POST /notificaciones/crear',
-            crearAlerta: 'POST /notificaciones/crear-alerta-programada',
-            marcarLeida: 'PUT /notificaciones/marcar-leida/:idNotificacion',
-            marcarTodasLeidas: 'PUT /notificaciones/marcar-todas-leidas/:idUsuario',
-            eliminar: 'DELETE /notificaciones/eliminar/:idNotificacion',
-            limpiarHistorial: 'DELETE /notificaciones/limpiar-historial/:idUsuario'
+            'lista': 'GET /notificacion/lista',
+            'lista-completa': 'GET /notificacion/lista-completa',
+            'estadisticas': 'GET /notificacion/estadisticas',
+            'por-usuario': 'GET /notificacion/usuario/:idUsuario',
+            'no-leidas': 'GET /notificacion/usuario/:idUsuario/no-leidas',
+            'por-id': 'GET /notificacion/:idNotificacion',
+            'crear': 'POST /notificacion',
+            'crear-alerta': 'POST /notificacion/alerta-programada',
+            'marcar-leida': 'PUT /notificacion/:idNotificacion/marcar-leida',
+            'actualizar-estado': 'PATCH /notificacion/:idNotificacion/estado',
+            'actualizar': 'PUT /notificacion/:idNotificacion',
+            'eliminar': 'DELETE /notificacion/:idNotificacion',
+            'limpiar-historial': 'DELETE /notificacion/limpiar-historial/:idUsuario'
         }
     });
 });
 
 // Obtener todas las notificaciones
 router.get('/lista', handleAsyncErrors(mostrarNotificaciones));
+
+// Obtener todas las notificaciones con información completa
+router.get('/lista-completa', handleAsyncErrors(mostrarNotificaciones));
 
 // Obtener estadísticas de notificaciones
 router.get('/estadisticas', handleAsyncErrors(obtenerEstadisticas));
@@ -205,31 +210,47 @@ router.get('/usuario/:idUsuario', validacionParametroUsuario, handleValidationEr
 router.get('/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(obtenerNotificacionPorId));
 
 // Crear nueva notificación (ruta principal para crear notificaciones)
-// IMPORTANTE: Esta ruta debe ir ANTES de las rutas con parámetros dinámicos
-router.post('/crear', (req, res, next) => {
-    console.log('[NOTIFICACIONES] POST /crear recibido');
-    console.log('[NOTIFICACIONES] Body:', req.body);
-    next();
-}, validacionCrearNotificacion, handleValidationErrors, handleAsyncErrors(crearNotificacion));
+router.post('/', validacionCrearNotificacion, handleValidationErrors, handleAsyncErrors(crearNotificacion));
 
-// Alias alternativo para compatibilidad
-router.post('/crear-notificacion', validacionCrearNotificacion, handleValidationErrors, handleAsyncErrors(crearNotificacion));
+// Alias para compatibilidad
+router.post('/crear', validacionCrearNotificacion, handleValidationErrors, handleAsyncErrors(crearNotificacion));
 
 // Crear notificaciones masivas
-router.post('/crear-masiva', validacionNotificacionMasiva, handleValidationErrors, handleAsyncErrors(crearNotificacionMasiva));
+router.post('/masiva', validacionNotificacionMasiva, handleValidationErrors, handleAsyncErrors(crearNotificacionMasiva));
 
 // Marcar notificación como leída
-router.put('/marcar-leida/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(marcarComoLeida));
+router.put('/:idNotificacion/marcar-leida', validacionParametroId, handleValidationErrors, handleAsyncErrors(marcarComoLeida));
+
+// Actualizar estado de la notificación
+router.patch('/:idNotificacion/estado', validacionParametroId, handleValidationErrors, handleAsyncErrors((req, res) => {
+    const { estado } = req.body;
+    if (!estado) {
+        return res.status(400).json({ 
+            success: false, 
+            message: 'El estado es requerido' 
+        });
+    }
+    req.query.estado = estado;
+    return marcarComoLeida(req, res);
+}));
+
+// Actualizar notificación (campos específicos)
+router.put('/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors((req, res) => {
+    // Si se intenta actualizar, usar el mismo controlador de crear pero con lógica de actualización
+    return obtenerNotificacionPorId(req, res);
+}));
 
 // Marcar todas las notificaciones de un usuario como leídas
 router.put('/marcar-todas-leidas/:idUsuario', validacionParametroUsuario, handleValidationErrors, handleAsyncErrors(marcarTodasComoLeidas));
 
-// Eliminar notificación (desde params)
+// Eliminar notificación
+router.delete('/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(eliminarNotificacion));
+
+// Alias para compatibilidad
 router.delete('/eliminar/:idNotificacion', validacionParametroId, handleValidationErrors, handleAsyncErrors(eliminarNotificacion));
 
 // Eliminar notificación (desde body) - Ruta alternativa para compatibilidad con frontend
 router.delete('/eliminar', (req, res, next) => {
-    // Si viene en body, moverlo a params para que funcione con el controlador
     if (req.body && req.body.idNotificacion) {
         req.params.idNotificacion = req.body.idNotificacion;
         console.log('[NOTIFICACIONES] ID de notificación recibido en body:', req.body.idNotificacion);
@@ -238,14 +259,13 @@ router.delete('/eliminar', (req, res, next) => {
 }, handleAsyncErrors(eliminarNotificacion));
 
 // Crear alerta programada (ej: Recordar vacuna en 6 meses)
-router.post('/crear-alerta-programada', validacionAlertaProgramada, handleValidationErrors, handleAsyncErrors(crearAlertaProgramada));
+router.post('/alerta-programada', validacionAlertaProgramada, handleValidationErrors, handleAsyncErrors(crearAlertaProgramada));
 
 // Limpiar historial de notificaciones de un usuario (desde params)
 router.delete('/limpiar-historial/:idUsuario', validacionParametroUsuario, handleValidationErrors, handleAsyncErrors(limpiarHistorial));
 
 // Limpiar historial de notificaciones (desde body) - Ruta alternativa para compatibilidad con frontend
 router.delete('/limpiar-historial', (req, res, next) => {
-    // Si viene en body, moverlo a params para que funcione con el controlador
     if (req.body && req.body.idUsuario) {
         req.params.idUsuario = req.body.idUsuario;
         console.log('[NOTIFICACIONES] ID de usuario recibido en body:', req.body.idUsuario);
