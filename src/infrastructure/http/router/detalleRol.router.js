@@ -90,6 +90,12 @@ router.post('/asignar-rol-multiples-usuarios', validacionRolMultiplesUsuarios, a
 // Remover múltiples roles de un usuario
 router.delete('/remover-multiples-roles', validacionMultiplesRoles, removerMultiplesRoles);
 
+router.get('/veterinarios', (req, res) => {
+    // Suponiendo que el idRol de "Veterinario" es 1
+    req.params.rolId = 1;
+    return obtenerUsuariosRol(req, res);
+});
+
 // Remover un rol de múltiples usuarios
 router.delete('/remover-rol-multiples-usuarios', validacionRolMultiplesUsuarios, removerRolMultiplesUsuarios);
 

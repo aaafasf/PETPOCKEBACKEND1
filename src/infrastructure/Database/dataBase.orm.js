@@ -56,6 +56,7 @@ sequelize.authenticate()
 // =======================
 // MODELOS
 // =======================
+
 const usuarioModel = require('../../domain/models/sql/usuario');
 const rolModel = require('../../domain/models/sql/rol');
 const detalleRolModel = require('../../domain/models/sql/detalleRol');
@@ -71,7 +72,7 @@ const auditoriaModel = require('../../domain/models/sql/auditoria');
 const feedbackModel = require('../../domain/models/sql/feedback');
 const promocionModel = require('../../domain/models/sql/promocion');
 const reservaModel = require('../../domain/models/sql/reserva');
-const configuracionModel = require('../../domain/models/sql/configuracion');
+const configuracionModel = require('../../domain/models/sql/configuracion.model');
 const configuracionServicioModel = require('../../domain/models/sql/configuracionServicio');
 const historialCitaModel = require('../../domain/models/sql/historialCita');
 const historialPagoModel = require('../../domain/models/sql/historialPago');
@@ -168,6 +169,7 @@ module.exports = {
   reserva,
   configuracion,
   configuracionServicio,
+  configuracionModel,
   historialCita,
   historialPago,
   log,

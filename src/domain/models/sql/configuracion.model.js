@@ -1,25 +1,20 @@
 const configuracion = (sequelize, Sequelize) => {
   return sequelize.define('configuracion', {
-    id: {
+    idConfiguracion: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
       primaryKey: true,
     },
-    nombre: Sequelize.STRING,
-    telefono: Sequelize.STRING,
-    correo: Sequelize.STRING,
-    direccion: Sequelize.STRING,
-    horarios: Sequelize.STRING,
-    logo: Sequelize.STRING,
-    zonaHoraria: Sequelize.STRING,
-    idioma: Sequelize.STRING,
-    formatoFecha: Sequelize.STRING,
-    politicas: Sequelize.TEXT,
-    horasMinimasCancelacion: Sequelize.INTEGER,
-    limiteMascotas: Sequelize.INTEGER
+    clave: Sequelize.STRING,
+    valor: Sequelize.STRING,
+    descripcion: Sequelize.STRING,
+    tipo: Sequelize.STRING,
+    createConfiguracion: Sequelize.STRING,
+    updateConfiguracion: Sequelize.STRING
   }, {
+    tableName: 'configuraciones',
     timestamps: false,
-    comment: 'Tabla de configuración de la clínica'
+    comment: 'Tabla de configuraciones clave-valor'
   });
 };
 
