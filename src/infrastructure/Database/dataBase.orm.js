@@ -19,7 +19,7 @@ if (MYSQL_URI) {
     dialectOptions: { charset: 'utf8mb4' },
     pool: {
       max: 20,
-      min: 5,
+      min: 0,
       acquire: 30000,
       idle: 10000
     },

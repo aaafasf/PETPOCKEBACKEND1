@@ -8,86 +8,88 @@ const servicioCtl = {};
 
 // Función auxiliar para construir URL completa de imagen
 const construirUrlImagen = (req, imagenUrl) => {
-  if (!imagenUrl) return null;  
-  const baseUrl = `${req.protocol}://${req.get('host')}`;
-  return `${baseUrl}/uploads/servicios/${imagenUrl}`;
-};
+    if (!imagenUrl) return null;
+    if (imagenUrl.startsWith('http')) return imagenUrl; 
+    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    return `${baseUrl}/uploads/servicios/${imagenUrl}`;
+  };
 
-// =======================
-// LISTAR ADMIN
-// =======================
-servicioCtl.listarAdmin = async (req, res) => {
-  try {
-    // Usar consulta SQL directa para evitar problemas con columnas que no existen
-    const [servicios] = await sql.promise().query(`
-      SELECT 
-        idServicio,
-        nombreServicio,
-        descripcionServicio,
-        precioServicio,
-        estadoServicio
-      FROM servicios
-      ORDER BY idServicio DESC
-    `);
 
-    // Obtener imágenes desde MongoDB si existen
-    const serviciosConImagen = await Promise.all(servicios.map(async (s) => {
-      try {
-        const servicioMongo = await mongo.servicioModel.findOne({ 
-          idServicioSql: s.idServicio.toString() 
-        });
-        return {
-          idServicio: s.idServicio,
-          nombreServicio: s.nombreServicio,
-          descripcionServicio: s.descripcionServicio,
-          precioServicio: s.precioServicio,
-          estadoServicio: s.estadoServicio,
-          imagen: construirUrlImagen(req, servicioMongo?.imagenUrl),
-          citas: 0
-        };
-      } catch (error) {
-        return {
-          idServicio: s.idServicio,
-          nombreServicio: s.nombreServicio,
-          descripcionServicio: s.descripcionServicio,
-          precioServicio: s.precioServicio,
-          estadoServicio: s.estadoServicio,
-          imagen: null,
-          citas: 0
-        };
-      }
-    }));
+  // =======================
+  // LISTAR ADMIN
+  // =======================
+  servicioCtl.listarAdmin = async (req, res) => {
+    try {
+      // Usar consulta SQL directa para evitar problemas con columnas que no existen
+      const [servicios] = await sql.promise().query(`
+        SELECT 
+          idServicio,
+          nombreServicio,
+          descripcionServicio,
+          precioServicio,
+          estadoServicio
+        FROM servicios
+        ORDER BY idServicio DESC
+      `);
 
-    res.json(serviciosConImagen);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Error al listar servicios' });
-  }
-};
+      // Obtener imágenes desde MongoDB si existen
+      const serviciosConImagen = await Promise.all(servicios.map(async (s) => {
+        try {
+          const servicioMongo = await mongo.servicioModel.findOne({ 
+            idServicioSql: s.idServicio.toString() 
+          });
+          return {
+            idServicio: s.idServicio,
+            nombreServicio: s.nombreServicio,
+            descripcionServicio: s.descripcionServicio,
+            precioServicio: s.precioServicio,
+            estadoServicio: s.estadoServicio,
+            imagen: construirUrlImagen(req, servicioMongo?.imagenUrl),
+            citas: 0
+          };
+        } catch (error) {
+          return {
+            idServicio: s.idServicio,
+            nombreServicio: s.nombreServicio,
+            descripcionServicio: s.descripcionServicio,
+            precioServicio: s.precioServicio,
+            estadoServicio: s.estadoServicio,
+            imagen: null,
+            citas: 0
+          };
+        }
+      }));
 
-// =======================
-// LISTAR PUBLICO
-// =======================
-servicioCtl.listarPublico = async (req, res) => {
-  try {
-    // Usar consulta SQL directa para evitar problemas con columnas que no existen
-    const [servicios] = await sql.promise().query(`
-      SELECT 
-        idServicio,
-        nombreServicio,
-        descripcionServicio,
-        precioServicio,
-        estadoServicio
-      FROM servicios
-      WHERE estadoServicio = 'activo'
-      ORDER BY idServicio DESC
-    `);
+      res.json(serviciosConImagen);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Error al listar servicios' });
+    }
+  };
 
-    // Obtener imágenes desde MongoDB si existen
-    const serviciosConImagen = await Promise.all(servicios.map(async (s) => {
-      try {
-        const servicioMongo = await mongo.servicioModel.findOne({ 
-          idServicioSql: s.idServicio.toString() 
+  // =======================
+  // LISTAR PUBLICO
+  // =======================
+  servicioCtl.listarPublico = async (req, res) => {
+    try {
+      // Usar consulta SQL directa para evitar problemas con columnas que no existen
+      const [servicios] = await sql.promise().query(`
+        SELECT 
+          idServicio,
+          nombreServicio,
+          descripcionServicio,
+          precioServicio,
+          estadoServicio
+        FROM servicios
+        WHERE estadoServicio = 'activo'
+        ORDER BY idServicio DESC
+      `);
+
+      // Obtener imágenes desde MongoDB si existen
+      const serviciosConImagen = await Promise.all(servicios.map(async (s) => {
+        try {
+          const servicioMongo = await mongo.servicioModel.findOne({ 
+            idServicioSql: s.idServicio.toString() 
         });
         return {
           idServicio: s.idServicio,
@@ -121,19 +123,26 @@ servicioCtl.listarPublico = async (req, res) => {
 // =======================
 servicioCtl.crear = async (req, res) => {
   try {
-    const { nombre, descripcion, precio } = req.body;
+    const { nombre, descripcion, precio, imagen } = req.body;
     let imagenUrl = null;
 
+    // Si viene como archivo
     if (req.files && req.files.imagen) {
-      const imagen = req.files.imagen;
-      const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagen.name);
-
-      if (!fs.existsSync(path.dirname(uploadPath))) fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
-      await imagen.mv(uploadPath);
-      imagenUrl = imagen.name;
+      const imagenFile = req.files.imagen;
+      const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagenFile.name);
+      if (!fs.existsSync(path.dirname(uploadPath))) {
+        fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
+      }
+      await imagenFile.mv(uploadPath);
+      imagenUrl = imagenFile.name;
     }
 
-    // Insertar en MySQL sin el campo imagen (que no existe en la tabla)
+    // Si viene como URL externa
+    if (!imagenUrl && imagen && imagen.startsWith('http')) {
+      imagenUrl = imagen; // 🔹 guarda la URL directamente
+    }
+
+    // Insertar en MySQL (sin campo imagen, porque no existe en la tabla)
     const [resultado] = await sql.promise().query(`
       INSERT INTO servicios (nombreServicio, descripcionServicio, precioServicio, estadoServicio)
       VALUES (?, ?, ?, ?)
@@ -141,6 +150,7 @@ servicioCtl.crear = async (req, res) => {
 
     const idServicio = resultado.insertId;
 
+    // Guardar en Mongo
     await mongo.servicioModel.create({
       idServicioSql: idServicio.toString(),
       descripcionExtendida: descripcion,
@@ -154,8 +164,9 @@ servicioCtl.crear = async (req, res) => {
       destacado: false
     });
 
+    // Respuesta al frontend
     res.status(201).json({
-      idServicio: idServicio,
+      idServicio,
       nombreServicio: nombre,
       descripcionServicio: descripcion,
       precioServicio: precio,
@@ -169,22 +180,25 @@ servicioCtl.crear = async (req, res) => {
   }
 };
 
+
 // =======================
 // ACTUALIZAR SERVICIO
 // =======================
 servicioCtl.actualizar = async (req, res) => {
   try {
     const { id } = req.params;
-    const { nombre, descripcion, precio, estadoServicio } = req.body;
+    const { nombre, descripcion, precio, estadoServicio, imagen } = req.body;
 
-    // Verificar que el servicio existe
+    // 1️⃣ Verificar que el servicio existe en MySQL
     const [servicios] = await sql.promise().query(
       'SELECT * FROM servicios WHERE idServicio = ?',
       [id]
     );
-    if (servicios.length === 0) return res.status(404).json({ message: 'Servicio no encontrado' });
+    if (servicios.length === 0) {
+      return res.status(404).json({ message: 'Servicio no encontrado' });
+    }
 
-    // Obtener imagen actual desde MongoDB
+    // 2️⃣ Obtener imagen actual desde MongoDB
     let imagenUrl = null;
     try {
       const servicioMongo = await mongo.servicioModel.findOne({ idServicioSql: id.toString() });
@@ -193,26 +207,36 @@ servicioCtl.actualizar = async (req, res) => {
       console.error('Error al obtener imagen de MongoDB:', error);
     }
 
+    // 3️⃣ Si viene como archivo
     if (req.files && req.files.imagen) {
-      const imagen = req.files.imagen;
-      const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagen.name);
-      if (!fs.existsSync(path.dirname(uploadPath))) fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
-      await imagen.mv(uploadPath);
-      imagenUrl = imagen.name;
+      const imagenFile = req.files.imagen;
+      const uploadPath = path.join(__dirname, '../../../uploads/servicios', imagenFile.name);
+      if (!fs.existsSync(path.dirname(uploadPath))) {
+        fs.mkdirSync(path.dirname(uploadPath), { recursive: true });
+      }
+      await imagenFile.mv(uploadPath);
+      imagenUrl = imagenFile.name;
     }
 
-    // Actualizar en MySQL sin el campo imagen
+    // 4️⃣ Si viene como URL externa en el body
+    if (imagen && imagen.startsWith('http')) {
+      imagenUrl = imagen; // 🔹 actualiza con la nueva URL enviada
+    }
+
+    // 5️⃣ Actualizar en MySQL
     await sql.promise().query(`
       UPDATE servicios 
       SET nombreServicio = ?, descripcionServicio = ?, precioServicio = ?, estadoServicio = ?
       WHERE idServicio = ?
     `, [nombre, descripcion, precio, estadoServicio, id]);
 
+    // 6️⃣ Actualizar en MongoDB
     await mongo.servicioModel.updateOne(
       { idServicioSql: id.toString() },
-      { descripcionExtendida: descripcion, imagenUrl: imagenUrl }
+      { $set: { descripcionExtendida: descripcion, imagenUrl: imagenUrl } }
     );
 
+    // 7️⃣ Respuesta al frontend
     res.json({
       idServicio: parseInt(id),
       nombreServicio: nombre,
@@ -227,6 +251,7 @@ servicioCtl.actualizar = async (req, res) => {
     res.status(500).json({ message: 'Error al actualizar servicio', error: error.message });
   }
 };
+
 
 // =======================
 // ELIMINAR SERVICIO
