@@ -16774,3 +16774,288 @@ notNull Violation: servicio.precio cannot be null
 2026-01-15 06:55:24 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
 2026-01-15 06:55:24 [INFO]: 🚀 MongoDB conectado correctamente
 2026-01-15 06:55:37 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 07:00:35 [INFO]: servicioCtl: [object Object]
+2026-01-15 07:00:36 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 07:00:36 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 07:00:36 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 07:00:36 [INFO]: Base de datos conectada
+2026-01-15 07:00:37 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 07:00:37 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 07:00:38 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 07:00:38 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 07:00:38 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 07:03:17 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 07:03:26 [INFO]: servicioCtl: [object Object]
+2026-01-15 07:03:26 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 07:03:26 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 07:03:26 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 07:03:26 [INFO]: Base de datos conectada
+2026-01-15 07:03:27 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 07:03:28 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 07:03:28 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 07:03:29 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 07:03:29 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 07:07:40 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 07:07:49 [INFO]: servicioCtl: [object Object]
+2026-01-15 07:07:50 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 07:07:50 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 07:07:50 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 07:07:51 [INFO]: Base de datos conectada
+2026-01-15 07:07:52 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 07:07:52 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 07:07:53 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 07:07:53 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 07:07:53 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 07:12:27 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 07:12:35 [INFO]: servicioCtl: [object Object]
+2026-01-15 07:12:36 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 07:12:36 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 07:12:36 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 07:12:36 [INFO]: Base de datos conectada
+2026-01-15 07:12:37 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 07:12:38 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 07:12:38 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 07:12:38 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 07:12:38 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 07:12:44 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 07:37:54 [INFO]: servicioCtl: [object Object]
+2026-01-15 07:37:55 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 07:37:55 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 07:37:55 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 07:37:55 [INFO]: Base de datos conectada
+2026-01-15 07:37:56 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 07:37:57 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 07:37:57 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 07:37:57 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 07:37:57 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 07:39:36 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 07:39:37 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1588.829 ms - 229[0m
+2026-01-15 07:39:38 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 07:39:38 [INFO]: [0mGET /api/notificaciones/lista?t=1768480775364 [32m200[0m 1677.895 ms - -[0m
+2026-01-15 07:39:44 [INFO]: [0mGET /configuracion [32m200[0m 208.231 ms - 2[0m
+2026-01-15 07:39:44 [INFO]: [0mGET /configuracion/listar [32m200[0m 131.999 ms - 2[0m
+2026-01-15 07:46:58 [INFO]: [0mPOST /configuracion [32m200[0m 3265.025 ms - 51[0m
+2026-01-15 07:47:02 [INFO]: [0mGET /configuracion [32m200[0m 126.516 ms - 368[0m
+2026-01-15 07:47:09 [INFO]: [0mGET /configuracion [36m304[0m 120.247 ms - -[0m
+2026-01-15 07:47:13 [INFO]: [0mGET /configuracion [36m304[0m 132.672 ms - -[0m
+2026-01-15 07:47:13 [INFO]: [0mGET /configuracion/listar [32m200[0m 123.929 ms - -[0m
+2026-01-15 07:47:21 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 07:47:21 [INFO]: [0mGET /configuracion/listar [31m500[0m 19331.240 ms - 45[0m
+2026-01-15 07:47:29 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 07:47:29 [INFO]: [0mGET /configuracion/listar [31m500[0m 19246.048 ms - 45[0m
+2026-01-15 08:40:35 [INFO]: servicioCtl: [object Object]
+2026-01-15 08:40:36 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 08:40:36 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 08:40:36 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 08:40:36 [INFO]: Base de datos conectada
+2026-01-15 08:40:37 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 08:40:38 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 08:40:38 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 08:40:39 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 08:40:39 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 08:40:39 [INFO]: [0mGET /api/servicios?t=1768484435367 [32m200[0m 2612.849 ms - 239[0m
+2026-01-15 08:41:16 [INFO]: [0mGET /api/servicios?t=1768484476243 [0m-[0m - ms - -[0m
+2026-01-15 08:41:16 [INFO]: [0mGET /api/servicios?t=1768484476443 [0m-[0m - ms - -[0m
+2026-01-15 08:41:16 [INFO]: [0mGET /api/servicios?t=1768484476493 [0m-[0m - ms - -[0m
+2026-01-15 08:41:20 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 08:41:20 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 08:41:20 [INFO]: [0mGET /api/notificaciones/lista?t=1768484480713 [32m200[0m 182.154 ms - -[0m
+2026-01-15 08:41:25 [INFO]: [0mGET /cita/veterinarios [32m200[0m 117.389 ms - 71[0m
+2026-01-15 08:41:25 [INFO]: [0mGET /api/servicios/lista [36m304[0m 316.781 ms - -[0m
+2026-01-15 08:41:25 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768484485232 [32m200[0m 327.904 ms - 672[0m
+2026-01-15 08:41:25 [INFO]: [0mGET /cita/veterinarios [36m304[0m 117.557 ms - -[0m
+2026-01-15 08:41:25 [INFO]: [0mGET /api/servicios/lista [36m304[0m 311.170 ms - -[0m
+2026-01-15 08:41:26 [INFO]: [0mGET /mascota/lista [32m200[0m 704.710 ms - -[0m
+2026-01-15 08:41:27 [INFO]: [0mGET /cliente/lista [32m200[0m 1681.124 ms - -[0m
+2026-01-15 08:41:28 [INFO]: [0mGET /api/servicios?t=1768484487884 [0m-[0m - ms - -[0m
+2026-01-15 08:41:28 [INFO]: [0mGET /api/servicios?t=1768484488072 [0m-[0m - ms - -[0m
+2026-01-15 08:41:28 [INFO]: [0mGET /api/servicios?t=1768484488305 [32m200[0m 308.279 ms - 239[0m
+2026-01-15 08:41:31 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 08:41:31 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 08:41:31 [INFO]: [0mGET /api/notificaciones/lista?t=1768484491189 [32m200[0m 130.601 ms - -[0m
+2026-01-15 08:47:03 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 08:47:03 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 08:47:04 [INFO]: [0mGET /api/notificaciones/lista?t=1768484823369 [32m200[0m 368.211 ms - -[0m
+2026-01-15 08:47:04 [INFO]: [0mGET /api/servicios/lista [32m200[0m 581.284 ms - 229[0m
+2026-01-15 08:47:56 [INFO]: [0mGET /api/servicios?t=1768484876009 [32m200[0m 430.987 ms - 239[0m
+2026-01-15 08:48:03 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: Unknown column 'idClinica' in 'field list'
+2026-01-15 08:48:03 [INFO]: [0mGET /configuracion?idClinica=1 [31m500[0m 448.206 ms - 45[0m
+2026-01-15 08:48:03 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: Unknown column 'idClinica' in 'field list'
+2026-01-15 08:48:03 [INFO]: [0mGET /configuracion/listar?idClinica=1 [31m500[0m 188.055 ms - 45[0m
+2026-01-15 08:52:40 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 08:52:49 [INFO]: servicioCtl: [object Object]
+2026-01-15 08:52:50 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 08:52:50 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 08:52:50 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 08:52:50 [INFO]: Base de datos conectada
+2026-01-15 08:52:51 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 08:52:51 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 1028.767 ms - 2[0m
+2026-01-15 08:52:51 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 1021.270 ms - 2[0m
+2026-01-15 08:52:52 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 08:52:52 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 08:52:52 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 08:52:52 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 08:52:55 [INFO]: [0mGET /api/servicios?t=1768485175536 [32m200[0m 355.125 ms - 239[0m
+2026-01-15 08:53:08 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 115.931 ms - -[0m
+2026-01-15 08:53:08 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 120.688 ms - -[0m
+2026-01-15 08:55:43 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 129.246 ms - -[0m
+2026-01-15 08:55:43 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 118.421 ms - -[0m
+2026-01-15 08:55:53 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 114.175 ms - -[0m
+2026-01-15 08:55:53 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 113.598 ms - -[0m
+2026-01-15 08:56:11 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 08:56:20 [INFO]: servicioCtl: [object Object]
+2026-01-15 08:56:21 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 08:56:21 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 08:56:21 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 08:56:21 [INFO]: Base de datos conectada
+2026-01-15 08:56:22 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 08:56:23 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 08:56:23 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 08:56:23 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 08:56:23 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 08:56:46 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 137.357 ms - -[0m
+2026-01-15 08:56:46 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 120.361 ms - -[0m
+2026-01-15 08:57:24 [INFO]: [0mPOST /configuracion [32m200[0m 2880.427 ms - 51[0m
+2026-01-15 08:57:27 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 114.413 ms - 293[0m
+2026-01-15 08:57:27 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 144.130 ms - -[0m
+2026-01-15 08:57:29 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 114.405 ms - -[0m
+2026-01-15 08:57:29 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 114.789 ms - -[0m
+2026-01-15 08:58:24 [INFO]: [0mPUT /configuracion/nombreClinica [32m200[0m 365.884 ms - 70[0m
+2026-01-15 08:58:24 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 116.526 ms - 296[0m
+2026-01-15 08:58:24 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 126.195 ms - -[0m
+2026-01-15 08:58:31 [INFO]: [0mDELETE /configuracion/logoClinica [32m200[0m 118.787 ms - 66[0m
+2026-01-15 08:58:31 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 113.740 ms - 286[0m
+2026-01-15 08:58:31 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 122.792 ms - -[0m
+2026-01-15 08:58:34 [INFO]: [0mDELETE /configuracion/logoClinica [33m404[0m 112.364 ms - 56[0m
+2026-01-15 08:58:45 [INFO]: [0mDELETE /configuracion/limiteMascotas [32m200[0m 117.453 ms - 69[0m
+2026-01-15 08:58:45 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 129.422 ms - 267[0m
+2026-01-15 08:58:45 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 133.735 ms - -[0m
+2026-01-15 08:58:49 [INFO]: [0mDELETE /configuracion/limiteMascotas [33m404[0m 111.314 ms - 59[0m
+2026-01-15 08:58:58 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 08:58:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 400.414 ms - -[0m
+2026-01-15 08:58:59 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 08:58:59 [INFO]: [0mGET /api/notificaciones/lista?t=1768485538845 [32m200[0m 523.406 ms - -[0m
+2026-01-15 08:59:00 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 08:59:00 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 08:59:00 [INFO]: [0mGET /api/notificaciones/lista?t=1768485540824 [32m200[0m 150.348 ms - -[0m
+2026-01-15 09:01:05 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 09:01:14 [INFO]: servicioCtl: [object Object]
+2026-01-15 09:01:14 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 09:01:14 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 09:01:14 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 09:01:15 [INFO]: Base de datos conectada
+2026-01-15 09:01:16 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 09:01:17 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 09:01:17 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 09:01:17 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 09:01:17 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 09:01:41 [INFO]: [0mGET /api/servicios?t=1768485700712 [32m200[0m 360.786 ms - 239[0m
+2026-01-15 09:01:48 [INFO]: [0mGET /api/servicios?t=1768485708181 [32m200[0m 305.878 ms - 239[0m
+2026-01-15 09:01:51 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 09:01:51 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 09:01:51 [INFO]: [0mGET /api/notificaciones/lista?t=1768485711719 [32m200[0m 150.872 ms - -[0m
+2026-01-15 09:02:02 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 151.600 ms - -[0m
+2026-01-15 09:02:02 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 141.341 ms - -[0m
+2026-01-15 09:02:19 [ERROR]: Error en eliminarConfiguracion: Error: WHERE parameter "idClinica" has invalid "undefined" value
+2026-01-15 09:02:19 [INFO]: [0mDELETE /configuracion/zonaHoraria [31m500[0m 47.767 ms - 46[0m
+2026-01-15 09:03:11 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 115.479 ms - -[0m
+2026-01-15 09:03:11 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 115.913 ms - -[0m
+2026-01-15 09:03:13 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 123.909 ms - -[0m
+2026-01-15 09:03:13 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 122.158 ms - -[0m
+2026-01-15 09:03:44 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 09:03:55 [INFO]: servicioCtl: [object Object]
+2026-01-15 09:03:56 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 09:03:56 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 09:03:56 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 09:03:56 [INFO]: Base de datos conectada
+2026-01-15 09:03:57 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 09:03:58 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 09:03:58 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-15 09:03:59 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 09:03:59 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 09:05:20 [INFO]: [0mDELETE /configuracion/idioma?idClinica=1 [32m200[0m 158.649 ms - 61[0m
+2026-01-15 09:05:20 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 119.786 ms - 253[0m
+2026-01-15 09:05:20 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 128.694 ms - -[0m
+2026-01-15 09:05:31 [INFO]: [0mDELETE /configuracion/horasMinimasCancelacion?idClinica=1 [32m200[0m 112.580 ms - 78[0m
+2026-01-15 09:05:31 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 111.892 ms - -[0m
+2026-01-15 09:05:31 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 119.265 ms - 224[0m
+2026-01-15 09:05:35 [INFO]: [0mDELETE /configuracion/horasMinimasCancelacion?idClinica=1 [33m404[0m 120.177 ms - 68[0m
+2026-01-15 09:05:51 [INFO]: [0mDELETE /configuracion/formatoFecha?idClinica=1 [32m200[0m 112.477 ms - 67[0m
+2026-01-15 09:05:51 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 114.478 ms - -[0m
+2026-01-15 09:05:51 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 115.059 ms - 196[0m
+2026-01-15 09:06:07 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 113.851 ms - -[0m
+2026-01-15 09:06:07 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 113.598 ms - -[0m
+2026-01-15 09:06:15 [INFO]: [0mDELETE /configuracion/politicas?idClinica=1 [32m200[0m 111.287 ms - 64[0m
+2026-01-15 09:06:15 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 112.642 ms - -[0m
+2026-01-15 09:06:15 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 114.064 ms - 171[0m
+2026-01-15 09:06:17 [INFO]: [0mDELETE /configuracion/zonaHoraria?idClinica=1 [32m200[0m 113.706 ms - 66[0m
+2026-01-15 09:06:17 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 110.734 ms - 887[0m
+2026-01-15 09:06:17 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 112.506 ms - 137[0m
+2026-01-15 09:06:19 [INFO]: [0mDELETE /configuracion/horariosClinica?idClinica=1 [32m200[0m 112.127 ms - 70[0m
+2026-01-15 09:06:19 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 110.844 ms - 697[0m
+2026-01-15 09:06:19 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 111.825 ms - 97[0m
+2026-01-15 09:06:20 [INFO]: [0mDELETE /configuracion/nombreClinica?idClinica=1 [32m200[0m 122.865 ms - 68[0m
+2026-01-15 09:06:20 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 112.746 ms - 526[0m
+2026-01-15 09:06:20 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 117.304 ms - 76[0m
+2026-01-15 09:06:22 [INFO]: [0mDELETE /configuracion/nombreClinica?idClinica=1 [33m404[0m 111.160 ms - 58[0m
+2026-01-15 09:06:25 [INFO]: [0mDELETE /configuracion/telefonoClinica?idClinica=1 [32m200[0m 113.734 ms - 70[0m
+2026-01-15 09:06:26 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 115.375 ms - 351[0m
+2026-01-15 09:06:26 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 115.660 ms - 51[0m
+2026-01-15 09:06:27 [INFO]: [0mDELETE /configuracion/correoClinica?idClinica=1 [32m200[0m 119.014 ms - 68[0m
+2026-01-15 09:06:27 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 110.545 ms - 172[0m
+2026-01-15 09:06:27 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 115.311 ms - 22[0m
+2026-01-15 09:06:32 [INFO]: [0mDELETE /configuracion/correoClinica?idClinica=1 [33m404[0m 111.664 ms - 58[0m
+2026-01-15 09:06:35 [INFO]: [0mDELETE /configuracion/direccionClinica?idClinica=1 [32m200[0m 112.734 ms - 71[0m
+2026-01-15 09:06:36 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 111.226 ms - 2[0m
+2026-01-15 09:06:36 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 111.208 ms - 2[0m
+2026-01-15 09:10:00 [INFO]: [0mPOST /configuracion [32m200[0m 3153.216 ms - 51[0m
+2026-01-15 09:10:02 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 112.070 ms - 335[0m
+2026-01-15 09:10:02 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 116.048 ms - -[0m
+2026-01-15 09:10:14 [INFO]: [0mDELETE /configuracion/idioma?idClinica=1 [32m200[0m 112.042 ms - 61[0m
+2026-01-15 09:10:14 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 110.659 ms - 321[0m
+2026-01-15 09:10:14 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 114.943 ms - -[0m
+2026-01-15 09:10:15 [INFO]: [0mGET /configuracion?idClinica=1 [36m304[0m 119.588 ms - -[0m
+2026-01-15 09:10:15 [INFO]: [0mGET /configuracion/listar?idClinica=1 [36m304[0m 122.988 ms - -[0m
+2026-01-15 09:10:35 [INFO]: [0mPUT /configuracion/direccionClinica [32m200[0m 342.800 ms - 73[0m
+2026-01-15 09:10:35 [INFO]: [0mGET /configuracion?idClinica=1 [32m200[0m 111.045 ms - 323[0m
+2026-01-15 09:10:35 [INFO]: [0mGET /configuracion/listar?idClinica=1 [32m200[0m 114.048 ms - -[0m
+2026-01-15 09:10:41 [INFO]: [0mGET /api/servicios?t=1768486240605 [32m200[0m 522.894 ms - 239[0m
+2026-01-15 09:11:35 [INFO]: [0mPOST /api/servicios [32m201[0m 422.961 ms - 272[0m
+2026-01-15 09:11:35 [INFO]: [0mGET /api/servicios?t=1768486295154 [32m200[0m 318.520 ms - 522[0m
+2026-01-15 09:11:49 [INFO]: [0mGET /api/servicios?t=1768486309598 [32m200[0m 308.860 ms - 522[0m
+2026-01-15 09:11:58 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 09:11:58 [INFO]: [0mGET /api/servicios/lista [32m200[0m 327.935 ms - 502[0m
+2026-01-15 09:11:58 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 09:11:58 [INFO]: [0mGET /api/notificaciones/lista?t=1768486318435 [32m200[0m 263.483 ms - -[0m
+2026-01-15 09:13:02 [INFO]: [0mGET /api/servicios?t=1768486382568 [32m200[0m 335.668 ms - 522[0m
+2026-01-15 09:13:06 [INFO]: [0mGET /api/servicios?t=1768486386125 [32m200[0m 319.687 ms - 522[0m
+2026-01-15 09:13:11 [INFO]: [0mGET /api/servicios?t=1768486391406 [32m200[0m 313.172 ms - 522[0m
+2026-01-15 09:16:35 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768486594741 [32m200[0m 321.897 ms - 672[0m
+2026-01-15 09:16:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1074.099 ms - -[0m
+2026-01-15 09:16:36 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.046 ms - -[0m
+2026-01-15 09:16:36 [INFO]: [0mGET /mascota/lista [32m200[0m 2205.268 ms - -[0m
+2026-01-15 09:16:36 [INFO]: [0mGET /cliente/lista [32m200[0m 2215.201 ms - -[0m
+2026-01-15 09:16:37 [INFO]: [0mGET /mascota/lista [36m304[0m 315.188 ms - -[0m
+2026-01-15 09:16:37 [INFO]: [0mGET /mascota/lista [36m304[0m 328.416 ms - -[0m
+2026-01-15 09:16:38 [INFO]: [0mGET /cliente/lista [36m304[0m 1533.298 ms - -[0m
+2026-01-15 09:16:38 [INFO]: [0mGET /cliente/lista [36m304[0m 336.494 ms - -[0m

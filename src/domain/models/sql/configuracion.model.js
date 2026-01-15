@@ -5,6 +5,11 @@ const configuracion = (sequelize, Sequelize) => {
       autoIncrement: true,
       primaryKey: true,
     },
+    idClinica: {   // 🔹 nuevo campo
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      comment: 'Identificador de la clínica dueña de esta configuración'
+    },
     clave: Sequelize.STRING,
     valor: Sequelize.STRING,
     descripcion: Sequelize.STRING,
@@ -14,7 +19,7 @@ const configuracion = (sequelize, Sequelize) => {
   }, {
     tableName: 'configuraciones',
     timestamps: false,
-    comment: 'Tabla de configuraciones clave-valor'
+    comment: 'Tabla de configuraciones clave-valor por clínica'
   });
 };
 
