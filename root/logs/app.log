@@ -16735,3 +16735,42 @@ notNull Violation: servicio.precio cannot be null
 2026-01-15 06:45:37 [INFO]: [0mGET /usuario/lista [36m304[0m 113.566 ms - -[0m
 2026-01-15 06:45:49 [INFO]: [0mGET /usuario/lista [36m304[0m 123.517 ms - -[0m
 2026-01-15 06:50:46 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:51:55 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:51:56 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:51:56 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:51:56 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:51:56 [INFO]: Base de datos conectada
+2026-01-15 06:51:57 [ERROR]: ❌ Error MySQL: Too many connections
+2026-01-15 06:51:57 [ERROR]: ❌ Error al sincronizar catálogos: Too many connections
+2026-01-15 06:51:58 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:51:58 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 06:51:58 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:54:56 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:55:04 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:55:04 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:55:04 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:55:04 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:55:05 [INFO]: Base de datos conectada
+2026-01-15 06:55:05 [ERROR]: ❌ Error MySQL: Too many connections
+2026-01-15 06:55:05 [ERROR]: ❌ Error al sincronizar catálogos: Too many connections
+2026-01-15 06:55:06 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:55:07 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 06:55:07 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:55:15 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:55:22 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:55:22 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:55:22 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:55:22 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:55:22 [INFO]: Base de datos conectada
+2026-01-15 06:55:23 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 06:55:24 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 06:55:24 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:55:24 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 06:55:24 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:55:37 [INFO]: ⚠️  Mongoose desconectado de MongoDB
