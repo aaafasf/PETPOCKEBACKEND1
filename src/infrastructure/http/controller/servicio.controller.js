@@ -8,7 +8,7 @@ const servicioCtl = {};
 
 // Función auxiliar para construir URL completa de imagen
 const construirUrlImagen = (req, imagenUrl) => {
-  if (!imagenUrl) return null;
+  if (!imagenUrl) return null;  
   const baseUrl = `${req.protocol}://${req.get('host')}`;
   return `${baseUrl}/uploads/servicios/${imagenUrl}`;
 };
@@ -244,6 +244,52 @@ servicioCtl.eliminar = async (req, res) => {
     console.error(error);
     res.status(500).json({ message: 'Error al eliminar servicio', error: error.message });
   }
+  
 };
+// =======================
+// CAMBIAR ESTADO SERVICIO
+// =======================
+servicioCtl.cambiarEstado = async (req, res) => {
+  try {
+    const { id } = req.params;
+    let { estadoServicio } = req.body;
+
+    console.log('ID:', id);
+    console.log('BODY:', req.body);
+
+    if (estadoServicio === undefined || estadoServicio === null) {
+      return res.status(400).json({ message: 'estadoServicio es requerido' });
+    }
+
+    estadoServicio = estadoServicio.toLowerCase();
+
+    // 1️⃣ Verificar existencia REAL
+    const [servicio] = await sql.promise().query(
+      'SELECT idServicio FROM servicios WHERE idServicio = ?',
+      [id]
+    );
+
+    if (servicio.length === 0) {
+      return res.status(404).json({ message: 'Servicio no encontrado' });
+    }
+
+    // 2️⃣ Actualizar SIN affectedRows
+    await sql.promise().query(
+      'UPDATE servicios SET estadoServicio = ? WHERE idServicio = ?',
+      [estadoServicio, id]
+    );
+
+    res.json({
+      message: 'Estado actualizado correctamente',
+      idServicio: Number(id),
+      estadoServicio
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error al cambiar estado del servicio' });
+  }
+};
+
 
 module.exports = servicioCtl;

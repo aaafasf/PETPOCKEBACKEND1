@@ -234,7 +234,7 @@ citaCtl.reprogramarCita = async (req, res) => {
         const { fecha, hora } = req.body;
 
         await orm.cita.update(
-            { fecha, hora },
+            { fecha, hora ,  estadoCita: 'programada' },
             { where: { idCita } }
         );
 
@@ -281,26 +281,26 @@ citaCtl.verificarDisponibilidad = async (req, res) => {
     }
 };
 
-/* =========================
-   ESTADÍSTICAS
-========================= */
-citaCtl.obtenerEstadisticas = async (req, res) => {
-    try {
-        const [stats] = await sql.promise().query(`
-            SELECT
-                COUNT(*) total,
-                SUM(estadoCita='programada') programadas,
-                SUM(estadoCita='confirmada') confirmadas,
-                SUM(estadoCita='completada') completadas,
-                SUM(estadoCita='cancelada') canceladas
-            FROM citas
-        `);
+    /* =========================
+    ESTADÍSTICAS
+    ========================= */
+    citaCtl.obtenerEstadisticas = async (req, res) => {
+        try {
+            const [stats] = await sql.promise().query(`
+                SELECT
+                    COUNT(*) total,
+                    SUM(estadoCita='programada') programadas,
+                    SUM(estadoCita='confirmada') confirmadas,
+                    SUM(estadoCita='completada') completadas,
+                    SUM(estadoCita='cancelada') canceladas
+                FROM citas
+            `);
 
-        return res.json(stats[0]);
-    } catch (error) {
-        return res.status(500).json({ message: 'Error estadísticas' });
-    }
-};
+            return res.json(stats[0]);
+        } catch (error) {
+            return res.status(500).json({ message: 'Error estadísticas' });
+        }
+    };
 
 /* =========================
    VETERINARIOS (CORREGIDO)
