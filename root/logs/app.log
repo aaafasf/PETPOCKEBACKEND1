@@ -10246,3 +10246,873 @@ notNull Violation: servicio.precio cannot be null
 2026-01-08 07:57:29 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
 2026-01-08 07:57:29 [INFO]: 🚀 MongoDB conectado correctamente
 >>>>>>> 1769dbb0157f54127c113bd028625ef46c968049
+2026-01-14 20:34:45 [INFO]: servicioCtl: [object Object]
+2026-01-14 20:34:46 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 20:34:46 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 20:34:46 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 20:34:46 [INFO]: Base de datos conectada
+2026-01-14 20:34:48 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-14 20:34:48 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 20:34:48 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 20:34:50 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 20:34:50 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 20:35:59 [INFO]: [0mGET /api/servicios/lista [32m200[0m 350.511 ms - 168[0m
+2026-01-14 20:35:59 [INFO]: [0mGET /uploads/null [33m404[0m 3.694 ms - 48[0m
+2026-01-14 20:40:30 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 20:40:30 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 3
+2026-01-14 20:40:30 [INFO]: [0mGET /notificacion/lista?t=1768441230459 [32m200[0m 135.924 ms - 797[0m
+2026-01-14 20:40:34 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 20:40:34 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 3
+2026-01-14 20:40:34 [INFO]: [0mGET /notificacion/lista?t=1768441234291 [32m200[0m 122.727 ms - 797[0m
+2026-01-14 20:40:36 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 20:40:36 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 3
+2026-01-14 20:40:36 [INFO]: [0mGET /notificacion/lista?t=1768441236435 [32m200[0m 117.786 ms - 797[0m
+2026-01-14 20:46:19 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 20:46:19 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 3
+2026-01-14 20:46:19 [INFO]: [0mGET /notificacion/lista?t=1768441579118 [32m200[0m 118.574 ms - 797[0m
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] POST /crear recibido
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 20:49:58 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "vacuna : vacunacion",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "14/1/2026, 8:49:58 p. m.",
+  "fechaProgramada": "2026-01-22T01:49:00.000Z"
+}
+2026-01-14 20:49:58 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 20:51:08 [INFO]: servicioCtl: [object Object]
+2026-01-14 20:51:08 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 20:51:08 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 20:51:08 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 20:51:09 [INFO]: Base de datos conectada
+2026-01-14 20:51:09 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 20:51:10 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 20:51:10 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 20:51:11 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 20:51:11 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] POST /crear recibido
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 20:51:13 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "14/1/2026, 8:51:13 p. m.",
+  "fechaProgramada": "2026-01-23T01:50:00.000Z"
+}
+2026-01-14 20:51:13 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 20:51:13 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'fechaProgramada' in 'field list'
+2026-01-14 20:51:13 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+      "programada",
+      "2026-01-23 01:50:00",
+      "14/1/2026, 8:51:13 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+      "programada",
+      "2026-01-23 01:50:00",
+      "14/1/2026, 8:51:13 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    58,
+    "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+    "programada",
+    "2026-01-23 01:50:00",
+    "14/1/2026, 8:51:13 p. m."
+  ]
+}
+2026-01-14 20:51:13 [INFO]: [0mPOST /notificacion/crear [31m500[0m 529.234 ms - 326[0m
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] POST /crear recibido
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 20:51:18 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "14/1/2026, 8:51:18 p. m.",
+  "fechaProgramada": "2026-01-23T01:50:00.000Z"
+}
+2026-01-14 20:51:18 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 20:51:18 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'fechaProgramada' in 'field list'
+2026-01-14 20:51:18 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+      "programada",
+      "2026-01-23 01:50:00",
+      "14/1/2026, 8:51:18 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+      "programada",
+      "2026-01-23 01:50:00",
+      "14/1/2026, 8:51:18 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    58,
+    "aaaaaaaaaaa: aaaaaaaaaaaaaaaaa",
+    "programada",
+    "2026-01-23 01:50:00",
+    "14/1/2026, 8:51:18 p. m."
+  ]
+}
+2026-01-14 20:51:18 [INFO]: [0mPOST /notificacion/crear [31m500[0m 466.869 ms - 326[0m
+2026-01-14 20:54:42 [INFO]: [NOTIFICACIONES] POST /crear recibido
+2026-01-14 20:54:42 [INFO]: [NOTIFICACIONES] Body: [object Object]
+2026-01-14 20:54:42 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 20:54:42 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 20:54:42 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 20:54:42 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "Recordatorio para blanquemaiento dental: Blanqueamiento dental de su mascota es para el próximo mes",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 8:54:43 p. m."
+}
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Notificación creada exitosamente en BD: 72
+2026-01-14 20:54:43 [INFO]: [0mPOST /notificacion/crear [32m201[0m 572.616 ms - 127[0m
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 20:54:43 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-14 20:54:43 [INFO]: [0mGET /notificacion/lista?t=1768442083419 [32m200[0m 132.541 ms - -[0m
+2026-01-14 21:29:11 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:29:11 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:29:11 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:29:11 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:29:11 [INFO]: Base de datos conectada
+2026-01-14 21:29:12 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:29:13 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:29:13 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:29:13 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:29:13 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:29:17 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:29:17 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-14 21:29:17 [INFO]: [0mGET /notificacion/lista-completa?t=1768444157545 [32m200[0m 155.062 ms - -[0m
+2026-01-14 21:29:30 [INFO]: [0mGET /mascota/lista [32m200[0m 652.833 ms - -[0m
+2026-01-14 21:29:31 [INFO]: [0mGET /cliente/lista [32m200[0m 1626.075 ms - -[0m
+2026-01-14 21:29:42 [INFO]: [0mGET /mascota/lista [36m304[0m 326.031 ms - -[0m
+2026-01-14 21:29:43 [INFO]: [0mGET /cliente/lista [36m304[0m 1701.630 ms - -[0m
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:30:53 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "Desparacitación anual: Se le recuerda estimado que la desparasitación se aproxima en 3 meses",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "14/1/2026, 9:30:53 p. m.",
+  "fechaProgramada": "2026-03-20T02:30:00.000Z"
+}
+2026-01-14 21:30:53 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:30:53 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'fechaProgramada' in 'field list'
+2026-01-14 21:30:53 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "Desparacitación anual: Se le recuerda estimado que la desparasitación se aproxima en 3 meses",
+      "programada",
+      "2026-03-20 02:30:00",
+      "14/1/2026, 9:30:53 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "Desparacitación anual: Se le recuerda estimado que la desparasitación se aproxima en 3 meses",
+      "programada",
+      "2026-03-20 02:30:00",
+      "14/1/2026, 9:30:53 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    58,
+    "Desparacitación anual: Se le recuerda estimado que la desparasitación se aproxima en 3 meses",
+    "programada",
+    "2026-03-20 02:30:00",
+    "14/1/2026, 9:30:53 p. m."
+  ]
+}
+2026-01-14 21:30:53 [INFO]: [0mPOST /notificacion [31m500[0m 492.815 ms - 326[0m
+2026-01-14 21:31:38 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:31:38 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-14 21:31:38 [INFO]: [0mGET /notificacion/lista-completa?t=1768444298103 [32m200[0m 131.469 ms - -[0m
+2026-01-14 21:31:38 [INFO]: [0mGET /api/servicios/lista [36m304[0m 314.158 ms - -[0m
+2026-01-14 21:31:38 [INFO]: [0mGET /uploads/null [33m404[0m 2.461 ms - 48[0m
+2026-01-14 21:31:38 [INFO]: [0mGET /cliente/lista [36m304[0m 305.013 ms - -[0m
+2026-01-14 21:31:40 [INFO]: [0mGET /mascota/lista [36m304[0m 1704.436 ms - -[0m
+2026-01-14 21:32:34 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:32:34 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 5
+2026-01-14 21:32:35 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:32:35 [ERROR]: [NOTIFICACIONES] Usuario con ID 5 no existe en la base de datos
+2026-01-14 21:32:35 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:32:35 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:32:35 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:32:35 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "Desparacitación anual: Se le recuerda estimado que la próxima desparasitación anual de su mascota es en 2 meses",
+  "estadoNotificacion": "programada",
+  "createNotificacion": "14/1/2026, 9:32:35 p. m.",
+  "fechaProgramada": "2026-03-20T02:31:00.000Z"
+}
+2026-01-14 21:32:35 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:32:35 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'fechaProgramada' in 'field list'
+2026-01-14 21:32:35 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "Desparacitación anual: Se le recuerda estimado que la próxima desparasitación anual de su mascota es en 2 meses",
+      "programada",
+      "2026-03-20 02:31:00",
+      "14/1/2026, 9:32:35 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'fechaProgramada' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "Desparacitación anual: Se le recuerda estimado que la próxima desparasitación anual de su mascota es en 2 meses",
+      "programada",
+      "2026-03-20 02:31:00",
+      "14/1/2026, 9:32:35 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`fechaProgramada`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    58,
+    "Desparacitación anual: Se le recuerda estimado que la próxima desparasitación anual de su mascota es en 2 meses",
+    "programada",
+    "2026-03-20 02:31:00",
+    "14/1/2026, 9:32:35 p. m."
+  ]
+}
+2026-01-14 21:32:35 [INFO]: [0mPOST /notificacion/crear [31m500[0m 453.056 ms - 326[0m
+2026-01-14 21:33:23 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:33:24 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 4
+2026-01-14 21:33:24 [INFO]: [0mGET /notificacion/lista-completa?t=1768444403928 [32m200[0m 117.790 ms - -[0m
+2026-01-14 21:33:24 [INFO]: [0mGET /api/servicios/lista [36m304[0m 303.454 ms - -[0m
+2026-01-14 21:33:24 [INFO]: [0mGET /uploads/null [33m404[0m 2.079 ms - 48[0m
+2026-01-14 21:33:24 [INFO]: [0mGET /cliente/lista [36m304[0m 306.241 ms - -[0m
+2026-01-14 21:33:24 [INFO]: [0mGET /mascota/lista [36m304[0m 306.702 ms - -[0m
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:34:31 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "Desparacitación anual: Se le recuerda que la próxima desparacitaci0on es dentro de dos meses",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 9:34:31 p. m."
+}
+2026-01-14 21:34:31 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:34:32 [INFO]: [NOTIFICACIONES] Notificación creada exitosamente en BD: 73
+2026-01-14 21:34:32 [INFO]: [0mPOST /notificacion/crear [32m201[0m 567.671 ms - 127[0m
+2026-01-14 21:34:32 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:34:32 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:34:32 [INFO]: [0mGET /notificacion/lista-completa?t=1768444472197 [32m200[0m 114.697 ms - -[0m
+2026-01-14 21:35:13 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:35:13 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:35:13 [INFO]: [0mGET /notificacion/lista-completa?t=1768444513717 [32m200[0m 115.758 ms - -[0m
+2026-01-14 21:35:43 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:35:44 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:35:44 [INFO]: [0mGET /notificacion/lista-completa?t=1768444543922 [32m200[0m 124.971 ms - -[0m
+2026-01-14 21:35:44 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:35:44 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:35:44 [INFO]: [0mGET /notificacion/lista-completa?t=1768444544123 [32m200[0m 131.543 ms - -[0m
+2026-01-14 21:35:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 339.199 ms - -[0m
+2026-01-14 21:35:44 [INFO]: [0mGET /uploads/null [33m404[0m 1.124 ms - 48[0m
+2026-01-14 21:36:39 [INFO]: [0mGET /notificacion/73 [32m200[0m 114.597 ms - 365[0m
+2026-01-14 21:36:39 [INFO]: [0mGET /cliente/lista [36m304[0m 309.293 ms - -[0m
+2026-01-14 21:36:40 [INFO]: [0mGET /mascota/lista [36m304[0m 638.420 ms - -[0m
+2026-01-14 21:36:49 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:36:49 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:36:49 [INFO]: [0mGET /notificacion/lista-completa?t=1768444609702 [32m200[0m 119.326 ms - -[0m
+2026-01-14 21:36:51 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:36:51 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:36:51 [INFO]: [0mGET /notificacion/lista-completa?t=1768444611203 [32m200[0m 125.660 ms - -[0m
+2026-01-14 21:38:22 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:38:22 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:38:22 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:38:22 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:38:22 [INFO]: Base de datos conectada
+2026-01-14 21:38:23 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:38:24 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:38:24 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:38:24 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 21:38:24 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:38:34 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:38:34 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:38:34 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:38:34 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:38:34 [INFO]: Base de datos conectada
+2026-01-14 21:38:35 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:38:36 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-14 21:38:36 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:38:36 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:38:36 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:38:44 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:38:44 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:38:44 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:38:44 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:38:44 [INFO]: Base de datos conectada
+2026-01-14 21:38:45 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:38:46 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-14 21:38:46 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:38:46 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:38:46 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:38:49 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:38:49 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:38:49 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:38:49 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:38:49 [INFO]: Base de datos conectada
+2026-01-14 21:38:50 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:38:51 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:38:51 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:38:51 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:38:51 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:39:21 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:39:21 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:39:21 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:39:21 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:39:21 [INFO]: Base de datos conectada
+2026-01-14 21:39:22 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:39:23 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:39:23 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:39:23 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:39:23 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:40:07 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:40:07 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: Unknown column 'n.idMascota' in 'on clause'
+2026-01-14 21:40:07 [INFO]: [0mGET /notificacion/lista-completa?t=1768444807335 [31m500[0m 126.095 ms - 214[0m
+2026-01-14 21:42:13 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:42:13 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:42:13 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:42:13 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:42:14 [INFO]: Base de datos conectada
+2026-01-14 21:42:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:42:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:42:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 21:42:16 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:42:16 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:42:20 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:42:20 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:42:20 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:42:20 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:42:20 [INFO]: Base de datos conectada
+2026-01-14 21:42:21 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:42:22 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 21:42:22 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:42:22 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:42:22 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:43:00 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:43:00 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:43:00 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:43:00 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:43:01 [INFO]: Base de datos conectada
+2026-01-14 21:43:01 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:43:02 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:43:02 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:43:03 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:43:03 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:43:52 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:43:52 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:43:52 [INFO]: [0mGET /notificacion/lista-completa?t=1768445032191 [32m200[0m 143.864 ms - -[0m
+2026-01-14 21:49:17 [INFO]: [0mGET /mascota/lista [36m304[0m 644.294 ms - -[0m
+2026-01-14 21:49:18 [INFO]: [0mGET /cliente/lista [36m304[0m 1788.174 ms - -[0m
+2026-01-14 21:49:19 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:49:19 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 5
+2026-01-14 21:49:19 [INFO]: [0mGET /notificacion/lista-completa?t=1768445359760 [32m200[0m 117.540 ms - -[0m
+2026-01-14 21:50:21 [INFO]: [0mGET /cliente/lista [36m304[0m 306.666 ms - -[0m
+2026-01-14 21:50:22 [INFO]: [0mGET /mascota/lista [36m304[0m 1756.639 ms - -[0m
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 2
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:50:57 [ERROR]: [NOTIFICACIONES] Usuario con ID 2 no existe en la base de datos
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "se le recuerda al estimado la vacunación de la mascota",
+  "tipo": "vacuna",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 9:50:57 p. m.",
+  "idMascota": 3
+}
+2026-01-14 21:50:57 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:50:57 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'idMascota' in 'field list'
+2026-01-14 21:50:57 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'idMascota' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`idMascota`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?,?);",
+    "parameters": [
+      58,
+      3,
+      "se le recuerda al estimado la vacunación de la mascota",
+      "pendiente",
+      "vacuna",
+      "14/1/2026, 9:50:57 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'idMascota' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`idMascota`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?,?);",
+    "parameters": [
+      58,
+      3,
+      "se le recuerda al estimado la vacunación de la mascota",
+      "pendiente",
+      "vacuna",
+      "14/1/2026, 9:50:57 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`idMascota`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?,?);",
+  "parameters": [
+    58,
+    3,
+    "se le recuerda al estimado la vacunación de la mascota",
+    "pendiente",
+    "vacuna",
+    "14/1/2026, 9:50:57 p. m."
+  ]
+}
+2026-01-14 21:50:57 [INFO]: [0mPOST /notificacion/crear [31m500[0m 495.840 ms - 314[0m
+2026-01-14 21:51:45 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:51:46 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:51:46 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:51:46 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:51:46 [INFO]: Base de datos conectada
+2026-01-14 21:51:47 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:51:49 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:51:49 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:51:49 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:51:49 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:51:49 [INFO]: Base de datos conectada
+2026-01-14 21:51:51 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:51:51 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:51:51 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:51:51 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:51:52 [INFO]: Base de datos conectada
+2026-01-14 21:51:52 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:51:54 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:51:54 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:51:54 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:51:54 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:51:54 [INFO]: Base de datos conectada
+2026-01-14 21:51:55 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:51:56 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:51:56 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:51:56 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:51:56 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:52:04 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:52:04 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 2
+2026-01-14 21:52:04 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:52:04 [ERROR]: [NOTIFICACIONES] Usuario con ID 2 no existe en la base de datos
+2026-01-14 21:52:04 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:52:04 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:52:04 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:52:05 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "se le recuerda al estimado la vacunación de la mascota",
+  "tipo": "vacuna",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 9:52:04 p. m."
+}
+2026-01-14 21:52:05 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:52:05 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'tipo' in 'field list'
+2026-01-14 21:52:05 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'tipo' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "se le recuerda al estimado la vacunación de la mascota",
+      "pendiente",
+      "vacuna",
+      "14/1/2026, 9:52:04 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'tipo' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "se le recuerda al estimado la vacunación de la mascota",
+      "pendiente",
+      "vacuna",
+      "14/1/2026, 9:52:04 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    58,
+    "se le recuerda al estimado la vacunación de la mascota",
+    "pendiente",
+    "vacuna",
+    "14/1/2026, 9:52:04 p. m."
+  ]
+}
+2026-01-14 21:52:05 [INFO]: [0mPOST /notificacion/crear [31m500[0m 507.526 ms - 304[0m
+2026-01-14 21:52:11 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:52:11 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:52:11 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:52:11 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:52:11 [INFO]: Base de datos conectada
+2026-01-14 21:52:12 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:52:13 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-14 21:52:13 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:52:13 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:52:13 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:52:19 [INFO]: [0mGET /mascota/lista [36m304[0m 647.468 ms - -[0m
+2026-01-14 21:52:20 [INFO]: [0mGET /cliente/lista [36m304[0m 1551.751 ms - -[0m
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 5
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:52:58 [ERROR]: [NOTIFICACIONES] Usuario con ID 5 no existe en la base de datos
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "estimado usuario se le recuerda el chequeo de la mascota",
+  "tipo": "control",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 9:52:58 p. m."
+}
+2026-01-14 21:52:58 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:52:58 [ERROR]: [NOTIFICACIONES] Error al crear notificación con ORM: SequelizeDatabaseError: Unknown column 'tipo' in 'field list'
+2026-01-14 21:52:58 [ERROR]: [NOTIFICACIONES] Error completo: {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'tipo' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "estimado usuario se le recuerda el chequeo de la mascota",
+      "pendiente",
+      "control",
+      "14/1/2026, 9:52:58 p. m."
+    ]
+  },
+  "original": {
+    "code": "ER_BAD_FIELD_ERROR",
+    "errno": 1054,
+    "sqlState": "42S22",
+    "sqlMessage": "Unknown column 'tipo' in 'field list'",
+    "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+    "parameters": [
+      58,
+      "estimado usuario se le recuerda el chequeo de la mascota",
+      "pendiente",
+      "control",
+      "14/1/2026, 9:52:58 p. m."
+    ]
+  },
+  "sql": "INSERT INTO `notificaciones` (`idNotificacion`,`idUsuario`,`mensaje`,`estadoNotificacion`,`tipo`,`createNotificacion`) VALUES (DEFAULT,?,?,?,?,?);",
+  "parameters": [
+    58,
+    "estimado usuario se le recuerda el chequeo de la mascota",
+    "pendiente",
+    "control",
+    "14/1/2026, 9:52:58 p. m."
+  ]
+}
+2026-01-14 21:52:58 [INFO]: [0mPOST /notificacion/crear [31m500[0m 485.985 ms - 304[0m
+2026-01-14 21:53:52 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:53:52 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:53:52 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:53:52 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:53:53 [INFO]: Base de datos conectada
+2026-01-14 21:53:53 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:53:54 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:53:54 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:53:54 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:53:54 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:53:57 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:53:58 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:53:58 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:53:58 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:53:58 [INFO]: Base de datos conectada
+2026-01-14 21:53:59 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:54:00 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 21:54:00 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:54:00 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:54:00 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:54:03 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:54:03 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:54:03 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:54:03 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:54:03 [INFO]: Base de datos conectada
+2026-01-14 21:54:04 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:54:05 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-14 21:54:05 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:54:05 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:54:05 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:54:07 [INFO]: servicioCtl: [object Object]
+2026-01-14 21:54:07 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 21:54:07 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 21:54:07 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 21:54:07 [INFO]: Base de datos conectada
+2026-01-14 21:54:08 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 21:54:09 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 21:54:09 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 21:54:09 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 21:54:09 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 5
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 21:54:13 [ERROR]: [NOTIFICACIONES] Usuario con ID 5 no existe en la base de datos
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "estimado usuario se le recuerda el chequeo de la mascota",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 9:54:13 p. m."
+}
+2026-01-14 21:54:13 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 21:54:14 [INFO]: [NOTIFICACIONES] Notificación creada exitosamente en BD: 74
+2026-01-14 21:54:14 [INFO]: [0mPOST /notificacion/crear [32m201[0m 607.526 ms - 177[0m
+2026-01-14 21:54:14 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 21:54:14 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 6
+2026-01-14 21:54:14 [INFO]: [0mGET /notificacion/lista-completa?t=1768445654235 [32m200[0m 122.968 ms - -[0m
+2026-01-14 21:54:48 [INFO]: [0mGET /api/servicios/ [32m200[0m 323.979 ms - 349[0m
+2026-01-14 22:00:55 [INFO]: [0mGET /api/servicios/ [36m304[0m 306.066 ms - -[0m
+2026-01-14 22:01:01 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:01:01 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:01:01 [INFO]: [0mGET /notificacion/lista-completa?t=1768446061051 [32m200[0m 120.029 ms - -[0m
+2026-01-14 22:01:08 [INFO]: [0mGET /mascota/lista [36m304[0m 637.845 ms - -[0m
+2026-01-14 22:01:09 [INFO]: [0mGET /cliente/lista [36m304[0m 1666.314 ms - -[0m
+2026-01-14 22:01:21 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:01:21 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:01:21 [INFO]: [0mGET /notificacion/lista-completa?t=1768446081523 [32m200[0m 122.614 ms - -[0m
+2026-01-14 22:01:24 [INFO]: [0mGET /api/servicios/ [36m304[0m 304.101 ms - -[0m
+2026-01-14 22:01:28 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:01:28 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:01:28 [INFO]: [0mGET /notificacion/lista-completa?t=1768446088321 [32m200[0m 121.195 ms - -[0m
+2026-01-14 22:01:33 [INFO]: [0mGET /api/servicios/ [36m304[0m 304.894 ms - -[0m
+2026-01-14 22:01:33 [INFO]: [0mGET /api/servicios/ [36m304[0m 301.442 ms - -[0m
+2026-01-14 22:05:38 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:05:39 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:05:39 [INFO]: [0mGET /notificacion/lista-completa?t=1768446338991 [32m200[0m 117.502 ms - -[0m
+2026-01-14 22:05:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.441 ms - -[0m
+2026-01-14 22:05:39 [INFO]: [0mGET /uploads/null [33m404[0m 3.941 ms - 48[0m
+2026-01-14 22:05:39 [INFO]: [0mGET /api/servicios/ [36m304[0m 312.866 ms - -[0m
+2026-01-14 22:05:44 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:05:44 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:05:44 [INFO]: [0mGET /notificacion/lista-completa?t=1768446344381 [32m200[0m 125.711 ms - -[0m
+2026-01-14 22:06:00 [INFO]: [0mGET /mascota/lista [36m304[0m 303.075 ms - -[0m
+2026-01-14 22:06:01 [INFO]: [0mGET /cliente/lista [36m304[0m 1719.885 ms - -[0m
+2026-01-14 22:07:53 [INFO]: [0mGET /mascota/lista [36m304[0m 306.771 ms - -[0m
+2026-01-14 22:07:55 [INFO]: [0mGET /cliente/lista [36m304[0m 1736.612 ms - -[0m
+2026-01-14 22:08:00 [INFO]: [0mGET /api/servicios/ [36m304[0m 303.318 ms - -[0m
+2026-01-14 22:08:00 [INFO]: [0mGET /api/servicios/ [36m304[0m 310.784 ms - -[0m
+2026-01-14 22:08:01 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:08:01 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:08:01 [INFO]: [0mGET /notificacion/lista-completa?t=1768446481286 [32m200[0m 116.837 ms - -[0m
+2026-01-14 22:08:36 [INFO]: [0mGET /cliente/lista [36m304[0m 312.868 ms - -[0m
+2026-01-14 22:08:36 [INFO]: [0mGET /mascota/lista [36m304[0m 311.770 ms - -[0m
+2026-01-14 22:10:00 [INFO]: servicioCtl: [object Object]
+2026-01-14 22:10:00 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 22:10:00 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 22:10:00 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 22:10:01 [INFO]: Base de datos conectada
+2026-01-14 22:10:01 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-14 22:10:02 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-14 22:10:02 [INFO]: ✅ Tablas maestras sincronizadas con la base de datos
+2026-01-14 22:10:03 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-14 22:10:03 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 22:10:22 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:10:22 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 7
+2026-01-14 22:10:22 [INFO]: [0mGET /notificacion/lista-completa?t=1768446622065 [32m200[0m 128.956 ms - -[0m
+2026-01-14 22:10:24 [INFO]: [0mGET /mascota/lista [36m304[0m 649.041 ms - -[0m
+2026-01-14 22:10:25 [INFO]: [0mGET /cliente/lista [36m304[0m 1606.897 ms - -[0m
+2026-01-14 22:15:49 [INFO]: [0mGET /cliente/lista [36m304[0m 312.740 ms - -[0m
+2026-01-14 22:15:50 [INFO]: [0mGET /mascota/lista [36m304[0m 1725.220 ms - -[0m
+2026-01-14 22:17:51 [INFO]: [0mGET /cliente/lista [36m304[0m 314.321 ms - -[0m
+2026-01-14 22:17:53 [INFO]: [0mGET /mascota/lista [36m304[0m 1662.086 ms - -[0m
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 2
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 22:18:20 [ERROR]: [NOTIFICACIONES] Usuario con ID 2 no existe en la base de datos
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "aaaaaaaaaaaaaaaaaaaa",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 10:18:20 p. m."
+}
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Notificación creada exitosamente en BD: 76
+2026-01-14 22:18:20 [INFO]: [0mPOST /notificacion/crear [32m201[0m 597.802 ms - 191[0m
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:18:20 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 8
+2026-01-14 22:18:20 [INFO]: [0mGET /notificacion/lista-completa?t=1768447100747 [32m200[0m 158.340 ms - -[0m
+2026-01-14 22:19:26 [INFO]: [0mGET /mascota/lista [36m304[0m 306.274 ms - -[0m
+2026-01-14 22:19:26 [INFO]: [0mGET /cliente/lista [36m304[0m 314.260 ms - -[0m
+2026-01-14 22:19:43 [INFO]: [NOTIFICACIONES] Creando notificación: [object Object]
+2026-01-14 22:19:43 [INFO]: [NOTIFICACIONES] Verificando existencia del usuario: 1
+2026-01-14 22:19:43 [INFO]: [NOTIFICACIONES] Resultado de consulta usuario: 
+2026-01-14 22:19:43 [ERROR]: [NOTIFICACIONES] Usuario con ID 1 no existe en la base de datos
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Usuarios activos encontrados: [object Object]
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Usuario válido confirmado: 58
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Datos de la notificación a crear: [object Object]
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Datos finales que se insertarán: {
+  "idUsuario": 58,
+  "mensaje": "aaaaaaaaaaaaaaaaaa",
+  "estadoNotificacion": "pendiente",
+  "createNotificacion": "14/1/2026, 10:19:44 p. m."
+}
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Intentando crear notificación con ORM...
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Notificación creada exitosamente en BD: 77
+2026-01-14 22:19:44 [INFO]: [0mPOST /notificacion/crear [32m201[0m 457.149 ms - 183[0m
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-14 22:19:44 [INFO]: [0mGET /notificacion/lista-completa?t=1768447184306 [32m200[0m 122.325 ms - -[0m

@@ -303,25 +303,31 @@ citaCtl.obtenerEstadisticas = async (req, res) => {
 };
 
 /* =========================
-   VETERINARIOS
+   VETERINARIOS (CORREGIDO)
 ========================= */
 citaCtl.obtenerVeterinarios = async (req, res) => {
   try {
-    // Traemos usuarios que tengan el rol 'Veterinario'
+    // CAMBIO IMPORTANTE:
+    // Ya no usamos 'detalleRols'. Ahora unimos 'users' directamente con 'roles'
+    // usando la columna 'idRol' que acabamos de crear en la base de datos.
     const [veterinarios] = await sql.promise().query(`
       SELECT u.idUser, u.nameUsers
       FROM users u
-      JOIN detalleRols dr ON dr.userIdUser = u.idUser
-      JOIN roles r ON r.idRol = dr.roleIdRol
-      WHERE r.nameRol = 'Veterinario'
+      JOIN roles r ON u.idRol = r.idRol
+      WHERE r.nameRol = 'Veterinario' 
     `);
 
+    // Mapeo de resultados para el Frontend
     const veterinariosMap = veterinarios.map(vet => ({
-      id: vet.idUser,
-      name: vet.nameUsers // si tu base estuviera encriptada, aquí puedes descifrar
+      idUser: vet.idUser,      // Ojo: asegúrate de enviar la clave que espera tu front
+      nameUsers: vet.nameUsers,
+      // Agregamos esto para cumplir con la estructura que tu service espera
+      usuarios: [] 
     }));
 
+    // Tu Frontend espera un objeto { usuarios: [...] }
     return res.json({ usuarios: veterinariosMap });
+
   } catch (error) {
     console.error('Error al obtener veterinarios:', error);
     return res.status(500).json({ message: 'Error al obtener veterinarios' });
@@ -339,10 +345,12 @@ citaCtl.obtenerCitasPorFecha = async (req, res) => {
         const [citas] = await sql.promise().query(`
             SELECT c.*,
                    cl.nombreCliente,
-                   m.nombreMascota
+                   m.nombreMascota,
+                   u.nameUsers as nombreVeterinario
             FROM citas c
             JOIN clientes cl ON c.idCliente = cl.idClientes
             JOIN mascotas m ON c.idMascota = m.idMascota
+            LEFT JOIN users u ON c.userIdUser = u.idUser
             WHERE c.fecha = ?
             ORDER BY c.hora ASC
         `, [fecha]);
@@ -361,6 +369,7 @@ citaCtl.obtenerCitasPorFecha = async (req, res) => {
                     idCliente: cita.idCliente,
                     idMascota: cita.idMascota,
                     idServicio: cita.idServicio,
+                    userIdUser: cita.userIdUser, // ✅ AGREGADO
 
                     motivo: descifrarSeguro(mongoData?.motivo),
 
@@ -370,6 +379,9 @@ citaCtl.obtenerCitasPorFecha = async (req, res) => {
                     mascota: {
                         nombre: descifrarSeguro(cita.nombreMascota)
                     },
+                    veterinario: cita.nombreVeterinario ? {
+                        nombre: cita.nombreVeterinario
+                    } : null, // ✅ AGREGADO (opcional)
                     detallesMongo: mongoData
                 };
             })

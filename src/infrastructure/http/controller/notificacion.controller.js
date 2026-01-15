@@ -101,9 +101,9 @@ notificacionCtl.mostrarNotificaciones = async (req, res) => {
 // Crear nueva notificación (compatible con frontend)
 notificacionCtl.crearNotificacion = async (req, res) => {
     try {
-        const { idUsuario, mensaje, tipo, titulo, fechaProgramada, tipoRecordatorio } = req.body;
+        const { idUsuario, mensaje, tipo, titulo, fechaProgramada, tipoRecordatorio, idMascota } = req.body;
 
-        console.log('[NOTIFICACIONES] Creando notificación:', { idUsuario, mensaje, tipo, titulo, fechaProgramada, tipoRecordatorio });
+        console.log('[NOTIFICACIONES] Creando notificación:', { idUsuario, titulo, mensaje, tipo, fechaProgramada, tipoRecordatorio, idMascota });
 
         // Obtener idUsuario de la sesión si no viene en el body
         let usuarioId = idUsuario;
@@ -114,8 +114,6 @@ notificacionCtl.crearNotificacion = async (req, res) => {
 
         // Si aún no hay idUsuario, usar un valor por defecto
         if (!usuarioId) {
-            // Usar idUsuario = 1 por defecto si no está autenticado ni viene en el body
-            // Esto permite que funcione sin autenticación en desarrollo
             usuarioId = 1;
             console.warn('[NOTIFICACIONES] No se proporcionó idUsuario, usando valor por defecto:', usuarioId);
             console.warn('[NOTIFICACIONES] En producción, asegúrate de enviar idUsuario o tener sesión activa');
@@ -136,7 +134,7 @@ notificacionCtl.crearNotificacion = async (req, res) => {
         let usuarioExiste;
         try {
             [usuarioExiste] = await sql.promise().query(
-                'SELECT idUser, stateUser FROM users WHERE idUser = ?',
+                'SELECT idUser, stateUser, nameUsers FROM users WHERE idUser = ?',
                 [usuarioId]
             );
             console.log('[NOTIFICACIONES] Resultado de consulta usuario:', usuarioExiste);
@@ -225,9 +223,6 @@ notificacionCtl.crearNotificacion = async (req, res) => {
 
         console.log('[NOTIFICACIONES] Usuario válido confirmado:', usuarioId);
 
-        // Construir mensaje completo (incluye título si existe)
-        const mensajeCompleto = titulo ? `${titulo}: ${mensaje}` : mensaje;
-
         // Determinar tipo y estado
         const tipoNotificacion = tipo || 'recordatorio';
         const tieneFecha = fechaProgramada && new Date(fechaProgramada).getTime() > Date.now();
@@ -235,31 +230,23 @@ notificacionCtl.crearNotificacion = async (req, res) => {
 
         console.log('[NOTIFICACIONES] Datos de la notificación a crear:', {
             usuarioId,
-            mensajeCompleto,
+            titulo,
+            mensaje,
             tipoNotificacion,
             estadoNotificacion,
+            idMascota,
             fechaProgramada: fechaProgramada || 'sin fecha',
             tipoRecordatorio: tipoRecordatorio || 'sin tipo recordatorio'
         });
 
-        // Preparar datos para crear (solo campos que existen en la BD)
-        // IMPORTANTE: La columna 'tipo' NO existe en la tabla de BD, no se incluye
+        // Preparar datos para crear
+        // Solo insertar los campos que existen en la tabla notificaciones
         const datosNotificacion = {
             idUsuario: usuarioId,
-            mensaje: mensajeCompleto,
+            mensaje: mensaje,              // Solo el mensaje
             estadoNotificacion: estadoNotificacion,
             createNotificacion: new Date().toLocaleString(),
         };
-
-        // Agregar fecha programada si existe (solo si la columna existe en la BD)
-        if (fechaProgramada && tieneFecha) {
-            datosNotificacion.fechaProgramada = fechaProgramada;
-        }
-
-        // Agregar tipoRecordatorio si existe (solo si la columna existe en la BD)
-        if (tipoRecordatorio) {
-            datosNotificacion.tipoRecordatorio = tipoRecordatorio;
-        }
 
         console.log('[NOTIFICACIONES] Datos finales que se insertarán:', JSON.stringify(datosNotificacion, null, 2));
 
@@ -285,8 +272,11 @@ notificacionCtl.crearNotificacion = async (req, res) => {
             message: estadoNotificacion === 'programada' ? 'Alerta programada creada exitosamente' : 'Notificación creada exitosamente',
             data: {
                 idNotificacion: nuevaNotificacion.idNotificacion,
+                titulo: titulo,
+                tipo: tipoNotificacion,
                 estado: estadoNotificacion,
-                usuarioId: usuarioId
+                usuarioId: usuarioId,
+                idMascota: idMascota
             }
         });
 
