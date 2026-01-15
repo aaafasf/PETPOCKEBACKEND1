@@ -15420,3 +15420,1318 @@ notNull Violation: servicio.precio cannot be null
 2026-01-14 22:19:44 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
 2026-01-14 22:19:44 [INFO]: [0mGET /notificacion/lista-completa?t=1768447184306 [32m200[0m 122.325 ms - -[0m
 >>>>>>> 9a0c79f8c85ced086bef198ce71270de85f79cf8
+2026-01-14 23:57:55 [INFO]: servicioCtl: [object Object]
+2026-01-14 23:57:55 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-14 23:57:55 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-14 23:57:55 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-14 23:57:56 [ERROR]: ❌ Error MySQL: Too many connections
+2026-01-14 23:57:56 [ERROR]: ❌ Error al sincronizar "servicio": SequelizeConnectionError: Too many connections
+2026-01-14 23:57:56 [ERROR]: ❌ Error al sincronizar catálogos: Too many connections
+2026-01-14 23:57:56 [ERROR]: La base de datos tiene demasiadas conexiones
+2026-01-14 23:57:58 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-14 23:57:58 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-14 23:58:12 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 23:58:13 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: Too many connections
+2026-01-14 23:58:13 [INFO]: [0mGET /notificacion/lista-completa?t=1768453092703 [31m500[0m 240.683 ms - 193[0m
+2026-01-14 23:58:13 [ERROR]: Error: Too many connections
+2026-01-14 23:58:13 [INFO]: [0mGET /api/servicios/lista [31m500[0m 407.383 ms - 49[0m
+2026-01-14 23:58:14 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 23:58:14 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: Too many connections
+2026-01-14 23:58:14 [INFO]: [0mGET /notificacion/lista-completa?t=1768453094402 [31m500[0m 252.820 ms - 193[0m
+2026-01-14 23:58:14 [ERROR]: Error: Too many connections
+2026-01-14 23:58:14 [INFO]: [0mGET /api/servicios/lista [31m500[0m 342.878 ms - 49[0m
+2026-01-14 23:58:20 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 23:58:20 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: Too many connections
+2026-01-14 23:58:20 [INFO]: [0mGET /notificacion/lista-completa?t=1768453100000 [31m500[0m 231.747 ms - 193[0m
+2026-01-14 23:58:20 [ERROR]: Error: Too many connections
+2026-01-14 23:58:20 [INFO]: [0mGET /api/servicios/lista [31m500[0m 338.038 ms - 49[0m
+2026-01-14 23:58:22 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 23:58:22 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: Too many connections
+2026-01-14 23:58:22 [INFO]: [0mGET /notificacion/lista-completa?t=1768453102482 [31m500[0m 370.426 ms - 191[0m
+2026-01-14 23:58:25 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-14 23:58:25 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: Too many connections
+2026-01-14 23:58:25 [INFO]: [0mGET /notificacion/lista-completa?t=1768453105681 [31m500[0m 233.974 ms - 193[0m
+2026-01-14 23:58:26 [ERROR]: Error: Too many connections
+2026-01-14 23:58:26 [INFO]: [0mGET /api/servicios/lista [31m500[0m 339.615 ms - 49[0m
+2026-01-15 00:18:18 [INFO]: servicioCtl: [object Object]
+2026-01-15 00:18:18 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 00:18:18 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 00:18:18 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 00:18:19 [INFO]: Base de datos conectada
+2026-01-15 00:18:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 00:18:20 [ERROR]: ❌ Error al sincronizar catálogos: Too many connections
+2026-01-15 00:18:21 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 00:18:21 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 00:18:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 00:24:14 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 00:24:14 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 8
+2026-01-15 00:24:14 [INFO]: [0mGET /notificacion/lista-completa?t=1768454653851 [32m200[0m 610.492 ms - -[0m
+2026-01-15 00:24:33 [ERROR]: Error: read ECONNRESET
+2026-01-15 00:24:33 [INFO]: [0mGET /api/servicios/lista [31m500[0m 19559.528 ms - 49[0m
+2026-01-15 00:52:18 [INFO]: servicioCtl: [object Object]
+2026-01-15 00:52:19 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 00:52:19 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 00:52:19 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 00:52:19 [INFO]: Base de datos conectada
+2026-01-15 00:52:20 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 00:52:20 [ERROR]: ❌ Error al sincronizar catálogos: Too many connections
+2026-01-15 00:52:21 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 00:52:22 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 00:52:22 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 00:52:40 [INFO]: [0mGET /api/servicios/ [32m200[0m 1608.300 ms - 877[0m
+2026-01-15 00:52:41 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768456360826 [32m200[0m 370.691 ms - 672[0m
+2026-01-15 00:52:41 [INFO]: [0mGET /api/servicios/lista [32m200[0m 340.392 ms - 656[0m
+2026-01-15 00:52:41 [INFO]: [0mGET /mascota/lista [32m200[0m 980.757 ms - -[0m
+2026-01-15 00:52:42 [INFO]: [0mGET /cliente/lista [32m200[0m 1211.678 ms - -[0m
+2026-01-15 00:52:42 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 00:52:42 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 00:52:42 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 00:52:42 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 00:52:42 [INFO]: [0mGET /cliente/lista [32m200[0m 2047.961 ms - -[0m
+2026-01-15 00:52:43 [INFO]: [0mGET /api/servicios/ [32m200[0m 868.088 ms - 877[0m
+2026-01-15 00:52:44 [INFO]: [0mGET /api/servicios/ [36m304[0m 1946.700 ms - -[0m
+2026-01-15 00:52:57 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768456377286 [32m200[0m 319.513 ms - 672[0m
+2026-01-15 00:52:57 [INFO]: [0mGET /cliente/lista [36m304[0m 348.094 ms - -[0m
+2026-01-15 00:52:57 [INFO]: [0mGET /mascota/lista [36m304[0m 357.154 ms - -[0m
+2026-01-15 00:52:57 [INFO]: [0mGET /cliente/lista [32m200[0m 553.887 ms - -[0m
+2026-01-15 00:52:58 [INFO]: [0mGET /mascota/lista [32m200[0m 694.554 ms - -[0m
+2026-01-15 00:52:58 [INFO]: [0mGET /api/servicios/lista [32m200[0m 432.671 ms - 656[0m
+2026-01-15 00:52:58 [INFO]: [0mGET /cliente/lista [32m200[0m 545.558 ms - -[0m
+2026-01-15 00:52:58 [INFO]: [0mGET /mascota/lista [32m200[0m 592.905 ms - -[0m
+2026-01-15 00:52:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1634.435 ms - -[0m
+2026-01-15 00:53:03 [INFO]: [0mGET /cita/veterinarios [32m200[0m 114.929 ms - 71[0m
+2026-01-15 00:53:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.915 ms - -[0m
+2026-01-15 00:53:03 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768456383482 [32m200[0m 324.402 ms - 672[0m
+2026-01-15 00:53:05 [INFO]: [0mGET /cita/veterinarios [36m304[0m 150.853 ms - -[0m
+2026-01-15 00:53:05 [INFO]: [0mGET /api/servicios/lista [36m304[0m 407.670 ms - -[0m
+2026-01-15 00:53:05 [INFO]: [0mGET /cliente/lista [36m304[0m 400.113 ms - -[0m
+2026-01-15 00:53:06 [INFO]: [0mGET /mascota/lista [36m304[0m 1635.627 ms - -[0m
+2026-01-15 00:53:09 [INFO]: [0mGET /api/servicios/ [36m304[0m 348.365 ms - -[0m
+2026-01-15 00:53:17 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:17 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 463.635 ms - 91[0m
+2026-01-15 00:53:19 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:19 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 418.113 ms - 91[0m
+2026-01-15 00:53:19 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:19 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 419.005 ms - 91[0m
+2026-01-15 00:53:20 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:20 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 462.161 ms - 91[0m
+2026-01-15 00:53:21 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:21 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 441.335 ms - 91[0m
+2026-01-15 00:53:21 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:21 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 438.172 ms - 91[0m
+2026-01-15 00:53:22 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:22 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 456.788 ms - 91[0m
+2026-01-15 00:53:22 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 00:53:22 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 433.348 ms - 91[0m
+2026-01-15 01:08:13 [INFO]: servicioCtl: [object Object]
+2026-01-15 01:08:13 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 01:08:13 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 01:08:13 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 01:08:14 [INFO]: Base de datos conectada
+2026-01-15 01:08:15 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 01:08:15 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 01:08:16 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 01:08:16 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 01:08:16 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 01:08:59 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1704.274 ms - -[0m
+2026-01-15 01:08:59 [INFO]: [0mGET /uploads/null [33m404[0m 5.270 ms - 48[0m
+2026-01-15 01:09:27 [INFO]: [0mGET /api/servicios?t=1768457366008 [32m200[0m 1539.482 ms - 877[0m
+2026-01-15 01:09:32 [INFO]: [0mGET /api/servicios?t=1768457371715 [32m200[0m 318.181 ms - 877[0m
+2026-01-15 01:09:34 [INFO]: ID: 53
+2026-01-15 01:09:34 [INFO]: BODY: [object Object]
+2026-01-15 01:09:34 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 276.675 ms - 90[0m
+2026-01-15 01:09:35 [INFO]: [0mGET /api/servicios?t=1768457374786 [32m200[0m 330.185 ms - 879[0m
+2026-01-15 01:09:35 [INFO]: ID: 53
+2026-01-15 01:09:35 [INFO]: BODY: [object Object]
+2026-01-15 01:09:35 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 225.186 ms - 88[0m
+2026-01-15 01:09:35 [INFO]: [0mGET /api/servicios?t=1768457375595 [32m200[0m 310.502 ms - 877[0m
+2026-01-15 01:09:53 [INFO]: [0mPUT /api/servicios/53 [32m200[0m 691.120 ms - 187[0m
+2026-01-15 01:09:54 [INFO]: [0mPUT /api/servicios/53 [32m200[0m 667.556 ms - 187[0m
+2026-01-15 01:09:54 [INFO]: [0mGET /api/servicios?t=1768457394042 [32m200[0m 321.083 ms - 941[0m
+2026-01-15 01:09:54 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768457394042 [33m404[0m 13.586 ms - 48[0m
+2026-01-15 01:09:55 [INFO]: [0mGET /api/servicios?t=1768457393418 [32m200[0m 2057.119 ms - 941[0m
+2026-01-15 01:09:55 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768457394042 [33m404[0m 5.305 ms - 48[0m
+2026-01-15 01:10:09 [INFO]: [0mGET /configuracion [32m200[0m 135.280 ms - 272[0m
+2026-01-15 01:10:09 [INFO]: [0mGET /configuracion/listar [32m200[0m 126.841 ms - -[0m
+2026-01-15 01:10:11 [INFO]: [0mGET /api/servicios?t=1768457411410 [32m200[0m 324.637 ms - 941[0m
+2026-01-15 01:10:11 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768457411379 [33m404[0m 2.924 ms - 48[0m
+2026-01-15 01:10:12 [INFO]: [0mGET /configuracion [36m304[0m 118.557 ms - -[0m
+2026-01-15 01:10:12 [INFO]: [0mGET /configuracion/listar [36m304[0m 123.162 ms - -[0m
+2026-01-15 01:10:20 [INFO]: [0mGET /usuario/lista [32m200[0m 137.990 ms - 251[0m
+2026-01-15 01:10:21 [INFO]: [0mGET /api/servicios?t=1768457421389 [32m200[0m 319.904 ms - 941[0m
+2026-01-15 01:10:21 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768457421383 [33m404[0m 3.644 ms - 48[0m
+2026-01-15 01:10:24 [INFO]: [0mGET /cita/veterinarios [36m304[0m 116.539 ms - -[0m
+2026-01-15 01:10:24 [INFO]: [0mGET /api/servicios/lista [32m200[0m 326.375 ms - 720[0m
+2026-01-15 01:10:24 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768457424131 [32m200[0m 650.966 ms - 672[0m
+2026-01-15 01:10:25 [INFO]: [0mGET /cita/veterinarios [36m304[0m 114.972 ms - -[0m
+2026-01-15 01:10:25 [INFO]: [0mGET /api/servicios/lista [36m304[0m 318.702 ms - -[0m
+2026-01-15 01:10:26 [INFO]: [0mGET /mascota/lista [36m304[0m 692.184 ms - -[0m
+2026-01-15 01:10:27 [INFO]: [0mGET /cliente/lista [36m304[0m 1963.880 ms - -[0m
+2026-01-15 01:10:31 [INFO]: [0mGET /cita/veterinarios [36m304[0m 114.359 ms - -[0m
+2026-01-15 01:10:31 [INFO]: [0mGET /cliente/lista [36m304[0m 336.094 ms - -[0m
+2026-01-15 01:10:31 [INFO]: [0mGET /mascota/lista [36m304[0m 346.187 ms - -[0m
+2026-01-15 01:10:36 [INFO]: [0mGET /api/servicios?t=1768457436364 [32m200[0m 323.950 ms - 941[0m
+2026-01-15 01:10:39 [INFO]: [0mGET /cita/veterinarios [36m304[0m 119.737 ms - -[0m
+2026-01-15 01:10:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 350.012 ms - -[0m
+2026-01-15 01:10:39 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768457439498 [32m200[0m 376.420 ms - 672[0m
+2026-01-15 01:10:41 [INFO]: [0mGET /cita/veterinarios [0m-[0m - ms - -[0m
+2026-01-15 01:10:41 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 01:10:41 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 01:10:41 [ERROR]: Error al mostrar mascotas: Error: Too many connections
+2026-01-15 01:10:41 [INFO]: [0mGET /mascota/lista [31m500[0m 226.582 ms - 74[0m
+2026-01-15 01:10:41 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 01:10:41 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 01:10:41 [ERROR]: Error al mostrar clientes: Error: Too many connections
+2026-01-15 01:10:41 [INFO]: [0mGET /cliente/lista [36m304[0m 389.510 ms - -[0m
+2026-01-15 01:10:41 [INFO]: [0mGET /mascota/lista [36m304[0m 576.099 ms - -[0m
+2026-01-15 01:10:42 [INFO]: [0mGET /api/servicios/lista [32m200[0m 504.096 ms - 720[0m
+2026-01-15 01:10:42 [INFO]: [0mGET /cliente/lista [32m200[0m 532.093 ms - -[0m
+2026-01-15 01:10:42 [INFO]: [0mGET /mascota/lista [32m200[0m 674.405 ms - -[0m
+2026-01-15 01:10:42 [INFO]: [0mGET /api/servicios?t=1768457442032 [32m200[0m 317.535 ms - 941[0m
+2026-01-15 01:10:42 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768457441180 [32m200[0m 1517.044 ms - 672[0m
+2026-01-15 01:11:45 [INFO]: [0mGET /api/servicios?t=1768457504552 [32m200[0m 387.196 ms - 941[0m
+2026-01-15 01:11:45 [INFO]: [0mGET /api/servicios/lista [36m304[0m 347.653 ms - -[0m
+2026-01-15 01:11:46 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 8.849 ms - 48[0m
+2026-01-15 01:11:46 [INFO]: [0mGET /uploads/null [33m404[0m 10.582 ms - 48[0m
+2026-01-15 01:11:48 [INFO]: [0mGET /api/servicios?t=1768457507938 [32m200[0m 374.702 ms - 941[0m
+2026-01-15 01:11:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 328.254 ms - -[0m
+2026-01-15 01:11:52 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 4.570 ms - 48[0m
+2026-01-15 01:11:52 [INFO]: [0mGET /uploads/null [33m404[0m 3.063 ms - 48[0m
+2026-01-15 02:08:33 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:08:33 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:08:33 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:08:33 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:08:34 [INFO]: Base de datos conectada
+2026-01-15 02:08:35 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:08:35 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:08:36 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:08:36 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 02:08:36 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:12:27 [INFO]: [0mGET /api/servicios/lista [32m200[0m 4111.464 ms - 720[0m
+2026-01-15 02:12:27 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 16.128 ms - 48[0m
+2026-01-15 02:12:27 [INFO]: [0mGET /uploads/null [33m404[0m 16.401 ms - 48[0m
+2026-01-15 02:12:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 679.058 ms - -[0m
+2026-01-15 02:12:35 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 6.182 ms - 48[0m
+2026-01-15 02:12:35 [INFO]: [0mGET /uploads/null [33m404[0m 5.579 ms - 48[0m
+2026-01-15 02:12:40 [INFO]: [0mGET /api/servicios/lista [36m304[0m 648.157 ms - -[0m
+2026-01-15 02:12:41 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 5.962 ms - 48[0m
+2026-01-15 02:12:41 [INFO]: [0mGET /uploads/null [33m404[0m 6.520 ms - 48[0m
+2026-01-15 02:12:48 [INFO]: [0mGET /api/servicios/lista [36m304[0m 698.880 ms - -[0m
+2026-01-15 02:12:48 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 6.724 ms - 48[0m
+2026-01-15 02:12:48 [INFO]: [0mGET /uploads/null [33m404[0m 6.285 ms - 48[0m
+2026-01-15 02:12:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 2166.868 ms - -[0m
+2026-01-15 02:12:57 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 3.714 ms - 48[0m
+2026-01-15 02:12:57 [INFO]: [0mGET /uploads/null [33m404[0m 2.186 ms - 48[0m
+2026-01-15 02:13:21 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:13:33 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:13:33 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:13:33 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:13:33 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:13:36 [INFO]: Base de datos conectada
+2026-01-15 02:13:41 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:13:46 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:13:47 [INFO]: [0mGET /api/servicios/lista [32m200[0m 13298.439 ms - 667[0m
+2026-01-15 02:13:47 [INFO]: [0mGET /uploads/null [33m404[0m 13.608 ms - 48[0m
+2026-01-15 02:13:50 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:13:56 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 02:13:56 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:15:19 [INFO]: [0mGET /api/servicios?t=1768461317267 [32m200[0m 2079.418 ms - 941[0m
+2026-01-15 02:27:56 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:28:05 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:28:05 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:28:05 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:28:05 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:28:06 [INFO]: Base de datos conectada
+2026-01-15 02:28:06 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:28:07 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:28:08 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:28:08 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 02:28:08 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:29:02 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1728.298 ms - 720[0m
+2026-01-15 02:29:43 [INFO]: [0mGET /cliente/lista [32m200[0m 352.911 ms - -[0m
+2026-01-15 02:29:44 [INFO]: [0mGET /mascota/lista [32m200[0m 1670.042 ms - -[0m
+2026-01-15 02:30:15 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:30:50 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:30:50 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:30:50 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:30:50 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:30:51 [INFO]: Base de datos conectada
+2026-01-15 02:30:52 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:30:52 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:30:53 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:30:53 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 02:30:53 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:42:15 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:42:27 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:42:27 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:42:27 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:42:27 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:42:28 [INFO]: Base de datos conectada
+2026-01-15 02:42:29 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:42:29 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:42:30 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:42:30 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 02:42:30 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:42:43 [INFO]: [0mGET /cita/veterinarios [32m200[0m 491.286 ms - 71[0m
+2026-01-15 02:42:43 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768462963089 [32m200[0m 691.508 ms - 672[0m
+2026-01-15 02:42:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1811.887 ms - -[0m
+2026-01-15 02:46:26 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:46:34 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:46:34 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:46:34 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:46:34 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:46:35 [INFO]: Base de datos conectada
+2026-01-15 02:46:36 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:46:36 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:46:37 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:46:37 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 02:46:37 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:46:40 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 02:46:41 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 02:46:41 [INFO]: [0mGET /api/notificaciones/lista [32m200[0m 207.317 ms - -[0m
+2026-01-15 02:46:41 [INFO]: [0mGET /favicon.ico [33m404[0m 4.725 ms - 48[0m
+2026-01-15 02:50:55 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:51:02 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:51:02 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:51:02 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:51:02 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:51:03 [INFO]: Base de datos conectada
+2026-01-15 02:51:04 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:51:04 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:51:05 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:51:06 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 02:51:06 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:51:19 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:51:19 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:51:19 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:51:19 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:51:20 [INFO]: Base de datos conectada
+2026-01-15 02:51:21 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:51:21 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:51:22 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:51:22 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 02:51:22 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:51:53 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1639.211 ms - -[0m
+2026-01-15 02:51:53 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 8.934 ms - 48[0m
+2026-01-15 02:51:53 [INFO]: [0mGET /uploads/null [33m404[0m 11.671 ms - 48[0m
+2026-01-15 02:52:01 [INFO]: [0mGET /api/servicios?t=1768463519663 [32m200[0m 1658.824 ms - 941[0m
+2026-01-15 02:53:41 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:53:41 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:53:41 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:53:41 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:53:42 [INFO]: Base de datos conectada
+2026-01-15 02:53:43 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:53:43 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:53:44 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:53:44 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 02:53:44 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:55:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1861.615 ms - -[0m
+2026-01-15 02:55:15 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 13.815 ms - 48[0m
+2026-01-15 02:55:15 [INFO]: [0mGET /uploads/null [33m404[0m 22.142 ms - 48[0m
+2026-01-15 02:55:37 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 02:55:43 [INFO]: servicioCtl: [object Object]
+2026-01-15 02:55:43 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 02:55:43 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 02:55:43 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 02:55:44 [INFO]: Base de datos conectada
+2026-01-15 02:55:45 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 02:55:45 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 02:55:46 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 02:55:46 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 02:55:46 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 02:57:17 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 02:57:17 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 02:57:17 [INFO]: [0mGET /api/notificaciones/lista [36m304[0m 228.078 ms - -[0m
+2026-01-15 03:05:45 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 03:06:02 [INFO]: servicioCtl: [object Object]
+2026-01-15 03:06:02 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 03:06:02 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 03:06:02 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 03:06:03 [INFO]: Base de datos conectada
+2026-01-15 03:06:04 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 03:06:04 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 03:06:05 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 03:06:05 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 03:06:05 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 03:06:30 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:06:31 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:06:31 [INFO]: [0mGET /api/notificaciones/lista?t=1768464390627 [32m200[0m 518.616 ms - -[0m
+2026-01-15 03:06:32 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1583.151 ms - -[0m
+2026-01-15 03:06:32 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 10.833 ms - 48[0m
+2026-01-15 03:06:32 [INFO]: [0mGET /uploads/null [33m404[0m 10.730 ms - 48[0m
+2026-01-15 03:06:33 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:06:33 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:06:33 [INFO]: [0mGET /api/notificaciones/lista?t=1768464393254 [32m200[0m 137.753 ms - -[0m
+2026-01-15 03:07:16 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:07:16 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:07:16 [INFO]: [0mGET /api/notificaciones/lista?t=1768464436423 [32m200[0m 164.995 ms - -[0m
+2026-01-15 03:07:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 339.360 ms - -[0m
+2026-01-15 03:07:16 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 6.371 ms - 48[0m
+2026-01-15 03:07:16 [INFO]: [0mGET /uploads/null [33m404[0m 7.417 ms - 48[0m
+2026-01-15 03:07:18 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:07:18 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:07:18 [INFO]: [0mGET /api/notificaciones/lista?t=1768464438585 [32m200[0m 135.226 ms - -[0m
+2026-01-15 03:07:49 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:07:49 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:07:49 [INFO]: [0mGET /api/notificaciones/lista?t=1768464469464 [32m200[0m 125.217 ms - -[0m
+2026-01-15 03:09:17 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:09:17 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:09:17 [INFO]: [0mGET /api/notificaciones/lista?t=1768464557497 [32m200[0m 178.001 ms - -[0m
+2026-01-15 03:09:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 365.364 ms - -[0m
+2026-01-15 03:09:18 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 8.552 ms - 48[0m
+2026-01-15 03:09:18 [INFO]: [0mGET /uploads/null [33m404[0m 8.324 ms - 48[0m
+2026-01-15 03:09:19 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:09:19 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:09:19 [INFO]: [0mGET /api/notificaciones/lista?t=1768464559006 [32m200[0m 273.023 ms - -[0m
+2026-01-15 03:12:15 [INFO]: [0mGET /cliente/lista [36m304[0m 371.841 ms - -[0m
+2026-01-15 03:12:17 [INFO]: [0mGET /mascota/lista [36m304[0m 1842.310 ms - -[0m
+2026-01-15 03:12:29 [INFO]: [0mGET /api/servicios?t=1768464748994 [32m200[0m 319.116 ms - 941[0m
+2026-01-15 03:15:37 [INFO]: [0mGET /api/servicios?t=1768464937189 [32m200[0m 323.780 ms - 941[0m
+2026-01-15 03:16:54 [INFO]: [0mGET /api/servicios?t=1768465013931 [32m200[0m 363.002 ms - 941[0m
+2026-01-15 03:17:09 [INFO]: [0mGET /api/servicios?t=1768465029125 [32m200[0m 319.484 ms - 941[0m
+2026-01-15 03:17:09 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768465029075 [33m404[0m 8.887 ms - 48[0m
+2026-01-15 03:17:12 [INFO]: [0mGET /api/servicios?t=1768465031723 [32m200[0m 315.505 ms - 941[0m
+2026-01-15 03:21:15 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:21:16 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:21:16 [INFO]: [0mGET /api/notificaciones/lista?t=1768465275842 [32m200[0m 180.872 ms - -[0m
+2026-01-15 03:21:21 [INFO]: [0mGET /api/servicios?t=1768465280889 [32m200[0m 327.442 ms - 941[0m
+2026-01-15 03:49:38 [INFO]: servicioCtl: [object Object]
+2026-01-15 03:49:39 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 03:49:39 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 03:49:39 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 03:49:39 [INFO]: Base de datos conectada
+2026-01-15 03:49:40 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 03:49:40 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 03:49:41 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 03:49:41 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 03:49:41 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 03:49:43 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:49:43 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:49:43 [INFO]: [0mGET /api/notificaciones/lista?t=1768466982893 [32m200[0m 480.003 ms - -[0m
+2026-01-15 03:49:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1524.682 ms - -[0m
+2026-01-15 03:49:44 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg [33m404[0m 10.047 ms - 48[0m
+2026-01-15 03:49:44 [INFO]: [0mGET /uploads/null [33m404[0m 8.517 ms - 48[0m
+2026-01-15 03:49:50 [INFO]: [0mGET /api/servicios?t=1768466988947 [32m200[0m 1498.472 ms - 941[0m
+2026-01-15 03:49:54 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768466994189 [32m200[0m 312.892 ms - 672[0m
+2026-01-15 03:49:54 [INFO]: [0mGET /cliente/lista [36m304[0m 322.990 ms - -[0m
+2026-01-15 03:49:54 [INFO]: [0mGET /cliente/lista [32m200[0m 317.291 ms - -[0m
+2026-01-15 03:49:55 [INFO]: [0mGET /mascota/lista [36m304[0m 829.709 ms - -[0m
+2026-01-15 03:49:55 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1006.022 ms - -[0m
+2026-01-15 03:49:55 [INFO]: [0mGET /cliente/lista [32m200[0m 1191.914 ms - -[0m
+2026-01-15 03:49:55 [INFO]: [0mGET /mascota/lista [32m200[0m 1357.106 ms - -[0m
+2026-01-15 03:49:55 [INFO]: [0mGET /mascota/lista [32m200[0m 758.148 ms - -[0m
+2026-01-15 03:49:56 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1584.554 ms - 720[0m
+2026-01-15 03:49:59 [INFO]: [0mGET /api/servicios?t=1768466998913 [32m200[0m 308.707 ms - 941[0m
+2026-01-15 03:50:00 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467000476 [32m200[0m 317.205 ms - 672[0m
+2026-01-15 03:50:00 [INFO]: [0mGET /cliente/lista [36m304[0m 336.351 ms - -[0m
+2026-01-15 03:50:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 501.233 ms - -[0m
+2026-01-15 03:50:01 [INFO]: [0mGET /cliente/lista [32m200[0m 675.920 ms - -[0m
+2026-01-15 03:50:01 [INFO]: [0mGET /mascota/lista [32m200[0m 685.928 ms - -[0m
+2026-01-15 03:50:01 [INFO]: [0mGET /api/servicios/lista [32m200[0m 547.746 ms - 720[0m
+2026-01-15 03:50:01 [INFO]: [0mGET /cliente/lista [32m200[0m 576.368 ms - -[0m
+2026-01-15 03:50:01 [INFO]: [0mGET /mascota/lista [32m200[0m 561.802 ms - -[0m
+2026-01-15 03:50:02 [INFO]: [0mGET /mascota/lista [36m304[0m 1508.540 ms - -[0m
+2026-01-15 03:50:02 [INFO]: [0mGET /cita/veterinarios [36m304[0m 114.044 ms - -[0m
+2026-01-15 03:50:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.481 ms - -[0m
+2026-01-15 03:50:02 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467002354 [32m200[0m 319.604 ms - 672[0m
+2026-01-15 03:50:03 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 03:50:03 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 03:50:03 [INFO]: [0mGET /cita/veterinarios [0m-[0m - ms - -[0m
+2026-01-15 03:50:03 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 03:50:04 [INFO]: [0mGET /api/servicios?t=1768467003832 [32m200[0m 481.117 ms - 941[0m
+2026-01-15 03:50:04 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768467003796 [33m404[0m 2.532 ms - 48[0m
+2026-01-15 03:50:05 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:50:05 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:50:05 [INFO]: [0mGET /api/notificaciones/lista?t=1768467005297 [32m200[0m 120.752 ms - -[0m
+2026-01-15 03:50:06 [INFO]: [0mGET /configuracion [32m200[0m 125.430 ms - 272[0m
+2026-01-15 03:50:06 [INFO]: [0mGET /configuracion/listar [32m200[0m 114.769 ms - -[0m
+2026-01-15 03:50:11 [INFO]: [0mGET /configuracion [36m304[0m 112.514 ms - -[0m
+2026-01-15 03:50:11 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.331 ms - -[0m
+2026-01-15 03:50:16 [INFO]: [0mGET /configuracion [36m304[0m 112.310 ms - -[0m
+2026-01-15 03:50:16 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.412 ms - -[0m
+2026-01-15 03:50:18 [INFO]: [0mGET /usuario/lista [32m200[0m 121.391 ms - 251[0m
+2026-01-15 03:50:19 [INFO]: [0mGET /configuracion [36m304[0m 112.309 ms - -[0m
+2026-01-15 03:50:19 [INFO]: [0mGET /configuracion/listar [36m304[0m 113.542 ms - -[0m
+2026-01-15 03:50:50 [INFO]: [0mGET /usuario/lista [36m304[0m 113.516 ms - -[0m
+2026-01-15 03:50:57 [INFO]: [0mGET /api/servicios?t=1768467056662 [32m200[0m 312.865 ms - 941[0m
+2026-01-15 03:50:57 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768467056658 [33m404[0m 1.940 ms - 48[0m
+2026-01-15 03:50:57 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 03:50:57 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 03:50:57 [INFO]: [0mGET /api/notificaciones/lista?t=1768467057621 [32m200[0m 128.259 ms - -[0m
+2026-01-15 03:50:59 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467059445 [32m200[0m 308.721 ms - 672[0m
+2026-01-15 03:50:59 [INFO]: [0mGET /cliente/lista [36m304[0m 326.627 ms - -[0m
+2026-01-15 03:50:59 [INFO]: [0mGET /mascota/lista [36m304[0m 333.410 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /mascota/lista [32m200[0m 509.081 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /cliente/lista [32m200[0m 504.835 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /api/servicios/lista [32m200[0m 383.361 ms - 720[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /cliente/lista [32m200[0m 365.368 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /mascota/lista [32m200[0m 451.423 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /cita/veterinarios [36m304[0m 115.718 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 311.147 ms - -[0m
+2026-01-15 03:51:00 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467060311 [32m200[0m 306.584 ms - 672[0m
+2026-01-15 03:51:02 [INFO]: [0mGET /cita/veterinarios [36m304[0m 117.293 ms - -[0m
+2026-01-15 03:51:02 [INFO]: [0mGET /api/servicios?t=1768467062342 [32m200[0m 317.259 ms - 941[0m
+2026-01-15 03:51:02 [INFO]: [0mGET /api/servicios/lista [36m304[0m 321.655 ms - -[0m
+2026-01-15 03:51:02 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 03:51:02 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 03:51:04 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467064346 [32m200[0m 305.055 ms - 672[0m
+2026-01-15 03:51:04 [INFO]: [0mGET /cliente/lista [36m304[0m 329.585 ms - -[0m
+2026-01-15 03:51:04 [INFO]: [0mGET /mascota/lista [36m304[0m 337.896 ms - -[0m
+2026-01-15 03:51:04 [INFO]: [0mGET /api/servicios/lista [36m304[0m 338.904 ms - -[0m
+2026-01-15 03:51:04 [INFO]: [0mGET /mascota/lista [32m200[0m 490.607 ms - -[0m
+2026-01-15 03:51:05 [INFO]: [0mGET /api/servicios/lista [32m200[0m 316.995 ms - 720[0m
+2026-01-15 03:51:05 [INFO]: [0mGET /cliente/lista [32m200[0m 309.627 ms - -[0m
+2026-01-15 03:51:05 [INFO]: [0mGET /mascota/lista [32m200[0m 342.430 ms - -[0m
+2026-01-15 03:51:06 [INFO]: [0mGET /cliente/lista [32m200[0m 1586.675 ms - -[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467103837 [32m200[0m 314.067 ms - 672[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /cliente/lista [36m304[0m 365.462 ms - -[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 373.495 ms - -[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /mascota/lista [36m304[0m 384.445 ms - -[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /mascota/lista [32m200[0m 524.174 ms - -[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /api/servicios/lista [32m200[0m 311.920 ms - 720[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /cliente/lista [32m200[0m 321.122 ms - -[0m
+2026-01-15 03:51:44 [INFO]: [0mGET /mascota/lista [32m200[0m 323.230 ms - -[0m
+2026-01-15 03:51:45 [INFO]: [0mGET /cliente/lista [32m200[0m 1593.521 ms - -[0m
+2026-01-15 03:54:22 [INFO]: [0mGET /configuracion [36m304[0m 142.335 ms - -[0m
+2026-01-15 03:54:22 [INFO]: [0mGET /configuracion/listar [36m304[0m 121.847 ms - -[0m
+2026-01-15 03:54:26 [INFO]: [0mGET /usuario/lista [36m304[0m 126.926 ms - -[0m
+2026-01-15 03:54:29 [INFO]: [0mGET /usuario/lista [36m304[0m 116.478 ms - -[0m
+2026-01-15 03:55:07 [INFO]: [0mGET /usuario/lista [36m304[0m 115.148 ms - -[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467309054 [32m200[0m 320.246 ms - 672[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /cliente/lista [36m304[0m 327.420 ms - -[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /mascota/lista [36m304[0m 338.114 ms - -[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /api/servicios/lista [36m304[0m 345.632 ms - -[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /cliente/lista [32m200[0m 359.074 ms - -[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /api/servicios/lista [32m200[0m 311.239 ms - 720[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /cliente/lista [32m200[0m 316.557 ms - -[0m
+2026-01-15 03:55:09 [INFO]: [0mGET /mascota/lista [32m200[0m 317.855 ms - -[0m
+2026-01-15 03:55:10 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 03:55:12 [INFO]: [0mGET /usuario/lista [36m304[0m 123.444 ms - -[0m
+2026-01-15 03:56:28 [INFO]: [0mGET /usuario/lista [36m304[0m 114.355 ms - -[0m
+2026-01-15 03:56:47 [INFO]: [0mGET /usuario/lista [36m304[0m 116.473 ms - -[0m
+2026-01-15 03:59:17 [INFO]: [0mGET /configuracion [36m304[0m 121.722 ms - -[0m
+2026-01-15 03:59:17 [INFO]: [0mGET /configuracion/listar [36m304[0m 116.117 ms - -[0m
+2026-01-15 03:59:19 [INFO]: [0mGET /api/servicios?t=1768467558733 [32m200[0m 342.334 ms - 941[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768467560088 [32m200[0m 306.284 ms - 672[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /cliente/lista [36m304[0m 321.488 ms - -[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /mascota/lista [36m304[0m 329.856 ms - -[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /api/servicios/lista [36m304[0m 335.375 ms - -[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /cliente/lista [32m200[0m 357.929 ms - -[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /api/servicios/lista [32m200[0m 316.582 ms - 720[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /cliente/lista [32m200[0m 312.032 ms - -[0m
+2026-01-15 03:59:20 [INFO]: [0mGET /mascota/lista [32m200[0m 302.667 ms - -[0m
+2026-01-15 03:59:21 [INFO]: [0mGET /mascota/lista [32m200[0m 1762.427 ms - -[0m
+2026-01-15 04:06:42 [INFO]: servicioCtl: [object Object]
+2026-01-15 04:06:42 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 04:06:42 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 04:06:42 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 04:06:43 [INFO]: Base de datos conectada
+2026-01-15 04:06:44 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 04:06:44 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 04:06:45 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 04:06:45 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 04:06:45 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 04:06:48 [INFO]: [0mGET /usuario/lista [36m304[0m 136.975 ms - -[0m
+2026-01-15 04:07:10 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 04:07:10 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 04:07:10 [INFO]: [0mGET /api/notificaciones/lista?t=1768468030119 [32m200[0m 175.333 ms - -[0m
+2026-01-15 04:07:12 [INFO]: [0mGET /configuracion [36m304[0m 120.405 ms - -[0m
+2026-01-15 04:07:12 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.423 ms - -[0m
+2026-01-15 04:07:14 [INFO]: [0mGET /usuario/lista [36m304[0m 114.423 ms - -[0m
+2026-01-15 04:07:19 [INFO]: [0mGET /usuario/lista [36m304[0m 113.676 ms - -[0m
+2026-01-15 04:08:57 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 04:08:57 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 04:08:57 [INFO]: [0mGET /api/notificaciones/lista?t=1768468137258 [32m200[0m 132.766 ms - -[0m
+2026-01-15 04:14:54 [INFO]: [0mGET /configuracion [36m304[0m 207.633 ms - -[0m
+2026-01-15 04:15:13 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 04:15:13 [INFO]: [0mGET /configuracion/listar [31m500[0m 19325.820 ms - 45[0m
+2026-01-15 04:18:03 [INFO]: [0mGET /api/servicios?t=1768468681866 [32m200[0m 1963.541 ms - 941[0m
+2026-01-15 04:18:08 [INFO]: [0mGET /configuracion [36m304[0m 119.762 ms - -[0m
+2026-01-15 04:18:27 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 04:18:27 [INFO]: [0mGET /configuracion/listar [31m500[0m 19267.748 ms - 45[0m
+2026-01-15 04:19:00 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 04:19:07 [INFO]: servicioCtl: [object Object]
+2026-01-15 04:19:07 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 04:19:07 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 04:19:07 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 04:19:07 [INFO]: Base de datos conectada
+2026-01-15 04:19:08 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 04:19:08 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 04:19:09 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 04:19:09 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 04:19:09 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 04:19:13 [INFO]: [0mGET /api/servicios?t=1768468751633 [32m200[0m 1532.039 ms - 941[0m
+2026-01-15 04:19:13 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768468751595 [33m404[0m 6.732 ms - 48[0m
+2026-01-15 04:19:25 [INFO]: [0mGET /configuracion [36m304[0m 122.655 ms - -[0m
+2026-01-15 04:19:25 [INFO]: [0mGET /configuracion/listar [32m200[0m 117.220 ms - -[0m
+2026-01-15 04:22:50 [INFO]: [0mGET /configuracion [36m304[0m 124.127 ms - -[0m
+2026-01-15 04:22:50 [INFO]: [0mGET /configuracion/listar [36m304[0m 116.503 ms - -[0m
+2026-01-15 04:25:57 [INFO]: [0mGET /configuracion [36m304[0m 138.200 ms - -[0m
+2026-01-15 04:25:57 [INFO]: [0mGET /configuracion/listar [36m304[0m 126.868 ms - -[0m
+2026-01-15 04:25:59 [INFO]: [0mGET /configuracion [36m304[0m 125.646 ms - -[0m
+2026-01-15 04:25:59 [INFO]: [0mGET /configuracion/listar [36m304[0m 118.454 ms - -[0m
+2026-01-15 04:29:44 [INFO]: [0mGET /configuracion [36m304[0m 121.681 ms - -[0m
+2026-01-15 04:29:44 [INFO]: [0mGET /configuracion/listar [36m304[0m 116.482 ms - -[0m
+2026-01-15 04:29:56 [INFO]: [0mGET /configuracion [36m304[0m 124.983 ms - -[0m
+2026-01-15 04:29:56 [INFO]: [0mGET /configuracion/listar [36m304[0m 122.903 ms - -[0m
+2026-01-15 04:30:00 [INFO]: [0mGET /configuracion [36m304[0m 123.189 ms - -[0m
+2026-01-15 04:30:00 [INFO]: [0mGET /configuracion/listar [36m304[0m 118.558 ms - -[0m
+2026-01-15 04:32:52 [INFO]: [0mGET /api/servicios?t=1768469571766 [0m-[0m - ms - -[0m
+2026-01-15 04:32:53 [INFO]: [0mGET /api/servicios?t=1768469572745 [0m-[0m - ms - -[0m
+2026-01-15 04:32:54 [INFO]: [0mGET /api/servicios?t=1768469573226 [0m-[0m - ms - -[0m
+2026-01-15 04:32:54 [INFO]: [0mGET /api/servicios?t=1768469574025 [32m200[0m 487.419 ms - 941[0m
+2026-01-15 04:33:09 [ERROR]: Error: read ECONNRESET
+2026-01-15 04:33:09 [INFO]: [0mGET /api/servicios?t=1768469569829 [31m500[0m 19297.015 ms - 39[0m
+2026-01-15 04:39:42 [INFO]: servicioCtl: [object Object]
+2026-01-15 04:39:42 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 04:39:42 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 04:39:42 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 04:39:42 [INFO]: Base de datos conectada
+2026-01-15 04:39:43 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 04:39:43 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 04:39:44 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 04:39:45 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 04:39:45 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 04:39:53 [INFO]: [0mGET /configuracion [36m304[0m 143.469 ms - -[0m
+2026-01-15 04:39:53 [INFO]: [0mGET /configuracion/listar [36m304[0m 129.416 ms - -[0m
+2026-01-15 04:40:11 [INFO]: [0mPOST /configuracion [32m200[0m 2910.262 ms - 51[0m
+2026-01-15 04:40:14 [INFO]: [0mGET /configuracion [32m200[0m 111.942 ms - 283[0m
+2026-01-15 04:40:14 [INFO]: [0mGET /configuracion/listar [32m200[0m 122.044 ms - -[0m
+2026-01-15 04:40:21 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.395 ms - -[0m
+2026-01-15 04:40:21 [INFO]: [0mGET /configuracion [36m304[0m 121.615 ms - -[0m
+2026-01-15 04:45:39 [INFO]: [0mGET /api/servicios?t=1768470338370 [0m-[0m - ms - -[0m
+2026-01-15 04:45:39 [INFO]: [0mGET /api/servicios?t=1768470339472 [32m200[0m 501.823 ms - 941[0m
+2026-01-15 04:45:47 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768470347044 [32m200[0m 321.631 ms - 672[0m
+2026-01-15 04:45:47 [INFO]: [0mGET /mascota/lista [36m304[0m 307.847 ms - -[0m
+2026-01-15 04:45:48 [INFO]: [0mGET /api/servicios/lista [36m304[0m 311.591 ms - -[0m
+2026-01-15 04:45:48 [INFO]: [0mGET /cliente/lista [32m200[0m 331.946 ms - -[0m
+2026-01-15 04:45:48 [INFO]: [0mGET /mascota/lista [32m200[0m 305.337 ms - -[0m
+2026-01-15 04:45:48 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 04:45:49 [INFO]: [0mGET /cliente/lista [36m304[0m 1923.319 ms - -[0m
+2026-01-15 04:45:49 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.661 ms - -[0m
+2026-01-15 04:45:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 307.745 ms - -[0m
+2026-01-15 04:45:49 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768470349008 [32m200[0m 303.396 ms - 672[0m
+2026-01-15 04:45:53 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 04:45:53 [INFO]: [0mGET /cita/veterinarios [0m-[0m - ms - -[0m
+2026-01-15 04:45:54 [INFO]: [0mGET /api/servicios?t=1768470353607 [32m200[0m 640.974 ms - 941[0m
+2026-01-15 04:45:54 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768470353594 [33m404[0m 6.827 ms - 48[0m
+2026-01-15 04:45:54 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 04:45:54 [INFO]: [0mGET /configuracion [31m500[0m 19412.429 ms - 45[0m
+2026-01-15 04:45:54 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 04:45:54 [INFO]: [0mGET /configuracion/listar [31m500[0m 19265.808 ms - 45[0m
+2026-01-15 04:45:54 [ERROR]: Error en listarConfiguraciones: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 04:45:54 [INFO]: [0mGET /configuracion/listar [31m500[0m 19250.535 ms - 45[0m
+2026-01-15 04:45:54 [ERROR]: Error en obtenerConfiguracion: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 04:45:54 [INFO]: [0mGET /configuracion [31m500[0m 19262.329 ms - 45[0m
+2026-01-15 04:45:56 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 04:45:56 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 04:45:56 [INFO]: [0mGET /api/notificaciones/lista?t=1768470355987 [32m200[0m 135.034 ms - -[0m
+2026-01-15 04:45:58 [INFO]: [0mGET /configuracion [32m200[0m 132.355 ms - 283[0m
+2026-01-15 04:45:58 [INFO]: [0mGET /configuracion/listar [32m200[0m 223.945 ms - -[0m
+2026-01-15 04:46:02 [INFO]: [0mGET /usuario/lista [36m304[0m 118.908 ms - -[0m
+2026-01-15 04:46:11 [INFO]: [0mGET /usuario/lista [36m304[0m 114.868 ms - -[0m
+2026-01-15 04:46:24 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 04:46:24 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 04:46:24 [INFO]: [0mGET /api/notificaciones/lista?t=1768470384017 [32m200[0m 137.722 ms - -[0m
+2026-01-15 04:46:25 [INFO]: [0mGET /configuracion [36m304[0m 121.259 ms - -[0m
+2026-01-15 04:46:25 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.982 ms - -[0m
+2026-01-15 04:49:21 [INFO]: [0mGET /configuracion [36m304[0m 115.780 ms - -[0m
+2026-01-15 04:49:21 [INFO]: [0mGET /configuracion/listar [36m304[0m 114.156 ms - -[0m
+2026-01-15 04:51:12 [INFO]: [0mGET /configuracion [36m304[0m 113.464 ms - -[0m
+2026-01-15 04:51:12 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.516 ms - -[0m
+2026-01-15 04:51:25 [INFO]: [0mGET /configuracion [36m304[0m 111.436 ms - -[0m
+2026-01-15 04:51:25 [INFO]: [0mGET /configuracion/listar [36m304[0m 111.927 ms - -[0m
+2026-01-15 04:51:46 [INFO]: [0mGET /configuracion [36m304[0m 4959.849 ms - -[0m
+2026-01-15 04:51:46 [INFO]: [0mGET /configuracion/listar [36m304[0m 4956.710 ms - -[0m
+2026-01-15 04:51:55 [INFO]: [0mGET /configuracion [36m304[0m 116.052 ms - -[0m
+2026-01-15 04:51:55 [INFO]: [0mGET /configuracion/listar [36m304[0m 112.349 ms - -[0m
+2026-01-15 04:52:19 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 04:52:19 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 04:52:19 [INFO]: [0mGET /api/notificaciones/lista?t=1768470739521 [32m200[0m 146.594 ms - -[0m
+2026-01-15 04:52:23 [INFO]: [0mGET /api/servicios?t=1768470743570 [32m200[0m 327.541 ms - 941[0m
+2026-01-15 04:54:07 [INFO]: [0mGET /api/servicios?t=1768470847006 [32m200[0m 320.700 ms - 941[0m
+2026-01-15 05:00:55 [INFO]: servicioCtl: [object Object]
+2026-01-15 05:00:55 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 05:00:55 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 05:00:56 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 05:00:56 [INFO]: Base de datos conectada
+2026-01-15 05:00:57 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 05:00:57 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 05:00:58 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 05:00:58 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 05:00:58 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 05:01:07 [INFO]: [0mGET /api/servicios?t=1768471265924 [32m200[0m 1567.053 ms - 941[0m
+2026-01-15 05:01:12 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471272262 [32m200[0m 312.361 ms - 672[0m
+2026-01-15 05:01:12 [INFO]: [0mGET /api/servicios/lista [32m200[0m 319.768 ms - 720[0m
+2026-01-15 05:01:13 [INFO]: [0mGET /mascota/lista [36m304[0m 821.672 ms - -[0m
+2026-01-15 05:01:13 [INFO]: [0mGET /api/servicios/lista [36m304[0m 996.457 ms - -[0m
+2026-01-15 05:01:13 [INFO]: [0mGET /cliente/lista [32m200[0m 1186.028 ms - -[0m
+2026-01-15 05:01:13 [INFO]: [0mGET /mascota/lista [32m200[0m 1351.459 ms - -[0m
+2026-01-15 05:01:13 [INFO]: [0mGET /cliente/lista [32m200[0m 932.035 ms - -[0m
+2026-01-15 05:01:13 [INFO]: [0mGET /mascota/lista [32m200[0m 755.308 ms - -[0m
+2026-01-15 05:01:14 [INFO]: [0mGET /api/servicios?t=1768471273290 [32m200[0m 785.194 ms - 941[0m
+2026-01-15 05:01:14 [INFO]: [0mGET /cliente/lista [36m304[0m 1846.118 ms - -[0m
+2026-01-15 05:01:15 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471275496 [32m200[0m 306.634 ms - 672[0m
+2026-01-15 05:01:15 [INFO]: [0mGET /api/servicios/lista [36m304[0m 317.953 ms - -[0m
+2026-01-15 05:01:16 [INFO]: [0mGET /cliente/lista [32m200[0m 510.735 ms - -[0m
+2026-01-15 05:01:16 [INFO]: [0mGET /mascota/lista [36m304[0m 687.265 ms - -[0m
+2026-01-15 05:01:16 [INFO]: [0mGET /mascota/lista [32m200[0m 691.853 ms - -[0m
+2026-01-15 05:01:16 [INFO]: [0mGET /cliente/lista [32m200[0m 549.158 ms - -[0m
+2026-01-15 05:01:16 [INFO]: [0mGET /api/servicios/lista [32m200[0m 873.766 ms - 720[0m
+2026-01-15 05:01:16 [INFO]: [0mGET /mascota/lista [32m200[0m 548.397 ms - -[0m
+2026-01-15 05:01:17 [INFO]: [0mGET /cliente/lista [36m304[0m 1529.031 ms - -[0m
+2026-01-15 05:01:19 [INFO]: [0mGET /cita/veterinarios [36m304[0m 110.350 ms - -[0m
+2026-01-15 05:01:19 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.814 ms - -[0m
+2026-01-15 05:01:19 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471279622 [32m200[0m 312.038 ms - 672[0m
+2026-01-15 05:01:21 [INFO]: [0mGET /api/servicios/lista [0m-[0m - ms - -[0m
+2026-01-15 05:01:21 [INFO]: [0mGET /cita/veterinarios [0m-[0m - ms - -[0m
+2026-01-15 05:01:22 [INFO]: [0mGET /api/servicios?t=1768471281374 [32m200[0m 1482.516 ms - 941[0m
+2026-01-15 05:01:22 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471281348 [33m404[0m 5.707 ms - 48[0m
+2026-01-15 05:01:24 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 05:01:24 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 05:01:24 [INFO]: [0mGET /api/notificaciones/lista?t=1768471284643 [32m200[0m 132.295 ms - -[0m
+2026-01-15 05:01:27 [INFO]: [0mGET /configuracion [36m304[0m 119.265 ms - -[0m
+2026-01-15 05:01:27 [INFO]: [0mGET /configuracion/listar [36m304[0m 113.640 ms - -[0m
+2026-01-15 05:01:33 [INFO]: [0mGET /usuario/lista [36m304[0m 122.825 ms - -[0m
+2026-01-15 05:01:36 [INFO]: [0mGET /configuracion [36m304[0m 125.262 ms - -[0m
+2026-01-15 05:01:36 [INFO]: [0mGET /configuracion/listar [36m304[0m 120.398 ms - -[0m
+2026-01-15 05:01:37 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 05:01:37 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 05:01:37 [INFO]: [0mGET /api/notificaciones/lista?t=1768471297352 [32m200[0m 128.500 ms - -[0m
+2026-01-15 05:02:57 [INFO]: [0mGET /api/servicios?t=1768471377043 [32m200[0m 322.853 ms - 941[0m
+2026-01-15 05:02:57 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471377008 [33m404[0m 3.418 ms - 48[0m
+2026-01-15 05:03:30 [INFO]: [0mGET /cita/veterinarios [36m304[0m 116.506 ms - -[0m
+2026-01-15 05:03:30 [INFO]: [0mGET /api/servicios/lista [36m304[0m 317.518 ms - -[0m
+2026-01-15 05:03:30 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471410368 [32m200[0m 308.084 ms - 672[0m
+2026-01-15 05:03:32 [INFO]: [0mGET /cita/veterinarios [36m304[0m 111.486 ms - -[0m
+2026-01-15 05:03:32 [INFO]: [0mGET /api/servicios?t=1768471412298 [32m200[0m 318.996 ms - 941[0m
+2026-01-15 05:03:32 [INFO]: [0mGET /api/servicios/lista [36m304[0m 329.486 ms - -[0m
+2026-01-15 05:03:32 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 05:03:32 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 05:03:38 [INFO]: [0mGET /api/servicios?t=1768471418422 [32m200[0m 309.946 ms - 941[0m
+2026-01-15 05:03:38 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471418417 [33m404[0m 2.514 ms - 48[0m
+2026-01-15 05:04:39 [INFO]: [0mGET /api/servicios?t=1768471478848 [32m200[0m 310.320 ms - 941[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471483251 [32m200[0m 949.635 ms - 672[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /api/servicios/lista [36m304[0m 945.425 ms - -[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /cliente/lista [36m304[0m 962.195 ms - -[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /cliente/lista [32m200[0m 1138.501 ms - -[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /mascota/lista [32m200[0m 1147.835 ms - -[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /api/servicios/lista [32m200[0m 419.901 ms - 720[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /cliente/lista [32m200[0m 415.218 ms - -[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 05:04:44 [INFO]: [0mGET /cita/veterinarios [36m304[0m 137.732 ms - -[0m
+2026-01-15 05:04:45 [INFO]: [0mGET /api/servicios/lista [36m304[0m 343.258 ms - -[0m
+2026-01-15 05:04:45 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471484752 [32m200[0m 312.360 ms - 672[0m
+2026-01-15 05:04:45 [INFO]: [0mGET /mascota/lista [36m304[0m 2315.472 ms - -[0m
+2026-01-15 05:04:46 [INFO]: [0mGET /api/servicios?t=1768471485802 [32m200[0m 309.070 ms - 941[0m
+2026-01-15 05:04:46 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471485796 [33m404[0m 2.025 ms - 48[0m
+2026-01-15 05:04:47 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 05:04:47 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 05:04:47 [INFO]: [0mGET /api/notificaciones/lista?t=1768471487083 [32m200[0m 125.044 ms - -[0m
+2026-01-15 05:05:59 [INFO]: [0mGET /api/servicios?t=1768471558879 [32m200[0m 320.746 ms - 941[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471636688 [32m200[0m 306.634 ms - 672[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /cliente/lista [36m304[0m 330.417 ms - -[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /mascota/lista [36m304[0m 331.918 ms - -[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 331.915 ms - -[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /mascota/lista [32m200[0m 492.307 ms - -[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /api/servicios/lista [32m200[0m 304.021 ms - 720[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /cliente/lista [32m200[0m 338.065 ms - -[0m
+2026-01-15 05:07:17 [INFO]: [0mGET /mascota/lista [32m200[0m 345.599 ms - -[0m
+2026-01-15 05:07:18 [INFO]: [0mGET /cliente/lista [32m200[0m 1770.853 ms - -[0m
+2026-01-15 05:07:20 [INFO]: [0mGET /api/servicios?t=1768471639952 [32m200[0m 304.983 ms - 941[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471641827 [32m200[0m 303.014 ms - 672[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /cliente/lista [36m304[0m 320.173 ms - -[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /mascota/lista [36m304[0m 321.669 ms - -[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /api/servicios/lista [36m304[0m 329.188 ms - -[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /mascota/lista [32m200[0m 483.698 ms - -[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /api/servicios/lista [32m200[0m 306.122 ms - 720[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /cliente/lista [32m200[0m 315.322 ms - -[0m
+2026-01-15 05:07:22 [INFO]: [0mGET /mascota/lista [32m200[0m 331.617 ms - -[0m
+2026-01-15 05:07:23 [INFO]: [0mGET /cliente/lista [32m200[0m 1528.181 ms - -[0m
+2026-01-15 05:07:24 [INFO]: [0mGET /api/servicios?t=1768471644217 [32m200[0m 312.482 ms - 941[0m
+2026-01-15 05:07:27 [INFO]: [0mGET /cliente/lista [36m304[0m 321.205 ms - -[0m
+2026-01-15 05:07:27 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471647530 [32m200[0m 330.575 ms - 672[0m
+2026-01-15 05:07:27 [INFO]: [0mGET /mascota/lista [36m304[0m 329.205 ms - -[0m
+2026-01-15 05:07:27 [INFO]: [0mGET /api/servicios/lista [36m304[0m 335.028 ms - -[0m
+2026-01-15 05:07:28 [INFO]: [0mGET /api/servicios/lista [32m200[0m 304.374 ms - 720[0m
+2026-01-15 05:07:28 [INFO]: [0mGET /cliente/lista [32m200[0m 316.240 ms - -[0m
+2026-01-15 05:07:28 [INFO]: [0mGET /mascota/lista [32m200[0m 308.856 ms - -[0m
+2026-01-15 05:07:29 [INFO]: [0mGET /mascota/lista [32m200[0m 1506.367 ms - -[0m
+2026-01-15 05:07:29 [INFO]: [0mGET /cliente/lista [32m200[0m 1528.474 ms - -[0m
+2026-01-15 05:07:53 [INFO]: [0mGET /api/servicios/lista [36m304[0m 322.437 ms - -[0m
+2026-01-15 05:07:53 [INFO]: [0mGET /cliente/lista [36m304[0m 344.275 ms - -[0m
+2026-01-15 05:07:53 [INFO]: [0mGET /api/servicios/lista [32m200[0m 354.261 ms - 720[0m
+2026-01-15 05:07:53 [INFO]: [0mGET /mascota/lista [36m304[0m 361.544 ms - -[0m
+2026-01-15 05:07:53 [INFO]: [0mGET /mascota/lista [32m200[0m 491.978 ms - -[0m
+2026-01-15 05:07:54 [INFO]: [0mGET /cliente/lista [0m-[0m - ms - -[0m
+2026-01-15 05:07:54 [INFO]: [0mGET /api/servicios/lista [36m304[0m 314.470 ms - -[0m
+2026-01-15 05:07:54 [INFO]: [0mGET /cliente/lista [36m304[0m 322.671 ms - -[0m
+2026-01-15 05:07:54 [INFO]: [0mGET /mascota/lista [36m304[0m 325.330 ms - -[0m
+2026-01-15 05:07:54 [INFO]: [0mGET /api/servicios/lista [32m200[0m 328.228 ms - 720[0m
+2026-01-15 05:07:54 [INFO]: [0mGET /mascota/lista [32m200[0m 455.159 ms - -[0m
+2026-01-15 05:07:56 [INFO]: [0mGET /cliente/lista [32m200[0m 1521.117 ms - -[0m
+2026-01-15 05:08:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 307.041 ms - -[0m
+2026-01-15 05:08:03 [INFO]: [0mGET /cliente/lista [36m304[0m 317.121 ms - -[0m
+2026-01-15 05:08:03 [INFO]: [0mGET /api/servicios/lista [32m200[0m 323.338 ms - 720[0m
+2026-01-15 05:08:03 [INFO]: [0mGET /mascota/lista [36m304[0m 326.934 ms - -[0m
+2026-01-15 05:08:03 [INFO]: [0mGET /cliente/lista [32m200[0m 342.453 ms - -[0m
+2026-01-15 05:08:05 [INFO]: [0mGET /mascota/lista [32m200[0m 1521.712 ms - -[0m
+2026-01-15 05:08:38 [INFO]: [0mGET /api/servicios/lista [36m304[0m 322.995 ms - -[0m
+2026-01-15 05:08:38 [INFO]: [0mGET /cliente/lista [36m304[0m 329.992 ms - -[0m
+2026-01-15 05:08:38 [INFO]: [0mGET /mascota/lista [36m304[0m 313.922 ms - -[0m
+2026-01-15 05:08:38 [INFO]: [0mGET /api/servicios/lista [32m200[0m 311.743 ms - 720[0m
+2026-01-15 05:08:38 [INFO]: [0mGET /cliente/lista [32m200[0m 333.152 ms - -[0m
+2026-01-15 05:08:40 [INFO]: [0mGET /mascota/lista [32m200[0m 1743.547 ms - -[0m
+2026-01-15 05:08:47 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.229 ms - -[0m
+2026-01-15 05:08:47 [INFO]: [0mGET /cliente/lista [36m304[0m 324.801 ms - -[0m
+2026-01-15 05:08:47 [INFO]: [0mGET /mascota/lista [36m304[0m 326.294 ms - -[0m
+2026-01-15 05:08:47 [INFO]: [0mGET /api/servicios/lista [32m200[0m 330.835 ms - 720[0m
+2026-01-15 05:08:47 [INFO]: [0mGET /cliente/lista [32m200[0m 341.885 ms - -[0m
+2026-01-15 05:08:47 [INFO]: [0mGET /mascota/lista [32m200[0m 337.694 ms - -[0m
+2026-01-15 05:08:52 [INFO]: [0mGET /api/servicios/lista [36m304[0m 310.601 ms - -[0m
+2026-01-15 05:08:52 [INFO]: [0mGET /mascota/lista [36m304[0m 307.345 ms - -[0m
+2026-01-15 05:08:52 [INFO]: [0mGET /cliente/lista [36m304[0m 352.494 ms - -[0m
+2026-01-15 05:08:52 [INFO]: [0mGET /api/servicios/lista [32m200[0m 352.386 ms - 720[0m
+2026-01-15 05:08:52 [INFO]: [0mGET /cliente/lista [32m200[0m 359.484 ms - -[0m
+2026-01-15 05:08:52 [INFO]: [0mGET /mascota/lista [32m200[0m 352.096 ms - -[0m
+2026-01-15 05:09:04 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.965 ms - -[0m
+2026-01-15 05:09:04 [INFO]: [0mGET /api/servicios/lista [36m304[0m 316.612 ms - -[0m
+2026-01-15 05:09:04 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471744585 [32m200[0m 306.329 ms - 672[0m
+2026-01-15 05:09:29 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.070 ms - -[0m
+2026-01-15 05:09:29 [INFO]: [0mGET /api/servicios/lista [36m304[0m 317.472 ms - -[0m
+2026-01-15 05:09:29 [INFO]: [0mGET /cliente/lista [36m304[0m 323.421 ms - -[0m
+2026-01-15 05:09:29 [INFO]: [0mGET /mascota/lista [36m304[0m 323.809 ms - -[0m
+2026-01-15 05:09:30 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.782 ms - -[0m
+2026-01-15 05:09:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.165 ms - -[0m
+2026-01-15 05:09:31 [INFO]: [0mGET /cliente/lista [36m304[0m 318.650 ms - -[0m
+2026-01-15 05:09:31 [INFO]: [0mGET /mascota/lista [36m304[0m 318.282 ms - -[0m
+2026-01-15 05:09:32 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.258 ms - -[0m
+2026-01-15 05:09:32 [INFO]: [0mGET /api/servicios/lista [36m304[0m 310.471 ms - -[0m
+2026-01-15 05:09:32 [INFO]: [0mGET /cliente/lista [36m304[0m 328.207 ms - -[0m
+2026-01-15 05:09:32 [INFO]: [0mGET /mascota/lista [36m304[0m 318.668 ms - -[0m
+2026-01-15 05:09:35 [INFO]: [0mGET /cita/veterinarios [36m304[0m 109.855 ms - -[0m
+2026-01-15 05:09:35 [INFO]: [0mGET /api/servicios/lista [36m304[0m 314.902 ms - -[0m
+2026-01-15 05:09:35 [INFO]: [0mGET /cliente/lista [36m304[0m 317.181 ms - -[0m
+2026-01-15 05:09:35 [INFO]: [0mGET /mascota/lista [36m304[0m 315.256 ms - -[0m
+2026-01-15 05:10:22 [INFO]: [0mGET /cita/veterinarios [36m304[0m 119.635 ms - -[0m
+2026-01-15 05:10:22 [INFO]: [0mGET /api/servicios/lista [36m304[0m 325.752 ms - -[0m
+2026-01-15 05:10:22 [INFO]: [0mGET /cliente/lista [36m304[0m 339.830 ms - -[0m
+2026-01-15 05:10:22 [INFO]: [0mGET /mascota/lista [36m304[0m 338.658 ms - -[0m
+2026-01-15 05:10:42 [INFO]: [0mGET /api/servicios?t=1768471842243 [32m200[0m 316.305 ms - 941[0m
+2026-01-15 05:10:42 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471842225 [33m404[0m 14.193 ms - 48[0m
+2026-01-15 05:10:46 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.622 ms - -[0m
+2026-01-15 05:10:46 [INFO]: [0mGET /api/servicios/lista [36m304[0m 308.269 ms - -[0m
+2026-01-15 05:10:46 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768471846529 [32m200[0m 309.830 ms - 672[0m
+2026-01-15 05:10:48 [INFO]: [0mGET /api/servicios?t=1768471847757 [32m200[0m 315.881 ms - 941[0m
+2026-01-15 05:10:48 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471847754 [33m404[0m 3.175 ms - 48[0m
+2026-01-15 05:12:48 [INFO]: [0mGET /api/servicios?t=1768471962880 [32m200[0m 386.335 ms - 941[0m
+2026-01-15 05:12:50 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471962859 [33m404[0m 9.078 ms - 48[0m
+2026-01-15 05:13:13 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471962859 [33m404[0m 2.439 ms - 48[0m
+2026-01-15 05:13:23 [INFO]: ID: 53
+2026-01-15 05:13:23 [INFO]: BODY: [object Object]
+2026-01-15 05:13:24 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 384.785 ms - 90[0m
+2026-01-15 05:13:24 [INFO]: [0mGET /api/servicios?t=1768472004171 [32m200[0m 313.109 ms - 943[0m
+2026-01-15 05:13:25 [INFO]: ID: 53
+2026-01-15 05:13:25 [INFO]: BODY: [object Object]
+2026-01-15 05:13:25 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471962859 [33m404[0m 4.961 ms - 48[0m
+2026-01-15 05:13:25 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 222.840 ms - 90[0m
+2026-01-15 05:13:25 [INFO]: [0mGET /api/servicios?t=1768472005592 [32m200[0m 315.018 ms - 943[0m
+2026-01-15 05:13:26 [INFO]: ID: 53
+2026-01-15 05:13:26 [INFO]: BODY: [object Object]
+2026-01-15 05:13:26 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471962859 [33m404[0m 3.179 ms - 48[0m
+2026-01-15 05:13:26 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 225.659 ms - 88[0m
+2026-01-15 05:13:26 [INFO]: [0mGET /api/servicios?t=1768472006351 [32m200[0m 308.954 ms - 941[0m
+2026-01-15 05:13:27 [INFO]: ID: 53
+2026-01-15 05:13:27 [INFO]: BODY: [object Object]
+2026-01-15 05:13:27 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471962859 [33m404[0m 2.292 ms - 48[0m
+2026-01-15 05:13:27 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 492.879 ms - 88[0m
+2026-01-15 05:13:28 [INFO]: [0mGET /api/servicios?t=1768472007706 [32m200[0m 343.322 ms - 941[0m
+2026-01-15 05:13:53 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768471962859 [33m404[0m 12.490 ms - 48[0m
+2026-01-15 05:13:55 [INFO]: [0mGET /api/servicios?t=1768472035138 [32m200[0m 599.621 ms - 941[0m
+2026-01-15 05:13:56 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472035127 [33m404[0m 2.523 ms - 48[0m
+2026-01-15 05:13:59 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472035127 [33m404[0m 2.539 ms - 48[0m
+2026-01-15 05:14:01 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472035127 [33m404[0m 3.188 ms - 48[0m
+2026-01-15 05:14:03 [INFO]: [0mGET /api/servicios?t=1768472042546 [32m200[0m 516.428 ms - 941[0m
+2026-01-15 05:14:03 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472042534 [33m404[0m 2.849 ms - 48[0m
+2026-01-15 05:14:11 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472042534 [33m404[0m 3.296 ms - 48[0m
+2026-01-15 05:14:13 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472042534 [33m404[0m 2.669 ms - 48[0m
+2026-01-15 05:15:31 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472042534 [33m404[0m 5.736 ms - 48[0m
+2026-01-15 05:19:29 [INFO]: servicioCtl: [object Object]
+2026-01-15 05:19:30 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 05:19:30 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 05:19:30 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 05:19:30 [INFO]: Base de datos conectada
+2026-01-15 05:19:31 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 05:19:31 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 05:19:32 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 05:19:32 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 05:19:32 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 05:19:40 [INFO]: [0mGET /api/servicios?t=1768472379050 [32m200[0m 1650.359 ms - 941[0m
+2026-01-15 05:19:40 [INFO]: [0mGET /uploads/servicios/http://localhost:3000/uploads/servicios/cortedepelo.jpg?t=1768472379042 [33m404[0m 4.347 ms - 48[0m
+2026-01-15 05:22:21 [INFO]: [0mGET /api/servicios/lista [36m304[0m 506.758 ms - -[0m
+2026-01-15 05:22:21 [INFO]: [0mGET /cita/veterinarios [36m304[0m 477.909 ms - -[0m
+2026-01-15 05:22:22 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472541146 [32m200[0m 772.389 ms - 672[0m
+2026-01-15 05:22:23 [INFO]: [0mGET /cita/veterinarios [36m304[0m 125.699 ms - -[0m
+2026-01-15 05:22:23 [INFO]: [0mGET /api/servicios/lista [36m304[0m 330.259 ms - -[0m
+2026-01-15 05:22:23 [INFO]: [0mGET /mascota/lista [36m304[0m 652.814 ms - -[0m
+2026-01-15 05:22:24 [INFO]: [0mGET /cliente/lista [36m304[0m 1933.688 ms - -[0m
+2026-01-15 05:22:26 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472546362 [32m200[0m 307.269 ms - 672[0m
+2026-01-15 05:22:26 [INFO]: [0mGET /cliente/lista [36m304[0m 331.251 ms - -[0m
+2026-01-15 05:22:26 [INFO]: [0mGET /api/servicios/lista [36m304[0m 521.854 ms - -[0m
+2026-01-15 05:22:27 [INFO]: [0mGET /api/servicios/lista [32m200[0m 419.777 ms - 720[0m
+2026-01-15 05:22:27 [INFO]: [0mGET /cliente/lista [32m200[0m 481.355 ms - -[0m
+2026-01-15 05:22:27 [INFO]: [0mGET /cliente/lista [32m200[0m 922.507 ms - -[0m
+2026-01-15 05:22:27 [INFO]: [0mGET /mascota/lista [32m200[0m 992.872 ms - -[0m
+2026-01-15 05:22:27 [INFO]: [0mGET /mascota/lista [32m200[0m 591.737 ms - -[0m
+2026-01-15 05:22:27 [INFO]: [0mGET /mascota/lista [36m304[0m 1524.631 ms - -[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472621950 [32m200[0m 361.206 ms - 672[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /cliente/lista [36m304[0m 388.980 ms - -[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /mascota/lista [36m304[0m 415.638 ms - -[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /cliente/lista [32m200[0m 601.510 ms - -[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /mascota/lista [32m200[0m 711.505 ms - -[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /api/servicios/lista [32m200[0m 351.825 ms - 720[0m
+2026-01-15 05:23:42 [INFO]: [0mGET /cliente/lista [32m200[0m 487.289 ms - -[0m
+2026-01-15 05:23:43 [INFO]: [0mGET /mascota/lista [32m200[0m 520.451 ms - -[0m
+2026-01-15 05:23:43 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1869.741 ms - -[0m
+2026-01-15 05:23:58 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472638545 [32m200[0m 306.781 ms - 672[0m
+2026-01-15 05:23:58 [INFO]: [0mGET /cliente/lista [36m304[0m 328.138 ms - -[0m
+2026-01-15 05:23:58 [INFO]: [0mGET /mascota/lista [36m304[0m 337.892 ms - -[0m
+2026-01-15 05:23:59 [INFO]: [0mGET /cliente/lista [32m200[0m 513.559 ms - -[0m
+2026-01-15 05:23:59 [INFO]: [0mGET /mascota/lista [32m200[0m 519.469 ms - -[0m
+2026-01-15 05:23:59 [INFO]: [0mGET /api/servicios/lista [32m200[0m 396.233 ms - 720[0m
+2026-01-15 05:23:59 [INFO]: [0mGET /cliente/lista [32m200[0m 372.905 ms - -[0m
+2026-01-15 05:23:59 [INFO]: [0mGET /mascota/lista [32m200[0m 438.322 ms - -[0m
+2026-01-15 05:24:00 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1539.243 ms - -[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472656089 [32m200[0m 304.652 ms - 672[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /cliente/lista [36m304[0m 326.171 ms - -[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 329.764 ms - -[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /mascota/lista [32m200[0m 483.763 ms - -[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /api/servicios/lista [32m200[0m 316.646 ms - 720[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /cliente/lista [32m200[0m 377.007 ms - -[0m
+2026-01-15 05:24:16 [INFO]: [0mGET /mascota/lista [32m200[0m 375.070 ms - -[0m
+2026-01-15 05:24:17 [INFO]: [0mGET /mascota/lista [36m304[0m 1520.454 ms - -[0m
+2026-01-15 05:24:17 [INFO]: [0mGET /cliente/lista [32m200[0m 1519.826 ms - -[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472895766 [32m200[0m 412.583 ms - 672[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /cliente/lista [36m304[0m 400.664 ms - -[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /mascota/lista [36m304[0m 403.754 ms - -[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 414.755 ms - -[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /mascota/lista [32m200[0m 571.230 ms - -[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /api/servicios/lista [32m200[0m 307.395 ms - 720[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /cliente/lista [32m200[0m 346.563 ms - -[0m
+2026-01-15 05:28:16 [INFO]: [0mGET /mascota/lista [32m200[0m 347.232 ms - -[0m
+2026-01-15 05:28:17 [INFO]: [0mGET /cliente/lista [32m200[0m 1863.990 ms - -[0m
+2026-01-15 05:28:19 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 05:28:29 [INFO]: servicioCtl: [object Object]
+2026-01-15 05:28:29 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 05:28:29 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 05:28:29 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 05:28:30 [INFO]: Base de datos conectada
+2026-01-15 05:28:31 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 05:28:31 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 05:28:32 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 05:28:32 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 05:28:32 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 05:28:57 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768472936877 [32m200[0m 485.372 ms - 672[0m
+2026-01-15 05:28:58 [INFO]: [0mGET /mascota/lista [36m304[0m 1188.907 ms - -[0m
+2026-01-15 05:28:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 1431.000 ms - -[0m
+2026-01-15 05:28:58 [INFO]: [0mGET /cliente/lista [32m200[0m 1625.259 ms - -[0m
+2026-01-15 05:28:58 [INFO]: [0mGET /mascota/lista [32m200[0m 1802.882 ms - -[0m
+2026-01-15 05:28:59 [INFO]: [0mGET /cliente/lista [36m304[0m 2015.091 ms - -[0m
+2026-01-15 05:28:59 [INFO]: [0mGET /api/servicios/lista [32m200[0m 1669.639 ms - 720[0m
+2026-01-15 05:28:59 [INFO]: [0mGET /mascota/lista [32m200[0m 724.874 ms - -[0m
+2026-01-15 05:29:00 [INFO]: [0mGET /cliente/lista [32m200[0m 2016.961 ms - -[0m
+2026-01-15 05:30:16 [INFO]: [0mGET /cita/veterinarios [36m304[0m 112.696 ms - -[0m
+2026-01-15 05:30:16 [INFO]: [0mGET /api/servicios/lista [36m304[0m 318.608 ms - -[0m
+2026-01-15 05:30:16 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768473016112 [32m200[0m 311.636 ms - 672[0m
+2026-01-15 05:30:17 [INFO]: [0mGET /cita/veterinarios [36m304[0m 116.590 ms - -[0m
+2026-01-15 05:30:17 [INFO]: [0mGET /api/servicios/lista [36m304[0m 315.388 ms - -[0m
+2026-01-15 05:30:17 [INFO]: [0mGET /mascota/lista [36m304[0m 479.611 ms - -[0m
+2026-01-15 05:30:18 [INFO]: [0mGET /cliente/lista [36m304[0m 1743.090 ms - -[0m
+2026-01-15 05:30:21 [INFO]: [0mGET /api/servicios?t=1768473020804 [32m200[0m 315.179 ms - 941[0m
+2026-01-15 05:30:21 [INFO]: [0mGET /uploads/servicios/cortedepelo.jpg [32m200[0m 22.076 ms - 109025[0m
+2026-01-15 05:31:00 [INFO]: [0mDELETE /api/servicios/52 [32m200[0m 333.125 ms - 46[0m
+2026-01-15 05:31:02 [INFO]: [0mDELETE /api/servicios/51 [32m200[0m 319.036 ms - 46[0m
+2026-01-15 05:31:04 [INFO]: [0mDELETE /api/servicios/50 [32m200[0m 303.646 ms - 46[0m
+2026-01-15 05:31:06 [INFO]: [0mDELETE /api/servicios/48 [32m200[0m 307.849 ms - 46[0m
+2026-01-15 05:32:50 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:32:50 [INFO]: [0mPOST /api/servicios [31m500[0m 236.497 ms - 86[0m
+2026-01-15 05:33:00 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:33:00 [INFO]: [0mPOST /api/servicios [31m500[0m 112.829 ms - 86[0m
+2026-01-15 05:33:13 [INFO]: [0mGET /api/servicios?t=1768473193057 [32m200[0m 312.882 ms - 374[0m
+2026-01-15 05:34:18 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:18 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 423.289 ms - 91[0m
+2026-01-15 05:34:21 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:21 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 415.824 ms - 91[0m
+2026-01-15 05:34:22 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:22 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 422.632 ms - 91[0m
+2026-01-15 05:34:24 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:24 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 414.878 ms - 91[0m
+2026-01-15 05:34:24 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:24 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 419.620 ms - 91[0m
+2026-01-15 05:34:24 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:24 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 413.292 ms - 91[0m
+2026-01-15 05:34:24 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:24 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 433.066 ms - 91[0m
+2026-01-15 05:34:25 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:25 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 411.434 ms - 91[0m
+2026-01-15 05:34:25 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:34:25 [INFO]: [0mPUT /api/servicios/1 [31m500[0m 413.518 ms - 91[0m
+2026-01-15 05:37:42 [INFO]: [0mGET /api/servicios?t=1768473462299 [32m200[0m 395.508 ms - 374[0m
+2026-01-15 05:38:12 [INFO]: [0mGET /api/servicios?t=1768473490545 [32m200[0m 2060.967 ms - 374[0m
+2026-01-15 05:38:44 [INFO]: [0mGET /api/servicios?t=1768473524583 [32m200[0m 307.854 ms - 374[0m
+2026-01-15 05:38:48 [INFO]: [0mGET /api/servicios?t=1768473528081 [32m200[0m 306.100 ms - 374[0m
+2026-01-15 05:38:50 [INFO]: ID: 53
+2026-01-15 05:38:50 [INFO]: BODY: [object Object]
+2026-01-15 05:38:50 [INFO]: [0mPATCH /api/servicios/53/estado [32m200[0m 245.644 ms - 90[0m
+2026-01-15 05:38:50 [INFO]: [0mGET /api/servicios?t=1768473530316 [32m200[0m 307.019 ms - 376[0m
+2026-01-15 05:38:52 [INFO]: [0mGET /api/servicios?t=1768473531678 [32m200[0m 311.612 ms - 376[0m
+2026-01-15 05:39:28 [INFO]: [0mGET /api/servicios?t=1768473567874 [32m200[0m 305.022 ms - 376[0m
+2026-01-15 05:39:57 [INFO]: [0mGET /api/servicios?t=1768473596360 [32m200[0m 311.824 ms - 376[0m
+2026-01-15 05:40:03 [INFO]: [0mDELETE /api/servicios/1 [32m200[0m 365.960 ms - 46[0m
+2026-01-15 05:40:06 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:40:06 [INFO]: [0mPOST /api/servicios [31m500[0m 117.369 ms - 86[0m
+2026-01-15 05:40:12 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 05:40:33 [INFO]: servicioCtl: [object Object]
+2026-01-15 05:40:34 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 05:40:34 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 05:40:34 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 05:40:34 [INFO]: Base de datos conectada
+2026-01-15 05:40:35 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 05:40:35 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 05:40:36 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 05:40:37 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 05:40:37 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 05:43:57 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:43:57 [INFO]: [0mPOST /api/servicios [31m500[0m 236.812 ms - 86[0m
+2026-01-15 05:44:02 [ERROR]: Error: Column 'nombreServicio' cannot be null
+2026-01-15 05:44:02 [INFO]: [0mPOST /api/servicios [31m500[0m 113.169 ms - 86[0m
+2026-01-15 05:45:37 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 05:45:44 [INFO]: servicioCtl: [object Object]
+2026-01-15 05:45:44 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 05:45:44 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 05:45:45 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 05:45:45 [INFO]: Base de datos conectada
+2026-01-15 05:45:46 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 05:45:46 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 05:45:47 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 05:45:47 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 05:45:47 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 05:45:59 [INFO]: [0mGET /api/servicios?t=1768473959517 [32m200[0m 355.178 ms - 199[0m
+2026-01-15 05:46:33 [ERROR]: Error: Column 'descripcionServicio' cannot be null
+2026-01-15 05:46:33 [INFO]: [0mPOST /api/servicios [31m500[0m 154.691 ms - 91[0m
+2026-01-15 05:47:00 [INFO]: [0mGET /api/servicios?t=1768474019718 [32m200[0m 312.936 ms - 199[0m
+2026-01-15 05:47:03 [INFO]: [0mGET /api/servicios?t=1768474022963 [32m200[0m 318.099 ms - 199[0m
+2026-01-15 05:47:06 [INFO]: [0mGET /api/servicios?t=1768474026145 [32m200[0m 306.145 ms - 199[0m
+2026-01-15 05:47:09 [INFO]: [0mGET /api/servicios?t=1768474029246 [32m200[0m 313.014 ms - 199[0m
+2026-01-15 05:47:21 [INFO]: [0mPOST /api/servicios [32m201[0m 343.811 ms - 131[0m
+2026-01-15 05:47:22 [INFO]: [0mGET /api/servicios?t=1768474041698 [32m200[0m 309.246 ms - 341[0m
+2026-01-15 05:47:35 [INFO]: [0mDELETE /api/servicios/54 [32m200[0m 324.721 ms - 46[0m
+2026-01-15 05:47:47 [ERROR]: Error: Column 'descripcionServicio' cannot be null
+2026-01-15 05:47:47 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 421.924 ms - 96[0m
+2026-01-15 05:47:50 [ERROR]: Error: Column 'descripcionServicio' cannot be null
+2026-01-15 05:47:50 [INFO]: [0mPUT /api/servicios/53 [31m500[0m 420.438 ms - 96[0m
+2026-01-15 05:48:40 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 05:48:40 [INFO]: [0mGET /api/servicios/lista [32m200[0m 121.239 ms - 2[0m
+2026-01-15 05:48:40 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 05:48:41 [INFO]: [0mGET /api/notificaciones/lista?t=1768474120472 [32m200[0m 533.670 ms - -[0m
+2026-01-15 05:49:01 [INFO]: [0mGET /api/servicios?t=1768474140985 [32m200[0m 313.207 ms - 199[0m
+2026-01-15 05:49:04 [INFO]: [0mGET /api/servicios?t=1768474144037 [32m200[0m 306.388 ms - 199[0m
+2026-01-15 05:49:09 [INFO]: [0mDELETE /api/servicios/53 [32m200[0m 316.837 ms - 46[0m
+2026-01-15 05:49:41 [INFO]: [0mPOST /api/servicios [32m201[0m 319.959 ms - 160[0m
+2026-01-15 05:49:42 [INFO]: [0mGET /api/servicios?t=1768474181888 [32m200[0m 300.119 ms - 172[0m
+2026-01-15 05:50:43 [INFO]: [0mPUT /api/servicios/55 [32m200[0m 650.541 ms - 160[0m
+2026-01-15 05:50:44 [INFO]: [0mGET /api/servicios?t=1768474243909 [32m200[0m 303.747 ms - 172[0m
+2026-01-15 05:53:57 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 05:54:05 [INFO]: servicioCtl: [object Object]
+2026-01-15 05:54:06 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 05:54:06 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 05:54:06 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 05:54:06 [INFO]: Base de datos conectada
+2026-01-15 05:54:07 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 05:54:07 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 05:54:08 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 05:54:08 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 05:54:08 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 05:54:34 [INFO]: [0mGET /api/servicios?t=1768474473854 [32m200[0m 364.494 ms - 172[0m
+2026-01-15 05:58:52 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:02:28 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:02:29 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:02:29 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:02:29 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:02:29 [INFO]: Base de datos conectada
+2026-01-15 06:02:30 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 06:02:30 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 06:02:31 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:02:31 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 06:02:31 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:02:47 [INFO]: [0mGET /api/servicios?t=1768474966673 [32m200[0m 366.730 ms - 172[0m
+2026-01-15 06:03:09 [INFO]: [0mPUT /api/servicios/55 [32m200[0m 654.019 ms - 160[0m
+2026-01-15 06:03:09 [INFO]: [0mGET /api/servicios?t=1768474989480 [32m200[0m 306.587 ms - 172[0m
+2026-01-15 06:04:50 [INFO]: [0mGET /api/servicios?t=1768475090290 [32m200[0m 681.208 ms - 172[0m
+2026-01-15 06:04:56 [INFO]: [0mGET /api/servicios?t=1768475096575 [32m200[0m 319.403 ms - 172[0m
+2026-01-15 06:05:03 [INFO]: [0mGET /api/servicios?t=1768475103339 [32m200[0m 302.677 ms - 172[0m
+2026-01-15 06:05:18 [INFO]: [0mGET /api/servicios?t=1768475118476 [32m200[0m 303.811 ms - 172[0m
+2026-01-15 06:06:25 [INFO]: [0mPUT /api/servicios/55 [32m200[0m 647.794 ms - 160[0m
+2026-01-15 06:06:26 [INFO]: [0mGET /api/servicios?t=1768475185902 [32m200[0m 314.076 ms - 172[0m
+2026-01-15 06:06:31 [INFO]: [0mPUT /api/servicios/55 [32m200[0m 618.741 ms - 160[0m
+2026-01-15 06:06:32 [INFO]: [0mGET /api/servicios?t=1768475191743 [32m200[0m 308.665 ms - 172[0m
+2026-01-15 06:08:41 [INFO]: [0mGET /api/servicios?t=1768475320781 [32m200[0m 329.849 ms - 172[0m
+2026-01-15 06:09:06 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:09:07 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:09:07 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:09:07 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:09:07 [INFO]: Base de datos conectada
+2026-01-15 06:09:08 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 06:09:09 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 06:09:09 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:09:10 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 06:09:10 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:09:54 [INFO]: [0mGET /api/servicios?t=1768475394151 [32m200[0m 354.483 ms - 172[0m
+2026-01-15 06:10:13 [INFO]: [0mPUT /api/servicios/55 [32m200[0m 655.194 ms - 160[0m
+2026-01-15 06:10:13 [INFO]: [0mGET /api/servicios?t=1768475413169 [32m200[0m 302.950 ms - 172[0m
+2026-01-15 06:10:46 [INFO]: [0mPOST /api/servicios [32m201[0m 350.958 ms - 194[0m
+2026-01-15 06:10:46 [INFO]: [0mGET /api/servicios?t=1768475446346 [32m200[0m 324.390 ms - 377[0m
+2026-01-15 06:10:51 [INFO]: [0mGET /api/servicios?t=1768475450703 [32m200[0m 314.078 ms - 377[0m
+2026-01-15 06:10:56 [INFO]: [0mDELETE /api/servicios/55 [32m200[0m 324.380 ms - 46[0m
+2026-01-15 06:11:34 [INFO]: [0mGET /api/servicios?t=1768475494477 [32m200[0m 306.915 ms - 206[0m
+2026-01-15 06:11:41 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:11:41 [INFO]: [0mGET /api/servicios/lista [32m200[0m 313.927 ms - 196[0m
+2026-01-15 06:11:41 [INFO]: [0mGET /uploads/servicios/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 11.726 ms - 48[0m
+2026-01-15 06:11:41 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:11:41 [INFO]: [0mGET /api/notificaciones/lista?t=1768475500878 [32m200[0m 492.856 ms - -[0m
+2026-01-15 06:11:55 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:11:55 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:11:55 [INFO]: [0mGET /api/notificaciones/lista?t=1768475515463 [32m200[0m 129.485 ms - -[0m
+2026-01-15 06:11:55 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.445 ms - -[0m
+2026-01-15 06:11:55 [INFO]: [0mGET /uploads/servicios/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 3.226 ms - 48[0m
+2026-01-15 06:12:35 [INFO]: [0mPUT /api/servicios/56 [32m200[0m 624.403 ms - 194[0m
+2026-01-15 06:12:35 [INFO]: [0mPUT /api/servicios/56 [32m200[0m 618.370 ms - 194[0m
+2026-01-15 06:12:35 [INFO]: [0mGET /api/servicios?t=1768475555620 [32m200[0m 307.983 ms - 206[0m
+2026-01-15 06:12:35 [INFO]: [0mGET /api/servicios?t=1768475555629 [32m200[0m 307.247 ms - 206[0m
+2026-01-15 06:14:57 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:14:57 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:14:57 [INFO]: [0mGET /api/notificaciones/lista?t=1768475696877 [32m200[0m 154.219 ms - -[0m
+2026-01-15 06:14:57 [INFO]: [0mGET /api/servicios/lista [36m304[0m 315.096 ms - -[0m
+2026-01-15 06:14:57 [INFO]: [0mGET /uploads/servicios/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 11.494 ms - 48[0m
+2026-01-15 06:16:49 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:16:49 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:16:49 [INFO]: [0mGET /api/notificaciones/lista?t=1768475808670 [32m200[0m 307.625 ms - -[0m
+2026-01-15 06:16:49 [INFO]: [0mGET /api/servicios/lista [36m304[0m 541.586 ms - -[0m
+2026-01-15 06:16:49 [INFO]: [0mGET /uploads/servicios/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 9.389 ms - 48[0m
+2026-01-15 06:16:59 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:17:09 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:17:09 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:17:09 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:17:09 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:17:10 [INFO]: Base de datos conectada
+2026-01-15 06:17:11 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 06:17:11 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 06:17:12 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:17:12 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-00.ux4si.mongodb.net
+2026-01-15 06:17:12 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:17:43 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:17:43 [INFO]: [0mGET /api/servicios/lista [36m304[0m 383.625 ms - -[0m
+2026-01-15 06:17:43 [INFO]: [0mGET /uploads/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 7.964 ms - 48[0m
+2026-01-15 06:17:43 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:17:43 [INFO]: [0mGET /api/notificaciones/lista?t=1768475863070 [32m200[0m 494.545 ms - -[0m
+2026-01-15 06:17:45 [INFO]: [0mGET /api/servicios?t=1768475864657 [32m200[0m 315.044 ms - 206[0m
+2026-01-15 06:18:20 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:18:20 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:18:20 [INFO]: [0mGET /api/notificaciones/lista?t=1768475899817 [32m200[0m 166.317 ms - -[0m
+2026-01-15 06:18:20 [INFO]: [0mGET /api/servicios/lista [36m304[0m 336.948 ms - -[0m
+2026-01-15 06:18:20 [INFO]: [0mGET /uploads/servicios/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 5.627 ms - 48[0m
+2026-01-15 06:18:20 [INFO]: [0mGET /api/servicios?t=1768475899954 [32m200[0m 640.343 ms - 206[0m
+2026-01-15 06:18:25 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:18:25 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:18:25 [INFO]: [0mGET /api/notificaciones/lista?t=1768475904936 [32m200[0m 140.707 ms - -[0m
+2026-01-15 06:18:25 [INFO]: [0mGET /api/servicios/lista [36m304[0m 315.482 ms - -[0m
+2026-01-15 06:18:26 [INFO]: [0mGET /uploads/https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg [33m404[0m 3.304 ms - 48[0m
+2026-01-15 06:18:28 [INFO]: [0mGET /api/servicios?t=1768475907724 [32m200[0m 316.572 ms - 206[0m
+2026-01-15 06:21:10 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:21:10 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:21:10 [INFO]: [0mGET /api/notificaciones/lista?t=1768476069944 [32m200[0m 165.319 ms - -[0m
+2026-01-15 06:21:10 [INFO]: [0mGET /api/servicios/lista [36m304[0m 351.143 ms - -[0m
+2026-01-15 06:23:07 [INFO]: [0mPUT /api/servicios/56 [32m200[0m 829.523 ms - 194[0m
+2026-01-15 06:23:07 [INFO]: [0mGET /api/servicios?t=1768476187584 [32m200[0m 306.633 ms - 206[0m
+2026-01-15 06:23:12 [INFO]: [0mGET /api/servicios?t=1768476192361 [32m200[0m 308.735 ms - 206[0m
+2026-01-15 06:26:35 [INFO]: [0mGET /api/servicios?t=1768476395331 [32m200[0m 416.718 ms - 206[0m
+2026-01-15 06:26:38 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:26:39 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.876 ms - -[0m
+2026-01-15 06:26:54 [INFO]: [0mPUT /api/servicios/56 [32m200[0m 661.185 ms - 194[0m
+2026-01-15 06:26:54 [INFO]: [0mGET /api/servicios?t=1768476414672 [32m200[0m 302.372 ms - 206[0m
+2026-01-15 06:26:58 [ERROR]: [NOTIFICACIONES] Error al ejecutar query: Error: read ECONNRESET
+2026-01-15 06:26:58 [INFO]: [0mGET /api/notificaciones/lista?t=1768476398463 [31m500[0m 19325.303 ms - 180[0m
+2026-01-15 06:27:17 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:27:17 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:27:17 [INFO]: [0mGET /api/notificaciones/lista?t=1768476437561 [32m200[0m 160.000 ms - -[0m
+2026-01-15 06:27:29 [INFO]: [0mGET /api/servicios?t=1768476449056 [32m200[0m 308.759 ms - 206[0m
+2026-01-15 06:27:31 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768476450653 [32m200[0m 375.318 ms - 672[0m
+2026-01-15 06:27:31 [INFO]: [0mGET /api/servicios/lista [36m304[0m 321.861 ms - -[0m
+2026-01-15 06:27:31 [INFO]: [0mGET /api/servicios/lista [32m200[0m 307.592 ms - 196[0m
+2026-01-15 06:27:31 [INFO]: [0mGET /cliente/lista [32m200[0m 493.899 ms - -[0m
+2026-01-15 06:27:31 [INFO]: [0mGET /cliente/lista [36m304[0m 1002.211 ms - -[0m
+2026-01-15 06:27:31 [INFO]: [0mGET /mascota/lista [36m304[0m 1157.813 ms - -[0m
+2026-01-15 06:27:32 [INFO]: [0mGET /cliente/lista [32m200[0m 1341.875 ms - -[0m
+2026-01-15 06:27:32 [INFO]: [0mGET /mascota/lista [32m200[0m 989.123 ms - -[0m
+2026-01-15 06:27:32 [INFO]: [0mGET /mascota/lista [0m-[0m - ms - -[0m
+2026-01-15 06:27:32 [INFO]: [0mGET /cita/veterinarios [36m304[0m 113.431 ms - -[0m
+2026-01-15 06:27:32 [INFO]: [0mGET /api/servicios/lista [36m304[0m 302.165 ms - -[0m
+2026-01-15 06:27:33 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768476452671 [32m200[0m 303.659 ms - 672[0m
+2026-01-15 06:27:33 [INFO]: [0mGET /api/servicios?t=1768476453606 [32m200[0m 307.604 ms - 206[0m
+2026-01-15 06:28:21 [INFO]: [0mDELETE /api/servicios/56 [0m-[0m - ms - -[0m
+2026-01-15 06:28:21 [INFO]: [0mDELETE /api/servicios/56 [0m-[0m - ms - -[0m
+2026-01-15 06:28:22 [INFO]: [0mGET /api/servicios?t=1768476502327 [32m200[0m 307.558 ms - 206[0m
+2026-01-15 06:28:28 [ERROR]: SequelizeDatabaseError: read ECONNRESET
+2026-01-15 06:28:33 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:28:42 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:28:43 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:28:43 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:28:43 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:28:43 [INFO]: Base de datos conectada
+2026-01-15 06:28:44 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 06:28:44 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 06:28:45 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:28:45 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-02.ux4si.mongodb.net
+2026-01-15 06:28:45 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:29:20 [INFO]: [0mDELETE /api/servicios/56 [32m200[0m 339.624 ms - 46[0m
+2026-01-15 06:29:43 [INFO]: [0mPOST /api/servicios [32m201[0m 385.552 ms - 218[0m
+2026-01-15 06:29:43 [INFO]: [0mGET /api/servicios?t=1768476583621 [32m200[0m 314.730 ms - 230[0m
+2026-01-15 06:30:14 [INFO]: [0mPUT /api/servicios/57 [32m200[0m 616.775 ms - 218[0m
+2026-01-15 06:30:14 [INFO]: [0mGET /api/servicios?t=1768476614275 [32m200[0m 304.466 ms - 230[0m
+2026-01-15 06:30:51 [INFO]: [0mPUT /api/servicios/57 [32m200[0m 635.828 ms - 218[0m
+2026-01-15 06:30:52 [INFO]: [0mGET /api/servicios?t=1768476651740 [32m200[0m 311.629 ms - 230[0m
+2026-01-15 06:30:59 [INFO]: [0mDELETE /api/servicios/57 [32m200[0m 321.236 ms - 46[0m
+2026-01-15 06:31:09 [INFO]: [0mPOST /api/servicios [32m201[0m 318.133 ms - 194[0m
+2026-01-15 06:31:09 [INFO]: [0mGET /api/servicios?t=1768476669357 [32m200[0m 304.794 ms - 206[0m
+2026-01-15 06:31:59 [INFO]: [0mPUT /api/servicios/58 [32m200[0m 1030.240 ms - 194[0m
+2026-01-15 06:31:59 [INFO]: [0mGET /api/servicios?t=1768476719072 [32m200[0m 440.210 ms - 206[0m
+2026-01-15 06:36:22 [INFO]: ⚠️  Mongoose desconectado de MongoDB
+2026-01-15 06:36:31 [INFO]: servicioCtl: [object Object]
+2026-01-15 06:36:32 [INFO]: 
+🔧 [APP] Registrando router de notificaciones en /api/notificaciones
+2026-01-15 06:36:32 [INFO]: ✅ [APP] Router de notificaciones registrado correctamente
+
+2026-01-15 06:36:32 [INFO]: 🚀 El servidor está escuchando en el puerto 3000
+2026-01-15 06:36:32 [INFO]: Base de datos conectada
+2026-01-15 06:36:33 [INFO]: ✅ Conectado a MySQL (Sequelize)
+2026-01-15 06:36:33 [ERROR]: ❌ Error al sincronizar catálogos: Too many keys specified; max 64 keys allowed
+2026-01-15 06:36:34 [INFO]: ✅ Tabla "servicio" sincronizada con la base de datos
+2026-01-15 06:36:34 [INFO]: ✅ Mongoose conectado a MongoDB en: edisoncloud-shard-00-01.ux4si.mongodb.net
+2026-01-15 06:36:34 [INFO]: 🚀 MongoDB conectado correctamente
+2026-01-15 06:37:18 [INFO]: [0mGET /api/servicios?t=1768477037875 [32m200[0m 363.318 ms - 206[0m
+2026-01-15 06:37:24 [INFO]: [0mDELETE /api/servicios/58 [32m200[0m 313.545 ms - 46[0m
+2026-01-15 06:37:35 [INFO]: [0mPOST /api/servicios [32m201[0m 385.408 ms - 201[0m
+2026-01-15 06:37:36 [INFO]: [0mGET /api/servicios?t=1768477055663 [32m200[0m 309.478 ms - 213[0m
+2026-01-15 06:37:58 [INFO]: [0mPUT /api/servicios/59 [32m200[0m 648.390 ms - 201[0m
+2026-01-15 06:37:58 [INFO]: [0mGET /api/servicios?t=1768477078541 [32m200[0m 307.876 ms - 213[0m
+2026-01-15 06:38:13 [INFO]: [0mPUT /api/servicios/59 [32m200[0m 608.200 ms - 196[0m
+2026-01-15 06:38:13 [INFO]: [0mGET /api/servicios?t=1768477093043 [32m200[0m 309.779 ms - 208[0m
+2026-01-15 06:38:56 [INFO]: [0mPUT /api/servicios/59 [32m200[0m 633.929 ms - 227[0m
+2026-01-15 06:38:56 [INFO]: [0mGET /api/servicios?t=1768477136186 [32m200[0m 306.702 ms - 239[0m
+2026-01-15 06:39:01 [INFO]: [0mGET /api/servicios?t=1768477141312 [32m200[0m 314.322 ms - 239[0m
+2026-01-15 06:39:11 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:39:12 [INFO]: [0mGET /api/servicios/lista [32m200[0m 317.324 ms - 229[0m
+2026-01-15 06:39:12 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:39:12 [INFO]: [0mGET /api/notificaciones/lista?t=1768477151568 [32m200[0m 597.059 ms - -[0m
+2026-01-15 06:39:16 [INFO]: [0mGET /api/servicios?t=1768477155619 [32m200[0m 305.358 ms - 239[0m
+2026-01-15 06:39:20 [INFO]: [0mGET /api/servicios?t=1768477159878 [32m200[0m 305.104 ms - 239[0m
+2026-01-15 06:40:42 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:40:42 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:40:42 [INFO]: [0mGET /api/notificaciones/lista?t=1768477242365 [32m200[0m 152.199 ms - -[0m
+2026-01-15 06:40:49 [INFO]: [0mGET /configuracion [36m304[0m 205.849 ms - -[0m
+2026-01-15 06:40:49 [INFO]: [0mGET /configuracion/listar [36m304[0m 123.871 ms - -[0m
+2026-01-15 06:40:51 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:40:52 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:40:52 [INFO]: [0mGET /api/notificaciones/lista?t=1768477251874 [32m200[0m 131.708 ms - -[0m
+2026-01-15 06:40:52 [INFO]: [0mGET /configuracion [36m304[0m 111.242 ms - -[0m
+2026-01-15 06:40:52 [INFO]: [0mGET /configuracion/listar [36m304[0m 114.003 ms - -[0m
+2026-01-15 06:41:00 [INFO]: [0mGET /usuario/lista [36m304[0m 140.198 ms - -[0m
+2026-01-15 06:41:56 [INFO]: [0mGET /api/servicios?t=1768477315666 [32m200[0m 326.155 ms - 239[0m
+2026-01-15 06:41:58 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768477318133 [32m200[0m 340.147 ms - 672[0m
+2026-01-15 06:41:58 [INFO]: [0mGET /api/servicios/lista [36m304[0m 332.759 ms - -[0m
+2026-01-15 06:41:58 [INFO]: [0mGET /api/servicios/lista [32m200[0m 303.827 ms - 229[0m
+2026-01-15 06:41:59 [INFO]: [0mGET /mascota/lista [32m200[0m 867.133 ms - -[0m
+2026-01-15 06:41:59 [INFO]: [0mGET /cliente/lista [36m304[0m 1175.551 ms - -[0m
+2026-01-15 06:41:59 [INFO]: [0mGET /cliente/lista [32m200[0m 1443.653 ms - -[0m
+2026-01-15 06:41:59 [INFO]: [0mGET /mascota/lista [36m304[0m 1593.195 ms - -[0m
+2026-01-15 06:42:00 [INFO]: [0mGET /mascota/lista [32m200[0m 1181.833 ms - -[0m
+2026-01-15 06:42:00 [INFO]: [0mGET /cliente/lista [32m200[0m 1909.596 ms - -[0m
+2026-01-15 06:42:01 [INFO]: [0mGET /cita/veterinarios [32m200[0m 124.994 ms - 71[0m
+2026-01-15 06:42:01 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.805 ms - -[0m
+2026-01-15 06:42:01 [INFO]: [0mGET /cita/agenda/2026-01-15?t=1768477321554 [32m200[0m 320.416 ms - 672[0m
+2026-01-15 06:42:03 [INFO]: [0mGET /cita/veterinarios [36m304[0m 120.638 ms - -[0m
+2026-01-15 06:42:03 [INFO]: [0mGET /api/servicios/lista [36m304[0m 306.541 ms - -[0m
+2026-01-15 06:42:03 [INFO]: [0mGET /cliente/lista [36m304[0m 346.408 ms - -[0m
+2026-01-15 06:42:04 [INFO]: [0mGET /mascota/lista [36m304[0m 1517.743 ms - -[0m
+2026-01-15 06:42:07 [INFO]: [0mGET /api/servicios?t=1768477327486 [32m200[0m 316.264 ms - 239[0m
+2026-01-15 06:42:09 [INFO]: [NOTIFICACIONES] Obteniendo todas las notificaciones
+2026-01-15 06:42:09 [INFO]: [NOTIFICACIONES] Notificaciones encontradas: 9
+2026-01-15 06:42:09 [INFO]: [0mGET /api/notificaciones/lista?t=1768477329096 [32m200[0m 142.051 ms - -[0m
+2026-01-15 06:42:10 [INFO]: [0mGET /configuracion [36m304[0m 116.372 ms - -[0m
+2026-01-15 06:42:10 [INFO]: [0mGET /configuracion/listar [36m304[0m 115.122 ms - -[0m
+2026-01-15 06:42:16 [INFO]: [0mGET /usuario/lista [36m304[0m 117.177 ms - -[0m
+2026-01-15 06:42:20 [INFO]: [0mGET /usuario/lista [36m304[0m 118.969 ms - -[0m
+2026-01-15 06:42:24 [INFO]: [0mGET /usuario/lista [36m304[0m 114.500 ms - -[0m
+2026-01-15 06:45:28 [INFO]: [0mGET /usuario/lista [36m304[0m 467.698 ms - -[0m
+2026-01-15 06:45:37 [INFO]: [0mGET /usuario/lista [36m304[0m 113.566 ms - -[0m
+2026-01-15 06:45:49 [INFO]: [0mGET /usuario/lista [36m304[0m 123.517 ms - -[0m
+2026-01-15 06:50:46 [INFO]: ⚠️  Mongoose desconectado de MongoDB
