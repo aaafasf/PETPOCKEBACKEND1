@@ -8,7 +8,8 @@ const configuracionCtl = {};
 // =======================
 configuracionCtl.obtenerConfiguracion = async (req, res) => {
   try {
-    const configs = await Configuracion.findAll({ raw: true });
+    const { idClinica } = req.query; // viene por query
+    const configs = await Configuracion.findAll({ where: { idClinica }, raw: true });
     const datosClinica = {};
 
     configs.forEach(c => {
@@ -40,7 +41,8 @@ configuracionCtl.obtenerConfiguracion = async (req, res) => {
 // =======================
 configuracionCtl.listarConfiguraciones = async (req, res) => {
   try {
-    const configs = await Configuracion.findAll({ raw: true });
+    const { idClinica } = req.query;
+    const configs = await Configuracion.findAll({ where: { idClinica }, raw: true });
     res.json(configs);
   } catch (error) {
     console.error('Error en listarConfiguraciones:', error);
@@ -49,13 +51,13 @@ configuracionCtl.listarConfiguraciones = async (req, res) => {
 };
 
 // =======================
-// GUARDAR / ACTUALIZAR
+// GUARDAR / ACTUALIZAR CONFIGURACIÓN GENERAL
 // =======================
 configuracionCtl.guardarConfiguracion = async (req, res) => {
   try {
     const datos = req.body;
+    const { idClinica } = req.body;
 
-    // Guardar cada campo como un registro clave-valor
     const claves = {
       nombre: 'nombreClinica',
       telefono: 'telefonoClinica',
@@ -74,12 +76,11 @@ configuracionCtl.guardarConfiguracion = async (req, res) => {
     for (const campo in claves) {
       const clave = claves[campo];
       const valor = datos[campo];
-
-      const existente = await Configuracion.findOne({ where: { clave } });
+      const existente = await Configuracion.findOne({ where: { clave, idClinica } });
       if (existente) {
-        await Configuracion.update({ valor }, { where: { clave } });
+        await Configuracion.update({ valor }, { where: { clave, idClinica } });
       } else {
-        await Configuracion.create({ clave, valor, tipo: 'clinica' });
+        await Configuracion.create({ clave, valor, tipo: 'clinica', idClinica });
       }
     }
 
@@ -87,6 +88,53 @@ configuracionCtl.guardarConfiguracion = async (req, res) => {
   } catch (error) {
     console.error('Error en guardarConfiguracion:', error);
     res.status(500).json({ message: 'Error al guardar configuración' });
+  }
+};
+
+// =======================
+// ELIMINAR CONFIGURACIÓN POR CLAVE
+// =======================
+configuracionCtl.eliminarConfiguracion = async (req, res) => {
+  try {
+    const { clave } = req.params;
+    const { idClinica } = req.query; // 🔹 Antes estaba en req.body, ahora query
+
+    if (!idClinica) {
+      return res.status(400).json({ message: 'idClinica es requerido' });
+    }
+
+    const eliminado = await Configuracion.destroy({ where: { clave, idClinica } });
+
+    if (eliminado) {
+      res.json({ message: `Configuración '${clave}' eliminada correctamente` });
+    } else {
+      res.status(404).json({ message: `Configuración '${clave}' no encontrada` });
+    }
+  } catch (error) {
+    console.error('Error en eliminarConfiguracion:', error);
+    res.status(500).json({ message: 'Error al eliminar configuración' });
+  }
+};
+
+
+// =======================
+// ACTUALIZAR CONFIGURACIÓN POR CLAVE
+// =======================
+configuracionCtl.actualizarConfiguracion = async (req, res) => {
+  try {
+    const { clave } = req.params;
+    const { valor, idClinica } = req.body;
+
+    const existente = await Configuracion.findOne({ where: { clave, idClinica } });
+    if (existente) {
+      await Configuracion.update({ valor }, { where: { clave, idClinica } });
+      res.json({ message: `Configuración '${clave}' actualizada correctamente` });
+    } else {
+      res.status(404).json({ message: `Configuración '${clave}' no encontrada` });
+    }
+  } catch (error) {
+    console.error('Error en actualizarConfiguracion:', error);
+    res.status(500).json({ message: 'Error al actualizar configuración' });
   }
 };
 
