@@ -66,14 +66,24 @@ mascotaCtl.mostrarMascotas = async (req, res) => {
 // Crear nueva mascota
 mascotaCtl.crearMascota = async (req, res) => {
     try {
-        const { 
+        console.log('DEBUG crearMascota: body=', JSON.stringify(req.body));
+        const {
             nombreMascota, especie, raza, edad, sexo, idPropietario,
-            observaciones, vacunas, pesoKg, color, esterilizado, alergias, chipIdentificacion 
+            observaciones, vacunas, pesoKg, color, esterilizado, alergias, chipIdentificacion,
+            idCliente
         } = req.body;
 
+        // Accept either idPropietario or idCliente (compatibility)
+        const ownerId = idPropietario || idCliente;
+
         // Validación de campos requeridos
-        if (!nombreMascota || !especie || !idPropietario) {
-            return res.status(400).json({ message: 'Nombre, especie y propietario son obligatorios' });
+        const missing = [];
+        if (!nombreMascota) missing.push('nombreMascota');
+        if (!especie) missing.push('especie');
+        if (!ownerId) missing.push('idPropietario/idCliente');
+        if (missing.length > 0) {
+            console.log('DEBUG crearMascota: missing fields =', missing);
+            return res.status(400).json({ message: 'Campos requeridos faltantes', missing });
         }
 
         // Crear en SQL con datos encriptados
@@ -83,14 +93,14 @@ mascotaCtl.crearMascota = async (req, res) => {
             raza: cifrarDatos(raza || ''),
             edad: edad || 0,
             sexo: cifrarDatos(sexo || ''),
-            idPropietario: idPropietario,
+            idPropietario: ownerId,
             createMascota: new Date().toLocaleString(),
         });
 
         // Crear en MongoDB con datos adicionales
         await mongo.mascotaModel.create({
             idMascotaSql: nuevaMascota.idMascota.toString(),
-            idPropietario: idPropietario.toString(),
+            idPropietario: String(ownerId),
             observaciones: observaciones || '',
             vacunas: vacunas || [],
             pesoKg: pesoKg || null,

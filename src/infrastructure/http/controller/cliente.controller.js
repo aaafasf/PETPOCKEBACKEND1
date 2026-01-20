@@ -29,7 +29,7 @@ clienteCtl.mostrarClientes = async (req, res) => {
                 return {
                     ...cliente,
                     cedulaCliente: descifrarSeguro(cliente.cedulaCliente),
-                    nombreCliente: descifrarSeguro(cliente.nombreCliente),
+                    nombreCliente: cliente.nombreCliente,
                     usernameCliente: descifrarSeguro(cliente.usernameCliente),
                     // La contraseña no se debería enviar desencriptada
                     detallesMongo: clienteMongo ? {
