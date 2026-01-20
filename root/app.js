@@ -275,21 +275,50 @@ app.options('/health', (req, res) => {
 });
 
 // ==================== RUTAS API ====================
-// Asegúrate de que estas rutas existan en tu carpeta /src
-app.use('/api/servicios', require('../src/infrastructure/http/router/servicio.router'));
-app.use('/cliente', require('../src/infrastructure/http/router/cliente.router'));
-app.use('/auth', require('../src/infrastructure/http/router/auth.router'));
-app.use('/mascota', require('../src/infrastructure/http/router/mascota.router'));
-app.use('/cita', require('../src/infrastructure/http/router/cita.router'));
-app.use('/producto', require('../src/infrastructure/http/router/producto.router'));
-app.use('/configuracion', require('../src/infrastructure/http/router/configuracion.router'));
-app.use('/usuario', require('../src/infrastructure/http/router/user.router'));
+// Todas las rutas bajo /api para consistencia
+console.log('\n🔧 [APP] ===== Registrando Routers API =====');
 
-// Registrar router de notificaciones
-const notificacionRouter = require('../src/infrastructure/http/router/notificacion.router');
-console.log('\n🔧 [APP] Registrando router de notificaciones en /api/notificaciones');
-app.use('/api/notificaciones', notificacionRouter);
-console.log('✅ [APP] Router de notificaciones registrado correctamente\n');
+// Routers con prefijo /api
+app.use('/api/servicios', require('../src/infrastructure/http/router/servicio.router'));
+app.use('/api/mascota', require('../src/infrastructure/http/router/mascota.router'));
+app.use('/api/cliente', require('../src/infrastructure/http/router/cliente.router'));
+app.use('/api/cita', require('../src/infrastructure/http/router/cita.router'));
+app.use('/api/producto', require('../src/infrastructure/http/router/producto.router'));
+app.use('/api/usuario', require('../src/infrastructure/http/router/user.router'));
+app.use('/api/notificaciones', require('../src/infrastructure/http/router/notificacion.router'));
+app.use('/api/configuracion', require('../src/infrastructure/http/router/configuracion.router'));
+
+// Catálogos
+app.use('/api/especies', require('../src/infrastructure/http/router/especie.router'));
+app.use('/api/razas', require('../src/infrastructure/http/router/raza.router'));
+app.use('/api/sexos', require('../src/infrastructure/http/router/sexo.router'));
+app.use('/api/colores', require('../src/infrastructure/http/router/color.router'));
+app.use('/api/tamanos', require('../src/infrastructure/http/router/tamano.router'));
+app.use('/api/tipos-mascota', require('../src/infrastructure/http/router/estadoMascota.router'));
+
+// Routers sin prefijo /api (auth debe estar sin /api por convención)
+app.use('/auth', require('../src/infrastructure/http/router/auth.router'));
+
+console.log('✅ [APP] Todos los routers registrados correctamente');
+console.log('  ✓ /api/servicios');
+console.log('  ✓ /api/mascota');
+console.log('  ✓ /api/cliente');
+console.log('  ✓ /api/cita');
+console.log('  ✓ /api/producto');
+console.log('  ✓ /api/usuario');
+console.log('  ✓ /api/notificaciones');
+console.log('  ✓ /api/configuracion');
+console.log('  ✓ /api/especies');
+console.log('  ✓ /api/razas');
+console.log('  ✓ /api/sexos');
+console.log('  ✓ /api/colores');
+console.log('  ✓ /api/tamanos');
+console.log('  ✓ /api/tipos-mascota');
+console.log('  ✓ /auth');
+console.log('  ✓ /api/notificaciones');
+console.log('  ✓ /api/configuracion');
+console.log('  ✓ /auth');
+console.log('🔧 [APP] ===== Fin de registro de Routers =====\n');
 
 
 // ==================== MANEJO DE ERRORES ====================

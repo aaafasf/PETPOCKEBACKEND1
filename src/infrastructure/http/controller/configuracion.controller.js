@@ -29,6 +29,9 @@ configuracionCtl.obtenerConfiguracion = async (req, res) => {
       }
     });
 
+    // Deshabilitar cache
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+    res.set('Pragma', 'no-cache');
     res.json(datosClinica);
   } catch (error) {
     console.error('Error en obtenerConfiguracion:', error);
@@ -42,13 +45,38 @@ configuracionCtl.obtenerConfiguracion = async (req, res) => {
 configuracionCtl.listarConfiguraciones = async (req, res) => {
   try {
     const { idClinica } = req.query;
-    const configs = await Configuracion.findAll({ where: { idClinica }, raw: true });
-    res.json(configs);
+
+    const configs = await Configuracion.findAll({
+      where: { idClinica },
+      raw: true
+    });
+
+    const datosClinica = {};
+
+    configs.forEach(c => {
+      switch (c.clave) {
+        case 'nombreClinica': datosClinica.nombre = c.valor; break;
+        case 'telefonoClinica': datosClinica.telefono = c.valor; break;
+        case 'correoClinica': datosClinica.correo = c.valor; break;
+        case 'direccionClinica': datosClinica.direccion = c.valor; break;
+        case 'horariosClinica': datosClinica.horarios = c.valor; break;
+        case 'logoClinica': datosClinica.logo = c.valor; break;
+        case 'zonaHoraria': datosClinica.zonaHoraria = c.valor; break;
+        case 'idioma': datosClinica.idioma = c.valor; break;
+        case 'formatoFecha': datosClinica.formatoFecha = c.valor; break;
+        case 'politicas': datosClinica.politicas = c.valor; break;
+        case 'horasMinimasCancelacion': datosClinica.horasMinimasCancelacion = parseInt(c.valor); break;
+        case 'limiteMascotas': datosClinica.limiteMascotas = parseInt(c.valor); break;
+      }
+    });
+
+    res.json([datosClinica]); // 👈 DEVUELVE ARRAY PARA *ngFor
   } catch (error) {
     console.error('Error en listarConfiguraciones:', error);
     res.status(500).json({ message: 'Error al listar configuraciones' });
   }
 };
+
 
 // =======================
 // GUARDAR / ACTUALIZAR CONFIGURACIÓN GENERAL

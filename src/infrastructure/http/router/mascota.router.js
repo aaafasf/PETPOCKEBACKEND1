@@ -5,7 +5,10 @@ const { body, param } = require('express-validator');
 const { 
     mostrarMascotas, 
     crearMascota, 
-    actualizarMascota
+    actualizarMascota,
+    obtenerMascotasPorPropietario,
+    obtenerMascotaPorId,
+    eliminarMascota
 } = require('../controller/mascota.controller');
 
 // Middleware de autenticación (opcional)
@@ -98,16 +101,10 @@ const validacionActualizarMascota = [
 router.get('/lista', mostrarMascotas);
 
 // Obtener mascotas por propietario
-router.get('/propietario/:idPropietario', (req, res) => {
-    // Implementar en el controlador si es necesario
-    res.json({ message: 'Endpoint para obtener mascotas por propietario' });
-});
+router.get('/propietario/:idPropietario', obtenerMascotasPorPropietario);
 
-// Obtener mascotas por especie
-router.get('/especie/:especie', (req, res) => {
-    // Implementar en el controlador si es necesario
-    res.json({ message: 'Endpoint para obtener mascotas por especie' });
-});
+// Obtener una mascota por ID
+router.get('/:id', obtenerMascotaPorId);
 
 // Crear nueva mascota
 router.post('/crear', validacionCrearMascota, crearMascota);
@@ -115,9 +112,7 @@ router.post('/crear', validacionCrearMascota, crearMascota);
 // Actualizar mascota existente
 router.put('/actualizar/:id', validacionActualizarMascota, actualizarMascota);
 
-// Eliminar mascota (implementar en controlador si es necesario)
-router.delete('/eliminar/:id', (req, res) => {
-    res.json({ message: 'Endpoint para eliminar mascota - Por implementar' });
-});
+// Eliminar mascota
+router.delete('/eliminar/:id', eliminarMascota);
 
 module.exports = router;

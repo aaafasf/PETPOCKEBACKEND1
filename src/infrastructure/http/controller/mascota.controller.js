@@ -115,6 +115,111 @@ mascotaCtl.crearMascota = async (req, res) => {
     }
 };
 
+// Obtener mascotas por propietario
+mascotaCtl.obtenerMascotasPorPropietario = async (req, res) => {
+    try {
+        const { idPropietario } = req.params;
+
+        const [listaMascotas] = await sql.promise().query(`
+            SELECT m.*, p.nombrePropietario, p.emailPropietario 
+            FROM mascotas m
+            JOIN propietarios p ON m.idPropietario = p.idPropietario
+            WHERE m.idPropietario = ?
+            ORDER BY m.createMascota DESC
+        `, [idPropietario]);
+
+        const mascotasCompletas = await Promise.all(
+            listaMascotas.map(async (mascota) => {
+                // Obtener datos adicionales de MongoDB
+                const mascotaMongo = await mongo.mascotaModel.findOne({ 
+                    idMascotaSql: mascota.idMascota.toString()
+                });
+
+                return {
+                    ...mascota,
+                    nombreMascota: descifrarSeguro(mascota.nombreMascota),
+                    especie: descifrarSeguro(mascota.especie),
+                    raza: descifrarSeguro(mascota.raza),
+                    sexo: descifrarSeguro(mascota.sexo),
+                    propietario: {
+                        nombre: descifrarSeguro(mascota.nombrePropietario),
+                        email: descifrarSeguro(mascota.emailPropietario)
+                    },
+                    detallesMongo: mascotaMongo ? {
+                        observaciones: mascotaMongo.observaciones,
+                        vacunas: mascotaMongo.vacunas,
+                        pesoKg: mascotaMongo.pesoKg,
+                        color: mascotaMongo.color,
+                        razaDetallada: mascotaMongo.raza,
+                        esterilizado: mascotaMongo.esterilizado,
+                        alergias: mascotaMongo.alergias,
+                        chipIdentificacion: mascotaMongo.chipIdentificacion,
+                        ultimaVisita: mascotaMongo.ultimaVisita
+                    } : null
+                };
+            })
+        );
+
+        return res.json(mascotasCompletas);
+    } catch (error) {
+        console.error('Error al obtener mascotas del propietario:', error);
+        return res.status(500).json({ message: 'Error al obtener las mascotas', error: error.message });
+    }
+};
+
+// Obtener una mascota por ID
+mascotaCtl.obtenerMascotaPorId = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const [listaMascotas] = await sql.promise().query(`
+            SELECT m.*, p.nombrePropietario, p.emailPropietario 
+            FROM mascotas m
+            JOIN propietarios p ON m.idPropietario = p.idPropietario
+            WHERE m.idMascota = ?
+        `, [id]);
+
+        if (!listaMascotas || listaMascotas.length === 0) {
+            return res.status(404).json({ message: 'Mascota no encontrada' });
+        }
+
+        const mascota = listaMascotas[0];
+
+        // Obtener datos adicionales de MongoDB
+        const mascotaMongo = await mongo.mascotaModel.findOne({ 
+            idMascotaSql: mascota.idMascota.toString()
+        });
+
+        const mascotaCompleta = {
+            ...mascota,
+            nombreMascota: descifrarSeguro(mascota.nombreMascota),
+            especie: descifrarSeguro(mascota.especie),
+            raza: descifrarSeguro(mascota.raza),
+            sexo: descifrarSeguro(mascota.sexo),
+            propietario: {
+                nombre: descifrarSeguro(mascota.nombrePropietario),
+                email: descifrarSeguro(mascota.emailPropietario)
+            },
+            detallesMongo: mascotaMongo ? {
+                observaciones: mascotaMongo.observaciones,
+                vacunas: mascotaMongo.vacunas,
+                pesoKg: mascotaMongo.pesoKg,
+                color: mascotaMongo.color,
+                razaDetallada: mascotaMongo.raza,
+                esterilizado: mascotaMongo.esterilizado,
+                alergias: mascotaMongo.alergias,
+                chipIdentificacion: mascotaMongo.chipIdentificacion,
+                ultimaVisita: mascotaMongo.ultimaVisita
+            } : null
+        };
+
+        return res.json(mascotaCompleta);
+    } catch (error) {
+        console.error('Error al obtener mascota:', error);
+        return res.status(500).json({ message: 'Error al obtener la mascota', error: error.message });
+    }
+};
+
 // Actualizar mascota
 mascotaCtl.actualizarMascota = async (req, res) => {
     try {
@@ -168,6 +273,25 @@ mascotaCtl.actualizarMascota = async (req, res) => {
     } catch (error) {
         console.error('Error al actualizar mascota:', error);
         return res.status(500).json({ message: 'Error al actualizar', error: error.message });
+    }
+};
+
+// Eliminar mascota
+mascotaCtl.eliminarMascota = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Eliminar de MongoDB
+        await mongo.mascotaModel.deleteOne({ idMascotaSql: id.toString() });
+
+        // Eliminar de SQL
+        await sql.promise().query('DELETE FROM mascotas WHERE idMascota = ?', [id]);
+
+        return res.json({ message: 'Mascota eliminada exitosamente' });
+
+    } catch (error) {
+        console.error('Error al eliminar mascota:', error);
+        return res.status(500).json({ message: 'Error al eliminar', error: error.message });
     }
 };
 
